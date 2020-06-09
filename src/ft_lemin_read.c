@@ -6,7 +6,7 @@
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/01 18:30:08 by vfearles          #+#    #+#             */
-/*   Updated: 2020/05/13 19:34:18 by asmall           ###   ########.fr       */
+/*   Updated: 2020/05/22 19:33:49 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char		*ft_read_line(char *str, int fd)
 	char	*temp;
 	char	*line;
 
-	if (!(line = (char *)malloc(sizeof(char) * (16000 + 1))))
+	if (!(line = (char *)malloc(sizeof(char) * (16001 + 1))))
 		ft_print_error(E_MALLOC);
 	ft_bzero(line, 16001);
 	while ((ret = read(fd, line, 16001)) > 0)

@@ -22,7 +22,7 @@ static void	ft_zerodata(t_data *data)
 	data->options = NULL;
 	data->best_opt = NULL;
 	data->ways_dij = NULL;
-	data->ways_count = 0;
+	data->total_ways = 0;
 	data->i_rooms_start = 0;
 	data->i_rooms_end = 0;
 	data->i_links_start = 0;
@@ -45,14 +45,14 @@ static void	ft_print_ways(t_way *way, int steps)
 {
 	t_path	*ptr;
 	t_way	*w;
-	int		ways_count;
+	int		total_ways;
 
 	w = way;
-	ways_count = (w->ants) ? 1 : 0;
+	total_ways = (w->ants) ? 1 : 0;
 	while ((w = w->next) && w->ants)
-		++ways_count;
+		++total_ways;
 	ft_printf("Total lines: %d\nTotal ways:  %d\n"
-			" ANTS | WAYS\n", steps, ways_count);
+			" ANTS | WAYS\n", steps, total_ways);
 	while (way && way->ants > 0)
 	{
 		ft_printf("%5d | ", way->ants);
@@ -73,7 +73,7 @@ static void	ft_print_ways(t_way *way, int steps)
 ** ft_flags_lemin: проверка на флаги.
 ** ft_lemin_read: чтение карты. ft_valid: валидация карты.
 ** ft_parse_data: создание комнат и связей между ними.
-** ft_ways: главный алгоритм программы.
+** ft_find_all_ways: главный алгоритм программы.
 ** print_n_free_map_data: печать карты на консоль.
 ** ft_lemin: вывод на консоль ответа программы.
 ** ft_free_data: очистка структуры.
@@ -90,7 +90,7 @@ int			main(int ac, char **av)
 	map_data = ft_lemin_read(&data.flags, &str_split);
 	ft_valid(&data, str_split);
 	ft_parse_data(&data, str_split);
-	ft_ways(&data);
+	ft_find_all_ways(&data);
 	print_n_free_map_data(&map_data);
 	ft_lemin(&data);
 	(data.flags.ways == 1) ? ft_print_ways(data.best_opt->ways,

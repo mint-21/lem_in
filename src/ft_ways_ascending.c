@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ways_ascending.c                                :+:      :+:    :+:   */
+/*   ft_find_all_ways_ascending.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -79,7 +79,7 @@ static t_way	*ft_add_path(t_link *head, t_way *ways, t_room *end)
 ** Переворачиваем ребра от конца до старта и ищем пути
 */
 
-t_way			*ft_ways_ascending(t_link *head, t_link *tail,
+t_way			*ft_find_all_ways_ascending(t_link *head, t_link *tail,
 				t_room *start, t_room *end)
 {
 	t_link		*link;
