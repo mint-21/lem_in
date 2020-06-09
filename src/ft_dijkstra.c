@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ford.c                                          :+:      :+:    :+:   */
+/*   ft_dijkstra.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -104,33 +104,45 @@ static void	path(t_room *room, t_room *start, t_way **ways, int path_cost)
 }
 
 /*
-** ft_turn: алгоритм поиска в ширину, назначение родительских узлов.
+** ft_change_weight: алгоритм поиска в ширину, назначение родительских узлов.
 ** path: создание n-части пути, инициализация структур t_way и t_path.
 ** null: возвращаем структуру к исходному состоянию weight.
 ** rooms_count: количество комнат; weight: временная метка.
 */
 
-int			ft_ford(t_data *data)
+static void		find_INF(t_room *room, t_data *data, int fl)
 {
-	int		k;
-	t_room	*room;
-	int		flag;
+	t_room	*room_d;
 
-	k = data->rooms_count;
-	flag = 1;
-	data->start->weight = 0;
-	while (--k && flag == 1)
-	{
-		flag = 0;
-		room = data->rooms;
-		(room == data->end) ? room = room->next : 0;
+	(room == data->end) ? room = room->next : 0;
 		while (room)
 		{
 			if (room->state)
-				ft_turn(room, data->start, &flag);
+			{
+				if (room->weight != INF)
+					change_weight(room, data->start, &fl);
+				if ((room_d = room->room_out) && room_d->weight != INF)
+					change_weight(room, data->start, &fl);
+			}
 			room = room->next;
 			(room == data->end) ? room = room->next : 0;
 		}
+}
+
+int			ft_dijkstra(t_data *data)
+{
+	int		k;
+	t_room	*room;
+	int		fl;
+
+	k = data->rooms_count;
+	fl = 1;
+	data->start->weight = 0;
+	room = data->rooms;
+	while (--k && fl == 1)
+	{
+		fl = 0;
+		find_INF(room, data, &fl);
 	}
 	if (!data->end->room_par)
 		return (0);

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_turn.c                                          :+:      :+:    :+:   */
+/*   ft_change_weight.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -29,51 +29,30 @@ static int	loop(t_room *new_parrent, t_room *room)
 /*
 ** Присваиваем текущей комнате вес (weight)
 ** loop: родительской комнатой назначается та, чей weight меньше текущего
-*/
-
-static void	change_cost(t_room *room, t_link *link, int *flag)
-{
-	link->room->weight = room->weight + link->weight;
-	if (!link->room->room_par ||
-	((link->room->room_par) && !loop(room, link->room)))
-	{
-		link->room->room_par = room;
-		*flag = 1;
-	}
-}
-
-/*
 ** изначально список посещённых узлов пуст, weight = 0.
 ** начиная с узла-источника, все преемники текущего узла,
 ** которые ещё не были посещены, пометить как посещённые (weight)
-** change_cost: изменить временную метку (weight) на постоянную.
+** change_weight: изменить временную метку (weight) на постоянную.
 */
 
-void		ft_turn(t_room *room, t_room *start, int *flag)
+void	change_weight(t_room *room, t_room *start, int *flag)
 {
 	t_link	*link;
-	t_room	*room_d;
 
-	if (room->weight != INF)
+	link = room->links;
+	while (link)
 	{
-		link = room->links;
-		while (link)
-		{
-			if (room->weight + link->weight < link->room->weight
+		if (room->weight + link->weight < link->room->weight
 				&& link->room != start)
-				change_cost(room, link, flag);
-			link = link->next;
-		}
-	}
-	if ((room_d = room->room_out) && room_d->weight != INF)
-	{
-		link = room_d->links;
-		while (link)
 		{
-			if (room_d->weight + link->weight < link->room->weight
-				&& link->room != start)
-				change_cost(room_d, link, flag);
-			link = link->next;
+			link->room->weight = room->weight + link->weight;
+			if (!link->room->room_par ||
+			((link->room->room_par) && !loop(room, link->room)))
+			{
+				link->room->room_par = room;
+				*flag = 1;
+			}
 		}
+		link = link->next;
 	}
 }

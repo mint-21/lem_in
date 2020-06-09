@@ -155,8 +155,8 @@ int					ft_findrooms(t_data *data, char *link, t_room **room1,
 					t_room **room2);
 void				ft_find_all_ways(t_data *data);
 int					ft_suurballe(t_data *data);
-int					ft_ford(t_data *data);
-void				ft_turn(t_room *room, t_room *start, int *flag);
+int					ft_dijkstra(t_data *data);
+void				ft_change_weight(t_room *room, t_room *start, int *flag);
 void				ft_direction(t_path *path);
 t_way				*ft_paths_ascending(t_room *start, t_room *end);
 t_way				*ft_find_all_ways_ascending(t_link *turn_head, t_link *turn_tail,
@@ -167,6 +167,6 @@ void				ft_free_data(t_data *data);
 void				ft_print_error(int id);
 void				ft_perror();
 int					ft_atoi_mod(const char *str);
-
+void	change_weight(t_room *room, t_room *start, int *flag);
 
 #endif

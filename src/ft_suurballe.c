@@ -77,7 +77,7 @@ static void	duplicate_rooms(t_path *path)
 }
 
 /*
-** ft_ford: поиск в ширину по алгоритму Дейкстры
+** ft_dijkstra: поиск в ширину по алгоритму Дейкстры
 ** ft_direction: делаем график направленным и меняем направление ребер
 ** duplicate_rooms: дублируем все промежуточные вершины части пути во
 ** входящую и исходящую части.
@@ -85,7 +85,7 @@ static void	duplicate_rooms(t_path *path)
 
 int			ft_suurballe(t_data *data)
 {
-	if (ft_ford(data))
+	if (ft_dijkstra(data))
 	{
 		ft_direction(data->ways_dij->path);
 		duplicate_rooms(data->ways_dij->path);
