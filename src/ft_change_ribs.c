@@ -24,7 +24,10 @@ static void	ft_redirection_link(t_room *src, t_room *dst, t_link *link)
 		src->links = link->next;
 	if (link->next)
 		link->next->prev = link->prev;
-	link->weight = (link->weight == -1) ? 2 : -1;
+	if (link->weight == -1)
+		link->weight = 2;
+	else
+		link->weight = -1;
 	link->room = src;
 	link->room_one = dst;
 	link->prev = NULL;
