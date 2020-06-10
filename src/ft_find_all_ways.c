@@ -74,13 +74,6 @@ static int		find_ways(t_link *start, t_link *end)
 	return ((j < i) ? j : i);
 }
 
-void			init_var(t_option *var, t_way *new_ways, int new_steps)
-{
-	var->ways = new_ways;
-	var->steps = new_steps;
-	var->next = NULL;
-}
-
 /*
 ** find_ways: возвращает количество путей
 ** ft_suurballe: ф-ия создает новый граф с входящими и исходящими узлами

@@ -46,6 +46,13 @@ static void		ft_link_end(t_link **turn_head, t_link **turn_tail)
 	}
 }
 
+static void		init_var(t_option *var, t_way *new_ways, int new_steps)
+{
+	var->ways = new_ways;
+	var->steps = new_steps;
+	var->next = NULL;
+}
+
 /*
 ** turn_head, turn_tail: обратные края (ребра).
 ** ft_ways_ascending: поиск кратчайших путей.
