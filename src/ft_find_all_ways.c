@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ways.c                                          :+:      :+:    :+:   */
+/*   ft_find_all_ways.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -50,64 +50,29 @@ static int		ft_min_steps_for_ants(t_way *way, int ants)
 }
 
 /*
-** В структуру data создаем структуру с лучшими вариантами пути
-*/
-
-static void		ft_cmp_options(t_data *data)
-{
-	t_option	*ptr;
-	int			best_steps;
-	t_option	*best_opt;
-
-	ptr = data->options;
-	best_steps = ptr->steps;
-	best_opt = ptr;
-	while ((ptr = ptr->next))
-		if (ptr->steps <= best_steps)
-		{
-			best_steps = ptr->steps;
-			best_opt = ptr;
-		}
-	data->best_opt = best_opt;
-}
-
-/*
 ** Считает количество связей с start и количество связей, приходящих в end
 ** Функция возвращает наименьшее из подсчитанных значений.
 */
 
-static int		number_of_paths(t_room *start, t_room *end)
+static int		find_ways(t_link *start, t_link *end)
 {
 	int			i;
 	int			j;
-	t_link		*ptr;
 
 	i = 0;
-	ptr = start->links;
-	while (ptr)
+	while (start)
 	{
 		++i;
-		ptr = ptr->next;
+		start = start->next;
 	}
 	j = 0;
-	ptr = end->links;
-	while (ptr)
+	while (end)
 	{
 		++j;
-		ptr = ptr->next;
+		end = end->next;
 	}
 	return ((j < i) ? j : i);
 }
-
-/*
-** number_of_paths: возвращает количество путей
-** ft_suurballe: ф-ия создает новый граф с входящими и исходящими узлами
-** ft_paths_ascending: инициализируем струтуру new_ways и находим
-** кратчайшие пути в новом графе
-** ft_min_steps_for_ants: количество шагов от start до end
-** ft_cmp_options: в главную структуру добавляем структуру с лучшими путями
-** --data->ways_count: удаляем количество найденных путей
-*/
 
 void			init_var(t_option *var, t_way *new_ways, int new_steps)
 {
@@ -116,18 +81,20 @@ void			init_var(t_option *var, t_way *new_ways, int new_steps)
 	var->next = NULL;
 }
 
-void			ft_ways(t_data *data)
+/*
+** ft_paths_ascending: инициализируем струтуру new_ways и находим
+** кратчайшие пути в новом графе
+** ft_min_steps_for_ants: количество шагов от start до end
+*/
+
+void			find_of_ways_struct(t_data *data)
 {
 	t_way		*new_ways;
 	int			new_steps;
 	t_option	*var;
 
 	new_steps = 0;
-	data->ways_count = number_of_paths(data->start, data->end);
-	while (data->ways_count > 0 && ft_suurballe(data))
-	{
-		--data->ways_count;
-		if ((new_ways = ft_paths_ascending(data->start, data->end)))
+	if ((new_ways = ft_paths_ascending(data->start, data->end)))
 			new_steps = ft_min_steps_for_ants(new_ways, data->ants);
 		!(var = (t_option *)malloc(sizeof(t_option))) ? ft_perror() : 0;
 		init_var(var, new_ways, new_steps);
@@ -138,8 +105,40 @@ void			ft_ways(t_data *data)
 			var->next = data->options;
 			data->options = var;
 		}
+}
+
+/*
+** find_ways: возвращает количество путей
+** ft_suurballe: ф-ия создает новый граф с входящими и исходящими узлами
+** В главную структуру добавляем структуру с лучшими путями
+*/
+
+void			ft_find_all_ways(t_data *data)
+{
+	t_link		*end_link;
+	t_link		*start_link;
+	t_option	*ptr;
+	int			best_steps;
+	t_option	*best_opt;
+
+	end_link = data->end->links;
+	start_link = data->start->links;
+	while ((data->total_ways = find_ways(start_link, end_link)) > 0
+	        && ft_suurballe(data))
+	{
+		--data->total_ways;
+		find_of_ways_struct(data);
 	}
 	(!data->options || (data->options && !data->options->ways)) ?
 				ft_print_error(E_PATH) : 1;
-	ft_cmp_options(data);
+	ptr = data->options;
+	best_steps = ptr->steps;
+	best_opt = ptr;
+	while ((ptr = ptr->next))
+		if (ptr->steps <= best_steps)
+		{
+			best_steps = ptr->steps;
+			best_opt = ptr;
+		}
+	data->best_opt = best_opt;
 }

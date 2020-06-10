@@ -127,7 +127,7 @@ typedef struct		s_data
 	t_option		*options;
 	t_option		*best_opt;
 	t_way			*ways_dij;
-	int				ways_count;
+	int				total_ways;
 	int				i_rooms_start;
 	int				i_rooms_end;
 	int				i_links_start;
@@ -153,7 +153,7 @@ void				ft_links(t_data *data, char *str);
 t_link				*ft_createlink(t_room *room);
 int					ft_findrooms(t_data *data, char *link, t_room **room1,
 					t_room **room2);
-void				ft_ways(t_data *data);
+void				ft_find_all_ways(t_data *data);
 int					ft_suurballe(t_data *data);
 int					ft_ford(t_data *data);
 void				ft_turn(t_room *room, t_room *start, int *flag);
