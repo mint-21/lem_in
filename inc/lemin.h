@@ -169,7 +169,7 @@ void				ft_perror();
 int					ft_atoi_mod(const char *str);
 int					ft_min_steps_for_ants(t_way *way, int ants);
 void				find_of_ways_struct(t_data *data);
-void				ft_null_link(t_room *dst, t_room *src);
+void  				ft_find_null(t_path *path);
 void				null_turn(t_link *turn_head, t_link *turn_tail, t_room *end);
 
 #endif

@@ -16,35 +16,26 @@
 
 #include "lemin.h"
 
-static void	ft_redirection_link(t_room *src, t_room *dst)
+static void	ft_redirection_link(t_room *src, t_room *dst, t_link *link)
 {
-	t_link	*link;
-
-	link = src->links;
-	while (link && link->room != dst)
-		link = link->next;
-	if (link && link->room == dst)
-	{
-		if (link->prev)
-			link->prev->next = link->next;
-		else
-			src->links = link->next;
-		if (link->next)
-			link->next->prev = link->prev;
-		link->weight = (link->weight == -1) ? 2 : -1;
-		link->room = src;
-		link->room_one = dst;
-		link->prev = NULL;
-		link->next = dst->links;
-		if (dst->links)
-			dst->links->prev = link;
-		dst->links = link;
-	}
+	if (link->prev)
+		link->prev->next = link->next;
+	else
+		src->links = link->next;
+	if (link->next)
+		link->next->prev = link->prev;
+	link->weight = (link->weight == -1) ? 2 : -1;
+	link->room = src;
+	link->room_one = dst;
+	link->prev = NULL;
+	link->next = dst->links;
+	if (dst->links)
+		dst->links->prev = link;
+	dst->links = link;
 }
 
 /*
-** path->room: комната со связями; path->next->room: следующая связующая комната.
-** ft_null_link: удаление предыдущих связей
+** ft_find_null: находим комнаты для обратных ребер и удаляем их связи
 ** ft_redirection_link: перенаправление связей в структуре two
 */
 
@@ -52,23 +43,14 @@ void		ft_change_ribs(t_path *path)
 {
 	while (path && path->next)
 	{
-		if (!(path->room->in_part || path->room->out_part))
-		{
-			if (!(path->next->room->in_part || path->next->room->out_part))
-				ft_null_link(path->next->room, path->room);
-			else if (path->next->room->out_part)
-				ft_null_link(path->next->room->out_part, path->room);
-			else if (path->next->room->in_part)
-				ft_null_link(path->next->room->in_part, path->room);
-		}
-		else if (!(path->next->room->in_part || path->next->room->out_part))
-		{
-			if (path->room->in_part)
-				ft_null_link(path->next->room, path->room->in_part);
-			else if (path->room->out_part)
-				ft_null_link(path->next->room, path->room->out_part);
-		}
-		ft_redirection_link(path->room, path->next->room);
+		t_link	*link;
+
+		ft_find_null(path);
+		link = path->room->links;
+		while (link && link->room != path->next->room)
+			link = link->next;
+		if (link && link->room == path->next->room)
+			ft_redirection_link(path->room, path->next->room, link);
 		path = path->next;
 	}
 }

@@ -35,7 +35,7 @@ void		null_turn(t_link *turn_head, t_link *turn_tail, t_room *end)
 ** чтобы граф не был двунаправленным.
 */
 
-void	ft_null_link(t_room *dst, t_room *src)
+static void	ft_null_link(t_room *dst, t_room *src)
 {
 	t_link	*link;
 
@@ -52,4 +52,33 @@ void	ft_null_link(t_room *dst, t_room *src)
 			link->next->prev = link->prev;
 		free(link);
 	}
+}
+
+/*
+** path->room: комната со связями; path->next->room: следующая связующая комната.
+** ft_null_link: удаление предыдущих связей
+*/
+
+void  ft_find_null(t_path *path)
+{
+	t_room	*room_one;
+	t_room	*room_two;
+
+	room_one = path->room;
+	room_two = path->next->room;
+	if (!(room_one->in_part || room_one->out_part) &&
+		!(room_two->in_part || room_two->out_part))
+		ft_null_link(room_two, room_one);
+	else if (!(room_one->in_part || room_one->out_part) &&
+		room_two->out_part)
+		ft_null_link(room_two->out_part, room_one);
+	else if (!(room_one->in_part || room_one->out_part) &&
+		room_two->in_part)
+		ft_null_link(room_two->in_part, room_one);
+	else if (room_one->in_part &&
+		!(room_two->in_part || room_two->out_part))
+		ft_null_link(room_two, room_one->in_part);
+	else if (room_one->out_part &&
+		!(room_two->in_part || room_two->out_part))
+		ft_null_link(room_two, room_one->out_part);
 }
