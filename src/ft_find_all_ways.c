@@ -59,20 +59,24 @@ static int		find_ways(t_room *start, t_room *end)
 	int			i;
 	int			j;
 	t_link		*ptr;
+	t_link		*src;
 
 	i = 0;
-	ptr = start->links;
-	while (ptr)
-	{
-		++i;
-		ptr = ptr->next;
-	}
 	j = 0;
-	ptr = end->links;
-	while (ptr)
+	ptr = start->links;
+	src = end->links;
+	while (ptr || src)
 	{
-		++j;
-		ptr = ptr->next;
+		if (ptr)
+		{
+			++i;
+			ptr = ptr->next;
+		}
+		else if (src)
+		{
+			++j;
+			src = src->next;
+		}
 	}
 	return ((j < i) ? j : i);
 }
