@@ -65,7 +65,7 @@ void		ft_turn(t_room *room, t_room *start, int *flag)
 			link = link->next;
 		}
 	}
-	if ((room_d = room->room_out) && room_d->weight != INF)
+	if ((room_d = room->out_part) && room_d->weight != INF)
 	{
 		link = room_d->links;
 		while (link)

@@ -54,22 +54,25 @@ int		ft_min_steps_for_ants(t_way *way, int ants)
 ** Функция возвращает наименьшее из подсчитанных значений.
 */
 
-static int		find_ways(t_link *start, t_link *end)
+static int		find_ways(t_room *start, t_room *end)
 {
 	int			i;
 	int			j;
+	t_link		*ptr;
 
 	i = 0;
-	while (start)
+	ptr = start->links;
+	while (ptr)
 	{
 		++i;
-		start = start->next;
+		ptr = ptr->next;
 	}
 	j = 0;
-	while (end)
+	ptr = end->links;
+	while (ptr)
 	{
 		++j;
-		end = end->next;
+		ptr = ptr->next;
 	}
 	return ((j < i) ? j : i);
 }
@@ -82,16 +85,12 @@ static int		find_ways(t_link *start, t_link *end)
 
 void			ft_find_all_ways(t_data *data)
 {
-	t_link		*end_link;
-	t_link		*start_link;
 	t_option	*ptr;
 	int			best_steps;
 	t_option	*best_opt;
 
-	end_link = data->end->links;
-	start_link = data->start->links;
-	while ((data->total_ways = find_ways(start_link, end_link)) > 0
-	        && ft_suurballe(data))
+	while ((data->total_ways = find_ways(data->start, data->end)) > 0 
+			&& ft_suurballe(data))
 	{
 		--data->total_ways;
 		find_of_ways_struct(data);

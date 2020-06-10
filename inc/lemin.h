@@ -100,8 +100,8 @@ typedef struct		s_room
 	int				y;
 	t_link			*links;
 	int				links_count;
-	struct s_room	*room_out;
-	struct s_room	*room_in;
+	struct s_room	*out_part;
+	struct s_room	*in_part;
 	struct s_room	*room_par;
 	int				ant;
 	int				weight;
@@ -157,7 +157,7 @@ void				ft_find_all_ways(t_data *data);
 int					ft_suurballe(t_data *data);
 int					ft_ford(t_data *data);
 void				ft_turn(t_room *room, t_room *start, int *flag);
-void				ft_direction(t_path *path);
+void				ft_change_ribs(t_path *path);
 t_way				*ft_paths_ascending(t_room *start, t_room *end);
 t_way				*ft_ways_ascending(t_link *turn_head, t_link *turn_tail,
 					t_room *start, t_room *end);
@@ -169,5 +169,7 @@ void				ft_perror();
 int					ft_atoi_mod(const char *str);
 int					ft_min_steps_for_ants(t_way *way, int ants);
 void				find_of_ways_struct(t_data *data);
+void				ft_null_link(t_room *dst, t_room *src);
+void				null_turn(t_link *turn_head, t_link *turn_tail, t_room *end);
 
 #endif

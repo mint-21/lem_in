@@ -28,7 +28,7 @@ static t_path	*ft_path(t_link *head, int *weight, t_room *end)
 		tmp = path;
 		if (!(path = (t_path *)malloc(sizeof(t_path))))
 			ft_perror();
-		path->room = (head->room->room_in) ? head->room->room_in : head->room;
+		path->room = (head->room->in_part) ? head->room->in_part : head->room;
 		path->next = tmp;
 		if (tmp)
 			tmp->prev = path;
@@ -90,8 +90,8 @@ t_way			*ft_ways_ascending(t_link *head, t_link *tail,
 	ways_begin = NULL;
 	while (head)
 	{
-		link = (head->room->room_in) ?
-				head->room->room_in->links : head->room->links;
+		link = (head->room->in_part) ?
+				head->room->in_part->links : head->room->links;
 		while (link && link->weight != -1)
 			link = link->next;
 		if (link && link->weight == -1)

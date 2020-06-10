@@ -23,9 +23,9 @@ static void	create_out_room(t_room *in, t_room *out, t_room *room)
 	t_link	*link;
 
 	out = ft_createroom(in->name);
-	in->room_out = out;
-	out->room_in = in;
-	link = ft_createlink((room->room_out) ? room->room_out : room);
+	in->out_part = out;
+	out->in_part = in;
+	link = ft_createlink((room->out_part) ? room->out_part : room);
 	link->weight = -1;
 	link->room_one = in;
 	out->links = in->links;
@@ -61,16 +61,16 @@ static void	duplicate_rooms(t_path *path)
 		if (!path->next || !path->next->next)
 			return ;
 		in = path->next->room;
-		if (!in->room_out && !in->room_in)
+		if (!in->out_part && !in->in_part)
 			create_out_room(in, NULL, path->room);
-		else if (in->room_out && !path->room->room_in)
+		else if (in->out_part && !path->room->in_part)
 		{
 			out = path->room;
 			link = in->links;
 			while (link && link->room != out)
 				link = link->next;
 			if (link && link->room == out)
-				link->room = out->room_out;
+				link->room = out->out_part;
 		}
 		path = path->next;
 	}
@@ -78,7 +78,7 @@ static void	duplicate_rooms(t_path *path)
 
 /*
 ** ft_ford: поиск в ширину по алгоритму Дейкстры
-** ft_direction: делаем график направленным и меняем направление ребер
+** ft_change_ribs: делаем график направленным и меняем направление ребер
 ** duplicate_rooms: дублируем все промежуточные вершины части пути во
 ** входящую и исходящую части.
 */
@@ -87,7 +87,7 @@ int			ft_suurballe(t_data *data)
 {
 	if (ft_ford(data))
 	{
-		ft_direction(data->ways_dij->path);
+		ft_change_ribs(data->ways_dij->path);
 		duplicate_rooms(data->ways_dij->path);
 		return (1);
 	}

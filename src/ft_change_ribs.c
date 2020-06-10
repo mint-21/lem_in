@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_direction.c                                     :+:      :+:    :+:   */
+/*   ft_change_ribs.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -43,60 +43,32 @@ static void	ft_redirection_link(t_room *src, t_room *dst)
 }
 
 /*
-** Удаление предыдущих связей в следующей связующей комнате,
-** чтобы граф не был двунаправленным.
-*/
-
-static void	ft_delete_link(t_room *dst, t_room *src)
-{
-	t_link	*link;
-
-	link = dst->links;
-	while (link && link->room != src)
-		link = link->next;
-	if (link && link->room == src)
-	{
-		if (link->prev)
-			link->prev->next = link->next;
-		else
-			dst->links = link->next;
-		if (link->next)
-			link->next->prev = link->prev;
-		free(link);
-	}
-}
-
-/*
-** room_one: комната со связями; room_two: следующая связующая комната.
-** ft_delete_link: удаление предыдущих связей
+** path->room: комната со связями; path->next->room: следующая связующая комната.
+** ft_null_link: удаление предыдущих связей
 ** ft_redirection_link: перенаправление связей в структуре two
 */
 
-void		ft_direction(t_path *path)
+void		ft_change_ribs(t_path *path)
 {
-	t_room	*room_one;
-	t_room	*room_two;
-
 	while (path && path->next)
 	{
-		room_one = path->room;
-		room_two = path->next->room;
-		if (!(room_one->room_in || room_one->room_out) &&
-		!(room_two->room_in || room_two->room_out))
-			ft_delete_link(room_two, room_one);
-		else if (!(room_one->room_in || room_one->room_out) &&
-		room_two->room_out)
-			ft_delete_link(room_two->room_out, room_one);
-		else if (!(room_one->room_in || room_one->room_out) &&
-		room_two->room_in)
-			ft_delete_link(room_two->room_in, room_one);
-		else if (room_one->room_in &&
-		!(room_two->room_in || room_two->room_out))
-			ft_delete_link(room_two, room_one->room_in);
-		else if (room_one->room_out &&
-		!(room_two->room_in || room_two->room_out))
-			ft_delete_link(room_two, room_one->room_out);
-		ft_redirection_link(room_one, room_two);
+		if (!(path->room->in_part || path->room->out_part))
+		{
+			if (!(path->next->room->in_part || path->next->room->out_part))
+				ft_null_link(path->next->room, path->room);
+			else if (path->next->room->out_part)
+				ft_null_link(path->next->room->out_part, path->room);
+			else if (path->next->room->in_part)
+				ft_null_link(path->next->room->in_part, path->room);
+		}
+		else if (!(path->next->room->in_part || path->next->room->out_part))
+		{
+			if (path->room->in_part)
+				ft_null_link(path->next->room, path->room->in_part);
+			else if (path->room->out_part)
+				ft_null_link(path->next->room, path->room->out_part);
+		}
+		ft_redirection_link(path->room, path->next->room);
 		path = path->next;
 	}
 }

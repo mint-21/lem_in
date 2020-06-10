@@ -24,15 +24,15 @@ static void	null(t_room *room)
 		{
 			room->room_par = NULL;
 			room->weight = INF;
-			if (room->room_out)
+			if (room->out_part)
 			{
-				room->room_out->room_par = NULL;
-				room->room_out->weight = INF;
+				room->out_part->room_par = NULL;
+				room->out_part->weight = INF;
 			}
-			else if (room->room_in)
+			else if (room->in_part)
 			{
-				room->room_in->room_par = NULL;
-				room->room_in->weight = INF;
+				room->in_part->room_par = NULL;
+				room->in_part->weight = INF;
 			}
 		}
 		room = room->next;

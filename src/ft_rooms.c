@@ -32,8 +32,8 @@ t_room			*ft_createroom(char *name)
 	room->y = 0;
 	room->links = NULL;
 	room->links_count = 0;
-	room->room_out = NULL;
-	room->room_in = NULL;
+	room->out_part = NULL;
+	room->in_part = NULL;
 	room->room_par = NULL;
 	room->next = NULL;
 	room->ant = 0;

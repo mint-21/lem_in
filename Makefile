@@ -22,10 +22,10 @@ INC_PATH		=	inc/
 OBJ_PATH		=	obj/
 
 SRC_NAME		=	ft_lemin_read.c ft_rooms.c ft_ford.c ft_suurballe.c\
-				   	ft_direction.c ft_turn.c ft_error.c ft_correct_main.c\
+				   	ft_change_ribs.c ft_turn.c ft_error.c ft_correct_main.c\
 				   	ft_findrooms.c ft_correct_map.c ft_free_data.c\
 					ft_correct_duplicates_rooms.c ft_free_str_split.c\
-					ft_lemin.c\
+					ft_lemin.c ft_null.c\
 					ft_links.c ft_find_all_ways.c ft_parse_data.c\
 					ft_ways_ascending.c ft_path_ascending.c main.c\
 					ft_flags_lemin.c\

@@ -76,12 +76,12 @@ void		ft_free_data(t_data *data)
 		data->rooms = data->rooms->next;
 		free(tmp->name);
 		ft_free_links(tmp->links);
-		if (tmp->room_out)
+		if (tmp->out_part)
 		{
-			free(tmp->room_out->name);
-			ft_free_links(tmp->room_out->links);
+			free(tmp->out_part->name);
+			ft_free_links(tmp->out_part->links);
 		}
-		free(tmp->room_out);
+		free(tmp->out_part);
 		free(tmp);
 	}
 	ft_free_ways(data->ways_dij);
