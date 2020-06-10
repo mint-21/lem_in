@@ -66,19 +66,20 @@ void  ft_find_null(t_path *path)
 
 	room_one = path->room;
 	room_two = path->next->room;
-	if (!(room_one->in_part || room_one->out_part) &&
-		!(room_two->in_part || room_two->out_part))
-		ft_null_link(room_two, room_one);
-	else if (!(room_one->in_part || room_one->out_part) &&
-		room_two->out_part)
-		ft_null_link(room_two->out_part, room_one);
-	else if (!(room_one->in_part || room_one->out_part) &&
-		room_two->in_part)
-		ft_null_link(room_two->in_part, room_one);
-	else if (room_one->in_part &&
-		!(room_two->in_part || room_two->out_part))
-		ft_null_link(room_two, room_one->in_part);
-	else if (room_one->out_part &&
-		!(room_two->in_part || room_two->out_part))
-		ft_null_link(room_two, room_one->out_part);
+	if (!(room_one->in_part || room_one->out_part))
+	{
+		if (!(room_two->in_part || room_two->out_part))
+			ft_null_link(room_two, room_one);
+		else if (room_two->out_part)
+			ft_null_link(room_two->out_part, room_one);
+		else if (room_two->in_part)
+			ft_null_link(room_two->in_part, room_one);
+	}
+	else if (!(room_two->in_part || room_two->out_part))
+	{
+		if (room_one->in_part)
+			ft_null_link(room_two, room_one->in_part);
+		else if (room_one->out_part)
+			ft_null_link(room_two, room_one->out_part);
+	}
 }
