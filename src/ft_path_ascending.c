@@ -70,3 +70,29 @@ t_way			*ft_paths_ascending(t_room *start, t_room *end)
 	null(turn_head, turn_tail, end);
 	return (ways_begin);
 }
+
+/*
+** ft_paths_ascending: инициализируем струтуру new_ways и находим
+** кратчайшие пути в новом графе
+** ft_min_steps_for_ants: количество шагов от start до end
+*/
+
+void			find_of_ways_struct(t_data *data)
+{
+	t_way		*new_ways;
+	int			new_steps;
+	t_option	*var;
+
+	new_steps = 0;
+	if ((new_ways = ft_paths_ascending(data->start, data->end)))
+			new_steps = ft_min_steps_for_ants(new_ways, data->ants);
+		!(var = (t_option *)malloc(sizeof(t_option))) ? ft_perror() : 0;
+		init_var(var, new_ways, new_steps);
+		if (!data->options)
+			data->options = var;
+		else
+		{
+			var->next = data->options;
+			data->options = var;
+		}
+}

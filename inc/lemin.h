@@ -167,5 +167,8 @@ void				ft_free_data(t_data *data);
 void				ft_print_error(int id);
 void				ft_perror();
 int					ft_atoi_mod(const char *str);
+int					ft_min_steps_for_ants(t_way *way, int ants);
+void				find_of_ways_struct(t_data *data);
+void				init_var(t_option *var, t_way *new_ways, int new_steps);
 
 #endif
