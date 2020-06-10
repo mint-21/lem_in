@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_error.c                                         :+:      :+:    :+:   */
+/*   ft_bit.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/18 17:44:00 by vfearles          #+#    #+#             */
-/*   Updated: 2020/01/12 13:25:48 by asmall           ###   ########.fr       */
+/*   Created: 2019/12/22 23:17:28 by asmall            #+#    #+#             */
+/*   Updated: 2019/12/22 23:17:30 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lemin.h"
+#include "libft.h"
 
-/*
-** Печать ошибок и выход из программы через заданный номер
-*/
-
-void	ft_print_error(int id)
+int		ft_bit_check(int flag, int position)
 {
-	write(2, "ERROR\n", 6);
-	exit(id);
+	return ((flag >> position) & 1);
 }
 
-void	ft_perror(void)
+void	ft_bit_on(int *flag, int position)
 {
-	perror("lem-in");
-	exit(1);
+	*flag = *flag | (1 << position);
+}
+
+void	ft_bit_off(int *flag, int position)
+{
+	*flag = *flag & (~(1 << position));
 }

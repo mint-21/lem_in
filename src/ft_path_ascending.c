@@ -48,7 +48,7 @@ static void		ft_link_end(t_link **turn_head, t_link **turn_tail)
 
 /*
 ** turn_head, turn_tail: обратные края (ребра).
-** ft_find_all_ways_ascending: поиск кратчайших путей.
+** ft_ways_ascending: поиск кратчайших путей.
 ** ft_link_end: связи с комнатой end.
 ** null: удаление обратных краев (ребер).
 */
@@ -66,7 +66,7 @@ t_way			*ft_paths_ascending(t_room *start, t_room *end)
 		return (NULL);
 	turn_tail = turn_head;
 	ft_link_end(&turn_head, &turn_tail);
-	ways_begin = ft_find_all_ways_ascending(turn_head, turn_tail, start, end);
+	ways_begin = ft_ways_ascending(turn_head, turn_tail, start, end);
 	null(turn_head, turn_tail, end);
 	return (ways_begin);
 }

@@ -28,40 +28,20 @@ static void		ft_descriptor(char **fd, int ac, char **av, int *i)
 		ft_usage();
 }
 
-// void			ft_flags_lemin(t_flags *flags, int ac, char **av)
-// {
-// 	int	i;
-
-// 	if (ac == 1)
-// 		return ;
-// 	i = 0;
-// 	while (++i < ac)
-// 	{
-// 		if (ft_strequ(av[i], "-f"))
-// 			ft_descriptor(&flags->fd_path, ac, av, &i);
-// 		else if (ft_strequ(av[i], "-w"))
-// 			flags->ways = 1;
-// 		else
-// 			ft_usage();
-// 	}
-// }
-
-
-void		ft_flags_lemin(t_flags *flags, int ac, char **av)
+void			ft_flags_lemin(t_flags *flags, int ac, char **av)
 {
 	int	i;
 
-	if (ac == 2)
-		ft_descriptor(&flags->fd_path, ac, av, &i);
-	else {
-		i = 0;
-		while (++i < ac) {
-			if (ft_strequ(av[i], "-f"))
-				ft_descriptor(&flags->fd_path, ac, av, &i);
-			else if (ft_strequ(av[i], "-w"))
-				flags->ways = 1;
-			else
-				ft_usage();
-		}
+	if (ac == 1)
+		return ;
+	i = 0;
+	while (++i < ac)
+	{
+		if (ft_strequ(av[i], "-f"))
+			ft_descriptor(&flags->fd_path, ac, av, &i);
+		else if (ft_strequ(av[i], "-w"))
+			flags->ways = 1;
+		else
+			ft_usage();
 	}
 }

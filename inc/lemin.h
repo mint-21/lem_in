@@ -19,7 +19,7 @@
 # include <limits.h>
 
 # define E_MALLOC 1
-# define E_NO_VALID 2
+# define E_NO_correct 2
 # define E_START 3
 # define E_END 4
 # define E_ANT 5
@@ -127,7 +127,7 @@ typedef struct		s_data
 	t_option		*options;
 	t_option		*best_opt;
 	t_way			*ways_dij;
-	int				total_ways;
+	int				ways_count;
 	int				i_rooms_start;
 	int				i_rooms_end;
 	int				i_links_start;
@@ -140,12 +140,12 @@ typedef struct		s_data
 
 void				ft_flags_lemin(t_flags *flags, int ac, char **av);
 char				*ft_lemin_read(t_flags *flags, char ***str_split);
-int					ft_valid(t_data *data, char **strings);
-int					ft_valid_hash(t_data *data, char *str);
-int					ft_valid_ants(char *str, t_data *data);
-int					ft_valid_rooms(char *str, t_data *data, int j);
-void				ft_valid_links(char *str, t_data *data, int j);
-int					ft_valid_duplicates_rooms(t_data *data, char **strings);
+int					ft_correct(t_data *data, char **strings);
+int					ft_correct_hash(t_data *data, char *str);
+int					ft_correct_ants(char *str, t_data *data);
+int					ft_correct_rooms(char *str, t_data *data, int j);
+void				ft_correct_links(char *str, t_data *data, int j);
+int					ft_correct_duplicates_rooms(t_data *data, char **strings);
 int					ft_parse_data(t_data *data, char **str_split);
 void				ft_rooms(t_data *data, char *str);
 t_room				*ft_createroom(char *line);
@@ -153,13 +153,13 @@ void				ft_links(t_data *data, char *str);
 t_link				*ft_createlink(t_room *room);
 int					ft_findrooms(t_data *data, char *link, t_room **room1,
 					t_room **room2);
-void				ft_find_all_ways(t_data *data);
+void				ft_ways(t_data *data);
 int					ft_suurballe(t_data *data);
-int					ft_dijkstra(t_data *data);
-void				ft_change_weight(t_room *room, t_room *start, int *flag);
+int					ft_ford(t_data *data);
+void				ft_turn(t_room *room, t_room *start, int *flag);
 void				ft_direction(t_path *path);
 t_way				*ft_paths_ascending(t_room *start, t_room *end);
-t_way				*ft_find_all_ways_ascending(t_link *turn_head, t_link *turn_tail,
+t_way				*ft_ways_ascending(t_link *turn_head, t_link *turn_tail,
 					t_room *start, t_room *end);
 void				ft_lemin(t_data *data);
 void				*ft_free_str_split(char **str_split);
@@ -167,6 +167,5 @@ void				ft_free_data(t_data *data);
 void				ft_print_error(int id);
 void				ft_perror();
 int					ft_atoi_mod(const char *str);
-void	change_weight(t_room *room, t_room *start, int *flag);
 
 #endif
