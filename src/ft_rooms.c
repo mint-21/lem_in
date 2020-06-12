@@ -73,3 +73,33 @@ void			ft_rooms(t_data *data, char *str)
 	data->rooms = room;
 	++data->rooms_count;
 }
+
+/*
+** Функция создает исходящие узлы
+** Вес ребер из исходящих во входящие узлы ставим на 0, наоборот -1
+*/
+
+void	create_out_room(t_room *in, t_room *out, t_room *room, t_connect *connect)
+{
+	while (connect && connect->room != room)
+		connect = connect->next;
+	if (connect && connect->room == room)
+	{
+		connect->room = in;
+		connect->room_one = out;
+		connect->weight = 0;
+	}
+	else
+		in->connects = connect;
+}
+
+void	create_out_in_room(t_room *in, t_room *out)
+{
+	t_connect	*connect;
+
+	connect = in->connects;
+	while (connect && connect->room != out)
+		connect = connect->next;
+	if (connect && connect->room == out)
+		connect->room = out->out_part;
+}

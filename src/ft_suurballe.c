@@ -13,37 +13,6 @@
 #include "lemin.h"
 
 /*
-** Функция создает исходящие узлы
-** ft_createroom: создаем структуру комнаты
-** Вес ребер из исходящих во входящие узлы ставим на 0, наоборот -1
-*/
-
-static void	create_out_room(t_room *in, t_room *out, t_room *room)
-{
-	t_connect	*connect;
-
-	out = ft_createroom(in->name);
-	in->out_part = out;
-	out->in_part = in;
-	connect = ft_createconnect((room->out_part) ? room->out_part : room);
-	connect->weight = -1;
-	connect->room_one = in;
-	out->connects = in->connects;
-	in->connects = connect;
-	connect = out->connects;
-	while (connect && connect->room != room)
-		connect = connect->next;
-	if (connect && connect->room == room)
-	{
-		connect->room = in;
-		connect->room_one = out;
-		connect->weight = 0;
-	}
-	else
-		in->connects = connect;
-}
-
-/*
 ** Дублируем все промежуточные вершины найденного пути на входящие
 ** и исходящие узлы.
 ** create_out_room: создание исходящих узлов
@@ -52,25 +21,37 @@ static void	create_out_room(t_room *in, t_room *out, t_room *room)
 
 static void	duplicate_rooms(t_path *path)
 {
-	t_room	*in;
-	t_room	*out;
-	t_connect	*connect;
+	t_room		*in;
 
 	while (path)
 	{
 		if (!path->next || !path->next->next)
 			return ;
 		in = path->next->room;
-		if (!in->out_part && !in->in_part)
-			create_out_room(in, NULL, path->room);
-		else if (in->out_part && !path->room->in_part)
+		ft_creat_duplicate(path, in);
+		path = path->next;
+	}
+}
+
+/*
+** ft_find_null: находим комнаты для обратных ребер и удаляем их связи
+** ft_redirection_connect: перенаправление связей в структуре two
+*/
+
+void		ft_change_ribs(t_path *path)
+{
+	t_connect	*connect;
+
+	while (path && path->next)
+	{
+		ft_find_null(path);
+		connect = path->room->connects;
+		while (connect && connect->room != path->next->room)
+			connect = connect->next;
+		if (connect && connect->room == path->next->room)
 		{
-			out = path->room;
-			connect = in->connects;
-			while (connect && connect->room != out)
-				connect = connect->next;
-			if (connect && connect->room == out)
-				connect->room = out->out_part;
+			redirection_conditions(connect, path->room);
+			ft_redirection_connect(path->room, path->next->room, connect);
 		}
 		path = path->next;
 	}

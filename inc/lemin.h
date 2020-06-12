@@ -173,5 +173,9 @@ void  				ft_find_null(t_path *path);
 void				null_turn(t_connect *turn_head, t_connect *turn_tail, t_room *end);
 void				ft_redirection_connect(t_room *src, t_room *dst, t_connect *connect);
 void				redirection_conditions(t_connect *connect, t_room *src);
+void	create_out_room(t_room *in, t_room *out, t_room *room, t_connect *connect);
+void    ft_creat_duplicate(t_path *path, t_room *in);
+void	create_out_in_room(t_room *in, t_room *out);
+
 
 #endif
