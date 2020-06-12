@@ -10,28 +10,33 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lemin.h"
-
 /*
-** ft_find_null: находим комнаты для обратных ребер и удаляем их связи
-** ft_redirection_connect: перенаправление связей в структуре two
+** Заменяем ребра из найденного кратчайшего пути обратными ребрами с отриц весом
 */
 
-void		ft_change_ribs(t_path *path)
-{
-	while (path && path->next)
-	{
-		t_connect	*connect;
+#include "lemin.h"
 
-		ft_find_null(path);
-		connect = path->room->connects;
-		while (connect && connect->room != path->next->room)
-			connect = connect->next;
-		if (connect && connect->room == path->next->room)
-		{
-			redirection_conditions(connect, path->room);
-			ft_redirection_connect(path->room, path->next->room, connect);
-		}
-		path = path->next;
-	}
+void		redirection_conditions(t_connect *connect, t_room *src)
+{
+	if (connect->prev)
+		connect->prev->next = connect->next;
+	else
+		src->connects = connect->next;
+	if (connect->next)
+		connect->next->prev = connect->prev;
+	if (connect->weight == -1)
+		connect->weight = 2;
+	else
+		connect->weight = -1;
+}
+
+void	ft_redirection_connect(t_room *src, t_room *dst, t_connect *connect)
+{
+	connect->room = src;
+	connect->room_one = dst;
+	connect->prev = NULL;
+	connect->next = dst->connects;
+	if (dst->connects)
+		dst->connects->prev = connect;
+	dst->connects = connect;
 }

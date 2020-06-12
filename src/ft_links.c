@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_link.c                                          :+:      :+:    :+:   */
+/*   ft_connect.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -16,80 +16,80 @@
 ** Инициализация структуры связей
 */
 
-t_link		*ft_createlink(t_room *room)
+t_connect		*ft_createconnect(t_room *room)
 {
-	t_link	*link;
+	t_connect	*connect;
 
-	if (!(link = (t_link *)malloc(sizeof(t_link))))
+	if (!(connect = (t_connect *)malloc(sizeof(t_connect))))
 		ft_perror();
-	link->weight = 1;
-	link->room_one = NULL;
-	link->room = room;
-	link->next = NULL;
-	link->prev = NULL;
-	link->turn_next = NULL;
-	link->parrent = NULL;
-	return (link);
+	connect->weight = 1;
+	connect->room_one = NULL;
+	connect->room = room;
+	connect->next = NULL;
+	connect->prev = NULL;
+	connect->turn_next = NULL;
+	connect->parrent = NULL;
+	return (connect);
 }
 
 /*
 ** Создание связей в структуре и инициализация.
 */
 
-static void	ft_connectlink(t_room *room_one, t_room *room_two)
+static void	ft_connectconnect(t_room *room_one, t_room *room_two)
 {
-	t_link	*link;
-	t_link	*tmp;
+	t_connect	*connect;
+	t_connect	*tmp;
 
-	link = ft_createlink(room_two);
-	if (room_one->links)
+	connect = ft_createconnect(room_two);
+	if (room_one->connects)
 	{
-		tmp = room_one->links;
-		room_one->links = link;
-		link->next = tmp;
-		tmp->prev = link;
+		tmp = room_one->connects;
+		room_one->connects = connect;
+		connect->next = tmp;
+		tmp->prev = connect;
 	}
 	else
-		room_one->links = link;
-	link->room_one = room_one;
-	room_one->links_count += 1;
+		room_one->connects = connect;
+	connect->room_one = room_one;
+	room_one->connects_count += 1;
 }
 
 /*
 ** Проверка на повторяющиеся связи>
 */
 
-static int	ft_check_duplicate_link(t_room *room1, t_room *room2)
+static int	ft_check_duplicate_connect(t_room *room1, t_room *room2)
 {
-	t_link	*link;
+	t_connect	*connect;
 
-	link = room1->links;
-	while (link)
+	connect = room1->connects;
+	while (connect)
 	{
-		if (link->room == room2)
+		if (connect->room == room2)
 			return (1);
-		link = link->next;
+		connect = connect->next;
 	}
 	return (0);
 }
 
 /*
 ** ft_findrooms: поиск связующих комнат.
-** ft_check_duplicate_link: проверка на повторяющиеся связи.
-** ft_connectlink: связываем комнаты друг с другом в структуре.
+** ft_check_duplicate_connect: проверка на повторяющиеся связи.
+** ft_connectconnect: связываем комнаты друг с другом в структуре.
 */
 
-void		ft_links(t_data *data, char *link_str)
+void		ft_connects(t_data *data, char *connect_str)
 {
 	t_room	*room1;
 	t_room	*room2;
 
 	room1 = NULL;
 	room2 = NULL;
-	ft_findrooms(data, link_str, &room1, &room2);
-	if (!ft_check_duplicate_link(room1, room2))
+	ft_findrooms(data, connect_str, &room1, &room2);
+	if (!ft_check_duplicate_connect(room1, room2))
 	{
-		ft_connectlink(room1, room2);
-		ft_connectlink(room2, room1);
+		ft_connectconnect(room1, room2);
+		ft_connectconnect(room2, room1);
 	}
 }

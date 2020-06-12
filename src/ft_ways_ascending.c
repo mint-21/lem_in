@@ -17,7 +17,7 @@
 ** ++(*weight): вес пути
 */
 
-static t_path	*ft_path(t_link *head, int *weight, t_room *end)
+static t_path	*ft_path(t_connect *head, int *weight, t_room *end)
 {
 	t_path	*path;
 	t_path	*tmp;
@@ -51,7 +51,7 @@ static t_path	*ft_path(t_link *head, int *weight, t_room *end)
 ** ft_path: ноходим кратчайшие пути в новом графе с их весом
 */
 
-static t_way	*ft_add_path(t_link *head, t_way *ways, t_room *end)
+static t_way	*ft_add_path(t_connect *head, t_way *ways, t_room *end)
 {
 	t_path		*path;
 	t_way		*way;
@@ -79,10 +79,10 @@ static t_way	*ft_add_path(t_link *head, t_way *ways, t_room *end)
 ** Переворачиваем ребра от конца до старта и ищем пути
 */
 
-t_way			*ft_ways_ascending(t_link *head, t_link *tail,
+t_way			*ft_ways_ascending(t_connect *head, t_connect *tail,
 				t_room *start, t_room *end)
 {
-	t_link		*link;
+	t_connect		*connect;
 	t_way		*ways;
 	t_way		*ways_begin;
 
@@ -90,14 +90,14 @@ t_way			*ft_ways_ascending(t_link *head, t_link *tail,
 	ways_begin = NULL;
 	while (head)
 	{
-		link = (head->room->in_part) ?
-				head->room->in_part->links : head->room->links;
-		while (link && link->weight != -1)
-			link = link->next;
-		if (link && link->weight == -1)
+		connect = (head->room->in_part) ?
+				head->room->in_part->connects : head->room->connects;
+		while (connect && connect->weight != -1)
+			connect = connect->next;
+		if (connect && connect->weight == -1)
 		{
-			tail->turn_next = link;
-			link->parrent = head;
+			tail->turn_next = connect;
+			connect->parrent = head;
 			tail = tail->turn_next;
 		}
 		if (head->room == start)

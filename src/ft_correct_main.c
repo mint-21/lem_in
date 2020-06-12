@@ -23,7 +23,7 @@ static void	correct_strings(t_data *data, char *str, int i)
 	else if (str[0] != '#' && ft_strchr(str, ' '))
 		ft_correct_rooms(str, data, i);
 	else if (str[0] != '#' && ft_strchr(str, '-'))
-		ft_correct_links(str, data, i);
+		ft_correct_connects(str, data, i);
 	else
 		ft_print_error(E_NO_correct);
 }

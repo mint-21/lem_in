@@ -24,7 +24,7 @@
 # define E_END 4
 # define E_ANT 5
 # define E_INT 6
-# define E_LINK 7
+# define E_connect 7
 # define E_PATH 8
 # define E_HASH 9
 # define E_ROOM 10
@@ -82,24 +82,24 @@ typedef struct		s_option
 	struct s_option	*next;
 }					t_option;
 
-typedef struct		s_link
+typedef struct		s_connect
 {
 	int				weight;
 	struct s_room	*room_one;
 	struct s_room	*room;
-	struct s_link	*next;
-	struct s_link	*prev;
-	struct s_link	*turn_next;
-	struct s_link	*parrent;
-}					t_link;
+	struct s_connect	*next;
+	struct s_connect	*prev;
+	struct s_connect	*turn_next;
+	struct s_connect	*parrent;
+}					t_connect;
 
 typedef struct		s_room
 {
 	char			*name;
 	int				x;
 	int				y;
-	t_link			*links;
-	int				links_count;
+	t_connect			*connects;
+	int				connects_count;
 	struct s_room	*out_part;
 	struct s_room	*in_part;
 	struct s_room	*room_par;
@@ -130,8 +130,8 @@ typedef struct		s_data
 	int				total_ways;
 	int				i_rooms_start;
 	int				i_rooms_end;
-	int				i_links_start;
-	int				i_links_end;
+	int				i_connects_start;
+	int				i_connects_end;
 	int				i_start;
 	int				i_end;
 	int				v_flag;
@@ -144,14 +144,14 @@ int					ft_correct(t_data *data, char **strings);
 int					ft_correct_hash(t_data *data, char *str);
 int					ft_correct_ants(char *str, t_data *data);
 int					ft_correct_rooms(char *str, t_data *data, int j);
-void				ft_correct_links(char *str, t_data *data, int j);
+void				ft_correct_connects(char *str, t_data *data, int j);
 int					ft_correct_duplicates_rooms(t_data *data, char **strings);
 int					ft_parse_data(t_data *data, char **str_split);
 void				ft_rooms(t_data *data, char *str);
 t_room				*ft_createroom(char *line);
-void				ft_links(t_data *data, char *str);
-t_link				*ft_createlink(t_room *room);
-int					ft_findrooms(t_data *data, char *link, t_room **room1,
+void				ft_connects(t_data *data, char *str);
+t_connect				*ft_createconnect(t_room *room);
+int					ft_findrooms(t_data *data, char *connect, t_room **room1,
 					t_room **room2);
 void				ft_find_all_ways(t_data *data);
 int					ft_suurballe(t_data *data);
@@ -159,7 +159,7 @@ int					ft_ford(t_data *data);
 void				ft_turn(t_room *room, t_room *start, int *flag);
 void				ft_change_ribs(t_path *path);
 t_way				*ft_paths_ascending(t_room *start, t_room *end);
-t_way				*ft_ways_ascending(t_link *turn_head, t_link *turn_tail,
+t_way				*ft_ways_ascending(t_connect *turn_head, t_connect *turn_tail,
 					t_room *start, t_room *end);
 void				ft_lemin(t_data *data);
 void				*ft_free_str_split(char **str_split);
@@ -170,6 +170,8 @@ int					ft_atoi_mod(const char *str);
 int					ft_min_steps_for_ants(t_way *way, int ants);
 void				find_of_ways_struct(t_data *data);
 void  				ft_find_null(t_path *path);
-void				null_turn(t_link *turn_head, t_link *turn_tail, t_room *end);
+void				null_turn(t_connect *turn_head, t_connect *turn_tail, t_room *end);
+void				ft_redirection_connect(t_room *src, t_room *dst, t_connect *connect);
+void				redirection_conditions(t_connect *connect, t_room *src);
 
 #endif

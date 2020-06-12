@@ -96,19 +96,19 @@ int				ft_correct_hash(t_data *data, char *str)
 }
 
 /*
-** ft_correct_links: check '-', write link-start/end in struct
+** ft_correct_connects: check '-', write connect-start/end in struct
 */
 
-void			ft_correct_links(char *str, t_data *data, int j)
+void			ft_correct_connects(char *str, t_data *data, int j)
 {
 	if (data->v_flag == 12 && data->i_start != -1 && data->i_end != -1)
 		data->v_flag += E_ROOM;
 	if (ft_strchr(str, ' ') || !ft_strchr(str, '-'))
-		ft_print_error(E_LINK);
-	if (!data->i_links_start)
+		ft_print_error(E_connect);
+	if (!data->i_connects_start)
 	{
-		data->i_links_start = j;
-		data->v_flag += E_LINK;
+		data->i_connects_start = j;
+		data->v_flag += E_connect;
 	}
-	data->i_links_end = j;
+	data->i_connects_end = j;
 }

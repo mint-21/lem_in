@@ -12,19 +12,19 @@
 
 #include "lemin.h"
 
-static void		ft_link_end(t_link **turn_head, t_link **turn_tail)
+static void		ft_connect_end(t_connect **turn_head, t_connect **turn_tail)
 {
-	t_link	*link;
+	t_connect	*connect;
 
-	link = (*turn_head)->next;
-	while (link)
+	connect = (*turn_head)->next;
+	while (connect)
 	{
-		if (link->weight == -1)
+		if (connect->weight == -1)
 		{
-			(*turn_tail)->turn_next = link;
+			(*turn_tail)->turn_next = connect;
 			*turn_tail = (*turn_tail)->turn_next;
 		}
-		link = link->next;
+		connect = connect->next;
 	}
 }
 
@@ -38,23 +38,23 @@ static void		init_var(t_option *var, t_way *new_ways, int new_steps)
 /*
 ** turn_head, turn_tail: обратные края (ребра).
 ** ft_ways_ascending: поиск кратчайших путей.
-** ft_link_end: связи с комнатой end.
+** ft_connect_end: связи с комнатой end.
 ** null: удаление обратных краев (ребер).
 */
 
 t_way			*ft_paths_ascending(t_room *start, t_room *end)
 {
-	t_link	*turn_head;
-	t_link	*turn_tail;
+	t_connect	*turn_head;
+	t_connect	*turn_tail;
 	t_way	*ways_begin;
 
-	turn_head = end->links;
+	turn_head = end->connects;
 	while (turn_head && turn_head->weight != -1)
 		turn_head = turn_head->next;
 	if (!turn_head)
 		return (NULL);
 	turn_tail = turn_head;
-	ft_link_end(&turn_head, &turn_tail);
+	ft_connect_end(&turn_head, &turn_tail);
 	ways_begin = ft_ways_ascending(turn_head, turn_tail, start, end);
 	null_turn(turn_head, turn_tail, end);
 	return (ways_begin);

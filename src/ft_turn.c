@@ -31,13 +31,13 @@ static int	loop(t_room *new_parrent, t_room *room)
 ** loop: родительской комнатой назначается та, чей weight меньше текущего
 */
 
-static void	change_cost(t_room *room, t_link *link, int *flag)
+static void	change_cost(t_room *room, t_connect *connect, int *flag)
 {
-	link->room->weight = room->weight + link->weight;
-	if (!link->room->room_par ||
-	((link->room->room_par) && !loop(room, link->room)))
+	connect->room->weight = room->weight + connect->weight;
+	if (!connect->room->room_par ||
+	((connect->room->room_par) && !loop(room, connect->room)))
 	{
-		link->room->room_par = room;
+		connect->room->room_par = room;
 		*flag = 1;
 	}
 }
@@ -51,29 +51,29 @@ static void	change_cost(t_room *room, t_link *link, int *flag)
 
 void		ft_turn(t_room *room, t_room *start, int *flag)
 {
-	t_link	*link;
+	t_connect	*connect;
 	t_room	*room_d;
 
 	if (room->weight != INF)
 	{
-		link = room->links;
-		while (link)
+		connect = room->connects;
+		while (connect)
 		{
-			if (room->weight + link->weight < link->room->weight
-				&& link->room != start)
-				change_cost(room, link, flag);
-			link = link->next;
+			if (room->weight + connect->weight < connect->room->weight
+				&& connect->room != start)
+				change_cost(room, connect, flag);
+			connect = connect->next;
 		}
 	}
 	if ((room_d = room->out_part) && room_d->weight != INF)
 	{
-		link = room_d->links;
-		while (link)
+		connect = room_d->connects;
+		while (connect)
 		{
-			if (room_d->weight + link->weight < link->room->weight
-				&& link->room != start)
-				change_cost(room_d, link, flag);
-			link = link->next;
+			if (room_d->weight + connect->weight < connect->room->weight
+				&& connect->room != start)
+				change_cost(room_d, connect, flag);
+			connect = connect->next;
 		}
 	}
 }

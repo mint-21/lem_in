@@ -12,14 +12,14 @@
 
 #include "lemin.h"
 
-static void	ft_free_links(t_link *links)
+static void	ft_free_connects(t_connect *connects)
 {
-	t_link	*tmp;
+	t_connect	*tmp;
 
-	while (links)
+	while (connects)
 	{
-		tmp = links;
-		links = links->next;
+		tmp = connects;
+		connects = connects->next;
 		free(tmp);
 	}
 }
@@ -75,11 +75,11 @@ void		ft_free_data(t_data *data)
 		tmp = data->rooms;
 		data->rooms = data->rooms->next;
 		free(tmp->name);
-		ft_free_links(tmp->links);
+		ft_free_connects(tmp->connects);
 		if (tmp->out_part)
 		{
 			free(tmp->out_part->name);
-			ft_free_links(tmp->out_part->links);
+			ft_free_connects(tmp->out_part->connects);
 		}
 		free(tmp->out_part);
 		free(tmp);

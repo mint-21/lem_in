@@ -79,17 +79,17 @@ static void	path(t_room *room, t_room *start, t_way **ways, int path_cost)
 	t_path	*tmp;
 	t_path	*path;
 	t_room	*room_p;
-	t_link	*link_p;
+	t_connect	*connect_p;
 
 	(!(path = (t_path *)malloc(sizeof(t_path)))) ? ft_perror() : 0;
 	path_cost = ft_init_path_struct(path, room, path_cost);
 	while (room && room != start)
 	{
 		room_p = room->room_par;
-		link_p = room_p->links;
-		while (link_p && link_p->room != room)
-			link_p = link_p->next;
-		if (link_p && link_p->room == room)
+		connect_p = room_p->connects;
+		while (connect_p && connect_p->room != room)
+			connect_p = connect_p->next;
+		if (connect_p && connect_p->room == room)
 		{
 			tmp = path;
 			(!(path = (t_path *)malloc(sizeof(t_path)))) ? ft_perror() : 0;

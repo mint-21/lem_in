@@ -20,27 +20,27 @@
 
 static void	create_out_room(t_room *in, t_room *out, t_room *room)
 {
-	t_link	*link;
+	t_connect	*connect;
 
 	out = ft_createroom(in->name);
 	in->out_part = out;
 	out->in_part = in;
-	link = ft_createlink((room->out_part) ? room->out_part : room);
-	link->weight = -1;
-	link->room_one = in;
-	out->links = in->links;
-	in->links = link;
-	link = out->links;
-	while (link && link->room != room)
-		link = link->next;
-	if (link && link->room == room)
+	connect = ft_createconnect((room->out_part) ? room->out_part : room);
+	connect->weight = -1;
+	connect->room_one = in;
+	out->connects = in->connects;
+	in->connects = connect;
+	connect = out->connects;
+	while (connect && connect->room != room)
+		connect = connect->next;
+	if (connect && connect->room == room)
 	{
-		link->room = in;
-		link->room_one = out;
-		link->weight = 0;
+		connect->room = in;
+		connect->room_one = out;
+		connect->weight = 0;
 	}
 	else
-		in->links = link;
+		in->connects = connect;
 }
 
 /*
@@ -54,7 +54,7 @@ static void	duplicate_rooms(t_path *path)
 {
 	t_room	*in;
 	t_room	*out;
-	t_link	*link;
+	t_connect	*connect;
 
 	while (path)
 	{
@@ -66,11 +66,11 @@ static void	duplicate_rooms(t_path *path)
 		else if (in->out_part && !path->room->in_part)
 		{
 			out = path->room;
-			link = in->links;
-			while (link && link->room != out)
-				link = link->next;
-			if (link && link->room == out)
-				link->room = out->out_part;
+			connect = in->connects;
+			while (connect && connect->room != out)
+				connect = connect->next;
+			if (connect && connect->room == out)
+				connect->room = out->out_part;
 		}
 		path = path->next;
 	}
