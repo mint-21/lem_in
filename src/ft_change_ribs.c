@@ -19,10 +19,10 @@
 
 void		ft_change_ribs(t_path *path)
 {
+	t_connect	*connect;
+
 	while (path && path->next)
 	{
-		t_connect	*connect;
-
 		ft_find_null(path);
 		connect = path->room->connects;
 		while (connect && connect->room != path->next->room)
