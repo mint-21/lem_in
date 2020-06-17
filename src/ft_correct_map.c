@@ -71,6 +71,30 @@ int				ft_correct_rooms(char *str, t_data *data, int j)
 }
 
 /*
+** ft_correct_rooms_double: check rooms for doublicate
+*/
+
+int				ft_correct_rooms_double(char *room1, char *room2)
+{
+	int			i;
+	int			j;
+
+	i = 0;
+	j = 0;
+	while (room1[i] != ' ' || room2[j] != ' ')
+	{
+		(room1[i] == ' ') ? i : i++;
+		(room2[j] == ' ') ? j : j++;
+	}
+	if (i == j && !ft_strncmp(room1, room2, (i < j) ? j : i))
+		return (1);
+	while (room1[++i] && room2[++j])
+		if (room1[i] != room2[j])
+			return (0);
+	return (1);
+}
+
+/*
 ** ft_correct_hash: sets start/end flag, skip comments/command
 */
 

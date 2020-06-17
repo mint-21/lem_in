@@ -30,18 +30,30 @@ static void	correct_strings(t_data *data, char *str, int i)
 
 /*
 ** correct_strings: валидация муравьев, комнат, связей.
-** ft_correct_duplicates_rooms: проверка на дубликаты комнат.
+** ft_correct_rooms_duble: проверка на дубликаты комнат.
 */
 
 int			ft_correct(t_data *data, char **strings)
 {
 	int	i;
+	int j;
 
 	i = -1;
 	while (strings[++i])
 		correct_strings(data, strings[i], i);
 	if (data->v_flag != 29)
 		ft_print_error(E_NO_correct);
-	ft_correct_duplicates_rooms(data, strings);
+	i = data->i_rooms_start - 1;
+	while (++i <= data->i_rooms_end)
+	{
+		(strings[i][0] == '#') ? i++ : i;
+		j = i;
+		while (++j <= data->i_rooms_end)
+		{
+			(strings[j][0] == '#') ? j++ : j;
+			if (ft_correct_rooms_double(strings[i], strings[j]))
+				ft_print_error(E_MALLOC);
+		}
+	}
 	return (0);
 }
