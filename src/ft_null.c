@@ -16,17 +16,17 @@
 ** Удаление обратных краев(ребер) вместе с их оригиналами
 */
 
-void		null_turn(t_connect *turn_head, t_connect *turn_tail, t_room *end)
+void		null_turn(t_connect *reverse_h, t_connect *reverse_t, t_room *end)
 {
-	turn_head = end->connects;
-	while (turn_head && turn_head->weight != -1)
-		turn_head = turn_head->next;
-	while (turn_head)
+	reverse_h = end->connects;
+	while (reverse_h && reverse_h->weight != -1)
+		reverse_h = reverse_h->next;
+	while (reverse_h)
 	{
-		turn_tail = turn_head->turn_next;
-		turn_head->turn_next = NULL;
-		turn_head->parrent = NULL;
-		turn_head = turn_tail;
+		reverse_t = reverse_h->turn_next;
+		reverse_h->turn_next = NULL;
+		reverse_h->parrent = NULL;
+		reverse_h = reverse_t;
 	}
 }
 

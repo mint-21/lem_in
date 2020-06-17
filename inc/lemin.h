@@ -158,7 +158,7 @@ int					ft_suurballe(t_data *data);
 int					ft_ford(t_data *data);
 void				ft_turn(t_room *room, t_room *start, int *flag);
 void				ft_change_ribs(t_path *path);
-t_way				*ft_ways_ascending(t_connect *turn_head, t_connect *turn_tail,
+t_way				*ft_ways_ascending(t_connect *reverse_h, t_connect *reverse_t,
 					t_room *start, t_room *end);
 void				ft_lemin(t_data *data);
 void				*ft_free_str_split(char **str_split);
@@ -169,7 +169,7 @@ int					ft_atoi_mod(const char *str);
 int					ft_min_steps_for_ants(t_way *way, int ants);
 void				find_of_ways_struct(t_data *data);
 void  				ft_find_null(t_path *path);
-void				null_turn(t_connect *turn_head, t_connect *turn_tail, t_room *end);
+void				null_turn(t_connect *reverse_h, t_connect *reverse_t, t_room *end);
 void				ft_redirection_connect(t_room *src, t_room *dst, t_connect *connect);
 void				redirection_conditions(t_connect *connect, t_room *src);
 void	create_out_room(t_room *in, t_room *out, t_room *room, t_connect *connect);
