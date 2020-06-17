@@ -158,7 +158,6 @@ int					ft_suurballe(t_data *data);
 int					ft_ford(t_data *data);
 void				ft_turn(t_room *room, t_room *start, int *flag);
 void				ft_change_ribs(t_path *path);
-t_way				*ft_paths_ascending(t_room *start, t_room *end);
 t_way				*ft_ways_ascending(t_connect *turn_head, t_connect *turn_tail,
 					t_room *start, t_room *end);
 void				ft_lemin(t_data *data);
