@@ -45,7 +45,7 @@ int				ft_correct_ants(char *str, t_data *data)
 ** checking coordinates for int, the presence of two spaces
 */
 
-int				ft_correct_rooms(char *str, t_data *data, int j)
+int				ft_correct_rooms(char *str, t_valid *check, int j)
 {
 	int			space;
 
@@ -62,11 +62,11 @@ int				ft_correct_rooms(char *str, t_data *data, int j)
 			str++;
 	}
 	(space != 2) ? ft_print_error(E_ROOM) : 1;
-	data->i_rooms_end = j;
-	if (!data->i_rooms_start)
-		data->i_rooms_start = j;
-	(data->i_start == -1) ? data->i_start = j : 1;
-	(data->i_end == -1) ? (data->i_end = j) : 1;
+	check->li_room_finish = j;
+	if (!check->li_room_begin)
+		check->li_room_begin = j;
+	(check->hash_start == -1) ? check->hash_start = j : 1;
+	(check->hash_end == -1) ? (check->hash_end = j) : 1;
 	return (0);
 }
 
@@ -98,23 +98,24 @@ int				ft_correct_rooms_double(char *room1, char *room2)
 ** ft_correct_hash: sets start/end flag, skip comments/command
 */
 
-int				ft_correct_hash(t_data *data, char *str)
+int				ft_correct_hash(t_data *data, t_valid *check, char *str)
 {
 	if (ft_strequ(str, "##start"))
 	{
-		if (data->i_start || data->i_end == -1)
+		if (check->hash_start || check->hash_end == -1)
 			ft_print_error(E_START);
-		data->i_start = -1;
+		check->hash_start = -1;
 		data->v_flag += E_START;
 	}
 	else if (ft_strequ(str, "##end"))
 	{
-		if (data->i_end || data->i_start == -1)
+		if (check->hash_end || check->hash_start == -1)
 			ft_print_error(E_END);
-		data->i_end = -1;
+		check->hash_end = -1;
 		data->v_flag += E_END;
 	}
-	else if (*str == '#' && (data->i_start == -1 || data->i_end == -1))
+	else if (*str == '#' && (check->hash_start == -1 
+		|| check->hash_end == -1))
 		ft_print_error(E_HASH);
 	return (0);
 }
@@ -123,16 +124,17 @@ int				ft_correct_hash(t_data *data, char *str)
 ** ft_correct_connects: check '-', write connect-start/end in struct
 */
 
-void			ft_correct_connects(char *str, t_data *data, int j)
+void			ft_correct_connects(char *str, t_data *data, t_valid *check, int j)
 {
-	if (data->v_flag == 12 && data->i_start != -1 && data->i_end != -1)
+	if (data->v_flag == 12 && check->hash_start != -1
+		&& check->hash_end != -1)
 		data->v_flag += E_ROOM;
 	if (ft_strchr(str, ' ') || !ft_strchr(str, '-'))
 		ft_print_error(E_CONNECT);
-	if (!data->i_connects_start)
+	if (!check->li_connects_bigin)
 	{
-		data->i_connects_start = j;
+		check->li_connects_bigin = j;
 		data->v_flag += E_CONNECT;
 	}
-	data->i_connects_end = j;
+	check->li_connects_finish = j;
 }

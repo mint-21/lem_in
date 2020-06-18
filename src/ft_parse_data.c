@@ -18,22 +18,22 @@
 ** ft_free_str_split: очистка двумерного массива после занесения всех данных
 */
 
-int	ft_parse_data(t_data *data, char **strings)
+int	ft_parse_data(t_data *data, t_valid *check, char **strings)
 {
 	int	i;
 
-	i = data->i_rooms_start - 1;
-	while (++i <= data->i_rooms_end)
+	i = check->li_room_begin - 1;
+	while (++i <= check->li_room_finish)
 	{
 		if (strings[i][0] != '#')
 			ft_rooms(data, strings[i]);
-		if (i == data->i_start)
+		if (i == check->hash_start)
 			data->start = data->rooms;
-		else if (i == data->i_end)
+		else if (i == check->hash_end)
 			data->end = data->rooms;
 	}
-	i = data->i_connects_start - 1;
-	while (++i <= data->i_connects_end)
+	i = check->li_connects_bigin - 1;
+	while (++i <= check->li_connects_finish)
 		if (strings[i][0] != '#')
 			ft_connects(data, strings[i]);
 	ft_free_str_split(strings);

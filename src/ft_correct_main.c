@@ -12,18 +12,18 @@
 
 #include "lemin.h"
 
-static void	correct_strings(t_data *data, char *str, int i)
+static void	correct_strings(t_data *data, t_valid *check, char *str, int i)
 {
 	if (str[0] == '\0' || str[0] == 'L')
 		ft_print_error(E_NO_CORRECT);
 	else if (!(data->ants))
 		ft_correct_ants(str, data);
 	else if (str[0] == '#')
-		ft_correct_hash(data, str);
+		ft_correct_hash(data, check, str);
 	else if (str[0] != '#' && ft_strchr(str, ' '))
-		ft_correct_rooms(str, data, i);
+		ft_correct_rooms(str, check, i);
 	else if (str[0] != '#' && ft_strchr(str, '-'))
-		ft_correct_connects(str, data, i);
+		ft_correct_connects(str, data, check, i);
 	else
 		ft_print_error(E_NO_CORRECT);
 }
@@ -33,23 +33,24 @@ static void	correct_strings(t_data *data, char *str, int i)
 ** ft_correct_rooms_duble: проверка на дубликаты комнат.
 */
 
-int			ft_correct(t_data *data, char **strings)
+int			ft_correct(t_data *data, t_valid *check, char **strings)
 {
 	int	i;
 	int j;
 
+
 	i = -1;
 	while (strings[++i])
-		correct_strings(data, strings[i], i);
+		correct_strings(data, check, strings[i], i);
 	if (data->v_flag != 29)
 		ft_print_error(E_NO_CORRECT);
-	i = data->i_rooms_start - 1;
-	while (++i <= data->i_rooms_end)
+	i = check->li_room_begin - 1;
+	while (++i <= check->li_room_finish)
 	{
 		if (strings[i][0] == '#')
 			break ;
 		j = i;
-		while (++j <= data->i_rooms_end)
+		while (++j <= check->li_room_finish)
 		{
 			if (strings[j][0] != '#')
 				if (ft_correct_rooms_double(strings[i], strings[j]))

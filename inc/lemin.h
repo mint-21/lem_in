@@ -109,11 +109,21 @@ typedef struct		s_room
 	int				state;
 }					t_room;
 
+typedef struct		s_valid
+{
+	int				li_room_begin;
+	int				li_room_finish;
+	int				li_connects_bigin;
+	int				li_connects_finish;
+	int				hash_start;
+	int				hash_end;
+}					t_valid;
+
 /*
 ** ways_dij: все пути которые находил алгоритм дейкстры.
-** i_rooms_start: index where rooms begin.
-** i_rooms_end: index where roms end.
-** i_start: index of room start; i_end: index of room end.
+** li_room_begin: index where rooms begin.
+** li_room_finish: index where roms end.
+** hash_start: index of room start; hash_end: index of room end.
 ** options: варианты выбранных путей; best_opt: лучшие варианты.
 */
 
@@ -128,25 +138,20 @@ typedef struct		s_data
 	t_option		*best_opt;
 	t_way			*ways_dij;
 	int				total_ways;
-	int				i_rooms_start;
-	int				i_rooms_end;
-	int				i_connects_start;
-	int				i_connects_end;
-	int				i_start;
-	int				i_end;
 	int				v_flag;
 	t_flags			flags;
+	t_valid			check;
 }					t_data;
 
 void				ft_flags_lemin(t_flags *flags, int ac, char **av);
 char				*ft_lemin_read(t_flags *flags, char ***str_split);
-int					ft_correct(t_data *data, char **strings);
-int					ft_correct_hash(t_data *data, char *str);
+int					ft_correct(t_data *data, t_valid *check, char **strings);
+int					ft_correct_hash(t_data *data, t_valid *check, char *str);
 int					ft_correct_ants(char *str, t_data *data);
-int					ft_correct_rooms(char *str, t_data *data, int j);
+int					ft_correct_rooms(char *str, t_valid *check, int j);
 int					ft_correct_rooms_double(char *room1, char *room2);
-void				ft_correct_connects(char *str, t_data *data, int j);
-int					ft_parse_data(t_data *data, char **str_split);
+void				ft_correct_connects(char *str, t_data *data, t_valid *check, int j);
+int					ft_parse_data(t_data *data, t_valid *check, char **str_split);
 void				ft_rooms(t_data *data, char *str);
 t_room				*ft_createroom(char *line);
 void				ft_connects(t_data *data, char *str);
