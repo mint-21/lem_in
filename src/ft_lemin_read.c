@@ -16,10 +16,8 @@ char		*ft_read_line(char *str, int fd)
 {
 	int		ret;
 	char	*temp;
-	char	*line;
+	char	line[16002];
 
-	if (!(line = (char *)malloc(sizeof(char) * (16001 + 1))))
-		ft_print_error(E_MALLOC);
 	ft_bzero(line, 16001);
 	while ((ret = read(fd, line, 16001)) > 0)
 	{
@@ -30,7 +28,6 @@ char		*ft_read_line(char *str, int fd)
 		free(temp);
 	}
 	(ret < 0) ? ft_perror() : 1;
-	ft_strdel(&line);
 	return (str);
 }
 
