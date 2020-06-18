@@ -15,7 +15,7 @@
 static void	correct_strings(t_data *data, char *str, int i)
 {
 	if (str[0] == '\0' || str[0] == 'L')
-		ft_print_error(E_NO_correct);
+		ft_print_error(E_NO_CORRECT);
 	else if (!(data->ants))
 		ft_correct_ants(str, data);
 	else if (str[0] == '#')
@@ -25,7 +25,7 @@ static void	correct_strings(t_data *data, char *str, int i)
 	else if (str[0] != '#' && ft_strchr(str, '-'))
 		ft_correct_connects(str, data, i);
 	else
-		ft_print_error(E_NO_correct);
+		ft_print_error(E_NO_CORRECT);
 }
 
 /*
@@ -42,17 +42,18 @@ int			ft_correct(t_data *data, char **strings)
 	while (strings[++i])
 		correct_strings(data, strings[i], i);
 	if (data->v_flag != 29)
-		ft_print_error(E_NO_correct);
+		ft_print_error(E_NO_CORRECT);
 	i = data->i_rooms_start - 1;
 	while (++i <= data->i_rooms_end)
 	{
-		(strings[i][0] == '#') ? i++ : i;
+		if (strings[i][0] == '#')
+			break ;
 		j = i;
 		while (++j <= data->i_rooms_end)
 		{
-			(strings[j][0] == '#') ? j++ : j;
-			if (ft_correct_rooms_double(strings[i], strings[j]))
-				ft_print_error(E_MALLOC);
+			if (strings[j][0] != '#')
+				if (ft_correct_rooms_double(strings[i], strings[j]))
+					ft_print_error(E_MALLOC);
 		}
 	}
 	return (0);

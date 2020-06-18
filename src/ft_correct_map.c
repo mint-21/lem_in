@@ -128,11 +128,11 @@ void			ft_correct_connects(char *str, t_data *data, int j)
 	if (data->v_flag == 12 && data->i_start != -1 && data->i_end != -1)
 		data->v_flag += E_ROOM;
 	if (ft_strchr(str, ' ') || !ft_strchr(str, '-'))
-		ft_print_error(E_connect);
+		ft_print_error(E_CONNECT);
 	if (!data->i_connects_start)
 	{
 		data->i_connects_start = j;
-		data->v_flag += E_connect;
+		data->v_flag += E_CONNECT;
 	}
 	data->i_connects_end = j;
 }

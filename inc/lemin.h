@@ -19,12 +19,12 @@
 # include <limits.h>
 
 # define E_MALLOC 1
-# define E_NO_correct 2
+# define E_NO_CORRECT 2
 # define E_START 3
 # define E_END 4
 # define E_ANT 5
 # define E_INT 6
-# define E_connect 7
+# define E_CONNECT 7
 # define E_PATH 8
 # define E_HASH 9
 # define E_ROOM 10
