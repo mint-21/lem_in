@@ -96,8 +96,6 @@ typedef struct		s_connect
 typedef struct		s_room
 {
 	char			*name;
-	int				x;
-	int				y;
 	t_connect			*connects;
 	int				connects_count;
 	struct s_room	*out_part;
@@ -151,7 +149,7 @@ int					ft_correct_ants(char *str, t_data *data);
 int					ft_correct_rooms(char *str, t_valid *check, int j);
 int					ft_correct_rooms_double(char *room1, char *room2);
 void				ft_correct_connects(char *str, t_valid *check, int j);
-int					ft_parse_data(t_data *data, t_valid *check, char **str_split);
+int					ft_parse_data(t_data *data, t_valid *check, char **str);
 void				ft_rooms(t_data *data, char *str);
 t_room				*ft_createroom(char *line);
 void				ft_connects(t_data *data, char *str);
@@ -180,6 +178,6 @@ void				redirection_conditions(t_connect *connect, t_room *src);
 void	create_out_room(t_room *in, t_room *out, t_room *room, t_connect *connect);
 void    ft_creat_duplicate(t_path *path, t_room *in);
 void	create_out_in_room(t_room *in, t_room *out);
-
+t_room	*ft_create_new_room(char *line);
 
 #endif
