@@ -120,8 +120,6 @@ typedef struct		s_valid
 
 /*
 ** ways_dij: все пути которые находил алгоритм дейкстры.
-** li_room_begin: index where rooms begin.
-** li_room_finish: index where roms end.
 ** hash_start: index of room start; hash_end: index of room end.
 ** options: варианты выбранных путей; best_opt: лучшие варианты.
 */
@@ -129,14 +127,14 @@ typedef struct		s_valid
 typedef struct		s_data
 {
 	int				ants;
+	int				rooms_count;
+	int				total_ways;
 	t_room			*start;
 	t_room			*end;
 	t_room			*rooms;
-	int				rooms_count;
 	t_option		*options;
 	t_option		*best_opt;
 	t_way			*ways_dij;
-	int				total_ways;
 	t_flags			flags;
 	t_valid			check;
 }					t_data;

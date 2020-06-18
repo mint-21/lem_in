@@ -25,7 +25,6 @@ t_room	*ft_createroom(char *name)
 	if (!(room->name = ft_strsub(name, 0, ft_strlen_char(name, " "))))
 		ft_perror();
 	room->connects = NULL;
-	room->connects_count = 0;
 	room->out_part = NULL;
 	room->in_part = NULL;
 	room->room_par = NULL;
