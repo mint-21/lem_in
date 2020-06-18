@@ -36,7 +36,7 @@ int				ft_correct_ants(char *str, t_data *data)
 	if (*str || !((res *= negative) >= 0 && res <= INT_MAX))
 		ft_print_error(E_INT);
 	data->ants = ((int)res);
-	data->v_flag = E_ANT;
+	data->check.valid_flag = E_ANT;
 	return (0);
 }
 
@@ -98,21 +98,21 @@ int				ft_correct_rooms_double(char *room1, char *room2)
 ** ft_correct_hash: sets start/end flag, skip comments/command
 */
 
-int				ft_correct_hash(t_data *data, t_valid *check, char *str)
+int				ft_correct_hash(t_valid *check, char *str)
 {
 	if (ft_strequ(str, "##start"))
 	{
 		if (check->hash_start || check->hash_end == -1)
 			ft_print_error(E_START);
 		check->hash_start = -1;
-		data->v_flag += E_START;
+		check->valid_flag += E_START;
 	}
 	else if (ft_strequ(str, "##end"))
 	{
 		if (check->hash_end || check->hash_start == -1)
 			ft_print_error(E_END);
 		check->hash_end = -1;
-		data->v_flag += E_END;
+		check->valid_flag += E_END;
 	}
 	else if (*str == '#' && (check->hash_start == -1 
 		|| check->hash_end == -1))
@@ -124,17 +124,17 @@ int				ft_correct_hash(t_data *data, t_valid *check, char *str)
 ** ft_correct_connects: check '-', write connect-start/end in struct
 */
 
-void			ft_correct_connects(char *str, t_data *data, t_valid *check, int j)
+void			ft_correct_connects(char *str, t_valid *check, int j)
 {
-	if (data->v_flag == 12 && check->hash_start != -1
+	if (check->valid_flag == 12 && check->hash_start != -1
 		&& check->hash_end != -1)
-		data->v_flag += E_ROOM;
+		check->valid_flag += E_ROOM;
 	if (ft_strchr(str, ' ') || !ft_strchr(str, '-'))
 		ft_print_error(E_CONNECT);
 	if (!check->li_connects_bigin)
 	{
 		check->li_connects_bigin = j;
-		data->v_flag += E_CONNECT;
+		check->valid_flag += E_CONNECT;
 	}
 	check->li_connects_finish = j;
 }

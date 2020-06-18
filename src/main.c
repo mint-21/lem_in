@@ -25,7 +25,7 @@ static void	ft_zerodata(t_data *data)
 	data->total_ways = 0;
 	data->flags.fd_path = NULL;
 	data->flags.ways = 0;
-	data->v_flag = 0;
+	data->check.valid_flag = 0;
 	data->check.li_room_begin = 0;
 	data->check.li_room_finish = 0;
 	data->check.li_connects_bigin = 0;

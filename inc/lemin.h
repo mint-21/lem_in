@@ -117,6 +117,7 @@ typedef struct		s_valid
 	int				li_connects_finish;
 	int				hash_start;
 	int				hash_end;
+	int				valid_flag;
 }					t_valid;
 
 /*
@@ -138,7 +139,6 @@ typedef struct		s_data
 	t_option		*best_opt;
 	t_way			*ways_dij;
 	int				total_ways;
-	int				v_flag;
 	t_flags			flags;
 	t_valid			check;
 }					t_data;
@@ -146,11 +146,11 @@ typedef struct		s_data
 void				ft_flags_lemin(t_flags *flags, int ac, char **av);
 char				*ft_lemin_read(t_flags *flags, char ***str_split);
 int					ft_correct(t_data *data, t_valid *check, char **strings);
-int					ft_correct_hash(t_data *data, t_valid *check, char *str);
+int					ft_correct_hash(t_valid *check, char *str);
 int					ft_correct_ants(char *str, t_data *data);
 int					ft_correct_rooms(char *str, t_valid *check, int j);
 int					ft_correct_rooms_double(char *room1, char *room2);
-void				ft_correct_connects(char *str, t_data *data, t_valid *check, int j);
+void				ft_correct_connects(char *str, t_valid *check, int j);
 int					ft_parse_data(t_data *data, t_valid *check, char **str_split);
 void				ft_rooms(t_data *data, char *str);
 t_room				*ft_createroom(char *line);

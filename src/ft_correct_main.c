@@ -19,11 +19,11 @@ static void	correct_strings(t_data *data, t_valid *check, char *str, int i)
 	else if (!(data->ants))
 		ft_correct_ants(str, data);
 	else if (str[0] == '#')
-		ft_correct_hash(data, check, str);
+		ft_correct_hash(check, str);
 	else if (str[0] != '#' && ft_strchr(str, ' '))
 		ft_correct_rooms(str, check, i);
 	else if (str[0] != '#' && ft_strchr(str, '-'))
-		ft_correct_connects(str, data, check, i);
+		ft_correct_connects(str, check, i);
 	else
 		ft_print_error(E_NO_CORRECT);
 }
@@ -38,11 +38,10 @@ int			ft_correct(t_data *data, t_valid *check, char **strings)
 	int	i;
 	int j;
 
-
 	i = -1;
 	while (strings[++i])
 		correct_strings(data, check, strings[i], i);
-	if (data->v_flag != 29)
+	if (check->valid_flag != 29)
 		ft_print_error(E_NO_CORRECT);
 	i = check->li_room_begin - 1;
 	while (++i <= check->li_room_finish)
