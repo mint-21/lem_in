@@ -68,10 +68,10 @@ void			find_of_ways_struct(t_data *data)
 		exit (0);
 	reverse_t = reverse_h;
 	ft_connect_end(&reverse_h, &reverse_t);
-	new_ways = ft_ways_ascending(reverse_h, reverse_t, data->start, data->end);
+	new_ways = ft_ways_ascending(reverse_h, reverse_t, data->start, data->end); // иземнить ft_ways_ascending
 	null_turn(reverse_h, reverse_t, data->end);
 	if (new_ways)
-		new_steps = ft_min_steps_for_ants(new_ways, data->ants);
+		new_steps = ft_min_steps_for_ants(new_ways, data->ants); // изменить ft_min_steps_for_ants
 	!(var = (t_option *)malloc(sizeof(t_option))) ? ft_perror() : 0;
 	init_var(var, new_ways, new_steps, data);
 }

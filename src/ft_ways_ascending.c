@@ -82,7 +82,7 @@ static t_way	*ft_add_path(t_connect *head, t_way *ways, t_room *end)
 t_way			*ft_ways_ascending(t_connect *head, t_connect *tail,
 				t_room *start, t_room *end)
 {
-	t_connect		*connect;
+	t_connect	*connect;
 	t_way		*ways;
 	t_way		*ways_begin;
 

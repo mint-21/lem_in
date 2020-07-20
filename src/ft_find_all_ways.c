@@ -21,11 +21,26 @@
 ** Функция возвращает количество пройденных шагов.
 */
 
+static int ost_steps(t_way *way, int steps, int ost)
+{
+	int tmp;
+	int i;
+
+	ost = 0;
+	tmp = steps - (way->path_cost - 1);
+	steps = steps - tmp;
+	tmp = (ost) ? tmp - 1 : tmp;
+	i = (tmp * (way->path_number - 1) + ost);
+	steps += i / way->path_number;
+	ost = i;
+	ost %= way->path_number;
+	return (steps);
+}
+
 int		ft_min_steps_for_ants(t_way *way, int ants)
 {
 	int			steps;
 	int			ost;
-	int			tmp;
 
 	steps = 0;
 	ost = 0;
@@ -35,12 +50,11 @@ int		ft_min_steps_for_ants(t_way *way, int ants)
 			steps = way->path_cost + ants - 1;
 		else if (steps > way->path_cost)
 		{
-			tmp = steps - (way->path_cost - 1);
-			steps = steps - tmp;
-			tmp = (ost) ? tmp - 1 : tmp;
-			steps += ((tmp * (way->path_number - 1)) + ost) / way->path_number;
-			ost = (tmp * (way->path_number - 1) + ost) % way->path_number;
-			steps = (ost) ? steps + 1 : steps;
+			steps = ost_steps(way, steps, ost);
+			if (ost)
+				steps = steps + 1;
+			else
+			 	steps = steps;
 		}
 		else if (steps <= way->path_cost)
 			break ;
