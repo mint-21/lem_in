@@ -19,5 +19,5 @@ The purpose of this project is to find paths from start room to end room and to 
 ./lem-in < MAP_FILE
 ```
 
-![Lem-in](screen/lem.png)
+![Lem-in](screen/lem.jpg)
 
