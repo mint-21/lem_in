@@ -12,30 +12,43 @@
 
 #include "libft.h"
 
-int			ft_atoi(const char *str)
+static int	prov(const char *str, int i, int flag)
 {
-	unsigned long int	r;
-	int					i;
-	int					s;
+	unsigned long long n;
 
-	i = 0;
-	s = 1;
-	r = 0;
-	while (str[i] == '\n' || str[i] == '\t' || str[i] == '\v' ||\
-			str[i] == '\r' || str[i] == '\f' || str[i] == ' ')
-		i++;
-	if (str[i] == '-')
-		s = -1;
-	if (str[i] == '-' || str[i] == '+')
-		i++;
+	n = 0;
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		r = r * 10 + (str[i] - '0');
-		if (r >= 9223372036854775807 && s == 1)
+		n *= 10;
+		n += str[i] - '0';
+		if (n > 9223372036854775807)
+		{
+			if (flag == -1)
+				return (0);
 			return (-1);
-		else if (r > 9223372036854775807 && s == -1)
-			return (0);
+		}
 		i++;
 	}
-	return ((int)r * s);
+	if ((n > 2147483648 && flag == -1) || (n > 2147483647 && flag == 1))
+		return (0);
+	return (n * flag);
+}
+
+int			ft_atoi(const char *str)
+{
+	int					i;
+	int					flag;
+
+	i = 0;
+	flag = 1;
+	while (str[i] == '\t' || str[i] == '\v' || str[i] == '\n' || str[i] == '\r'
+		|| str[i] == '\f' || str[i] == ' ')
+		i++;
+	if (str[i] == '-' || str[i] == '+')
+	{
+		if (str[i] == '-')
+			flag = -1;
+		i++;
+	}
+	return (prov(str, i, flag));
 }

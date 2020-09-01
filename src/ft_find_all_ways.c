@@ -51,10 +51,11 @@ int		ft_min_steps_for_ants(t_way *way, int ants)
 		else if (steps > way->path_cost)
 		{
 			steps = ost_steps(way, steps, ost);
-			if (ost)
-				steps = steps + 1;
-			else
-			 	steps = steps;
+			steps = (ost) ? steps + 1 : steps;
+			// if (ost)
+			// 	steps = steps + 1;
+			// else
+			//  	steps = steps;
 		}
 		else if (steps <= way->path_cost)
 			break ;

@@ -12,6 +12,39 @@
 
 #include "lemin.h"
 
+/*
+** ft_rooms: main funct to init and write info about rooms
+** ft_connects: основная функция связи между комнатами
+** ft_free_str_split: очистка двумерного массива после занесения всех данных
+*/
+
+int				ft_init_room(t_data *data, t_valid *check, char **str)
+{
+	int	i;
+	t_room		*room;
+
+	i = check->li_room_begin - 1;
+	while (++i <= check->li_room_finish)
+	{
+		if (str[i][0] != '#')
+		{
+			room = ft_createroom(str[i]);
+			if (check_double_coor(data, room, str[i]))
+				ft_print_error(E_NO_CORRECT);
+			room->next = data->rooms;
+			data->rooms = room;
+			data->rooms_count++;
+		}
+		data->start = (i == check->hash_start) ? data->rooms : data->start;
+		data->end = (i == check->hash_end) ? data->rooms : data->end;
+	}
+	i = check->li_connects_bigin - 1;
+	while (++i <= check->li_connects_finish)
+		(str[i][0] != '#') ? ft_connects(data, str[i]) : 0;
+	ft_free_str_split(str);
+	return (0);
+}
+
 static void	correct_strings(t_data *data, t_valid *check, char *str, int i)
 {
 	if (str[0] == '\0' || str[0] == 'L')
@@ -36,25 +69,12 @@ static void	correct_strings(t_data *data, t_valid *check, char *str, int i)
 int			ft_correct(t_data *data, t_valid *check, char **strings)
 {
 	int	i;
-	int j;
 
 	i = -1;
 	while (strings[++i])
 		correct_strings(data, check, strings[i], i);
 	if (check->valid_flag != 29)
 		ft_print_error(E_NO_CORRECT);
-	i = check->li_room_begin - 1;
-	while (++i <= check->li_room_finish)
-	{
-		if (strings[i][0] == '#')
-			break ;
-		j = i;
-		while (++j <= check->li_room_finish)
-		{
-			if (strings[j][0] != '#')
-				if (ft_correct_rooms_double(strings[i], strings[j]))
-					ft_print_error(E_MALLOC);
-		}
-	}
+	ft_init_room(data, check, strings);
 	return (0);
 }
