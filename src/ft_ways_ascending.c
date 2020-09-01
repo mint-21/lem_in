@@ -13,47 +13,19 @@
 #include "lemin.h"
 
 /*
-** Находим новые кратчайшие пути в графе с входящими и исходящими узлами
-** ++(*weight): вес пути
+** Создаем структуру путей ways
+** create_inhead: создаем входящие узлы
+** находим кратчайшие пути в новом графе с их весом
 */
 
-static t_connect	*create_inhead(t_path *tmp, t_path *path,
-							t_connect *head, int *weight)
+static void			path_init(t_path *path, t_room *end, t_path *tmp)
 {
-	if (head->room->in_part)
-		path->room = head->room->in_part;
-	else
-		path->room = head->room;
+	path->room = end;
 	path->next = tmp;
-	if (tmp)
-		tmp->prev = path;
-	++(*weight);
-	head = head->parrent;
-	return (head);
+	path->prev = NULL;
 }
 
-/*
-** Инициализируем новую структуру путей ways
-** ft_path: ноходим кратчайшие пути в новом графе с их весом
-*/
-
-static t_way *way_init(t_way *way, t_path *path, int weight, t_way *ways)
-{
-	way->path = path;
-	way->path_cost = weight;
-	way->ants = 0;
-	if (ways)
-		ways->next = way;
-	way->prev = ways;
-	way->next = NULL;
-	if (ways)
-		way->path_number = ways->path_number + 1;
-	else
-		way->path_number = 1;
-	return (way);
-}
-
-static t_way	*ft_add_path(t_connect *head, t_way *ways, t_room *end)
+static t_way		*ft_add_path(t_connect *head, t_way *ways, t_room *end)
 {
 	t_path		*path;
 	t_way		*way;
@@ -72,9 +44,7 @@ static t_way	*ft_add_path(t_connect *head, t_way *ways, t_room *end)
 	tmp = path;
 	if (!(path = (t_path *)malloc(sizeof(t_path))))
 		ft_perror();
-	path->room = end;
-	path->next = tmp;
-	path->prev = NULL;
+	path_init(path, end, tmp);
 	if (tmp)
 		tmp->prev = path;
 	if (!(way = (t_way *)malloc(sizeof(t_way))))
@@ -83,17 +53,6 @@ static t_way	*ft_add_path(t_connect *head, t_way *ways, t_room *end)
 	ways = way;
 	return (ways);
 }
-
-	// way->path = path;
-	// way->path_cost = weight;
-	// way->ants = 0;
-	// if (ways)
-	// 	ways->next = way;
-	// way->prev = ways;
-	// way->next = NULL;
-	// way->path_number = (ways) ? ways->path_number + 1 : 1;
-	// ways = way;
-
 
 /*
 ** Находим кратчайшие пути на новом графе и заносим в структуру
