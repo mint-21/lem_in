@@ -31,30 +31,6 @@ static t_connect *create_inhead(t_path *tmp, t_path *path, t_connect *head, int 
 	return (head);
 }
 
-static t_path	*ft_path(t_connect *head, int *weight, t_room *end)
-{
-	t_path	*path;
-	t_path	*tmp;
-
-	path = NULL;
-	while (head)
-	{
-		tmp = path;
-		if (!(path = (t_path *)malloc(sizeof(t_path))))
-			ft_perror();
-		head = create_inhead(tmp, path, head, weight);
-	}
-	tmp = path;
-	if (!(path = (t_path *)malloc(sizeof(t_path))))
-		ft_perror();
-	path->room = end;
-	path->next = tmp;
-	path->prev = NULL;
-	if (tmp)
-		tmp->prev = path;
-	return (path);
-}
-
 /*
 ** Инициализируем новую структуру путей ways
 ** ft_path: ноходим кратчайшие пути в новом графе с их весом
@@ -64,10 +40,26 @@ static t_way	*ft_add_path(t_connect *head, t_way *ways, t_room *end)
 {
 	t_path		*path;
 	t_way		*way;
+	t_path		*tmp;
 	int			weight;
 
 	weight = 0;
-	path = ft_path(head, &weight, end);
+	path = NULL;
+	while (head)
+	{
+		tmp = path;
+		if (!(path = (t_path *)malloc(sizeof(t_path))))
+			ft_perror();
+		head = create_inhead(tmp, path, head, &weight);
+	}
+	tmp = path;
+	if (!(path = (t_path *)malloc(sizeof(t_path))))
+		ft_perror();
+	path->room = end;
+	path->next = tmp;
+	path->prev = NULL;
+	if (tmp)
+		tmp->prev = path;
 	if (!(way = (t_way *)malloc(sizeof(t_way))))
 		ft_perror();
 	way->path = path;
