@@ -17,6 +17,20 @@
 ** ++(*weight): вес пути
 */
 
+static t_connect *create_inhead(t_path *tmp, t_path *path, t_connect *head, int *weight)
+{
+	if (head->room->in_part)
+		path->room = head->room->in_part;
+	else
+		path->room = head->room;
+	path->next = tmp;
+	if (tmp)
+		tmp->prev = path;
+	++(*weight);
+	head = head->parrent;
+	return (head);
+}
+
 static t_path	*ft_path(t_connect *head, int *weight, t_room *end)
 {
 	t_path	*path;
@@ -28,12 +42,7 @@ static t_path	*ft_path(t_connect *head, int *weight, t_room *end)
 		tmp = path;
 		if (!(path = (t_path *)malloc(sizeof(t_path))))
 			ft_perror();
-		path->room = (head->room->in_part) ? head->room->in_part : head->room;
-		path->next = tmp;
-		if (tmp)
-			tmp->prev = path;
-		++(*weight);
-		head = head->parrent;
+		head = create_inhead(tmp, path, head, weight);
 	}
 	tmp = path;
 	if (!(path = (t_path *)malloc(sizeof(t_path))))
