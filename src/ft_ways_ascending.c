@@ -37,7 +37,7 @@ static t_connect	*create_inhead(t_path *tmp, t_path *path,
 ** ft_path: ноходим кратчайшие пути в новом графе с их весом
 */
 
-static t_way *bb(t_way *way, t_path *path, int weight, t_way *ways)
+static t_way *way_init(t_way *way, t_path *path, int weight, t_way *ways)
 {
 	way->path = path;
 	way->path_cost = weight;
@@ -46,7 +46,10 @@ static t_way *bb(t_way *way, t_path *path, int weight, t_way *ways)
 		ways->next = way;
 	way->prev = ways;
 	way->next = NULL;
-	way->path_number = (ways) ? ways->path_number + 1 : 1;
+	if (ways)
+		way->path_number = ways->path_number + 1;
+	else
+		way->path_number = 1;
 	return (way);
 }
 
@@ -76,7 +79,7 @@ static t_way	*ft_add_path(t_connect *head, t_way *ways, t_room *end)
 		tmp->prev = path;
 	if (!(way = (t_way *)malloc(sizeof(t_way))))
 		ft_perror();
-	way = bb(way, path, weight, ways);
+	way = way_init(way, path, weight, ways);
 	ways = way;
 	return (ways);
 }
