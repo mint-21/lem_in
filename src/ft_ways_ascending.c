@@ -17,7 +17,8 @@
 ** ++(*weight): вес пути
 */
 
-static t_connect *create_inhead(t_path *tmp, t_path *path, t_connect *head, int *weight)
+static t_connect	*create_inhead(t_path *tmp, t_path *path,
+							t_connect *head, int *weight)
 {
 	if (head->room->in_part)
 		path->room = head->room->in_part;
@@ -35,6 +36,19 @@ static t_connect *create_inhead(t_path *tmp, t_path *path, t_connect *head, int 
 ** Инициализируем новую структуру путей ways
 ** ft_path: ноходим кратчайшие пути в новом графе с их весом
 */
+
+static t_way *bb(t_way *way, t_path *path, int weight, t_way *ways)
+{
+	way->path = path;
+	way->path_cost = weight;
+	way->ants = 0;
+	if (ways)
+		ways->next = way;
+	way->prev = ways;
+	way->next = NULL;
+	way->path_number = (ways) ? ways->path_number + 1 : 1;
+	return (way);
+}
 
 static t_way	*ft_add_path(t_connect *head, t_way *ways, t_room *end)
 {
@@ -62,17 +76,21 @@ static t_way	*ft_add_path(t_connect *head, t_way *ways, t_room *end)
 		tmp->prev = path;
 	if (!(way = (t_way *)malloc(sizeof(t_way))))
 		ft_perror();
-	way->path = path;
-	way->path_cost = weight;
-	way->ants = 0;
-	if (ways)
-		ways->next = way;
-	way->prev = ways;
-	way->next = NULL;
-	way->path_number = (ways) ? ways->path_number + 1 : 1;
+	way = bb(way, path, weight, ways);
 	ways = way;
 	return (ways);
 }
+
+	// way->path = path;
+	// way->path_cost = weight;
+	// way->ants = 0;
+	// if (ways)
+	// 	ways->next = way;
+	// way->prev = ways;
+	// way->next = NULL;
+	// way->path_number = (ways) ? ways->path_number + 1 : 1;
+	// ways = way;
+
 
 /*
 ** Находим кратчайшие пути на новом графе и заносим в структуру
