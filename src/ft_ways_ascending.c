@@ -25,7 +25,7 @@ static void			path_init(t_path *path, t_room *end, t_path *tmp)
 	path->prev = NULL;
 }
 
-static t_way		*ft_add_path(t_connect *head, t_way *ways, t_room *end)
+static t_way		*create_ways(t_connect *head, t_way *ways, t_room *end)
 {
 	t_path		*path;
 	t_way		*way;
@@ -56,9 +56,20 @@ static t_way		*ft_add_path(t_connect *head, t_way *ways, t_room *end)
 
 /*
 ** Находим кратчайшие пути на новом графе и заносим в структуру
-** ft_add_path: создание новой структуры для кратчайших путей
+** create_ways: создание новой структуры для кратчайших путей
 ** Переворачиваем ребра от конца до старта и ищем пути
 */
+
+static t_connect	*terms(t_connect *head, t_connect *connect)
+{
+	if (head->room->in_part)
+		connect = head->room->in_part->connects;
+	else
+		connect = head->room->connects;
+	while (connect && connect->weight != -1)
+		connect = connect->next;
+	return (connect);
+}
 
 t_way			*ft_ways_ascending(t_connect *head, t_connect *tail,
 				t_room *start, t_room *end)
@@ -71,10 +82,7 @@ t_way			*ft_ways_ascending(t_connect *head, t_connect *tail,
 	ways_begin = NULL;
 	while (head)
 	{
-		connect = (head->room->in_part) ?
-				head->room->in_part->connects : head->room->connects;
-		while (connect && connect->weight != -1)
-			connect = connect->next;
+		connect = terms(head, connect);
 		if (connect && connect->weight == -1)
 		{
 			tail->turn_next = connect;
@@ -82,7 +90,7 @@ t_way			*ft_ways_ascending(t_connect *head, t_connect *tail,
 			tail = tail->turn_next;
 		}
 		if (head->room == start)
-			ways = ft_add_path(head, ways, end);
+			ways = create_ways(head, ways, end);
 		if (!ways_begin && ways)
 			ways_begin = ways;
 		head = head->turn_next;
