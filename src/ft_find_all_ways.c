@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_find_all_ways.c                                          :+:      :+:    :+:   */
+/*   ft_find_all_ways.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -11,58 +11,6 @@
 /* ************************************************************************** */
 
 #include "lemin.h"
-
-/*
-** Считаем количество шагов в пути
-** steps - (way->path_cost - 1): количество шагов подлежащее пересмотру
-** ((tmp * (way->path_number - 1)) + ost) / way->path_number: расчет нового
-** кол-ва шагов для пути
-** (tmp * (way->path_number - 1) + ost) % way->path_number: кол-во мурав в ост
-** Функция возвращает количество пройденных шагов.
-*/
-
-static int ost_steps(t_way *way, int steps, int ost)
-{
-	int tmp;
-	int i;
-
-	ost = 0;
-	tmp = steps - (way->path_cost - 1);
-	steps = steps - tmp;
-	tmp = (ost) ? tmp - 1 : tmp;
-	i = (tmp * (way->path_number - 1) + ost);
-	steps += i / way->path_number;
-	ost = i;
-	ost %= way->path_number;
-	return (steps);
-}
-
-int		ft_min_steps_for_ants(t_way *way, int ants)
-{
-	int			steps;
-	int			ost;
-
-	steps = 0;
-	ost = 0;
-	while (way)
-	{
-		if (!way->prev)
-			steps = way->path_cost + ants - 1;
-		else if (steps > way->path_cost)
-		{
-			steps = ost_steps(way, steps, ost);
-			steps = (ost) ? steps + 1 : steps;
-			// if (ost)
-			// 	steps = steps + 1;
-			// else
-			//  	steps = steps;
-		}
-		else if (steps <= way->path_cost)
-			break ;
-		way = way->next;
-	}
-	return (steps);
-}
 
 /*
 ** Считает количество связей с start и количество связей, приходящих в end
@@ -104,7 +52,7 @@ void			ft_find_all_ways(t_data *data)
 	int			best_steps;
 	t_option	*best_opt;
 
-	while ((data->total_ways = find_ways(data->start, data->end)) > 0 
+	while ((data->total_ways = find_ways(data->start, data->end)) > 0
 			&& ft_suurballe(data))
 	{
 		--data->total_ways;

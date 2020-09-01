@@ -175,7 +175,7 @@ void				ft_free_data(t_data *data);
 void				ft_print_error(int id);
 void				ft_perror();
 int					ft_atoi_mod(const char *str);
-int					ft_min_steps_for_ants(t_way *way, int ants);
+int					steps_for_ants(t_way *way, int ants);
 void				find_of_ways_struct(t_data *data);
 void  				ft_find_null(t_path *path);
 void				null_turn(t_connect *reverse_h, t_connect *reverse_t, t_room *end);
@@ -186,5 +186,7 @@ void    ft_creat_duplicate(t_path *path, t_room *in);
 void	create_out_in_room(t_room *in, t_room *out);
 t_room	*ft_create_new_room(char *line);
 int		check_double_coor(t_data *s, t_room *curr, char *str);
+void	ft_step(t_data *data, int *ant, t_buf *buf, int steps);
+void	ft_copy(t_data *data, t_path *path, t_buf *buf, int ant);
 
 #endif

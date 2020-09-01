@@ -33,7 +33,7 @@ static void	ft_join_text(t_buf *buf, int ant, char *name)
 ** В комнату добавляем муравья, а из которой вышли - убираем муравья
 */
 
-static void	ft_copy(t_data *data, t_path *path, t_buf *buf, int ant)
+void	ft_copy(t_data *data, t_path *path, t_buf *buf, int ant)
 {
 	if (data->flags.ways == 0)
 	{
@@ -44,41 +44,6 @@ static void	ft_copy(t_data *data, t_path *path, t_buf *buf, int ant)
 	path->prev->room->ant = (path->prev->room != data->end) ?
 			ant : path->prev->room->ant + 1;
 	(path->room == data->start) ? --path->room->ant : (path->room->ant = 0);
-}
-
-/*
-** Функция ищет комнату, где на данный момент есть муравей.
-** В path и way передали лучший путь.
-** ++way->ants: подчсчет кол-ва муравьев проходящих через путь.
-** ft_copy: заносит в буфер текст и ведет подсчет муравьев в каждой комнате.
-** way = way->next: если путь не один, берем следубщий путь.
-*/
-
-static void	ft_step(t_data *data, int *ant, t_buf *buf, int steps)
-{
-	t_way	*way;
-	t_path	*path;
-
-	buf->space = 0;
-	way = data->best_opt->ways;
-	while (way)
-	{
-		path = way->path;
-		while (path)
-		{
-			if (path->room == data->start && data->start->ant &&
-			(way->path_cost <= steps || way->path_number == 1))
-			{
-				ft_copy(data, path, buf, ++*ant);
-				++way->ants;
-			}
-			else if (path->room != data->start && path->room != data->end
-			&& path->room->ant)
-				ft_copy(data, path, buf, path->room->ant);
-			path = path->next;
-		}
-		way = way->next;
-	}
 }
 
 /*

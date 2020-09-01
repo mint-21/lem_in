@@ -49,7 +49,7 @@ static void		init_var(t_option *var, t_way *new_ways, int new_steps, t_data *dat
 ** null: удаление обратных краев (ребер).
 ** ft_paths_ascending: инициализируем струтуру new_ways и находим
 ** кратчайшие пути в новом графе
-** ft_min_steps_for_ants: количество шагов от start до end
+** steps_for_ants: количество шагов от start до end
 */
 
 void			find_of_ways_struct(t_data *data)
@@ -71,7 +71,7 @@ void			find_of_ways_struct(t_data *data)
 	new_ways = ft_ways_ascending(reverse_h, reverse_t, data->start, data->end); // иземнить ft_ways_ascending
 	null_turn(reverse_h, reverse_t, data->end);
 	if (new_ways)
-		new_steps = ft_min_steps_for_ants(new_ways, data->ants); // изменить ft_min_steps_for_ants
+		new_steps = steps_for_ants(new_ways, data->ants);
 	!(var = (t_option *)malloc(sizeof(t_option))) ? ft_perror() : 0;
 	init_var(var, new_ways, new_steps, data);
 }
