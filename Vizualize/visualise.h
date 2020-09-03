@@ -13,9 +13,9 @@
 
 
 # if __APPLE__
-#  include "/Users/asmall/.brew/include/SDL2/SDL.h"
-#  include "/Users/asmall/.brew/include/SDL2/SDL_ttf.h"
-# include "/Users/asmall/.brew/include/SDL2/SDL_image.h"
+#  include "/Users/vfearles/.brew/include/SDL2/SDL.h"
+#  include "/Users/vfearles/.brew/include/SDL2/SDL_ttf.h"
+# include "/Users/vfearles/.brew/include/SDL2/SDL_image.h"
 # else
 #  include <SDL2/SDL.h>
 #  include <SDL2/SDL_ttf.h>

@@ -12,42 +12,37 @@
 
 #include "lemin.h"
 
+#include "lemin.h"
+
 /*
 ** В буфер запоминаем для вывода на консоль (L1-name).
-*/
-
-static void	ft_join_text(t_buf *buf, int ant, char *name)
-{
-	int		j;
-
-	j = -1;
-	ft_putchar_buf(buf->str, &buf->i, BUFF_SIZE, 'L');
-	ft_putnbr_buf(buf->str, &buf->i, BUFF_SIZE, ant);
-	ft_putchar_buf(buf->str, &buf->i, BUFF_SIZE, '-');
-	while (name[++j])
-		ft_putchar_buf(buf->str, &buf->i, BUFF_SIZE, name[j]);
-}
-
-/*
-** ft_join_text: в бефер запоминаем вывод на консоль.
 ** В комнату добавляем муравья, а из которой вышли - убираем муравья
 */
 
 void	ft_copy(t_data *data, t_path *path, t_buf *buf, int ant)
 {
+	int j;
+
+	j = -1;
 	if (data->flags.ways == 0)
 	{
 		(buf->space) ? ft_putchar_buf(buf->str, &buf->i, BUFF_SIZE, ' ')
 		: (buf->space = 1);
-		ft_join_text(buf, ant, path->prev->room->name);
+		ft_putchar_buf(buf->str, &buf->i, BUFF_SIZE, 'L');
+		ft_putnbr_buf(buf->str, &buf->i, BUFF_SIZE, ant);
+		ft_putchar_buf(buf->str, &buf->i, BUFF_SIZE, '-');
+		while (path->prev->room->name[++j])
+			ft_putchar_buf(buf->str, &buf->i, BUFF_SIZE,
+					path->prev->room->name[j]);
 	}
 	if (path->prev->room != data->end)
 		path->prev->room->ant = ant;
 	else
 		path->prev->room->ant = path->prev->room->ant + 1;
-	// path->prev->room->ant = (path->prev->room != data->end) ?
-	// 		ant : path->prev->room->ant + 1;
-	(path->room == data->start) ? --path->room->ant : (path->room->ant = 0);
+	if (path->room == data->start)
+		--path->room->ant;
+	else
+		path->room->ant = 0;
 }
 
 /*
