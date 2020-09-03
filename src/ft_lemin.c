@@ -41,8 +41,12 @@ void	ft_copy(t_data *data, t_path *path, t_buf *buf, int ant)
 		: (buf->space = 1);
 		ft_join_text(buf, ant, path->prev->room->name);
 	}
-	path->prev->room->ant = (path->prev->room != data->end) ?
-			ant : path->prev->room->ant + 1;
+	if (path->prev->room != data->end)
+		path->prev->room->ant = ant;
+	else
+		path->prev->room->ant = path->prev->room->ant + 1;
+	// path->prev->room->ant = (path->prev->room != data->end) ?
+	// 		ant : path->prev->room->ant + 1;
 	(path->room == data->start) ? --path->room->ant : (path->room->ant = 0);
 }
 

@@ -27,7 +27,7 @@ SRC_NAME		=	ft_lemin_read.c ft_rooms.c ft_ford.c ft_suurballe.c\
 					ft_free_str_split.c\
 					ft_lemin.c ft_null.c ft_redirection.c\
 					ft_links.c ft_find_all_ways.c\
-					ft_flip_ribs.c find_of_ways_struct.c main.c\
+					find_of_ways_struct.c main.c\
 					ft_flags_lemin.c ft_creat_duplicate.c\
 					ft_steps.c ft_additional_func.c\
 
