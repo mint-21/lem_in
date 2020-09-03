@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ways_ascending.c                                :+:      :+:    :+:   */
+/*   flip_ribs.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -51,4 +51,30 @@ t_way		*way_init(t_way *way, t_path *path, int weight, t_way *ways)
 	else
 		way->path_number = 1;
 	return (way);
+}
+
+/*
+** дополнительные условия для реализации входящих узлов
+*/
+
+t_connect	*terms(t_connect *head, t_connect *connect)
+{
+	if (head->room->in_part)
+		connect = head->room->in_part->connects;
+	else
+		connect = head->room->connects;
+	while (connect && connect->weight != -1)
+		connect = connect->next;
+	return (connect);
+}
+
+/*
+** Инициализация
+*/
+
+void			path_init(t_path *path, t_room *end, t_path *tmp)
+{
+	path->room = end;
+	path->next = tmp;
+	path->prev = NULL;
 }

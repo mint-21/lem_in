@@ -167,8 +167,6 @@ int					ft_suurballe(t_data *data);
 int					ft_ford(t_data *data);
 void				ft_turn(t_room *room, t_room *start, int *flag);
 void				ft_change_ribs(t_path *path);
-t_way				*ft_ways_ascending(t_connect *reverse_h, t_connect *reverse_t,
-					t_room *start, t_room *end);
 void				ft_lemin(t_data *data);
 void				*ft_free_str_split(char **str_split);
 void				ft_free_data(t_data *data);
@@ -190,5 +188,7 @@ void				ft_step(t_data *data, int *ant, t_buf *buf, int steps);
 void				ft_copy(t_data *data, t_path *path, t_buf *buf, int ant);
 t_way 				*way_init(t_way *way, t_path *path, int weight, t_way *ways);
 t_connect			*create_inhead(t_path *tmp, t_path *path, t_connect *head, int *weight);
+t_connect			*terms(t_connect *head, t_connect *connect);
+void				path_init(t_path *path, t_room *end, t_path *tmp);
 
 #endif
