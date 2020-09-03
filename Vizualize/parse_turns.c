@@ -20,7 +20,7 @@ t_vis_ants	*make_new_vis_ants_array(t_data s)
 
 	array = (t_vis_ants *)malloc(sizeof(t_vis_ants) * s.ants);
 	current = g_vis_rooms;
-	while (current && current->num != s.start)
+	while (current && current->num != s.check.li_room_finish)
 		current = current->next;
 	i = -1;
 	while (++i < s.ants)

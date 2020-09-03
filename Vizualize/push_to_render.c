@@ -52,7 +52,7 @@ t_vis_rooms		*push_rooms_to_render(t_data s)
 {
 	t_vis_rooms	*vis_rooms;
 	t_vis_rooms	*current_vis_room;
-	t_room		*current_s_room = s.room;
+	t_room		*current_s_room = s.rooms;
 
 	vis_rooms = make_new_vis_room();
 	current_vis_room = vis_rooms;
@@ -61,7 +61,7 @@ t_vis_rooms		*push_rooms_to_render(t_data s)
 		current_vis_room->room.x = ft_abs(current_s_room->x * (SCREEN_WIDTH / (MAX(ft_find_max_x(s), 1))) - 50);
 		current_vis_room->room.y = ft_abs(current_s_room->y * (SCREEN_HEIGHT / (MAX(ft_find_max_y(s), 1))) - 50);
 		current_vis_room->name = current_s_room->name;
-		current_vis_room->num = current_s_room->n;
+		//current_vis_room->num = current_s_room->n;
 		current_vis_room->r = rand() % 255 + 1;
 		current_vis_room->g = rand() % 255 + 1;
 		current_vis_room->b = rand() & 255 + 1;
@@ -87,23 +87,24 @@ t_vis_rooms		*push_rooms_to_render(t_data s)
 void		push_links_ro_render(t_data s)
 {
 	t_vis_rooms	*current_vis_room;
-	t_link		*current_usual_room;
+	t_way		*current_usual_room;
 	t_vis_rooms	*end_of_line;
 
-	for (int i = 0; i < s.n_links; i++)
+	for (int i = 0; i < s.total_ways; i++)
 	{
-		current_usual_room = s.links[i];
+		current_usual_room = s.ways_dij;
 		current_vis_room = g_vis_rooms;
 		while (current_vis_room && current_vis_room->num != i)
+		
 			current_vis_room = current_vis_room->next;
 		if (current_vis_room)
 			while (current_usual_room)
 			{
 				end_of_line = g_vis_rooms;
-				while (end_of_line && end_of_line->num != current_usual_room->pair)
+				while (end_of_line && end_of_line->num != current_usual_room->path_number)
 					end_of_line = end_of_line->next;
 				SDL_SetRenderDrawColor(g_main_render, current_vis_room->r, current_vis_room->g, current_vis_room->b, 100);
-				if (current_usual_room->pair >= i)
+				if (current_usual_room->path_cost >= i)
 					SDL_RenderDrawLineF(g_main_render,
 										current_vis_room->room.x + 25,
 										current_vis_room->room.y + 25,
@@ -117,7 +118,7 @@ void		push_links_ro_render(t_data s)
 void		push_names_ro_render(t_data s)
 {
 	t_vis_rooms	*current_vis_room = g_vis_rooms;
-	t_room		*current_usual_room = s.room;
+	t_room		*current_usual_room = s.rooms;
 	TTF_Font	*Courier = NULL;
 	SDL_Color	Black = {0, 0, 0, 255};
 	SDL_Rect	name_rect;
@@ -130,7 +131,8 @@ void		push_names_ro_render(t_data s)
 	}
 	while (current_vis_room && current_usual_room)
 	{
-		if (current_vis_room->num == current_usual_room->n)
+		//changed!!!
+		if (!strcmp(current_vis_room->name, current_usual_room->name)) //<- this
 		{
 			TTF_SizeText(Courier, current_usual_room->name, &name_rect.w, &name_rect.h);
 			name_rect.x = (int)current_vis_room->room.x;

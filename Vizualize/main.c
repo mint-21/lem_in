@@ -122,11 +122,11 @@ int			initialize_data(int argc, char **argv)
 	//ft_flags_lemin(&data.flags, ac, av);
 	map_data = ft_lemin_read(&g_s.flags, &str_split);
 	ft_correct(&g_s, &g_s.check, str_split);
-	
+	ft_find_all_ways(&g_s);
 	if (g_s.rooms_count > 50)
 	{
 		//ft_return_main(OK, &g_s);
-		ft_print_error(E_ANT);
+		//ft_print_error(E_ANT);
 		printf("Too many rooms\n");
 		return (0);
 	}
@@ -175,7 +175,7 @@ int			main(int argc, char **argv)
 	if (!initialize_data(argc, argv))
 		return (0);
 	end_room = g_vis_rooms;
-	while (end_room && end_room->num != g_s.end)
+	while (end_room && end_room->num != g_s.check.li_room_begin)
 		end_room = end_room->next;
 	quit = false;
 	push_all_to_render(g_s, &array);

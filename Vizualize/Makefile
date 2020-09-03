@@ -20,6 +20,7 @@ SRC				=	../src/ft_lemin_read.c ../src/ft_rooms.c ../src/ft_ford.c ../src/ft_suu
 					../src/ft_links.c ../src/ft_find_all_ways.c\
 					../src/find_of_ways_struct.c\
 					../src/ft_flags_lemin.c ../src/ft_creat_duplicate.c\
+					../src/ft_steps.c ../src/ft_additional_func.c\
 
 INCLUDE =	visualise.h \
 			../libft/libft.h

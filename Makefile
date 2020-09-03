@@ -13,7 +13,7 @@
 all:
 	@make -C ./libft/
 	@make -C ./src/
-	#@make -C ./Vizualize/
+	@make -C ./Vizualize/
 
 new_lem_in:
 	@make -C ./src/ new
@@ -21,7 +21,7 @@ new_lem_in:
 new_Vizualize:
 	@make -C ./Vizualize/ new
 
-new: new_lem_in #new_Vizualize
+new: new_lem_in new_Vizualize
 
 clean:
 	@make -C ./src clean

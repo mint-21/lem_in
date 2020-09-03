@@ -12,13 +12,13 @@
 
 #include "visualise.h"
 
-int			ft_find_max_x( s)
+int			ft_find_max_x(t_data s)
 {
 	int		max;
 	t_room	*current;
 
 	max = -MAX_INT - 1;
-	current = s.room;
+	current = s.rooms;
 	while (current)
 	{
 		if (current->x > max)
@@ -34,7 +34,7 @@ int			ft_find_max_y(t_data s)
 	t_room	*current;
 
 	max = -MAX_INT - 1;
-	current = s.room;
+	current = s.rooms;
 	while (current)
 	{
 		if (current->y > max)
