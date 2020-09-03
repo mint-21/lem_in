@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header/visualise.h"
-# include "../../inc/lemin.h"
+#include "visualise.h"
 
 int			ft_find_max_x( s)
 {

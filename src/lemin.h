@@ -13,7 +13,7 @@
 #ifndef LEMIN_H
 # define LEMIN_H
 
-# include "libft.h"
+# include "../libft/libft.h"
 # include <stdio.h>
 # include <fcntl.h>
 # include <limits.h>

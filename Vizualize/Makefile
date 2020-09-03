@@ -10,53 +10,39 @@
 #                                                                              #
 # **************************************************************************** #
 
-SRC =	main.c \
-		parse_turns.c \
-		vis_help.c \
-		push_to_render.c 
+SRC_VI			=	main.c parse_turns.c vis_help.c push_to_render.c
 
-INCLUDE =	header/
-LIBFT_HEAD = ../libft/
+SRC				=	../src/ft_lemin_read.c ../src/ft_rooms.c ../src/ft_ford.c ../src/ft_suurballe.c\
+				   	../src/ft_turn.c ../src/ft_error.c ../src/ft_correct_main.c\
+				   	../src/ft_findrooms.c ../src/ft_correct_map.c ../src/ft_free_data.c\
+					../src/ft_free_str_split.c\
+					../src/ft_lemin.c ../src/ft_null.c ../src/ft_redirection.c\
+					../src/ft_links.c ../src/ft_find_all_ways.c\
+					../src/find_of_ways_struct.c\
+					../src/ft_flags_lemin.c ../src/ft_creat_duplicate.c\
+
+INCLUDE =	visualise.h \
+			../libft/libft.h
+
 FLAGS = -Wall -Wextra -Werror
 NAME = visualisator
-# OS detection.
-ifeq ($(OS),Windows_NT)
-	detected_OS = Windows
-else
-	detected_OS = $(shell sh -c 'uname 2>/dev/null || echo Unknown')
-endif
-# Note: Current version only supports Linux and Mac OS.
-ifeq ($(detected_OS),Darwin)
-	FRAMEWORKS = -L$(SDL_LIBRARY) -lSDL2 -lSDL2_ttf
-	FRAMEWORKS = -framework SDL2 -framework SDL2_ttf
-	FLAGS += -F ~/Library/Frameworks 
-	LDFLAGS += -I ~/Library/Frameworks/SDL2.framework/Headers -I ~/Library/Frameworks/SDL2_ttf.framework/Headers
-else
-	FRAMEWORKS = -lSDL2 -lSDL2_ttf -lSDL2_image
-endif
-				
+FRAMEWORKS =	-I/Library/Frameworks/SDL2.framework/Headers -F ~/Library/Frameworks -framework SDL2 \
+				-I/Library/Frameworks/SDL2_image.framework/Headers -F ~/Library/Frameworks -framework SDL2_image \
+				-I/Library/Frameworks/SDL2_ttf.framework/Headers -F ~/Library/Frameworks -framework SDL2_ttf
 
 all: $(NAME)
 
 $(NAME):
 	@echo Compiling Visualisator ...
-	#@bash script.bash
-	@gcc $(FLAGS) $(SRC) $(FRAMEWORKS)  ../libft/libft.a  -I $(INCLUDE) -I $(LIBFT_HEAD) -o $(NAME)
-	@mv $(NAME) ../$(NAME)
+	@bash script.bash
+	@gcc $(FLAGS) $(SRC_VI) $(SRC) -I $(INCLUDE) $(FRAMEWORKS)  ../libft/libft.a
+	@mv a.out ../$(NAME)
 
 new:
 	@echo Recompiling Visualisator ...
 	@rm -rf ../$(NAME)
-	@gcc $(FLAGS) $(SRC) $(FRAMEWORKS)  ../libft/libft.a -I $(INCLUDE) -I $(LIBFT_HEAD) -o $(NAME)
-	@mv $(NAME) ../$(NAME)
-
-debug:
-	@echo Recompiling Visualisator ...
-	@rm -rf ../$(NAME)
-	@rm -rf ../$(NAME).dSYM
-	@gcc -g $(FLAGS) $(SRC) -I $(INCLUDE) ../libft.a $(FRAMEWORKS)
+	@gcc $(FLAGS) $(SRC_VI) $(SRC) -I $(INCLUDE) $(FRAMEWORKS)  ../libft/libft.a
 	@mv a.out ../$(NAME)
-	@mv a.out.dSYM ../$(NAME).dSYM
 
 clean:
 	@rm -rf *.o

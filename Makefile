@@ -10,59 +10,28 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME			=	lem-in
-INC_NAME		=	lemin.h
+all:
+	@make -C ./libft/
+	@make -C ./src/
+	#@make -C ./Vizualize/
 
-LIB_PATH		=	libft/
-LIB_INC_PATH	=	libft/
-LIB_NAME		=	libft.a
+new_lem_in:
+	@make -C ./src/ new
 
-SRC_PATH		=	src/
-INC_PATH		=	inc/
-OBJ_PATH		=	obj/
+new_Vizualize:
+	@make -C ./Vizualize/ new
 
-SRC_NAME		=	ft_lemin_read.c ft_rooms.c ft_ford.c ft_suurballe.c\
-				   	ft_turn.c ft_error.c ft_correct_main.c\
-				   	ft_findrooms.c ft_correct_map.c ft_free_data.c\
-					ft_free_str_split.c\
-					ft_lemin.c ft_null.c ft_redirection.c\
-					ft_links.c ft_find_all_ways.c\
-					find_of_ways_struct.c main.c\
-					ft_flags_lemin.c ft_creat_duplicate.c\
-					ft_steps.c ft_additional_func.c\
+new: new_lem_in #new_Vizualize
 
-SRC				=	$(addprefix $(SRC_PATH), $(SRC_NAME))
-INC				=	$(addprefix $(INC_PATH), $(INC_NAME))
-OBJ				=	$(addprefix $(OBJ_PATH), $(SRC_NAME:.c=.o))
-
-CC				=	gcc
-CFLAGS			=	-Wall -Wextra -Werror
-IFLAGS			=	-I $(INC_PATH). -I $(LIB_PATH).
-LFLAGS			=	-L $(LIB_PATH) -lft
-
-LIB				=	make -C $(LIB_PATH)
-VIS             =   make -C Vizualize/
-.PHONY:	all clean fclean re lib
-
-$(OBJ_PATH)%.o:		$(SRC_PATH)%.c $(INC)
-					@mkdir -p $(OBJ_PATH)
-					@$(CC) $(CFLAGS) $(IFLAGS) -c -o $@ $<
-
-all:				$(NAME)
-
-$(NAME):			$(OBJ)
-
-					@$(LIB)
-					#@$(VIS)
-					@$(CC) $(CFLAGS) $(IFLAGS) -o $@ $^ $(LFLAGS)
-					@printf "%-54c\rDone !\n" ' '
-					
 clean:
-					make clean -C $(LIB_PATH)
-					rm -rf $(OBJ_PATH)
+	@make -C ./src clean
+	@make -C ./libft clean
+	@make -C ./Vizualize/ clean
 
-fclean:				clean
-					make fclean -C $(LIB_PATH)
-					rm -f $(NAME)
+fclean: clean
+	@make -C ./libft fclean
+	@rm -rf libft.a
+	@make -C ./src fclean
+	@make -C ./Vizualize/ fclean
 
-re:					fclean all
+re: fclean all

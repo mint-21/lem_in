@@ -21,7 +21,7 @@
 #  include <SDL2/SDL_ttf.h>
 # endif
 
-# include "../../inc/lemin.h"
+# include "../src/lemin.h"
 # include <stdio.h>
 # include <stdbool.h>
 # include <time.h>

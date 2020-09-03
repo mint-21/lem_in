@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header/visualise.h"
+#include "visualise.h"
 
 t_vis_ants	*make_new_vis_ants_array(t_data s)
 {
