@@ -19,7 +19,7 @@
 ** В комнату добавляем муравья, а из которой вышли - убираем муравья
 */
 
-void	ft_copy(t_data *data, t_path *path, t_buf *buf, int ant)
+void	copy_text_buff(t_data *data, t_path *path, t_buf *buf, int ant)
 {
 	int j;
 

@@ -185,7 +185,7 @@ void				create_out_in_room(t_room *in, t_room *out);
 t_room				*ft_create_new_room(char *line);
 int					check_double_coor(t_data *s, t_room *curr, char *str);
 void				ft_step(t_data *data, int *ant, t_buf *buf, int steps);
-void				ft_copy(t_data *data, t_path *path, t_buf *buf, int ant);
+void				copy_text_buff(t_data *data, t_path *path, t_buf *buf, int ant);
 t_way 				*way_init(t_way *way, t_path *path, int weight, t_way *ways);
 t_connect			*create_inhead(t_path *tmp, t_path *path, t_connect *head, int *weight);
 t_connect			*terms(t_connect *head, t_connect *connect);

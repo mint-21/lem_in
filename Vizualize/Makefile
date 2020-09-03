@@ -16,7 +16,7 @@ SRC				=	../src/ft_lemin_read.c ../src/ft_rooms.c ../src/ft_ford.c ../src/ft_suu
 				   	../src/ft_turn.c ../src/ft_error.c ../src/ft_correct_main.c\
 				   	../src/ft_findrooms.c ../src/ft_correct_map.c ../src/ft_free_data.c\
 					../src/ft_free_str_split.c\
-					../src/ft_lemin.c ../src/ft_null.c ../src/ft_redirection.c\
+					../src/ft_lemin_buff.c ../src/ft_null.c ../src/ft_redirection.c\
 					../src/ft_links.c ../src/ft_find_all_ways.c\
 					../src/find_of_ways_struct.c\
 					../src/ft_flags_lemin.c ../src/ft_creat_duplicate.c\

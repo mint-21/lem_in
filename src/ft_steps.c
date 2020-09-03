@@ -53,7 +53,7 @@ int		steps_for_ants(t_way *way, int ants)
 ** Функция ищет комнату, где на данный момент есть муравей.
 ** В path и way передали лучший путь.
 ** ++way->ants: подчсчет кол-ва муравьев проходящих через путь.
-** ft_copy: заносит в буфер текст и ведет подсчет муравьев в каждой комнате.
+** copy_text_buff: заносит в буфер текст и ведет подсчет муравьев в каждой комнате.
 ** way = way->next: если путь не один, берем следубщий путь.
 */
 
@@ -72,12 +72,12 @@ void	ft_step(t_data *data, int *ant, t_buf *buf, int steps)
 			if (path->room == data->start && data->start->ant &&
 			(way->path_cost <= steps || way->path_number == 1))
 			{
-				ft_copy(data, path, buf, ++*ant);
+				copy_text_buff(data, path, buf, ++*ant);
 				++way->ants;
 			}
 			else if (path->room != data->start && path->room != data->end
 			&& path->room->ant)
-				ft_copy(data, path, buf, path->room->ant);
+				copy_text_buff(data, path, buf, path->room->ant);
 			path = path->next;
 		}
 		way = way->next;
