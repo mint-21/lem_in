@@ -67,14 +67,3 @@ t_connect	*terms(t_connect *head, t_connect *connect)
 		connect = connect->next;
 	return (connect);
 }
-
-/*
-** Инициализация
-*/
-
-void			path_init(t_path *path, t_room *end, t_path *tmp)
-{
-	path->room = end;
-	path->next = tmp;
-	path->prev = NULL;
-}

@@ -13,13 +13,40 @@
 #include "lemin.h"
 
 /*
+** Зануляем room_par и weight ставим на временную метку
+*/
+
+static void		null(t_room *room)
+{
+	while (room)
+	{
+		if (room->state)
+		{
+			room->room_par = NULL;
+			room->weight = INF;
+			if (room->out_part)
+			{
+				room->out_part->room_par = NULL;
+				room->out_part->weight = INF;
+			}
+			else if (room->in_part)
+			{
+				room->in_part->room_par = NULL;
+				room->in_part->weight = INF;
+			}
+		}
+		room = room->next;
+	}
+}
+
+/*
 ** Дублируем все промежуточные вершины найденного пути на входящие
 ** и исходящие узлы.
 ** create_out_room: создание исходящих узлов
 ** end изначально указывает на входящую часть и не перенаправляется
 */
 
-static void	duplicate_rooms(t_path *path)
+static void		duplicate_rooms(t_path *path)
 {
 	t_room		*in;
 
@@ -38,7 +65,7 @@ static void	duplicate_rooms(t_path *path)
 ** ft_redirection_connect: перенаправление связей в структуре two
 */
 
-void		ft_change_ribs(t_path *path)
+void			ft_change_ribs(t_path *path)
 {
 	t_connect	*connect;
 
@@ -57,6 +84,18 @@ void		ft_change_ribs(t_path *path)
 	}
 }
 
+static int		ft_ford(t_data *data, int flag, int k)
+{
+	data->start->weight = 0;
+	djkastra(flag, k, data);
+	if (!data->end->room_par)
+		return (0);
+	path(data->end, data->start, &data->ways_dij, 0);
+	null(data->rooms);
+	return (1);
+}
+
+
 /*
 ** ft_ford: поиск в ширину по алгоритму Дейкстры
 ** ft_change_ribs: делаем график направленным и меняем направление ребер
@@ -64,9 +103,14 @@ void		ft_change_ribs(t_path *path)
 ** входящую и исходящую части.
 */
 
-int			ft_suurballe(t_data *data)
+int				ft_suurballe(t_data *data)
 {
-	if (ft_ford(data))
+	int flag;
+	int k;
+
+	flag = 1;
+	k = data->rooms_count;
+	if (ft_ford(data, flag, k))
 	{
 		ft_change_ribs(data->ways_dij->path);
 		duplicate_rooms(data->ways_dij->path);

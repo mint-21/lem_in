@@ -164,8 +164,8 @@ int					ft_findrooms(t_data *data, char *connect, t_room **room1,
 					t_room **room2);
 void				ft_find_all_ways(t_data *data);
 int					ft_suurballe(t_data *data);
-int					ft_ford(t_data *data);
-void				ft_turn(t_room *room, t_room *start, int *flag);
+void				djkastra(int flag, int k, t_data *data);
+// void				ft_turn(t_room *room, t_room *start, int *flag);
 void				ft_change_ribs(t_path *path);
 void				ft_lemin(t_data *data);
 void				*ft_free_str_split(char **str_split);
@@ -190,5 +190,9 @@ t_way 				*way_init(t_way *way, t_path *path, int weight, t_way *ways);
 t_connect			*create_inhead(t_path *tmp, t_path *path, t_connect *head, int *weight);
 t_connect			*terms(t_connect *head, t_connect *connect);
 void				path_init(t_path *path, t_room *end, t_path *tmp);
+t_connect 			*turn_room(t_room *room, t_connect *connect, t_room *start, int *flag);
+int					ft_init_path_struct(t_path *path, t_room *room, int path_cost);
+void				path(t_room *room, t_room *start, t_way **ways, int path_cost);
+void				init_way(t_way *way, int path_cost, t_way **ways, t_path *path);
 
 #endif

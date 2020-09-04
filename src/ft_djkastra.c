@@ -13,33 +13,6 @@
 #include "lemin.h"
 
 /*
-** Зануляем room_par и weight ставим на временную метку
-*/
-
-static void	null(t_room *room)
-{
-	while (room)
-	{
-		if (room->state)
-		{
-			room->room_par = NULL;
-			room->weight = INF;
-			if (room->out_part)
-			{
-				room->out_part->room_par = NULL;
-				room->out_part->weight = INF;
-			}
-			else if (room->in_part)
-			{
-				room->in_part->room_par = NULL;
-				room->in_part->weight = INF;
-			}
-		}
-		room = room->next;
-	}
-}
-
-/*
 ** Инициализация финальной структуры пути
 */
 
@@ -49,24 +22,10 @@ static void	create_way(t_path *path, int path_cost, t_way **ways)
 
 	if (!(way = (t_way *)malloc(sizeof(t_way))))
 		ft_perror();
-	way->path = path;
-	way->path_number = (*ways) ? (*ways)->path_number + 1 : 1;
-	way->path_cost = path_cost;
-	way->ants = 0;
-	way->prev = NULL;
-	way->next = *ways;
+	init_way(way, path_cost, ways, path);
 	if (*ways)
 		(*ways)->prev = way;
 	*ways = way;
-}
-
-int			ft_init_path_struct(t_path *path, t_room *room, int path_cost)
-{
-	path_cost = room->weight;
-	path->room = room;
-	path->next = NULL;
-	path->prev = NULL;
-	return (path_cost);
 }
 
 /*
@@ -74,11 +33,19 @@ int			ft_init_path_struct(t_path *path, t_room *room, int path_cost)
 ** на следующий и предыдущий элемент.
 */
 
-static void	path(t_room *room, t_room *start, t_way **ways, int path_cost)
+static void		init_path(t_path *path, t_room *room_p, t_path *tmp)
 {
-	t_path	*tmp;
-	t_path	*path;
-	t_room	*room_p;
+	path->room = room_p;
+	path->next = tmp;
+	path->prev = NULL;
+	(tmp->prev) = (tmp) ? (path) : (tmp);
+}
+
+void		path(t_room *room, t_room *start, t_way **ways, int path_cost)
+{
+	t_path		*tmp;
+	t_path		*path;
+	t_room		*room_p;
 	t_connect	*connect_p;
 
 	(!(path = (t_path *)malloc(sizeof(t_path)))) ? ft_perror() : 0;
@@ -93,10 +60,7 @@ static void	path(t_room *room, t_room *start, t_way **ways, int path_cost)
 		{
 			tmp = path;
 			(!(path = (t_path *)malloc(sizeof(t_path)))) ? ft_perror() : 0;
-			path->room = room_p;
-			path->next = tmp;
-			path->prev = NULL;
-			(tmp->prev) = (tmp) ? (path) : (tmp);
+			init_path(path, room_p, tmp);
 		}
 		room = room->room_par;
 	}
@@ -104,21 +68,18 @@ static void	path(t_room *room, t_room *start, t_way **ways, int path_cost)
 }
 
 /*
-** ft_turn: алгоритм поиска в ширину, назначение родительских узлов.
+** turn_room: алгоритм поиска в ширину, назначение родительских узлов.
 ** path: создание n-части пути, инициализация структур t_way и t_path.
 ** null: возвращаем структуру к исходному состоянию weight.
-** rooms_count: количество комнат; weight: временная метка.
+** rooms_count = k: количество комнат; weight: временная метка.
 */
 
-int			ft_ford(t_data *data)
+void		djkastra(int flag, int k, t_data *data)
 {
-	int		k;
-	t_room	*room;
-	int		flag;
+	t_room		*room;
+	t_connect	*connect;
+	t_room		*room_d;
 
-	k = data->rooms_count;
-	flag = 1;
-	data->start->weight = 0;
 	while (--k && flag == 1)
 	{
 		flag = 0;
@@ -127,14 +88,14 @@ int			ft_ford(t_data *data)
 		while (room)
 		{
 			if (room->state)
-				ft_turn(room, data->start, &flag);
+			{
+				if (room->weight != INF)
+					connect = turn_room(room, connect, data->start, &flag);
+				if ((room_d = room->out_part) && room_d->weight != INF)
+					connect = turn_room(room_d, connect, data->start, &flag);
+			}
 			room = room->next;
 			(room == data->end) ? room = room->next : 0;
 		}
 	}
-	if (!data->end->room_par)
-		return (0);
-	path(data->end, data->start, &data->ways_dij, 0);
-	null(data->rooms);
-	return (1);
 }

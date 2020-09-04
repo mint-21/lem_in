@@ -12,10 +12,10 @@
 
 SRC_VI			=	main.c parse_turns.c vis_help.c push_to_render.c
 
-SRC				=	../src/ft_lemin_read.c ../src/ft_rooms.c ../src/ft_ford.c ../src/ft_suurballe.c\
+SRC				=	../src/ft_lemin_read.c ../src/ft_rooms.c ../src/ft_djkastra.c ../src/ft_suurballe.c\
 				   	../src/ft_turn.c ../src/ft_error.c ../src/ft_correct_main.c\
 				   	../src/ft_findrooms.c ../src/ft_correct_map.c ../src/ft_free_data.c\
-					../src/ft_free_str_split.c\
+					../src/ft_free_str_split.c ../src/ft_init.c\
 					../src/ft_lemin_buff.c ../src/ft_null.c ../src/ft_redirection.c\
 					../src/ft_links.c ../src/ft_find_all_ways.c\
 					../src/find_of_ways_struct.c\

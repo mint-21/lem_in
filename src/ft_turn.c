@@ -31,7 +31,7 @@ static int	loop(t_room *new_parrent, t_room *room)
 ** loop: родительской комнатой назначается та, чей weight меньше текущего
 */
 
-static void	change_cost(t_room *room, t_connect *connect, int *flag)
+static void		change_cost(t_room *room, t_connect *connect, int *flag)
 {
 	connect->room->weight = room->weight + connect->weight;
 	if (!connect->room->room_par ||
@@ -49,31 +49,16 @@ static void	change_cost(t_room *room, t_connect *connect, int *flag)
 ** change_cost: изменить временную метку (weight) на постоянную.
 */
 
-void		ft_turn(t_room *room, t_room *start, int *flag)
+t_connect		*turn_room(t_room *room, t_connect *connect,
+			t_room *start, int *flag)
 {
-	t_connect	*connect;
-	t_room	*room_d;
-
-	if (room->weight != INF)
+	connect = room->connects;
+	while (connect)
 	{
-		connect = room->connects;
-		while (connect)
-		{
-			if (room->weight + connect->weight < connect->room->weight
-				&& connect->room != start)
-				change_cost(room, connect, flag);
-			connect = connect->next;
-		}
+		if (room->weight + connect->weight < connect->room->weight
+			&& connect->room != start)
+			change_cost(room, connect, flag);
+		connect = connect->next;
 	}
-	if ((room_d = room->out_part) && room_d->weight != INF)
-	{
-		connect = room_d->connects;
-		while (connect)
-		{
-			if (room_d->weight + connect->weight < connect->room->weight
-				&& connect->room != start)
-				change_cost(room_d, connect, flag);
-			connect = connect->next;
-		}
-	}
+	return (connect);
 }

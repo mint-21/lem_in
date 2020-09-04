@@ -12,22 +12,22 @@
 
 NAME			=	lem-in
 
-SRC				=	ft_lemin_read.c ft_rooms.c ft_ford.c ft_suurballe.c\
+SRC				=	ft_lemin_read.c ft_rooms.c ft_djkastra.c ft_suurballe.c\
 				   	ft_turn.c ft_error.c ft_correct_main.c\
 				   	ft_findrooms.c ft_correct_map.c ft_free_data.c\
-					ft_free_str_split.c\
+					ft_free_str_split.c ft_init.c\
 					ft_lemin_buff.c ft_null.c ft_redirection.c\
 					ft_links.c ft_find_all_ways.c\
 					find_of_ways_struct.c main.c\
 					ft_flags_lemin.c ft_creat_duplicate.c\
 					ft_steps.c ft_additional_func.c\
 
-OBJ				=	ft_lemin_read.o ft_rooms.o ft_ford.o ft_suurballe.o\
+OBJ				=	ft_lemin_read.o ft_rooms.o ft_djkastra.o ft_suurballe.o\
 				   	ft_turn.o ft_error.o ft_correct_main.o\
 				   	ft_findrooms.o ft_correct_map.o ft_free_data.o\
 					ft_free_str_split.o ft_additional_func.o\
 					ft_lemin_buff.o ft_null.o ft_redirection.o\
-					ft_links.o ft_find_all_ways.o\
+					ft_links.o ft_find_all_ways.o ft_init.o\
 					find_of_ways_struct.o main.o ft_steps.\
 					ft_flags_lemin.o ft_creat_duplicate.o\
 
