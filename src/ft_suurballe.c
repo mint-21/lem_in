@@ -84,17 +84,22 @@ void			ft_change_ribs(t_path *path)
 	}
 }
 
-static int		ft_ford(t_data *data, int flag, int k)
+/*
+** path: создание n-части пути, инициализация структур t_way и t_path.
+** null: возвращаем структуру к исходному состоянию weight.
+** rooms_count = k: количество комнат; weight: временная метка.
+*/
+
+static int		ft_ford(t_data *data, int flag)
 {
 	data->start->weight = 0;
-	djkastra(flag, k, data);
+	djkastra(flag, data);
 	if (!data->end->room_par)
 		return (0);
 	path(data->end, data->start, &data->ways_dij, 0);
 	null(data->rooms);
 	return (1);
 }
-
 
 /*
 ** ft_ford: поиск в ширину по алгоритму Дейкстры
@@ -106,11 +111,9 @@ static int		ft_ford(t_data *data, int flag, int k)
 int				ft_suurballe(t_data *data)
 {
 	int flag;
-	int k;
 
 	flag = 1;
-	k = data->rooms_count;
-	if (ft_ford(data, flag, k))
+	if (ft_ford(data, flag))
 	{
 		ft_change_ribs(data->ways_dij->path);
 		duplicate_rooms(data->ways_dij->path);

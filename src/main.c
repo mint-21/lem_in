@@ -12,40 +12,6 @@
 
 #include "lemin.h"
 
-static void	print_n_free_map_data(char **map_data)
-{
-	ft_printf("%s\n", *map_data);
-	free(*map_data);
-}
-
-static void	ft_print_ways(t_way *way, int steps)
-{
-	t_path	*ptr;
-	t_way	*w;
-	int		total_ways;
-
-	w = way;
-	total_ways = (w->ants) ? 1 : 0;
-	while ((w = w->next) && w->ants)
-		++total_ways;
-	ft_printf("Total lines: %d\nTotal ways:  %d\n"
-			" ANTS | WAYS\n", steps, total_ways);
-	while (way && way->ants > 0)
-	{
-		ft_printf("%5d | ", way->ants);
-		ptr = way->path;
-		while (ptr && ptr->next)
-			ptr = ptr->next;
-		while (ptr)
-		{
-			ft_printf("%s", ptr->room->name);
-			(ptr->prev) ? ft_printf(" - ") : ft_printf("\n");
-			ptr = ptr->prev;
-		}
-		way = way->next;
-	}
-}
-
 /*
 ** ft_flags_lemin: проверка на флаги.
 ** ft_lemin_read: чтение карты. ft_correct: валидация карты.

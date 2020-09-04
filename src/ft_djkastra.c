@@ -38,7 +38,10 @@ static void		init_path(t_path *path, t_room *room_p, t_path *tmp)
 	path->room = room_p;
 	path->next = tmp;
 	path->prev = NULL;
-	(tmp->prev) = (tmp) ? (path) : (tmp);
+	if (tmp)
+		tmp->prev = path;
+	else
+		tmp->prev = tmp;
 }
 
 void		path(t_room *room, t_room *start, t_way **ways, int path_cost)
@@ -48,7 +51,8 @@ void		path(t_room *room, t_room *start, t_way **ways, int path_cost)
 	t_room		*room_p;
 	t_connect	*connect_p;
 
-	(!(path = (t_path *)malloc(sizeof(t_path)))) ? ft_perror() : 0;
+	if (!(path = (t_path *)malloc(sizeof(t_path))))
+		ft_perror();
 	path_cost = ft_init_path_struct(path, room, path_cost);
 	while (room && room != start)
 	{
@@ -59,7 +63,8 @@ void		path(t_room *room, t_room *start, t_way **ways, int path_cost)
 		if (connect_p && connect_p->room == room)
 		{
 			tmp = path;
-			(!(path = (t_path *)malloc(sizeof(t_path)))) ? ft_perror() : 0;
+			if (!(path = (t_path *)malloc(sizeof(t_path))))
+				ft_perror();
 			init_path(path, room_p, tmp);
 		}
 		room = room->room_par;
@@ -71,20 +76,21 @@ void		path(t_room *room, t_room *start, t_way **ways, int path_cost)
 ** turn_room: алгоритм поиска в ширину, назначение родительских узлов.
 ** path: создание n-части пути, инициализация структур t_way и t_path.
 ** null: возвращаем структуру к исходному состоянию weight.
-** rooms_count = k: количество комнат; weight: временная метка.
+** rooms_count: количество комнат; weight: временная метка.
 */
 
-void		djkastra(int flag, int k, t_data *data)
+void		djkastra(int flag, t_data *data)
 {
 	t_room		*room;
 	t_connect	*connect;
 	t_room		*room_d;
 
-	while (--k && flag == 1)
+	while (--(data->rooms_count) && flag == 1)
 	{
 		flag = 0;
 		room = data->rooms;
-		(room == data->end) ? room = room->next : 0;
+		if (room == data->end)
+			room = room->next;
 		while (room)
 		{
 			if (room->state)
