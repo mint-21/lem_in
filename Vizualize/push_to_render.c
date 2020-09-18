@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_to_render.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: qmebble <qmebble@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/24 20:14:27 by asmall            #+#    #+#             */
-/*   Updated: 2019/10/20 16:58:08 by asmall           ###   ########.fr       */
+/*   Created: 2019/08/24 20:14:27 by qmebble           #+#    #+#             */
+/*   Updated: 2019/10/20 16:58:08 by qmebble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,12 +61,11 @@ t_vis_rooms		*push_rooms_to_render(t_data s)
 		current_vis_room->room.x = ft_abs(current_s_room->x * (SCREEN_WIDTH / (MAX(ft_find_max_x(s), 1))) - 50);
 		current_vis_room->room.y = ft_abs(current_s_room->y * (SCREEN_HEIGHT / (MAX(ft_find_max_y(s), 1))) - 50);
 		current_vis_room->name = current_s_room->name;
-		//current_vis_room->num = current_s_room->n;
+		current_vis_room->num = current_s_room->n;
 		current_vis_room->r = rand() % 255 + 1;
 		current_vis_room->g = rand() % 255 + 1;
 		current_vis_room->b = rand() & 255 + 1;
 		SDL_SetRenderDrawColor(g_main_render, current_vis_room->r, current_vis_room->g, current_vis_room->b, 100);
-	//убрать дебаг!
 		if (g_debug)
 			printf("Name = %s, x = %f, y = %f, RGB = %d %d %d\n",
 					current_vis_room->name, current_vis_room->room.x,
@@ -87,24 +86,23 @@ t_vis_rooms		*push_rooms_to_render(t_data s)
 void		push_links_ro_render(t_data s)
 {
 	t_vis_rooms	*current_vis_room;
-	t_way		*current_usual_room;
+	t_link		*current_usual_room;
 	t_vis_rooms	*end_of_line;
 
-	for (int i = 0; i < s.total_ways; i++)
+	for (int i = 0; i < s.links_count; i++)
 	{
-		current_usual_room = s.ways_dij;
+		current_usual_room = s.links[i];
 		current_vis_room = g_vis_rooms;
 		while (current_vis_room && current_vis_room->num != i)
-		
 			current_vis_room = current_vis_room->next;
 		if (current_vis_room)
 			while (current_usual_room)
 			{
 				end_of_line = g_vis_rooms;
-				while (end_of_line && end_of_line->num != current_usual_room->path_number)
+				while (end_of_line && end_of_line->num != current_usual_room->pair)
 					end_of_line = end_of_line->next;
 				SDL_SetRenderDrawColor(g_main_render, current_vis_room->r, current_vis_room->g, current_vis_room->b, 100);
-				if (current_usual_room->path_cost >= i)
+				if (current_usual_room->pair >= i)
 					SDL_RenderDrawLineF(g_main_render,
 										current_vis_room->room.x + 25,
 										current_vis_room->room.y + 25,
@@ -123,7 +121,7 @@ void		push_names_ro_render(t_data s)
 	SDL_Color	Black = {0, 0, 0, 255};
 	SDL_Rect	name_rect;
 
-	Courier = TTF_OpenFont("Vizualize/IMG/Courier New.ttf", 30);
+	Courier = TTF_OpenFont("/Library/Fonts/Courier New.ttf", 30);
 	if (Courier == NULL)
 	{
 		printf("Font didn't find. SDL error: %s\n", TTF_GetError());
@@ -131,8 +129,7 @@ void		push_names_ro_render(t_data s)
 	}
 	while (current_vis_room && current_usual_room)
 	{
-		//changed!!!
-		if (!strcmp(current_vis_room->name, current_usual_room->name)) //<- this
+		if (current_vis_room->num == current_usual_room->n)
 		{
 			TTF_SizeText(Courier, current_usual_room->name, &name_rect.w, &name_rect.h);
 			name_rect.x = (int)current_vis_room->room.x;

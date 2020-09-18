@@ -17,7 +17,7 @@ SRC				=	ft_lemin_read.c ft_rooms.c ft_djkastra.c ft_suurballe.c\
 				   	ft_findrooms.c ft_correct_map.c ft_free_data.c\
 					ft_free_str_split.c ft_init.c\
 					ft_lemin_buff.c ft_null.c ft_redirection.c\
-					ft_links.c ft_find_all_ways.c\
+					ft_links.c ft_find_all_ways.c add_room_link.c\
 					find_of_ways_struct.c main.c\
 					ft_flags_lemin.c ft_creat_duplicate.c\
 					ft_steps.c ft_additional_func.c ft_print.c\
@@ -28,7 +28,7 @@ OBJ				=	ft_lemin_read.o ft_rooms.o ft_djkastra.o ft_suurballe.o\
 					ft_free_str_split.o ft_additional_func.o\
 					ft_lemin_buff.o ft_null.o ft_redirection.o\
 					ft_links.o ft_find_all_ways.o ft_init.o\
-					find_of_ways_struct.o main.o ft_steps.\
+					find_of_ways_struct.o main.o ft_steps.o add_room_link.o\
 					ft_flags_lemin.o ft_creat_duplicate.o ft_print.o\
 
 FLAGS = -Wall -Wextra -Werror

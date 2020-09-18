@@ -12,6 +12,37 @@
 
 #include "lemin.h"
 
+t_data	ft_zerodata(void)
+{
+	t_data data;
+
+	data.ants = 0;
+	data.step = 0;
+	data.flag = 1;
+	data.rooms_count = 0;
+	data.total_ways = 0;
+	data.links_count = 0;
+	data.map_data = NULL;
+	data.split = NULL;
+	data.start = NULL;
+	data.end = NULL;
+	data.rooms = NULL;
+	data.options = NULL;
+	data.best_opt = NULL;
+	data.ways_dij = NULL;
+	data.flags.fd_path = NULL;
+	data.flags.ways = 0;
+	data.check.valid_flag = 0;
+	data.check.li_room_begin = 0;
+	data.check.li_room_finish = 0;
+	data.check.li_connects_bigin = 0;
+	data.check.li_connects_finish = 0;
+	data.check.hash_start = 0;
+	data.check.hash_end = 0;
+	data.links = NULL;
+	return(data);
+}
+
 /*
 ** ft_rooms: main funct to init and write info about rooms
 ** ft_connects: основная функция связи между комнатами
@@ -34,13 +65,16 @@ int				ft_init_room(t_data *data, t_valid *check, char **str)
 			room->next = data->rooms;
 			data->rooms = room;
 			data->rooms_count++;
+			room->n = room->next == NULL ? 0 : room->next->n + 1;
 		}
 		data->start = (i == check->hash_start) ? data->rooms : data->start;
 		data->end = (i == check->hash_end) ? data->rooms : data->end;
 	}
 	i = check->li_connects_bigin - 1;
-	while (++i <= check->li_connects_finish)
+	while (++i <= check->li_connects_finish) {
 		(str[i][0] != '#') ? ft_connects(data, str[i]) : 0;
+		add_link(data, str[i]);
+	}
 	ft_free_str_split(str);
 	return (0);
 }
@@ -71,7 +105,7 @@ int			ft_correct(t_data *data, t_valid *check, char **strings)
 	int	i;
 
 	i = -1;
-	while (strings[++i])
+	while (strings[++i] && strings[i][0] != 'L')
 		correct_strings(data, check, strings[i], i);
 	if (check->valid_flag != 29)
 		ft_print_error(E_NO_CORRECT);

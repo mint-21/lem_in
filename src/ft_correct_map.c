@@ -12,31 +12,6 @@
 
 #include "lemin.h"
 
-t_data	ft_zerodata(void)
-{
-	t_data data;
-
-	data.ants = 0;
-	data.rooms_count = 0;
-	data.total_ways = 0;
-	data.start = NULL;
-	data.end = NULL;
-	data.rooms = NULL;
-	data.options = NULL;
-	data.best_opt = NULL;
-	data.ways_dij = NULL;
-	data.flags.fd_path = NULL;
-	data.flags.ways = 0;
-	data.check.valid_flag = 0;
-	data.check.li_room_begin = 0;
-	data.check.li_room_finish = 0;
-	data.check.li_connects_bigin = 0;
-	data.check.li_connects_finish = 0;
-	data.check.hash_start = 0;
-	data.check.hash_end = 0;
-	return(data);
-}
-
 /*
 ** ft_correct_ants: checks the value of ants with atoi
 ** puts the number of ants in the struct, sets the flag
@@ -106,14 +81,14 @@ int		check_double_coor(t_data *s, t_room *curr, char *str)
 	str += ft_strlen(curr->name);
 	curr->x = ft_atoi(str);
 	str += 1;
-	while(*str && *str >= 0 && *str <= 9)
-		(*str) += 1;
+	while(*str && (*str >= '0' && *str <= '9'))
+		str += 1;
 	curr->y = ft_atoi(str);
 	check = s->rooms;
 	while (check)
 	{
-		if (curr->name != check->name && curr->x == check->x 
-			&& curr->y == check->y)
+		if (curr->name != check->name && (curr->x == check->x 
+			&& curr->y == check->y))
 			return (1);
 		check = check->next;
 	}

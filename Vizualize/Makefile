@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: asmall <asmall@student.42.fr>              +#+  +:+       +#+         #
+#    By: qmebble <qmebble@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/08/14 14:54:15 by asmall            #+#    #+#              #
-#    Updated: 2019/09/18 19:06:23 by asmall           ###   ########.fr        #
+#    Created: 2019/08/14 14:54:15 by qmebble           #+#    #+#              #
+#    Updated: 2019/09/18 19:06:23 by qmebble          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRC				=	../src/ft_lemin_read.c ../src/ft_rooms.c ../src/ft_djkastra.c ../src/ft
 					../src/ft_free_str_split.c ../src/ft_init.c\
 					../src/ft_lemin_buff.c ../src/ft_null.c ../src/ft_redirection.c\
 					../src/ft_links.c ../src/ft_find_all_ways.c\
-					../src/find_of_ways_struct.c ../src/ft_print.c\
+					../src/find_of_ways_struct.c ../src/add_room_link.c \
 					../src/ft_flags_lemin.c ../src/ft_creat_duplicate.c\
 					../src/ft_steps.c ../src/ft_additional_func.c\
 

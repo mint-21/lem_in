@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: qmebble <qmebble@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/14 14:00:10 by asmall            #+#    #+#             */
-/*   Updated: 2019/09/18 21:45:24 by asmall           ###   ########.fr       */
+/*   Created: 2019/08/14 14:00:10 by qmebble           #+#    #+#             */
+/*   Updated: 2019/09/18 21:45:24 by qmebble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,17 +116,13 @@ void		print_ants(t_vis_ants *array)
 int			initialize_data(int argc, char **argv)
 {
 	char	**str_split;
-	char	*map_data;
 
 	g_s = ft_zerodata();
-	//ft_flags_lemin(&data.flags, ac, av);
-	map_data = ft_lemin_read(&g_s.flags, &str_split);
+	g_s.map_data = ft_lemin_read(&g_s.flags, &str_split);
 	ft_correct(&g_s, &g_s.check, str_split);
 	ft_find_all_ways(&g_s);
 	if (g_s.rooms_count > 50)
 	{
-		//ft_return_main(OK, &g_s);
-		//ft_print_error(E_ANT);
 		printf("Too many rooms\n");
 		return (0);
 	}
@@ -143,16 +139,17 @@ int			initialize_data(int argc, char **argv)
 	return (1);
 }
 
-int			if_turn_over(t_vis_ants **array)
+int			if_turn_over(t_vis_ants **array, t_data *g_s)
 {
 	t_vis_rooms	*current;
 	int	i;
 
-	if (parse_turns_line(array))
-		return (0);
+	if (parse_turns_line(array, &g_s)) { 
+		printf("\n\n\n\n\n|||||||PARSE|||||||\n\n\n");
+		return (0); }
 	i = -1;
 	current = g_vis_rooms;
-	while (++i < g_s.ants && current)
+	while (++i < g_s->ants && current)
 		if ((*array)[i].next_room_name)
 		{
 			while(ft_strcmp((*array)[i].next_room_name, current->name) != 0 && current)
@@ -175,7 +172,7 @@ int			main(int argc, char **argv)
 	if (!initialize_data(argc, argv))
 		return (0);
 	end_room = g_vis_rooms;
-	while (end_room && end_room->num != g_s.check.li_room_begin)
+	while (end_room && end_room->num != g_s.end->n)
 		end_room = end_room->next;
 	quit = false;
 	push_all_to_render(g_s, &array);
@@ -189,10 +186,10 @@ int			main(int argc, char **argv)
 		push_all_to_render(g_s, NULL);
 		if (NULL_count == g_s.ants)
 		{
-			if (!if_turn_over(&array))
+			if (!if_turn_over(&array, &g_s))
 				break ;
 		}
-		else
+		else 
 			print_ants(array);
 		SDL_Delay(SCREEN_TICKS_PER_FRAME);
 		SDL_RenderPresent(g_main_render);

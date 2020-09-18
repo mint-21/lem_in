@@ -103,6 +103,7 @@ typedef struct		s_room
 	char			*name;
 	int				x;
 	int				y;
+	int				n;
 	t_connect			*connects;
 	int				connects_count;
 	struct s_room	*out_part;
@@ -113,6 +114,13 @@ typedef struct		s_room
 	struct s_room	*next;
 	int				state;
 }					t_room;
+
+typedef struct			s_link
+{
+	int					pair;
+	int					mark;
+	struct s_link		*next;
+}						t_link;
 
 typedef struct		s_valid
 {
@@ -134,8 +142,13 @@ typedef struct		s_valid
 typedef struct		s_data
 {
 	int				ants;
+	int				step;
+	int				flag;
 	int				rooms_count;
 	int				total_ways;
+	int				links_count;
+	char			*map_data;
+	char			**split;
 	t_room			*start;
 	t_room			*end;
 	t_room			*rooms;
@@ -144,9 +157,11 @@ typedef struct		s_data
 	t_way			*ways_dij;
 	t_flags			flags;
 	t_valid			check;
+	t_link			**links;
 }					t_data;
 
 t_data	ft_zerodata(void);
+int	add_link(t_data *s, char *tab);
 void				ft_flags_lemin(t_flags *flags, int ac, char **av);
 char				*ft_lemin_read(t_flags *flags, char ***str_split);
 int					ft_correct(t_data *data, t_valid *check, char **strings);

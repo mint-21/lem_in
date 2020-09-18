@@ -1,21 +1,10 @@
 #ifndef VISUALISE_H
 # define VISUALISE_H
 
-// # if __APPLE__
-// # include "SDL2.framework/Headers/SDL.h"
-// # include "SDL2_image.framework/Headers/SDL_image.h"
-// # include "SDL2_ttf.framework/Headers/SDL_ttf.h"
-// # else 
-// #  include <SDL2/SDL.h>
-// #  include <SDL2/SDL_ttf.h>
-// # include <SDL2/SDL_image.h>
-//# endif
-
-
 # if __APPLE__
-#  include "/Users/vfearles/.brew/include/SDL2/SDL.h"
-#  include "/Users/vfearles/.brew/include/SDL2/SDL_ttf.h"
-# include "/Users/vfearles/.brew/include/SDL2/SDL_image.h"
+#  include "/Users/asmall/.brew/include/SDL2/SDL.h"
+#  include "/Users/asmall/.brew/include/SDL2/SDL_ttf.h"
+# include "/Users/asmall/.brew/include/SDL2/SDL_image.h"
 # else
 #  include <SDL2/SDL.h>
 #  include <SDL2/SDL_ttf.h>
@@ -30,8 +19,8 @@
 # define ERR -1
 # define STOP -2
 
-# define SCREEN_WIDTH 1300
-# define SCREEN_HEIGHT 700
+# define SCREEN_WIDTH 1920
+# define SCREEN_HEIGHT 1080
 # define SCREEN_FPS 60
 # define SCREEN_TICKS_PER_FRAME 1000 / SCREEN_FPS
 
@@ -79,7 +68,7 @@ int							ft_find_max_x(t_data s);
 int							ft_find_max_y(t_data s);
 int							close_all(void);
 
-bool						parse_turns_line(t_vis_ants **array);
+bool						parse_turns_line(t_vis_ants **array, t_data **_s);
 t_turns_parser				*make_new_ant_turn(void);
 t_vis_ants					*make_new_vis_ants_array(t_data s);
 
