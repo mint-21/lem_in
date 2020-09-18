@@ -67,3 +67,9 @@ t_connect	*terms(t_connect *head, t_connect *connect)
 		connect = connect->next;
 	return (connect);
 }
+
+void	ft_perror(void)
+{
+	perror("lem-in");
+	exit(1);
+}

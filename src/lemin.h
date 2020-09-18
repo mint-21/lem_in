@@ -160,30 +160,28 @@ typedef struct		s_data
 	t_link			**links;
 }					t_data;
 
-t_data	ft_zerodata(void);
-int	add_link(t_data *s, char *tab);
-void				ft_flags_lemin(t_flags *flags, int ac, char **av);
-char				*ft_lemin_read(t_flags *flags, char ***str_split);
+t_data				ft_zerodata(void);
+int					add_link(t_data *s, char *tab);
+void				ft_flags_lemin(t_flags *flags, int ac, char **av); // уберем?
+char				*reading_card(t_flags *flags, char ***str_split);
 int					ft_correct(t_data *data, t_valid *check, char **strings);
 int					ft_correct_hash(t_valid *check, char *str);
 int					ft_correct_ants(char *str, t_data *data);
 int					ft_correct_rooms(char *str, t_valid *check, int j);
 int					ft_correct_rooms_double(char *room1, char *room2);
 void				ft_correct_connects(char *str, t_valid *check, int j);
-//int					ft_parse_data(t_data *data, t_valid *check, char **str);
-void				ft_rooms(t_data *data, char *str);
+void				ft_create(t_data *data, char *str);
 t_room				*ft_createroom(char *line);
 void				ft_connects(t_data *data, char *str);
-t_connect				*ft_createconnect(t_room *room);
+t_connect			*ft_createconnect(t_room *room);
 int					ft_findrooms(t_data *data, char *connect, t_room **room1,
 					t_room **room2);
 void				ft_find_all_ways(t_data *data);
 int					ft_suurballe(t_data *data);
 void				djkastra(int flag, t_data *data);
-// void				ft_turn(t_room *room, t_room *start, int *flag);
 void				ft_change_ribs(t_path *path);
 void				ft_lemin(t_data *data);
-void				ft_free_data(t_data *data);
+void				ft_struct_free(t_data *data);
 void				ft_print_error(int id);
 void				ft_perror();
 int					ft_atoi_mod(const char *str);
@@ -210,6 +208,5 @@ void				path(t_room *room, t_room *start, t_way **ways, int path_cost);
 void				init_way(t_way *way, int path_cost, t_way **ways, t_path *path);
 void				ft_print_ways(t_way *way, int steps);
 void				print_n_free_map_data(char **map_data);
-void				*ft_free_str_split(char **str_split);
 
 #endif

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lemin.h"
+#include "libft.h"
 
 /*
 ** Печать ошибок и выход из программы через заданный номер
@@ -20,10 +20,4 @@ void	ft_print_error(int id)
 {
 	write(2, "ERROR\n", 6);
 	exit(id);
-}
-
-void	ft_perror(void)
-{
-	perror("lem-in");
-	exit(1);
 }

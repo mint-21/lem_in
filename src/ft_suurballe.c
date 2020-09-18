@@ -90,7 +90,7 @@ void			ft_change_ribs(t_path *path)
 ** rooms_count = k: количество комнат; weight: временная метка.
 */
 
-static int		ft_ford(t_data *data, int flag)
+static int		ft_dij_path(t_data *data, int flag)
 {
 	data->start->weight = 0;
 	djkastra(flag, data);
@@ -102,7 +102,7 @@ static int		ft_ford(t_data *data, int flag)
 }
 
 /*
-** ft_ford: поиск в ширину по алгоритму Дейкстры
+** ft_dij_path: поиск в ширину по алгоритму Дейкстры
 ** ft_change_ribs: делаем график направленным и меняем направление ребер
 ** duplicate_rooms: дублируем все промежуточные вершины части пути во
 ** входящую и исходящую части.
@@ -113,7 +113,7 @@ int				ft_suurballe(t_data *data)
 	int flag;
 
 	flag = 1;
-	if (ft_ford(data, flag))
+	if (ft_dij_path(data, flag))
 	{
 		ft_change_ribs(data->ways_dij->path);
 		duplicate_rooms(data->ways_dij->path);

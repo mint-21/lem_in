@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lemin_read.c                                    :+:      :+:    :+:   */
+/*   reading_card.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -36,7 +36,7 @@ char		*ft_read_line(char *str, int fd)
 ** ft_read_line: чтени карты через read в строку.
 */
 
-char		*ft_lemin_read(t_flags *flags, char ***str_split)
+char		*reading_card(t_flags *flags, char ***str_split)
 {
 	char	*str;
 	char	*trash;

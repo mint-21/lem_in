@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free_data.c                                     :+:      :+:    :+:   */
+/*   ft_struct_free.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -66,7 +66,7 @@ static void	ft_free_vars(t_option *options)
 ** Очищаем главную структуру
 */
 
-void		ft_free_data(t_data *data)
+void		ft_struct_free(t_data *data)
 {
 	t_room	*tmp;
 

@@ -110,5 +110,6 @@ void				ft_putstr_buf(char *buf, size_t *i, size_t buff_size,
 					char *str);
 void				ft_putnbr_buf(char *buf, size_t *i, size_t buff_size,
 					int num);
+void				*ft_split_free(char **str_split);
 
 #endif

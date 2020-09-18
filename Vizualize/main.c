@@ -118,7 +118,7 @@ int			initialize_data(int argc, char **argv)
 	char	**str_split;
 
 	g_s = ft_zerodata();
-	g_s.map_data = ft_lemin_read(&g_s.flags, &str_split);
+	g_s.map_data = reading_card(&g_s.flags, &str_split);
 	ft_correct(&g_s, &g_s.check, str_split);
 	ft_find_all_ways(&g_s);
 	if (g_s.rooms_count > 50)

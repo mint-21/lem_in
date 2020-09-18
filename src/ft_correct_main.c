@@ -44,9 +44,9 @@ t_data	ft_zerodata(void)
 }
 
 /*
-** ft_rooms: main funct to init and write info about rooms
+** ft_create: main funct to init and write info about rooms
 ** ft_connects: основная функция связи между комнатами
-** ft_free_str_split: очистка двумерного массива после занесения всех данных
+** ft_split_free: очистка двумерного массива после занесения всех данных
 */
 
 int				ft_init_room(t_data *data, t_valid *check, char **str)
@@ -75,7 +75,7 @@ int				ft_init_room(t_data *data, t_valid *check, char **str)
 		(str[i][0] != '#') ? ft_connects(data, str[i]) : 0;
 		add_link(data, str[i]);
 	}
-	ft_free_str_split(str);
+	ft_split_free(str);
 	return (0);
 }
 
