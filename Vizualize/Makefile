@@ -12,14 +12,14 @@
 
 SRC_VI			=	main.c parse_turns.c vis_help.c push_to_render.c
 
-SRC				=	../src/ft_lemin_read.c ../src/ft_rooms.c ../src/ft_djkastra.c ../src/ft_suurballe.c\
-				   	../src/ft_turn.c ../src/ft_error.c ../src/ft_correct_main.c\
-				   	../src/ft_findrooms.c ../src/ft_correct_map.c ../src/ft_free_data.c\
-					../src/ft_free_str_split.c ../src/ft_init.c\
+SRC				=	../src/ft_card_reading.c ../src/ft_createroom.c ../src/ft_djkastra.c ../src/ft_suurballe.c\
+				   	../src/ft_change.c ../src/ft_error.c ../src/ft_correct_main.c\
+				   	../src/ft_name_find.c ../src/ft_correct_map.c ../src/ft_cleaning_struct.c\
+					../src/ft_clean_split.c ../src/ft_init.c\
 					../src/ft_lemin_buff.c ../src/ft_null.c ../src/ft_redirection.c\
-					../src/ft_links.c ../src/ft_find_all_ways.c\
-					../src/find_of_ways_struct.c ../src/add_room_link.c \
-					../src/ft_flags_lemin.c ../src/ft_creat_duplicate.c\
+					../src/ft_connects.c ../src/ft_find_all_ways.c\
+					../src/ft_find_of_ways_struct.c ../src/ft_add_room_link.c \
+					../src/ft_lemin_fl.c ../src/ft_creat_duplicate.c\
 					../src/ft_steps.c ../src/ft_additional_func.c\
 
 INCLUDE =	visualise.h \

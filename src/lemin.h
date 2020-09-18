@@ -183,7 +183,6 @@ void				djkastra(int flag, t_data *data);
 // void				ft_turn(t_room *room, t_room *start, int *flag);
 void				ft_change_ribs(t_path *path);
 void				ft_lemin(t_data *data);
-void				*ft_free_str_split(char **str_split);
 void				ft_free_data(t_data *data);
 void				ft_print_error(int id);
 void				ft_perror();
@@ -211,5 +210,6 @@ void				path(t_room *room, t_room *start, t_way **ways, int path_cost);
 void				init_way(t_way *way, int path_cost, t_way **ways, t_path *path);
 void				ft_print_ways(t_way *way, int steps);
 void				print_n_free_map_data(char **map_data);
+void				*ft_free_str_split(char **str_split);
 
 #endif
