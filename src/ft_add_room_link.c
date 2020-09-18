@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   add_room_link.c                                    :+:      :+:    :+:   */
+/*   ft_add_room_link.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/19 17:30:42 by asmall            #+#    #+#             */
-/*   Updated: 2019/08/20 11:42:51 by asmall           ###   ########.fr       */
+/*   Updated: 2020/08/20 11:42:51 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,9 +58,6 @@ int	fill_link(t_data *s, int n_a, int n_b)
 	s->links[n_a]->pair = n_b;
 	s->links[n_b]->pair = n_a;
 	s->links_count++;
-	// if ((n_a == s->start && n_b == s->end) ||\
-	// (n_b == s->start && n_a == s->end))
-	// 	s->dir = 1;
 	return (0);
 }
 
@@ -78,11 +75,11 @@ int	add_link(t_data *s, char *tab)
 	}
 	if (!tab[0] || !tab[1] || !tab[2])
 		return (-2);
-	if ((n_a = find_name_num(tab, s->rooms)) == -1) 
+	if ((n_a = find_name_num(tab, s->rooms)) == -1)
 		return (-2);
-	while(tab && *tab != '-')
+	while (tab && *tab != '-')
 		tab++;
-	tab+=1;
+	tab += 1;
 	if ((n_b = find_name_num(tab, s->rooms)) == -1 || n_a == n_b)
 		return (-2);
 	if ((stat = fill_link(s, n_a, n_b)) == -2 || stat == -2)

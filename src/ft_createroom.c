@@ -1,11 +1,11 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_create.c                                         :+:      :+:    :+:   */
+/*   ft_createroom.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/13 20:04:05 by vfearles          #+#    #+#             */
+/*   Created: 2019/10/13 20:04:05 by asmall            #+#    #+#             */
 /*   Updated: 2019/10/13 20:04:06 by vfearles         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
@@ -13,10 +13,10 @@
 #include "lemin.h"
 
 /*
-** Создаем структуру комнаты 
+** Создаем структуру комнатыs
 */
 
-t_room	*ft_createroom(char *name)
+t_room			*ft_createroom(char *name)
 {
 	t_room		*room;
 
@@ -40,7 +40,8 @@ t_room	*ft_createroom(char *name)
 ** Вес ребер из исходящих во входящие узлы ставим на 0, наоборот -1
 */
 
-void	create_out_room(t_room *in, t_room *out, t_room *room, t_connect *connect)
+void			create_out_room(t_room *in, t_room *out, t_room *room,
+					t_connect *connect)
 {
 	while (connect && connect->room != room)
 		connect = connect->next;
@@ -54,7 +55,7 @@ void	create_out_room(t_room *in, t_room *out, t_room *room, t_connect *connect)
 		in->connects = connect;
 }
 
-void	create_out_in_room(t_room *in, t_room *out)
+void			create_out_in_room(t_room *in, t_room *out)
 {
 	t_connect	*connect;
 

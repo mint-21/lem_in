@@ -6,7 +6,7 @@
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 15:52:39 by asmall            #+#    #+#             */
-/*   Updated: 2020/04/27 21:06:50 by asmall           ###   ########.fr       */
+/*   Updated: 2020/06/27 21:06:50 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,20 +74,20 @@ int				ft_correct_rooms(char *str, t_valid *check, int j)
 ** ft_correct_rooms_double: check rooms for doublicate x and y
 */
 
-int		check_double_coor(t_data *s, t_room *curr, char *str)
+int			check_double_coor(t_data *s, t_room *curr, char *str)
 {
 	t_room	*check;
-	
+
 	str += ft_strlen(curr->name);
 	curr->x = ft_atoi(str);
 	str += 1;
-	while(*str && (*str >= '0' && *str <= '9'))
+	while (*str && (*str >= '0' && *str <= '9'))
 		str += 1;
 	curr->y = ft_atoi(str);
 	check = s->rooms;
 	while (check)
 	{
-		if (curr->name != check->name && (curr->x == check->x 
+		if (curr->name != check->name && (curr->x == check->x
 			&& curr->y == check->y))
 			return (1);
 		check = check->next;
@@ -115,7 +115,7 @@ int				ft_correct_hash(t_valid *check, char *str)
 		check->hash_end = -1;
 		check->valid_flag += E_END;
 	}
-	else if (*str == '#' && (check->hash_start == -1 
+	else if (*str == '#' && (check->hash_start == -1
 		|| check->hash_end == -1))
 		ft_print_error(E_HASH);
 	return (0);

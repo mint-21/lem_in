@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_correct_main.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <ddarell@student.42.fr>             +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/14 20:06:00 by vfearles          #+#    #+#             */
-/*   Updated: 2020/01/12 13:40:22 by asmall           ###   ########.fr       */
+/*   Created: 2019/10/14 20:06:00 by asmall            #+#    #+#             */
+/*   Updated: 2020/06/12 13:40:22 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lemin.h"
 
-t_data	ft_zerodata(void)
+t_data		ft_zerodata(void)
 {
-	t_data data;
+	t_data	data;
 
 	data.ants = 0;
 	data.step = 0;
@@ -40,7 +40,7 @@ t_data	ft_zerodata(void)
 	data.check.hash_start = 0;
 	data.check.hash_end = 0;
 	data.links = NULL;
-	return(data);
+	return (data);
 }
 
 /*
@@ -71,7 +71,8 @@ int				ft_init_room(t_data *data, t_valid *check, char **str)
 		data->end = (i == check->hash_end) ? data->rooms : data->end;
 	}
 	i = check->li_connects_bigin - 1;
-	while (++i <= check->li_connects_finish) {
+	while (++i <= check->li_connects_finish)
+	{
 		(str[i][0] != '#') ? ft_connects(data, str[i]) : 0;
 		add_link(data, str[i]);
 	}
