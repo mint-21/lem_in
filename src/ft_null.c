@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_null.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/12/04 17:00:00 by vfearles          #+#    #+#             */
-/*   Updated: 2019/12/04 17:00:01 by vfearles         ###   ########.fr       */
+/*   Created: 2019/12/04 17:00:00 by asmall            #+#    #+#             */
+/*   Updated: 2020/03/04 14:00:01 by vfearles         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,11 +55,12 @@ static void	ft_null_connect(t_room *dst, t_room *src)
 }
 
 /*
-** path->room: комната со связями; path->next->room: следующая связующая комната.
+** path->room: комната со связями;
+** path->next->room: следующая связующая комната.
 ** ft_null_connect: удаление предыдущих связей
 */
 
-void  ft_find_null(t_path *path)
+void		ft_find_null(t_path *path)
 {
 	t_room	*room_one;
 	t_room	*room_two;

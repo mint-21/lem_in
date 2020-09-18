@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   find_of_ways_struct.c                              :+:      :+:    :+:   */
+/*   ft_find_of_ways_struct.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/12/04 17:00:00 by vfearles          #+#    #+#             */
-/*   Updated: 2019/12/04 17:00:01 by vfearles         ###   ########.fr       */
+/*   Created: 2019/12/04 17:00:00 by asmall            #+#    #+#             */
+/*   Updated: 2020/07/04 17:32:01 by vfearles         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,7 +97,8 @@ static void		ft_connect_end(t_connect **reverse_h, t_connect **reverse_t)
 	}
 }
 
-static void		init_var(t_option *var, t_way *new_ways, int new_steps, t_data *data)
+static void		init_var(t_option *var, t_way *new_ways,
+							int new_steps, t_data *data)
 {
 	var->ways = new_ways;
 	var->steps = new_steps;
@@ -134,7 +135,7 @@ void			find_of_ways_struct(t_data *data)
 	while (reverse_h && reverse_h->weight != -1)
 		reverse_h = reverse_h->next;
 	if (!reverse_h)
-		exit (0);
+		exit(0);
 	reverse_t = reverse_h;
 	ft_connect_end(&reverse_h, &reverse_t);
 	new_ways = flip_ribs(reverse_h, reverse_t, data->start, data->end);

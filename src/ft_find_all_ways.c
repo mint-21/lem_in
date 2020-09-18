@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/14 17:37:00 by vfearles          #+#    #+#             */
-/*   Updated: 2020/05/13 19:31:48 by asmall           ###   ########.fr       */
+/*   Created: 2019/11/14 17:37:00 by asmall            #+#    #+#             */
+/*   Updated: 2020/08/13 19:31:48 by vfearles         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@
 ** Функция возвращает наименьшее из подсчитанных значений.
 */
 
-static int		find_ways(t_room *start, t_room *end)
+static int			find_ways(t_room *start, t_room *end)
 {
-	int			i;
-	int			j;
+	int				i;
+	int				j;
 	t_connect		*ptr;
 	t_connect		*src;
 
