@@ -1,14 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   visualise.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/09/18 13:42:35 by asmall            #+#    #+#             */
+/*   Updated: 2020/09/18 13:42:38 by asmall           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef VISUALISE_H
 # define VISUALISE_H
 
-# if __APPLE__
-#  include "/Users/vfearles/.brew/include/SDL2/SDL.h"
-#  include "/Users/vfearles/.brew/include/SDL2/SDL_ttf.h"
-# include "/Users/vfearles/.brew/include/SDL2/SDL_image.h"
-# else
-#  include <SDL2/SDL.h>
-#  include <SDL2/SDL_ttf.h>
-# endif
+# include "/Users/asmall/.brew/include/SDL2/SDL.h"
+# include "/Users/asmall/.brew/include/SDL2/SDL_ttf.h"
+# include "/Users/asmall/.brew/include/SDL2/SDL_image.h"
 
 # include "../src/lemin.h"
 # include <stdio.h>
@@ -26,7 +33,6 @@
 
 SDL_Window					*g_main_window;
 SDL_Renderer				*g_main_render;
-bool						g_debug;
 t_data						g_s;
 
 typedef struct				s_vis_rooms
@@ -58,18 +64,25 @@ typedef struct				s_turns_parser
 	struct s_turns_parser	*next;
 }							t_turns_parser;
 
+void						error(const char *s, const char *t);
 bool						init(void);
 t_vis_rooms					*push_rooms_to_render(t_data s);
 void						push_links_ro_render(t_data s);
 void						push_names_ro_render(t_data s);
 void						push_ant_texture_to_render(SDL_FRect pos);
+
 t_vis_rooms					*make_new_vis_room();
 int							ft_find_max_x(t_data s);
 int							ft_find_max_y(t_data s);
 int							close_all(void);
+void						null_ptr_ant(t_vis_ants *ant, int *null_count);
 
-bool						parse_turns_line(t_vis_ants **array, t_data **_s);
+bool						parse_turns_line(t_vis_ants **array, t_data **g_s);
 t_turns_parser				*make_new_ant_turn(void);
 t_vis_ants					*make_new_vis_ants_array(t_data s);
+
+int							ants_move(t_vis_ants *array, int null_count);
+int							if_turn_over(t_vis_ants **array, t_data *g_s);
+void						print_ants(t_vis_ants *array);
 
 #endif

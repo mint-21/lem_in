@@ -55,6 +55,15 @@ int			close_all(void)
 	return (0);
 }
 
+void			null_ptr_ant(t_vis_ants *ant, int *null_count)
+{
+	(*ant).x_diff = 0;
+	(*ant).y_diff = 0;
+	(*ant).current_room = (*ant).next_room;
+	(*ant).next_room_name = NULL;
+	(*null_count)++;
+}
+
 t_vis_rooms	*make_new_vis_room(void)
 {
 	t_vis_rooms	*room;

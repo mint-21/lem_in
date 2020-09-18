@@ -158,6 +158,8 @@ typedef struct			s_data
 	t_flags				flags;
 	t_valid				check;
 	t_link				**links;
+	int					vis_quit;
+	int					vis_pause;
 }						t_data;
 
 t_data				ft_zerodata(void);

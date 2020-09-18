@@ -55,11 +55,45 @@ int			count_amount_turns(char *line)
 
 	i = -1;
 	amount_turns = 1;
-	printf("\nline - %s\n", line);
 	while (line[++i] != '\0' && line[i])
 		if (line[i] == ' ')
 			amount_turns++;
 	return (amount_turns);
+}
+
+void		turn_vis_ants(int amount_turns, char **turns, char ant_num_str[4], t_vis_ants **array)
+{
+	int i;
+	t_turns_parser	*start;
+	t_turns_parser	*current;
+
+	i = -1;
+	start = make_new_ant_turn();
+	current = start;
+	while (++i < amount_turns + 1)
+	{
+		current->ant_and_room = ft_strsplit(turns[i], '-');
+		current->next = make_new_ant_turn();
+		current = current->next;
+	}
+	current = start;
+	while (current && current->ant_and_room)
+	{
+		i = 0;
+		while (++i < (int)ft_strlen(current->ant_and_room[0]))
+			ant_num_str[i - 1] = current->ant_and_room[0][i];
+		(*array)[ft_atoi(ant_num_str) - 1].next_room_name = current->ant_and_room[1];
+		current = current->next;
+	}
+	current = start;
+	while (current)
+	{
+		free(current->ant_and_room);
+		start = current;
+		current = current->next;
+		free(start);
+	}
+	free(current);
 }
 
 bool		parse_turns_line(t_vis_ants **array, t_data **g_s)
@@ -69,54 +103,13 @@ bool		parse_turns_line(t_vis_ants **array, t_data **g_s)
 	int				amount_turns;
 	int				i;
 	char			ant_num_str[4];
-	t_turns_parser	*start;
-	t_turns_parser	*current;
 
-	if ((*g_s)->flag)
-		(*g_s)->split = ft_strsplit((*g_s)->map_data, '\n');
-	while ((*g_s)->flag && (*g_s)->split[(*g_s)->step][0] != 'L')
-		(*g_s)->step += 1;
-	(*g_s)->flag = 0;
-	if (!(*g_s)->split[(*g_s)->step])
-		return (true);
-	i = -1;
-	current = NULL;
+	turns = NULL;
 	amount_turns = count_amount_turns((*g_s)->split[(*g_s)->step]);
-	printf("TURNS = %i\n", amount_turns);
 	if (amount_turns)
 		turns = ft_strsplit((*g_s)->split[(*g_s)->step], ' ');
-	else
-		turns = NULL;
 	if (turns)
-	{
-		i = -1;
-		start = make_new_ant_turn();
-		current = start;
-		while (++i < amount_turns + 1)
-		{
-			current->ant_and_room = ft_strsplit(turns[i], '-');
-			current->next = make_new_ant_turn();
-			current = current->next;
-		}
-		current = start;
-		while (current && current->ant_and_room)
-		{
-			i = 0;
-			while (++i < (int)ft_strlen(current->ant_and_room[0]))
-				ant_num_str[i - 1] = current->ant_and_room[0][i];
-			(*array)[ft_atoi(ant_num_str) - 1].next_room_name = current->ant_and_room[1];
-			current = current->next;
-		}
-		current = start;
-		while (current)
-		{
-			free(current->ant_and_room);
-			start = current;
-			current = current->next;
-			free(start);
-		}
-		free(current);
-	}
+		turn_vis_ants(amount_turns, turns, ant_num_str, array);
 	else
 	{
 		i = 0;
@@ -125,7 +118,6 @@ bool		parse_turns_line(t_vis_ants **array, t_data **g_s)
 			ant_num_str[i - 1] = temp_str[0][i];
 		(*array)[ft_atoi(ant_num_str) - 1].next_room_name = temp_str[1];
 	}
-	// free((*g_s)->map_data);
 	(*g_s)->step += 1;
-	return(false);
+	return (false);
 }
