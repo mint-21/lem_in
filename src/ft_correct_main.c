@@ -51,7 +51,7 @@ t_data		ft_zerodata(void)
 
 int				ft_init_room(t_data *data, t_valid *check, char **str)
 {
-	int	i;
+	int			i;
 	t_room		*room;
 
 	i = check->li_room_begin - 1;
