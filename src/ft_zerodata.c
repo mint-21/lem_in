@@ -23,6 +23,7 @@ static void		ft_zerodata2(t_data *data)
 	data->best_opt = NULL;
 	data->ways_dij = NULL;
 	data->flags.fd_path = NULL;
+	data->links = NULL;
 }
 
 t_data		ft_zerodata(void)
@@ -43,7 +44,6 @@ t_data		ft_zerodata(void)
 	data.check.li_connects_finish = 0;
 	data.check.hash_start = 0;
 	data.check.hash_end = 0;
-	data.links = NULL;
 	data.vis_quit = 0;
 	data.vis_pause = 0;
 	ft_zerodata2(&data);
