@@ -35,7 +35,6 @@ t_data		ft_zerodata(void)
 	data.rooms_count = 0;
 	data.total_ways = 0;
 	data.links_count = 0;
-	ft_zerodata2(&data);
 	data.flags.ways = 0;
 	data.check.valid_flag = 0;
 	data.check.li_room_begin = 0;
@@ -47,5 +46,6 @@ t_data		ft_zerodata(void)
 	data.links = NULL;
 	data.vis_quit = 0;
 	data.vis_pause = 0;
+	ft_zerodata2(&data);
 	return (data);
 }
