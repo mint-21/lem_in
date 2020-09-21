@@ -15,7 +15,7 @@ SRC_VI			=	main.c parse_turns.c vis_help.c push_to_render.c ants_move.c
 SRC				=	../src/ft_card_reading.c ../src/ft_createroom.c ../src/ft_djkastra.c ../src/ft_suurballe.c\
 				   	../src/ft_change.c ../src/ft_correct_main.c\
 				   	../src/ft_name_find.c ../src/ft_correct_map.c ../src/ft_cleaning_struct.c\
-					../src/ft_init.c\
+					../src/ft_init.c ../src/ft_zerodata.c\
 					../src/ft_lemin_buff.c ../src/ft_null.c ../src/ft_redirection.c\
 					../src/ft_connects.c ../src/ft_find_all_ways.c ../src/ft_add_room_link.c\
 					../src/ft_find_of_ways_struct.c \
