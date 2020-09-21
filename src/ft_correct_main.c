@@ -56,6 +56,16 @@ t_data		ft_zerodata(void)
 ** ft_split_free: очистка двумерного массива после занесения всех данных
 */
 
+static void		free_init(int i, t_valid *check, t_data *data, char **str)
+{
+	while (++i <= check->li_connects_finish)
+	{
+		(str[i][0] != '#') ? ft_connects(data, str[i]) : 0;
+		add_link(data, str[i]);
+	}
+	ft_split_free(str);
+}
+
 int				ft_init_room(t_data *data, t_valid *check, char **str)
 {
 	int			i;
@@ -78,12 +88,7 @@ int				ft_init_room(t_data *data, t_valid *check, char **str)
 		data->end = (i == check->hash_end) ? data->rooms : data->end;
 	}
 	i = check->li_connects_bigin - 1;
-	while (++i <= check->li_connects_finish)
-	{
-		(str[i][0] != '#') ? ft_connects(data, str[i]) : 0;
-		add_link(data, str[i]);
-	}
-	ft_split_free(str);
+	free_init(i, check, data, str);
 	return (0);
 }
 
