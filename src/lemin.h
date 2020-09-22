@@ -221,5 +221,6 @@ void					init_way(t_way *way, int path_cost, t_way **ways,
 								t_path *path);
 void					ft_print_ways(t_way *way, int steps);
 void					print_n_free_map_data(char **map_data);
+void					terms_null(t_room *room);
 
 #endif

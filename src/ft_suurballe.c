@@ -24,16 +24,7 @@ static void		null(t_room *room)
 		{
 			room->room_par = NULL;
 			room->weight = INF;
-			if (room->out_part)
-			{
-				room->out_part->room_par = NULL;
-				room->out_part->weight = INF;
-			}
-			else if (room->in_part)
-			{
-				room->in_part->room_par = NULL;
-				room->in_part->weight = INF;
-			}
+			terms_null(room);
 		}
 		room = room->next;
 	}
