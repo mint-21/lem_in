@@ -96,9 +96,11 @@ void			djkastra(int flag, t_data *data)
 			if (room->state)
 			{
 				if (room->weight != INF)
-					connect = turn_and_change(room, connect, data->start, &flag);
+					connect = turn_and_change(room, connect,
+											data->start, &flag);
 				if ((room_d = room->out_part) && room_d->weight != INF)
-					connect = turn_and_change(room_d, connect, data->start, &flag);
+					connect = turn_and_change(room_d, connect,
+											data->start, &flag);
 			}
 			room = room->next;
 			(room == data->end) ? room = room->next : 0;
