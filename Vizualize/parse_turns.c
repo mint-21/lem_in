@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   parse_turns.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qmebble <qmebble@student.42.fr>            +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/19 14:27:36 by qmebble           #+#    #+#             */
-/*   Updated: 2019/08/27 16:26:23 by qmebble          ###   ########.fr       */
+/*   Created: 2020/09/21 12:59:54 by asmall            #+#    #+#             */
+/*   Updated: 2020/09/21 12:59:57 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "visualise.h"
 
-t_vis_ants	*make_new_vis_ants_array(t_data s)
+t_vis_ants			*make_new_vis_ants_array(t_data s)
 {
-	t_vis_ants	*array;
-	t_vis_rooms	*current;
-	int			i;
+	t_vis_ants		*array;
+	t_vis_rooms		*current;
+	int				i;
 
 	array = (t_vis_ants *)malloc(sizeof(t_vis_ants) * s.ants);
 	current = g_vis_rooms;
@@ -38,7 +38,7 @@ t_vis_ants	*make_new_vis_ants_array(t_data s)
 	return (array);
 }
 
-t_turns_parser	*make_new_ant_turn(void)
+t_turns_parser		*make_new_ant_turn(void)
 {
 	t_turns_parser	*t;
 
@@ -48,10 +48,10 @@ t_turns_parser	*make_new_ant_turn(void)
 	return (t);
 }
 
-int			count_amount_turns(char *line)
+int					count_amount_turns(char *line)
 {
-	int	i;
-	int	amount_turns;
+	int				i;
+	int				amount_turns;
 
 	i = -1;
 	amount_turns = 1;
@@ -61,9 +61,10 @@ int			count_amount_turns(char *line)
 	return (amount_turns);
 }
 
-void		turn_vis_ants(int amount_turns, char **turns, char ant_num_str[4], t_vis_ants **array)
+void				turn_vis_ants(int amount_turns, char **turns,
+						char ant_num_str[4], t_vis_ants **array)
 {
-	int i;
+	int				i;
 	t_turns_parser	*start;
 	t_turns_parser	*current;
 
@@ -96,7 +97,7 @@ void		turn_vis_ants(int amount_turns, char **turns, char ant_num_str[4], t_vis_a
 	free(current);
 }
 
-bool		parse_turns_line(t_vis_ants **array, t_data **g_s)
+bool				parse_turns_line(t_vis_ants **array, t_data **g_s)
 {
 	char			**turns;
 	char			**temp_str;

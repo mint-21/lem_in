@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   vis_help.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qmebble <qmebble@student.42.fr>            +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/24 20:13:54 by qmebble           #+#    #+#             */
-/*   Updated: 2019/08/25 00:09:38 by qmebble          ###   ########.fr       */
+/*   Created: 2020/09/21 13:00:28 by asmall            #+#    #+#             */
+/*   Updated: 2020/09/21 13:00:31 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int			close_all(void)
 	return (0);
 }
 
-void			null_ptr_ant(t_vis_ants *ant, int *null_count)
+void		null_ptr_ant(t_vis_ants *ant, int *null_count)
 {
 	(*ant).x_diff = 0;
 	(*ant).y_diff = 0;

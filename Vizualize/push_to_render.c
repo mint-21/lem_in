@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_to_render.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qmebble <qmebble@student.42.fr>            +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/24 20:14:27 by qmebble           #+#    #+#             */
-/*   Updated: 2019/10/20 16:58:08 by qmebble          ###   ########.fr       */
+/*   Created: 2020/09/21 13:00:09 by asmall            #+#    #+#             */
+/*   Updated: 2020/09/21 13:00:12 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,99 +30,102 @@ bool			init(void)
 		error("SDL_ttf couldn't initialize. SDL error: ", TTF_GetError());
 	return (true);
 }
-void			color_and_coord(t_vis_rooms	*current_vis_room,
+void			color_and_coord(t_vis_rooms *vis_room,
 					t_room *current_s_room, t_data s)
 {
-	current_vis_room->room.x = ft_abs(current_s_room->x * (SCREEN_WIDTH /
+	vis_room->room.x = ft_abs(current_s_room->x * (SCREEN_WIDTH /
 		(MAX(ft_find_max_x(s), 1))) - 50);
-	current_vis_room->room.y = ft_abs(current_s_room->y * (SCREEN_HEIGHT /
+	vis_room->room.y = ft_abs(current_s_room->y * (SCREEN_HEIGHT /
 		(MAX(ft_find_max_y(s), 1))) - 50);
-	current_vis_room->name = current_s_room->name;
-	current_vis_room->num = current_s_room->n;
-	current_vis_room->r = rand() % 255 + 1;
-	current_vis_room->g = rand() % 255 + 1;
-	current_vis_room->b = rand() & 255 + 1;
-	SDL_SetRenderDrawColor(g_main_render, current_vis_room->r,
-		current_vis_room->g, current_vis_room->b, 100);
-	SDL_RenderFillRectF(g_main_render, &current_vis_room->room);
+	vis_room->name = current_s_room->name;
+	vis_room->num = current_s_room->n;
+	vis_room->r = rand() % 255 + 1;
+	vis_room->g = rand() % 255 + 1;
+	vis_room->b = rand() & 255 + 1;
+	SDL_SetRenderDrawColor(g_main_render, vis_room->r,
+		vis_room->g, vis_room->b, 100);
+	SDL_RenderFillRectF(g_main_render, &vis_room->room);
 }
 
 t_vis_rooms		*push_rooms_to_render(t_data s)
 {
 	t_vis_rooms	*vis_rooms;
-	t_vis_rooms	*current_vis_room;
+	t_vis_rooms	*vis_room;
 	t_room		*current_s_room;
 
 	current_s_room = s.rooms;
 	vis_rooms = make_new_vis_room();
-	current_vis_room = vis_rooms;
+	vis_room = vis_rooms;
 	while (current_s_room)
 	{
-		color_and_coord(current_vis_room, current_s_room, s);
+		color_and_coord(vis_room, current_s_room, s);
 		if (current_s_room->next)
 		{
-			current_vis_room->next = make_new_vis_room();
-			current_vis_room = current_vis_room->next;
+			vis_room->next = make_new_vis_room();
+			vis_room = vis_room->next;
 		}
 		current_s_room = current_s_room->next;
 	}
 	return (vis_rooms);
 }
 
-void		push_links_ro_render(t_data s)
+void			push_links_ro_render(t_data s, int i)
 {
-	t_vis_rooms	*current_vis_room;
-	t_link		*current_usual_room;
-	t_vis_rooms	*end_of_line;
+	t_vis_rooms	*vis_room;
+	t_link		*norm_room;
+	t_vis_rooms	*end_line;
 
-	for (int i = 0; i < s.links_count; i++)
+	while (++i < s.links_count)
 	{
-		current_usual_room = s.links[i];
-		current_vis_room = g_vis_rooms;
-		while (current_vis_room && current_vis_room->num != i)
-			current_vis_room = current_vis_room->next;
-		if (current_vis_room)
-			while (current_usual_room)
+		norm_room = s.links[i];
+		vis_room = g_vis_rooms;
+		while (vis_room && vis_room->num != i)
+			vis_room = vis_room->next;
+		if (vis_room)
+			while (norm_room)
 			{
-				end_of_line = g_vis_rooms;
-				while (end_of_line && end_of_line->num != current_usual_room->pair)
-					end_of_line = end_of_line->next;
-				SDL_SetRenderDrawColor(g_main_render, current_vis_room->r, current_vis_room->g, current_vis_room->b, 100);
-				if (current_usual_room->pair >= i)
+				end_line = g_vis_rooms;
+				while (end_line && end_line->num != norm_room->pair)
+					end_line = end_line->next;
+				SDL_SetRenderDrawColor(g_main_render, vis_room->r,
+					vis_room->g, vis_room->b, 100);
+				if (norm_room->pair >= i)
 					SDL_RenderDrawLineF(g_main_render,
-										current_vis_room->room.x + 25,
-										current_vis_room->room.y + 25,
-										end_of_line->room.x + 25,
-										end_of_line->room.y + 25);
-				current_usual_room = current_usual_room->next;
+						vis_room->room.x + 25, vis_room->room.y + 25,
+						end_line->room.x + 25, end_line->room.y + 25);
+				norm_room = norm_room->next;
 			}
 	}
 }
 
-void		push_names_ro_render(t_data s)
+void			push_names_ro_render(t_data s)
 {
-	t_vis_rooms	*current_vis_room = g_vis_rooms;
-	t_room		*current_usual_room = s.rooms;
-	TTF_Font	*Courier = NULL;
-	SDL_Color	Black = {0, 0, 0, 255};
+	t_vis_rooms	*vis_room;
+	t_room		*norm_room;
+	TTF_Font	*courier;
 	SDL_Rect	name_rect;
 
-	Courier = TTF_OpenFont("Vizualize/InputMono-Regular.ttf", 20);
-	if (Courier == NULL)
+	vis_room = g_vis_rooms;
+	norm_room = s.rooms;
+	courier = TTF_OpenFont("Vizualize/InputMono-Regular.ttf", 20);
+	if (courier == NULL)
 		error("Font didn't find. SDL error: ", TTF_GetError());
-	while (current_vis_room && current_usual_room)
+	while (vis_room && norm_room)
 	{
-		if (current_vis_room->num == current_usual_room->n)
+		if (vis_room->num == norm_room->n)
 		{
-			TTF_SizeText(Courier, current_usual_room->name, &name_rect.w, &name_rect.h);
-			name_rect.x = (int)current_vis_room->room.x;
-			name_rect.y = (int)current_vis_room->room.y;
-			SDL_RenderCopy(g_main_render, SDL_CreateTextureFromSurface(g_main_render, TTF_RenderText_Solid(Courier, current_usual_room->name, Black)), NULL, &name_rect);
-			current_vis_room = current_vis_room->next;
+			TTF_SizeText(courier, norm_room->name, &name_rect.w, &name_rect.h);
+			name_rect.x = (int)vis_room->room.x;
+			name_rect.y = (int)vis_room->room.y;
+			SDL_RenderCopy(g_main_render,
+				SDL_CreateTextureFromSurface(g_main_render,
+				TTF_RenderText_Solid(courier, norm_room->name, BLACK)),
+				NULL, &name_rect);
+			vis_room = vis_room->next;
 		}
-		current_usual_room = current_usual_room->next;
+		norm_room = norm_room->next;
 	}
-	TTF_CloseFont(Courier);
+	TTF_CloseFont(courier);
 }
 
 void		push_ant_texture_to_render(SDL_FRect pos)

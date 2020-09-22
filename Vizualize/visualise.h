@@ -13,9 +13,9 @@
 #ifndef VISUALISE_H
 # define VISUALISE_H
 
-# include "/Users/vfearles/.brew/include/SDL2/SDL.h"
-# include "/Users/vfearles/.brew/include/SDL2/SDL_ttf.h"
-# include "/Users/vfearles/.brew/include/SDL2/SDL_image.h"
+# include "/Users/asmall/.brew/include/SDL2/SDL.h"
+# include "/Users/asmall/.brew/include/SDL2/SDL_ttf.h"
+# include "/Users/asmall/.brew/include/SDL2/SDL_image.h"
 
 # include "../src/lemin.h"
 # include <stdio.h>
@@ -26,6 +26,7 @@
 # define ERR -1
 # define STOP -2
 
+# define BLACK (SDL_Color){0, 0, 0, 255}
 # define SCREEN_WIDTH 1920
 # define SCREEN_HEIGHT 1080
 # define SCREEN_FPS 60
@@ -64,10 +65,23 @@ typedef struct				s_turns_parser
 	struct s_turns_parser	*next;
 }							t_turns_parser;
 
+/*
+** main.c
+*/
+
 void						error(const char *s, const char *t);
-bool						init(void);
+void						push_all_to_render(t_data s, t_vis_ants **array);
+void						event_handler(t_data *g_s);
+
+/*
+** ants_move.c
+*/
+
+int							if_turn_over(t_vis_ants **array, t_data *g_s);
+void						print_ants(t_vis_ants *array);
+
 t_vis_rooms					*push_rooms_to_render(t_data s);
-void						push_links_ro_render(t_data s);
+void						push_links_ro_render(t_data s, int i);
 void						push_names_ro_render(t_data s);
 void						push_ant_texture_to_render(SDL_FRect pos);
 
@@ -81,8 +95,9 @@ bool						parse_turns_line(t_vis_ants **array, t_data **g_s);
 t_turns_parser				*make_new_ant_turn(void);
 t_vis_ants					*make_new_vis_ants_array(t_data s);
 
-int							ants_move(t_vis_ants *array, int null_count);
-int							if_turn_over(t_vis_ants **array, t_data *g_s);
-void						print_ants(t_vis_ants *array);
+
+void						start_process(t_vis_ants *array);
+
+bool						init(void);
 
 #endif

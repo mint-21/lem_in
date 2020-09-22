@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/18 14:16:03 by asmall            #+#    #+#             */
-/*   Updated: 2020/09/18 14:16:05 by asmall           ###   ########.fr       */
+/*   Created: 2020/09/21 13:11:21 by asmall            #+#    #+#             */
+/*   Updated: 2020/09/21 13:11:37 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,4 +85,29 @@ int				ants_move(t_vis_ants *array, int null_count)
 		else
 			null_count++;
 	return (null_count);
+}
+
+void			start_process(t_vis_ants *array)
+{
+	int			count;
+
+	count = 0;
+	while (!g_s.vis_quit)
+	{
+		event_handler(&g_s);
+		if (!g_s.vis_pause)
+		{
+			count = ants_move(array, 0);
+			push_all_to_render(g_s, NULL);
+			if (count == g_s.ants)
+			{
+				if (!if_turn_over(&array, &g_s))
+					break ;
+			}
+			else
+				print_ants(array);
+			SDL_Delay(SCREEN_TICKS_PER_FRAME);
+			SDL_RenderPresent(g_main_render);
+		}
+	}
 }
