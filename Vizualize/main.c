@@ -21,24 +21,23 @@ void			error(const char *s, const char *t)
 	exit(EXIT_FAILURE);
 }
 
-void			push_all_to_render(t_data s, t_vis_ants **array)
+void			render_process(t_data s, t_vis_ants **array)
 {
-	t_vis_rooms	*current;
+	t_vis_rooms	*curr;
 
-	current = g_vis_rooms;
+	curr = g_vis_rooms;
 	SDL_SetRenderDrawColor(g_main_render, 255, 255, 255, 255);
 	SDL_RenderClear(g_main_render);
-	while (current)
+	while (curr)
 	{
-		SDL_SetRenderDrawColor(g_main_render, current->r,
-								current->g, current->b, 100);
-		SDL_RenderFillRectF(g_main_render, &current->room);
-		current = current->next;
+		SDL_SetRenderDrawColor(g_main_render, curr->r, curr->g, curr->b, 100);
+		SDL_RenderFillRectF(g_main_render, &curr->room);
+		curr = curr->next;
 	}
-	push_links_ro_render(s, -1);
+	render_links(s, -1);
 	if (array)
 		*array = make_new_vis_ants_array(s);
-	push_names_ro_render(s);
+	render_name_room(s);
 }
 
 int				initialize(void)
@@ -54,9 +53,9 @@ int				initialize(void)
 		return (0);
 	}
 	srand(time(NULL));
-	if (!init())
-		return (close_all());
-	g_vis_rooms = push_rooms_to_render(g_s);
+	if (!init_sdl())
+		return (close_sdl());
+	g_vis_rooms = render_rooms(g_s);
 	return (1);
 }
 
@@ -84,7 +83,7 @@ int				main(void)
 	end_room = g_vis_rooms;
 	while (end_room && end_room->num != g_s.end->n)
 		end_room = end_room->next;
-	push_all_to_render(g_s, &array);
+	render_process(g_s, &array);
 	start_process(array);
-	return (close_all());
+	return (close_sdl());
 }

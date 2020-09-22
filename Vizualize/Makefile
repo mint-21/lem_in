@@ -10,7 +10,8 @@
 #                                                                              #
 # **************************************************************************** #
 
-SRC_VI			=	main.c parse_turns.c vis_help.c push_to_render.c ants_move.c
+SRC_VI			=	main.c ft_push_turns.c ft_help_funct.c ft_render_init.c\
+					ft_render_info.c ft_ants_move.c
 
 SRC				=	../src/ft_card_reading.c ../src/ft_createroom.c\
 				   	../src/ft_correct_main.c ../src/ft_name_find.c\
@@ -24,7 +25,7 @@ INCLUDE =	visualise.h \
 
 FLAGS = -Wall -Wextra -Werror
 NAME = visualisator
-FRAMEWORKS = -L/Users/vfearles/.brew/lib -I/Users/vfearles/.brew/include/SDL2 -D_THREAD_SAFE -lSDL2 -lSDL2_image -lSDL2_ttf
+FRAMEWORKS = -L/Users/asmall/.brew/lib -I/Users/asmall/.brew/include/SDL2 -D_THREAD_SAFE -lSDL2 -lSDL2_image -lSDL2_ttf
 
 
 all: $(NAME)

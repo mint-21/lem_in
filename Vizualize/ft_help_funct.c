@@ -1,70 +1,59 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   vis_help.c                                         :+:      :+:    :+:   */
+/*   ft_help_funct.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/21 13:00:28 by asmall            #+#    #+#             */
-/*   Updated: 2020/09/21 13:00:31 by asmall           ###   ########.fr       */
+/*   Updated: 2020/09/22 12:07:30 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "visualise.h"
 
-int			ft_find_max_x(t_data s)
+int				ft_find_max_x(t_data s)
 {
-	int		max;
-	t_room	*current;
+	int			max;
+	t_room		*curr;
 
 	max = -MAX_INT - 1;
-	current = s.rooms;
-	while (current)
+	curr = s.rooms;
+	while (curr)
 	{
-		if (current->x > max)
-			max = current->x;
-		current = current->next;
+		if (curr->x > max)
+			max = curr->x;
+		curr = curr->next;
 	}
 	return (max);
 }
 
-int			ft_find_max_y(t_data s)
+int				ft_find_max_y(t_data s)
 {
-	int		max;
-	t_room	*current;
+	int			max;
+	t_room		*curr;
 
 	max = -MAX_INT - 1;
-	current = s.rooms;
-	while (current)
+	curr = s.rooms;
+	while (curr)
 	{
-		if (current->y > max)
-			max = current->y;
-		current = current->next;
+		if (curr->y > max)
+			max = curr->y;
+		curr = curr->next;
 	}
 	return (max);
 }
 
-int			close_all(void)
-{
-	free(g_vis_rooms);
-	SDL_DestroyWindow(g_main_window);
-	g_main_window = NULL;
-	TTF_Quit();
-	IMG_Quit();
-	SDL_Quit();
-	return (0);
-}
-
-void		null_ptr_ant(t_vis_ants *ant, int *null_count)
+void			null_ptr_ant(t_vis_ants *ant, int *null_count)
 {
 	(*ant).x_diff = 0;
 	(*ant).y_diff = 0;
 	(*ant).current_room = (*ant).next_room;
-	(*ant).next_room_name = NULL;
+	(*ant).next_name = NULL;
 	(*null_count)++;
 }
 
-t_vis_rooms	*make_new_vis_room(void)
+t_vis_rooms		*make_new_vis_room(void)
 {
 	t_vis_rooms	*room;
 
@@ -78,4 +67,30 @@ t_vis_rooms	*make_new_vis_room(void)
 	room->name = NULL;
 	room->num = 0;
 	return (room);
+}
+
+t_vis_ants		*make_new_vis_ants_array(t_data s)
+{
+	t_vis_ants	*array;
+	t_vis_rooms	*curr;
+	int			i;
+
+	array = (t_vis_ants *)malloc(sizeof(t_vis_ants) * s.ants);
+	curr = g_vis_rooms;
+	while (curr && curr->num != s.start->n)
+		curr = curr->next;
+	i = -1;
+	while (++i < s.ants)
+	{
+		array[i].current_room = curr->room;
+		array[i].next_room.h = 50;
+		array[i].next_room.w = 50;
+		array[i].next_room.x = 0;
+		array[i].next_room.y = 0;
+		array[i].x_diff = 0;
+		array[i].y_diff = 0;
+		array[i].current_name = curr->name;
+		array[i].next_name = NULL;
+	}
+	return (array);
 }
