@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/04 20:09:20 by vfearles          #+#    #+#             */
-/*   Updated: 2019/04/15 20:51:19 by vfearles         ###   ########.fr       */
+/*   Created: 2019/04/04 20:09:20 by asmall            #+#    #+#             */
+/*   Updated: 2019/04/15 20:51:19 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+char		*ft_strdup(const char *s1)
 {
 	char	*r;
 	size_t	i;

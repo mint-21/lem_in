@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ulltoa.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: vfearles <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 16:42:03 by vfearles          #+#    #+#             */
 /*   Updated: 2019/12/11 16:42:04 by vfearles         ###   ########.fr       */
@@ -14,7 +14,7 @@
 
 static int	ft_count(unsigned long long n)
 {
-	int	i;
+	int		i;
 
 	i = 0;
 	if (n == 0)

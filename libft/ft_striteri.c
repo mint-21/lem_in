@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/10 22:07:39 by vfearles          #+#    #+#             */
-/*   Updated: 2019/04/14 20:23:54 by vfearles         ###   ########.fr       */
+/*   Created: 2019/04/10 22:07:39 by asmall            #+#    #+#             */
+/*   Updated: 2019/04/14 20:23:54 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+void				ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;
 

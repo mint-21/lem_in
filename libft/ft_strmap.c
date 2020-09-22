@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/10 22:16:25 by vfearles          #+#    #+#             */
-/*   Updated: 2019/04/17 19:11:33 by vfearles         ###   ########.fr       */
+/*   Created: 2019/04/10 22:16:25 by asmall            #+#    #+#             */
+/*   Updated: 2019/04/17 19:11:33 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmap(char const *s, char (*f)(char))
+char		*ft_strmap(char const *s, char (*f)(char))
 {
 	char	*r;
 	size_t	i;

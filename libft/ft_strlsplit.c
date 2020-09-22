@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: vfearles <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/12 19:04:09 by vfearles          #+#    #+#             */
 /*   Updated: 2019/08/27 14:18:11 by vfearles         ###   ########.fr       */
@@ -14,8 +14,8 @@
 
 static char		*ft_strdupl(const char *s, size_t len)
 {
-	size_t	i;
-	char	*r;
+	size_t		i;
+	char		*r;
 
 	i = 0;
 	if (s && (r = (char *)malloc(sizeof(char) * (len + 1))))
@@ -33,9 +33,9 @@ static char		*ft_strdupl(const char *s, size_t len)
 
 static t_list	*ft_createelem(const char *str, char c, size_t *i)
 {
-	size_t	f;
-	char	*t;
-	t_list	*r;
+	size_t		f;
+	char		*t;
+	t_list		*r;
 
 	f = *i;
 	while (str[*i] && str[*i] != c)
@@ -65,9 +65,9 @@ static void		ft_del(void *content, size_t content_size)
 
 t_list			*ft_strlsplit(char const *s, char c)
 {
-	size_t	i;
-	t_list	*l;
-	t_list	*h;
+	size_t		i;
+	t_list		*l;
+	t_list		*h;
 
 	if (!s)
 		return (NULL);

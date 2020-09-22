@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/05 22:14:00 by vfearles          #+#    #+#             */
-/*   Updated: 2019/04/15 20:18:19 by vfearles         ###   ########.fr       */
+/*   Created: 2019/04/05 22:14:00 by asmall            #+#    #+#             */
+/*   Updated: 2019/04/15 20:18:19 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strstr(const char *haystack, const char *needle)
+char		*ft_strstr(const char *haystack, const char *needle)
 {
 	size_t	i;
 	size_t	j;

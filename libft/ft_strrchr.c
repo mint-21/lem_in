@@ -5,17 +5,17 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/05 18:54:49 by vfearles          #+#    #+#             */
-/*   Updated: 2019/04/15 18:55:14 by vfearles         ###   ########.fr       */
+/*   Created: 2019/04/05 18:54:49 by asmall            #+#    #+#             */
+/*   Updated: 2019/04/15 18:55:14 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "string.h"
 
-char	*ft_strrchr(const char *s, int c)
+char		*ft_strrchr(const char *s, int c)
 {
-	int	i;
-	int	f;
+	int		i;
+	int		f;
 
 	i = 0;
 	f = 0;

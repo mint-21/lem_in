@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: vfearles <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/04 21:36:08 by vfearles          #+#    #+#             */
 /*   Updated: 2019/04/15 18:43:39 by vfearles         ###   ########.fr       */
@@ -14,10 +14,10 @@
 
 size_t			ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	i;
-	size_t	j;
-	size_t	ls;
-	size_t	ld;
+	size_t		i;
+	size_t		j;
+	size_t		ls;
+	size_t		ld;
 
 	i = 0;
 	j = 0;

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/04 21:38:27 by vfearles          #+#    #+#             */
-/*   Updated: 2019/08/27 14:19:26 by vfearles         ###   ########.fr       */
+/*   Created: 2019/04/04 21:38:27 by asmall            #+#    #+#             */
+/*   Updated: 2020/02/27 14:19:26 by vfearles         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int					ft_strchr_count(const char *s, int c);
 char				*ft_strstr(const char *haystack, const char *needle);
 char				*ft_strnstr(const char *haystack, const char *needle,\
 					size_t len);
-int				ft_strlen_char(const char *str, const char *c);
+int					ft_strlen_char(const char *str, const char *c);
 int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_atoi(const char *str);

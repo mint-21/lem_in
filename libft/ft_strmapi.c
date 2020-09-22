@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/11 15:24:12 by vfearles          #+#    #+#             */
-/*   Updated: 2019/04/15 19:08:05 by vfearles         ###   ########.fr       */
+/*   Created: 2019/04/11 15:24:12 by asmall            #+#    #+#             */
+/*   Updated: 2019/04/15 19:08:05 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char				*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
 	char			*r;

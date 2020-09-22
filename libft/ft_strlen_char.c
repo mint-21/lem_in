@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen_char.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/01 18:30:08 by asmall            #+#    #+#             */
 /*   Updated: 2020/05/22 19:33:49 by asmall           ###   ########.fr       */
@@ -12,12 +12,12 @@
 
 #include "libft.h"
 
-int	ft_strlen_char(const char *str, const char *c)
+int		ft_strlen_char(const char *str, const char *c)
 {
 	int i;
 
 	i = 0;
-	while(str[i] != '\0' && str[i] != *c)
+	while (str[i] != '\0' && str[i] != *c)
 		i++;
-	return(i);
+	return (i);
 }

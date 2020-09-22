@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_satoi.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/08 21:44:01 by asmall            #+#    #+#             */
 /*   Updated: 2020/04/27 19:49:56 by asmall           ###   ########.fr       */

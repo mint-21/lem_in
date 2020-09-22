@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: vfearles <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/15 16:42:09 by vfearles          #+#    #+#             */
 /*   Updated: 2019/04/17 15:57:44 by vfearles         ###   ########.fr       */
@@ -12,9 +12,9 @@
 
 #include "libft.h"
 
-void	ft_swap(int *a, int *b)
+void		ft_swap(int *a, int *b)
 {
-	int	tmp;
+	int		tmp;
 
 	tmp = *a;
 	*a = *b;
