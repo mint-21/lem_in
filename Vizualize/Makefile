@@ -23,9 +23,10 @@ SRC				=	../src/ft_card_reading.c ../src/ft_createroom.c\
 INCLUDE =	visualise.h \
 			../libft/libft.h
 
+USER = $(shell whoami)
 FLAGS = -Wall -Wextra -Werror
 NAME = visualisator
-FRAMEWORKS = -L/Users/vfearles/.brew/lib -I/Users/vfearles/.brew/include/SDL2 -D_THREAD_SAFE -lSDL2 -lSDL2_image -lSDL2_ttf
+FRAMEWORKS = -L/Users/$(USER)/.brew/lib -I/Users/$(USER)/.brew/include/SDL2 -D_THREAD_SAFE -lSDL2 -lSDL2_image -lSDL2_ttf
 
 
 all: $(NAME)

@@ -17,10 +17,8 @@ double			calc_diff(t_vis_ants ant, char axis)
 	double		diff;
 
 	diff = 0;
-	if (axis == 'x')
-		diff = ft_abs(ant.next_room.x - ant.current_room.x);
-	else
-		diff = ft_abs(ant.next_room.y - ant.current_room.y);
+	diff = (axis == 'x') ? (ft_abs(ant.next_room.x - ant.current_room.x)) :
+		(ft_abs(ant.next_room.y - ant.current_room.y));
 	return (diff);
 }
 
@@ -52,8 +50,7 @@ int				if_turn_over(t_vis_ants **array, t_data *g_s)
 	while (++i < g_s->ants && curr)
 		if ((*array)[i].next_name)
 		{
-			while (ft_strcmp((*array)[i].next_name, curr->name) != 0
-				&& curr)
+			while (ft_strcmp((*array)[i].next_name, curr->name) != 0 && curr)
 				curr = curr->next;
 			(*array)[i].next_room = curr->room;
 			curr = g_vis_rooms;
