@@ -12,9 +12,9 @@
 
 #include "libft.h"
 
-static int	prov(const char *str, int i, int flag)
+static int				prov(const char *str, int i, int flag)
 {
-	unsigned long long n;
+	unsigned long long	n;
 
 	n = 0;
 	while (str[i] >= '0' && str[i] <= '9')
@@ -34,7 +34,7 @@ static int	prov(const char *str, int i, int flag)
 	return (n * flag);
 }
 
-int			ft_atoi(const char *str)
+int						ft_atoi(const char *str)
 {
 	int					i;
 	int					flag;

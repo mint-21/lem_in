@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-unsigned long long	ft_atoull(const char *str)
+unsigned long long		ft_atoull(const char *str)
 {
 	unsigned long long	r;
 	int					l;

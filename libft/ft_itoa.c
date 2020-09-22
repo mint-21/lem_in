@@ -12,9 +12,9 @@
 
 #include "libft.h"
 
-static size_t	ft_getlen(int n)
+static size_t		ft_getlen(int n)
 {
-	size_t		i;
+	size_t			i;
 
 	i = 1;
 	while (n /= 10)
@@ -22,7 +22,7 @@ static size_t	ft_getlen(int n)
 	return (i);
 }
 
-char			*ft_itoa(int n)
+char				*ft_itoa(int n)
 {
 	char			*str;
 	size_t			len;

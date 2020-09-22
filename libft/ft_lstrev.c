@@ -12,11 +12,11 @@
 
 #include "libft.h"
 
-void	ft_lstrev(t_list **beginlst)
+void		ft_lstrev(t_list **beginlst)
 {
-	t_list *list;
-	t_list *a;
-	t_list *b;
+	t_list	*list;
+	t_list	*a;
+	t_list	*b;
 
 	list = *beginlst;
 	if (!list)

@@ -14,7 +14,7 @@
 
 static int	ft_count(long long n)
 {
-	int	i;
+	int		i;
 
 	i = 0;
 	if ((unsigned long long)n == 0x8000000000000000)

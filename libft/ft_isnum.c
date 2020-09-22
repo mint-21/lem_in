@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	ft_isnum(char *str, int c)
+int			ft_isnum(char *str, int c)
 {
 	size_t	i;
 
