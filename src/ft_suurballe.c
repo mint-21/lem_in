@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_suurballe.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/14 17:27:26 by asmall            #+#    #+#             */
 /*   Updated: 2020/09/05 16:43:29 by vfearles         ###   ########.fr       */

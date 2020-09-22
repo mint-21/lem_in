@@ -1,9 +1,9 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_findnames.c                                     :+:      :+:    :+:   */
+/*   ft_name_find.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 20:26:15 by asmall            #+#    #+#             */
 /*   Updated: 2020/07/16 06:35:16 by vfearles         ###   ########.fr       */
@@ -17,9 +17,9 @@
 ** name_connect[i]; наименование комнаты до знака '-'.
 */
 
-int		ft_name_equ_room1(char *name_room, char *name_connect)
+int			ft_name_equ_room1(char *name_room, char *name_connect)
 {
-	int	i;
+	int		i;
 
 	i = -1;
 	while (name_room[++i] && name_connect[i] && name_connect[i] != '-')
@@ -35,10 +35,10 @@ int		ft_name_equ_room1(char *name_room, char *name_connect)
 ** name_connect[j]; наименование комнаты после знака '-'.
 */
 
-int		ft_name_equ_room2(char *name_room, char *name_connect)
+int			ft_name_equ_room2(char *name_room, char *name_connect)
 {
-	int	i;
-	int	j;
+	int		i;
+	int		j;
 
 	i = 0;
 	j = 0;
@@ -64,7 +64,7 @@ int		ft_name_equ_room2(char *name_room, char *name_connect)
 ** head: первая комната в структуре t_room.
 */
 
-int		ft_findrooms(t_data *data, char *connect_str,
+int			ft_findrooms(t_data *data, char *connect_str,
 				t_room **room1, t_room **room2)
 {
 	t_room	*head;

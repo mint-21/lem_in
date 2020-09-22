@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/11 22:28:23 by asmall            #+#    #+#             */
 /*   Updated: 2020/05/13 19:28:53 by asmall           ###   ########.fr       */
@@ -12,7 +12,7 @@
 
 #include "lemin.h"
 
-void		print_n_free_map_data(char **map_data)
+void			print_n_free_map_data(char **map_data)
 {
 	ft_printf("%s\n", *map_data);
 	free(*map_data);
@@ -37,7 +37,7 @@ static void		print_ways(t_way *way)
 	}
 }
 
-void		ft_print_ways(t_way *way, int steps)
+void			ft_print_ways(t_way *way, int steps)
 {
 	t_way		*w;
 	int			total_ways;

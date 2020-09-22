@@ -24,7 +24,7 @@ INCLUDE =	visualise.h \
 
 FLAGS = -Wall -Wextra -Werror
 NAME = visualisator
-FRAMEWORKS = -L/Users/asmall/.brew/lib -I/Users/asmall/.brew/include/SDL2 -D_THREAD_SAFE -lSDL2 -lSDL2_image -lSDL2_ttf
+FRAMEWORKS = -L/Users/vfearles/.brew/lib -I/Users/vfearles/.brew/include/SDL2 -D_THREAD_SAFE -lSDL2 -lSDL2_image -lSDL2_ttf
 
 
 all: $(NAME)

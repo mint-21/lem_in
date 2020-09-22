@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_add_room_link.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: vfearles <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/19 17:30:42 by asmall            #+#    #+#             */
-/*   Updated: 2020/08/20 11:42:51 by asmall           ###   ########.fr       */
+/*   Created: 2020/09/22 11:13:51 by vfearles          #+#    #+#             */
+/*   Updated: 2020/09/22 11:14:01 by vfearles         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lemin.h"
 
-int		find_name_num(char *str, t_room *r)
+int			find_name_num(char *str, t_room *r)
 {
-	t_room *tmp;
+	t_room	*tmp;
 
 	tmp = r;
 	while (str && tmp)
@@ -26,7 +26,7 @@ int		find_name_num(char *str, t_room *r)
 	return (-1);
 }
 
-int		add_link_list(t_link **link)
+int			add_link_list(t_link **link)
 {
 	t_link	*tmp;
 	t_link	*list;
@@ -41,9 +41,9 @@ int		add_link_list(t_link **link)
 	return (0);
 }
 
-int	fill_link(t_data *s, int n_a, int n_b)
+int			fill_link(t_data *s, int n_a, int n_b)
 {
-	t_link *tmp;
+	t_link	*tmp;
 
 	tmp = s->links[n_a];
 	while (tmp)
@@ -61,11 +61,11 @@ int	fill_link(t_data *s, int n_a, int n_b)
 	return (0);
 }
 
-int	add_link(t_data *s, char *tab)
+int			add_link(t_data *s, char *tab)
 {
-	int n_a;
-	int n_b;
-	int stat;
+	int		n_a;
+	int		n_b;
+	int		stat;
 
 	if (!s->links)
 	{

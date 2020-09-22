@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lemin_fl.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/14 21:58:17 by vfearles          #+#    #+#             */
 /*   Updated: 2020/06/13 19:33:59 by asmall           ###   ########.fr       */
@@ -30,7 +30,7 @@ static void		ft_descriptor(char **fd, int ac, char **av, int *i)
 
 void			ft_flags_lemin(t_flags *flags, int ac, char **av)
 {
-	int	i;
+	int			i;
 
 	if (ac == 1)
 		return ;

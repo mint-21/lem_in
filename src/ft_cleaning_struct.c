@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_struct_free.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 14:09:52 by asmall            #+#    #+#             */
 /*   Updated: 2020/07/06 14:09:52 by vfearles         ###   ########.fr       */
@@ -12,7 +12,7 @@
 
 #include "lemin.h"
 
-static void	ft_free_connects(t_connect *connects)
+static void		ft_free_connects(t_connect *connects)
 {
 	t_connect	*tmp;
 
@@ -24,9 +24,9 @@ static void	ft_free_connects(t_connect *connects)
 	}
 }
 
-static void	ft_free_path(t_path *path)
+static void		ft_free_path(t_path *path)
 {
-	t_path	*tmp;
+	t_path		*tmp;
 
 	while (path)
 	{
@@ -36,9 +36,9 @@ static void	ft_free_path(t_path *path)
 	}
 }
 
-static void	ft_free_ways(t_way *way)
+static void		ft_free_ways(t_way *way)
 {
-	t_way	*tmp;
+	t_way		*tmp;
 
 	while (way)
 	{
@@ -49,7 +49,7 @@ static void	ft_free_ways(t_way *way)
 	}
 }
 
-static void	ft_free_vars(t_option *options)
+static void		ft_free_vars(t_option *options)
 {
 	t_option	*tmp;
 
@@ -66,9 +66,9 @@ static void	ft_free_vars(t_option *options)
 ** Очищаем главную структуру
 */
 
-void		ft_struct_free(t_data *data)
+void			ft_struct_free(t_data *data)
 {
-	t_room	*tmp;
+	t_room		*tmp;
 
 	while (data->rooms)
 	{

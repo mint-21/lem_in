@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_djkastra.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/28 18:06:35 by asmall            #+#    #+#             */
 /*   Updated: 2020/08/28 18:06:36 by vfearles         ###   ########.fr       */
@@ -16,9 +16,9 @@
 ** Инициализация финальной структуры пути
 */
 
-static void	create_way(t_path *path, int path_cost, t_way **ways)
+static void		create_way(t_path *path, int path_cost, t_way **ways)
 {
-	t_way	*way;
+	t_way		*way;
 
 	if (!(way = (t_way *)malloc(sizeof(t_way))))
 		ft_perror();
@@ -44,7 +44,7 @@ static void		init_path(t_path *path, t_room *room_p, t_path *tmp)
 		tmp->prev = tmp;
 }
 
-void		path(t_room *room, t_room *start, t_way **ways, int path_cost)
+void			path(t_room *room, t_room *start, t_way **ways, int path_cost)
 {
 	t_path		*tmp;
 	t_path		*path;
@@ -79,7 +79,7 @@ void		path(t_room *room, t_room *start, t_way **ways, int path_cost)
 ** rooms_count: количество комнат; weight: временная метка.
 */
 
-void		djkastra(int flag, t_data *data)
+void			djkastra(int flag, t_data *data)
 {
 	t_room		*room;
 	t_connect	*connect;

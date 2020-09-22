@@ -3,7 +3,7 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: asmall <asmall@student.42.fr>              +#+  +:+       +#+         #
+#    By: asmall <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/08/14 14:54:15 by asmall            #+#    #+#              #
 #    Updated: 2019/09/18 19:06:23 by asmall           ###   ########.fr        #

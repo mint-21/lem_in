@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_redirection.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/27 15:58:22 by asmall            #+#    #+#             */
 /*   Updated: 2020/07/27 20:57:48 by asmall           ###   ########.fr       */
@@ -16,7 +16,7 @@
 
 #include "lemin.h"
 
-void		redirection_conditions(t_connect *connect, t_room *src)
+void	redirection_conditions(t_connect *connect, t_room *src)
 {
 	if (connect->prev)
 		connect->prev->next = connect->next;

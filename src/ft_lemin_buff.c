@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lemin_buff.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/05 19:21:00 by asmall            #+#    #+#             */
 /*   Updated: 2020/07/05 19:21:04 by vfearles         ###   ########.fr       */
@@ -17,9 +17,9 @@
 ** В комнату добавляем муравья, а из которой вышли - убираем муравья
 */
 
-void	copy_text_buff(t_data *data, t_path *path, t_buf *buf, int ant)
+void		copy_text_buff(t_data *data, t_path *path, t_buf *buf, int ant)
 {
-	int j;
+	int		j;
 
 	j = -1;
 	if (data->flags.ways == 0)

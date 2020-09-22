@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_zerodata.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 20:06:00 by asmall            #+#    #+#             */
 /*   Updated: 2020/09/12 13:40:22 by asmall           ###   ########.fr       */
@@ -26,9 +26,9 @@ static void		ft_zerodata2(t_data *data)
 	data->links = NULL;
 }
 
-t_data		ft_zerodata(void)
+t_data			ft_zerodata(void)
 {
-	t_data	data;
+	t_data		data;
 
 	data.ants = 0;
 	data.step = 0;

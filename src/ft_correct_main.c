@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_correct_main.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 20:06:00 by asmall            #+#    #+#             */
 /*   Updated: 2020/06/12 13:40:22 by asmall           ###   ########.fr       */
@@ -54,7 +54,7 @@ int				ft_init_room(t_data *data, t_valid *check, char **str)
 	return (0);
 }
 
-static void	correct_strings(t_data *data, t_valid *check, char *str, int i)
+static void		correct_strings(t_data *data, t_valid *check, char *str, int i)
 {
 	if (str[0] == '\0' || str[0] == 'L')
 		ft_print_error(E_NO_CORRECT);
@@ -75,9 +75,9 @@ static void	correct_strings(t_data *data, t_valid *check, char *str, int i)
 ** ft_correct_rooms_duble: проверка на дубликаты комнат.
 */
 
-int			ft_correct(t_data *data, t_valid *check, char **strings)
+int				ft_correct(t_data *data, t_valid *check, char **strings)
 {
-	int	i;
+	int			i;
 
 	i = -1;
 	while (strings[++i] && strings[i][0] != 'L')

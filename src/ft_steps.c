@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_steps.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/04 17:00:00 by asmall            #+#    #+#             */
 /*   Updated: 2020/08/04 17:00:01 by vfearles         ###   ########.fr       */
@@ -21,7 +21,7 @@
 ** Функция возвращает количество пройденных шагов.
 */
 
-int		steps_for_ants(t_way *way, int ants)
+int				steps_for_ants(t_way *way, int ants)
 {
 	int			steps;
 	int			ost;
@@ -58,10 +58,10 @@ int		steps_for_ants(t_way *way, int ants)
 ** way = way->next: если путь не один, берем следубщий путь.
 */
 
-void	ft_step(t_data *data, int *ant, t_buf *buf, int steps)
+void			ft_step(t_data *data, int *ant, t_buf *buf, int steps)
 {
-	t_way	*way;
-	t_path	*path;
+	t_way		*way;
+	t_path		*path;
 
 	buf->space = 0;
 	way = data->best_opt->ways;

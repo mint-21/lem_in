@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_correct_map.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 15:52:39 by asmall            #+#    #+#             */
 /*   Updated: 2020/06/27 21:06:50 by asmall           ###   ########.fr       */
@@ -74,9 +74,9 @@ int				ft_correct_rooms(char *str, t_valid *check, int j)
 ** ft_correct_rooms_double: check rooms for doublicate x and y
 */
 
-int			check_double_coor(t_data *s, t_room *curr, char *str)
+int				check_double_coor(t_data *s, t_room *curr, char *str)
 {
-	t_room	*check;
+	t_room		*check;
 
 	str += ft_strlen(curr->name);
 	curr->x = ft_atoi(str);

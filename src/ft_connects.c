@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_connects.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 17:17:51 by asmall            #+#    #+#             */
 /*   Updated: 2020/07/16 17:17:52 by vfearles         ###   ########.fr       */
@@ -36,7 +36,7 @@ t_connect		*ft_createconnect(t_room *room)
 ** Создание связей в структуре и инициализация.
 */
 
-static void	ft_connectconnect(t_room *room_one, t_room *room_two)
+static void		ft_connectconnect(t_room *room_one, t_room *room_two)
 {
 	t_connect	*connect;
 	t_connect	*tmp;
@@ -59,7 +59,7 @@ static void	ft_connectconnect(t_room *room_one, t_room *room_two)
 ** Проверка на повторяющиеся связи>
 */
 
-static int	ft_check_duplicate_connect(t_room *room1, t_room *room2)
+static int		ft_check_duplicate_connect(t_room *room1, t_room *room2)
 {
 	t_connect	*connect;
 
@@ -79,10 +79,10 @@ static int	ft_check_duplicate_connect(t_room *room1, t_room *room2)
 ** ft_connectconnect: связываем комнаты друг с другом в структуре.
 */
 
-void		ft_connects(t_data *data, char *connect_str)
+void			ft_connects(t_data *data, char *connect_str)
 {
-	t_room	*room1;
-	t_room	*room2;
+	t_room		*room1;
+	t_room		*room2;
 
 	room1 = NULL;
 	room2 = NULL;

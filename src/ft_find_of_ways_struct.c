@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_find_of_ways_struct.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/04 17:00:00 by asmall            #+#    #+#             */
 /*   Updated: 2020/07/04 17:32:01 by vfearles         ###   ########.fr       */

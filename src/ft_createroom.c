@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_createroom.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/13 20:04:05 by asmall            #+#    #+#             */
 /*   Updated: 2020/06/13 20:04:06 by vfearles         ###   ########.fr       */

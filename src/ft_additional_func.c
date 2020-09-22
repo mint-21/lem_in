@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_additional_func.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*   By: vfearles <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/12/04 16:56:17 by asmall            #+#    #+#             */
-/*   Updated: 2020/07/04 16:56:18 by vfearles         ###   ########.fr       */
+/*   Created: 2020/09/22 11:16:04 by vfearles          #+#    #+#             */
+/*   Updated: 2020/09/22 11:16:08 by vfearles         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 ** ++(*weight): вес пути
 */
 
-t_connect	*create_inhead(t_path *tmp, t_path *path, t_connect *head,
+t_connect		*create_inhead(t_path *tmp, t_path *path, t_connect *head,
 					int *weight)
 {
 	if (head->room->in_part)
@@ -37,7 +37,7 @@ t_connect	*create_inhead(t_path *tmp, t_path *path, t_connect *head,
 ** Инициализируем структуру путей way
 */
 
-t_way		*way_init(t_way *way, t_path *path, int weight, t_way *ways)
+t_way			*way_init(t_way *way, t_path *path, int weight, t_way *ways)
 {
 	way->path = path;
 	way->path_cost = weight;
@@ -57,7 +57,7 @@ t_way		*way_init(t_way *way, t_path *path, int weight, t_way *ways)
 ** дополнительные условия для реализации входящих узлов
 */
 
-t_connect	*terms(t_connect *head, t_connect *connect)
+t_connect		*terms(t_connect *head, t_connect *connect)
 {
 	if (head->room->in_part)
 		connect = head->room->in_part->connects;
@@ -68,7 +68,7 @@ t_connect	*terms(t_connect *head, t_connect *connect)
 	return (connect);
 }
 
-void	ft_perror(void)
+void			ft_perror(void)
 {
 	perror("lem-in");
 	exit(1);
