@@ -211,7 +211,7 @@ t_connect				*create_inhead(t_path *tmp, t_path *path,
 										t_connect *head, int *weight);
 t_connect				*terms(t_connect *head, t_connect *connect);
 void					path_init(t_path *path, t_room *end, t_path *tmp);
-t_connect				*turn_room(t_room *room, t_connect *connect,
+t_connect				*turn_and_change(t_room *room, t_connect *connect,
 									t_room *start, int *flag);
 int						ft_init_path_struct(t_path *path, t_room *room,
 											int path_cost);

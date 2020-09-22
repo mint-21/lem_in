@@ -73,7 +73,7 @@ void			path(t_room *room, t_room *start, t_way **ways, int path_cost)
 }
 
 /*
-** turn_room: алгоритм поиска в ширину, назначение родительских узлов.
+** turn_and_change: алгоритм поиска в ширину, назначение родительских узлов.
 ** path: создание n-части пути, инициализация структур t_way и t_path.
 ** null: возвращаем структуру к исходному состоянию weight.
 ** rooms_count: количество комнат; weight: временная метка.
@@ -96,9 +96,9 @@ void			djkastra(int flag, t_data *data)
 			if (room->state)
 			{
 				if (room->weight != INF)
-					connect = turn_room(room, connect, data->start, &flag);
+					connect = turn_and_change(room, connect, data->start, &flag);
 				if ((room_d = room->out_part) && room_d->weight != INF)
-					connect = turn_room(room_d, connect, data->start, &flag);
+					connect = turn_and_change(room_d, connect, data->start, &flag);
 			}
 			room = room->next;
 			(room == data->end) ? room = room->next : 0;
