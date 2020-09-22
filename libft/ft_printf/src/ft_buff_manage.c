@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-void	ft_init_buff(t_buff *buf, int fd)
+void		ft_init_buff(t_buff *buf, int fd)
 {
 	int		i;
 
@@ -24,14 +24,14 @@ void	ft_init_buff(t_buff *buf, int fd)
 	buf->fd = fd;
 }
 
-void	ft_fd_write(int fd, t_buff *buf)
+void		ft_fd_write(int fd, t_buff *buf)
 {
 	write(fd, buf->buff, buf->i);
 	buf->len += buf->i;
 	buf->i = 0;
 }
 
-void	ft_push(t_buff *buf, unsigned char c)
+void		ft_push(t_buff *buf, unsigned char c)
 {
 	buf->buff[buf->i++] = c;
 	if (buf->i == MAX_LEN - 1)

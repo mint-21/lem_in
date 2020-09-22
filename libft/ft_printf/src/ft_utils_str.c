@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-void	ft_strdel(char **str)
+void				ft_strdel(char **str)
 {
 	if (str && *str)
 	{
@@ -21,7 +21,7 @@ void	ft_strdel(char **str)
 	}
 }
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+void				*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char	*new_dst;
 	unsigned char	*new_src;
@@ -43,7 +43,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 
-int		ft_strnlen(char *str, int n)
+int					ft_strnlen(char *str, int n)
 {
 	int		len;
 
@@ -58,10 +58,10 @@ int		ft_strnlen(char *str, int n)
 	return (len);
 }
 
-int		ft_wstrnlen(wchar_t *str, int n)
+int					ft_wstrnlen(wchar_t *str, int n)
 {
-	int		len;
-	int		bytes;
+	int				len;
+	int				bytes;
 
 	len = 0;
 	while (*str && n)
@@ -87,9 +87,9 @@ int		ft_wstrnlen(wchar_t *str, int n)
 	return (len);
 }
 
-int		ft_rstrnlen(char *str, int n)
+int					ft_rstrnlen(char *str, int n)
 {
-	int		len;
+	int				len;
 
 	len = 0;
 	while (n--)

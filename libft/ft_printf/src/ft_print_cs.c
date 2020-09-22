@@ -19,7 +19,7 @@
 ** аргументе функции. По умолчанию число приводится к типу unsigned char.
 */
 
-void	ft_c_print(t_options *f, t_buff *buf, unsigned char c)
+void		ft_c_print(t_options *f, t_buff *buf, unsigned char c)
 {
 	f->width--;
 	if (!(f->flags & F_MINUS))
@@ -33,7 +33,7 @@ void	ft_c_print(t_options *f, t_buff *buf, unsigned char c)
 ** Условия для побитовой конвертации типа 'c'
 */
 
-int		ft_convert_to_utf8(wchar_t c, char *lc)
+int			ft_convert_to_utf8(wchar_t c, char *lc)
 {
 	int		bytes;
 
@@ -69,7 +69,7 @@ int		ft_convert_to_utf8(wchar_t c, char *lc)
 ** если был указан модификатор длины l)
 */
 
-void	ft_lc_print(t_options *f, t_buff *buf, wchar_t c)
+void		ft_lc_print(t_options *f, t_buff *buf, wchar_t c)
 {
 	int		bytes;
 	char	lc[4];
@@ -92,7 +92,7 @@ void	ft_lc_print(t_options *f, t_buff *buf, wchar_t c)
 ** Строка выводится пока не будет встречен символ конец строки (/0).
 */
 
-void	ft_s_print(t_options *f, t_buff *buf, char *str)
+void		ft_s_print(t_options *f, t_buff *buf, char *str)
 {
 	int		len;
 
@@ -114,7 +114,7 @@ void	ft_s_print(t_options *f, t_buff *buf, char *str)
 ** Для функции wprintf строка по умолчанию обрабатывается как wchar_t*.
 */
 
-void	ft_ls_print(t_options *f, t_buff *buf, wchar_t *str)
+void		ft_ls_print(t_options *f, t_buff *buf, wchar_t *str)
 {
 	int		len;
 	int		bytes;

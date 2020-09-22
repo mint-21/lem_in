@@ -20,7 +20,7 @@
 ** числами, на месте знака числа, будет выводиться пробел.
 */
 
-char					ft_get_sign(t_options *f, \
+char					ft_get_sign(t_options *f,
 							unsigned long long *unum, long long num)
 {
 	char				sign;

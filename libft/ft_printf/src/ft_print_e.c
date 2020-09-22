@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-void	ft_set_exp(char *number, t_fnum *fnum, char spec)
+void		ft_set_exp(char *number, t_fnum *fnum, char spec)
 {
 	int		numlen;
 
@@ -36,7 +36,7 @@ void	ft_set_exp(char *number, t_fnum *fnum, char spec)
 	*number = '\0';
 }
 
-int		ft_get_first_enum(char *number, char **ipoint, char **fpoint)
+int			ft_get_first_enum(char *number, char **ipoint, char **fpoint)
 {
 	int		i;
 
@@ -49,7 +49,7 @@ int		ft_get_first_enum(char *number, char **ipoint, char **fpoint)
 	return (i);
 }
 
-char	*ft_get_enum(t_fnum *fnum, int sum, int ilen, char spec)
+char		*ft_get_enum(t_fnum *fnum, int sum, int ilen, char spec)
 {
 	int		i;
 	int		zero;
@@ -86,7 +86,7 @@ char	*ft_get_enum(t_fnum *fnum, int sum, int ilen, char spec)
 ** (они равны 0, если аргумент равен 0).
 */
 
-void	ft_e_print(t_options *f, t_buff *buf, t_fnum *fnum)
+void		ft_e_print(t_options *f, t_buff *buf, t_fnum *fnum)
 {
 	char	sign;
 	char	*number;

@@ -21,9 +21,9 @@
 ** ft_set_spec - проверка спецификаторов
 */
 
-void	ft_set_options(t_options *f, const char **form, va_list ap)
+void			ft_set_options(t_options *f, const char **form, va_list ap)
 {
-	char	*temp;
+	char		*temp;
 
 	f->flags = 0;
 	f->width = -1;
@@ -53,7 +53,7 @@ void	ft_set_options(t_options *f, const char **form, va_list ap)
 ** ft_push: заполнение массива buff, если есть символы до "%"
 */
 
-int		ft_printf(const char *form, ...)
+int				ft_printf(const char *form, ...)
 {
 	va_list		ap;
 	t_options	f;
@@ -84,7 +84,7 @@ int		ft_printf(const char *form, ...)
 ** Главная управляющая функция с fd
 */
 
-int		ft_dprintf(int fd, const char *form, ...)
+int				ft_dprintf(int fd, const char *form, ...)
 {
 	va_list		ap;
 	t_options	f;

@@ -47,7 +47,7 @@ void	ft_r_printand(t_options *f, t_buff *buf)
 
 void	ft_r_print(t_options *f, t_buff *buf, char *str)
 {
-	int		len;
+	int	len;
 
 	if (!str)
 		str = "(null)";
@@ -87,9 +87,9 @@ void	ft_reset_opt_k(t_options *f)
 
 void	ft_k_print(t_options *f, t_buff *buf, unsigned long long unum)
 {
-	int		sec;
-	int		minutes;
-	int		hours;
+	int	sec;
+	int	minutes;
+	int	hours;
 
 	sec = unum % 60;
 	unum /= 60;

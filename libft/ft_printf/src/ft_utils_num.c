@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int		ft_atoi(const char *str)
+int				ft_atoi(const char *str)
 {
 	long		res;
 	short int	sign;
@@ -38,9 +38,9 @@ int		ft_atoi(const char *str)
 	return ((int)(res * sign));
 }
 
-int		ft_unumlen(unsigned long long num, int base)
+int				ft_unumlen(unsigned long long num, int base)
 {
-	int		len;
+	int			len;
 
 	len = 0;
 	while (num /= base)
@@ -48,10 +48,11 @@ int		ft_unumlen(unsigned long long num, int base)
 	return (len + 1);
 }
 
-int		ft_itoa_base(unsigned long long num, char *str, int base, char lower)
+int				ft_itoa_base(unsigned long long num, char *str,
+								int base, char lower)
 {
-	char	*digits;
-	int		len;
+	char		*digits;
+	int			len;
 
 	digits = "0123456789ABCDEF";
 	len = ft_unumlen(num, base);
@@ -69,9 +70,9 @@ int		ft_itoa_base(unsigned long long num, char *str, int base, char lower)
 ** Возведение в степень
 */
 
-int		ft_power(int base, int power)
+int				ft_power(int base, int power)
 {
-	int		res;
+	int			res;
 
 	res = 1;
 	while (power--)
@@ -84,11 +85,11 @@ int		ft_power(int base, int power)
 ** & (Побитовое И (AND)), << (Побитовый сдвиг влево)
 */
 
-int		ft_get_zero(unsigned long long num, int shift, char *fpoint)
+int				ft_get_zero(unsigned long long num, int shift, char *fpoint)
 {
-	int		len;
-	int		zero;
-	int		power;
+	int			len;
+	int			zero;
+	int			power;
 
 	len = ft_strnlen(fpoint, -1);
 	zero = 0;

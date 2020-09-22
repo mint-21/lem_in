@@ -19,7 +19,7 @@
 ** с правым выравниванием, указанием знака только для отрицательных чисел.
 */
 
-void	ft_parse_num(t_options *f, t_buff *buf, long long num)
+void		ft_parse_num(t_options *f, t_buff *buf, long long num)
 {
 	if (f->spec == 'D')
 		ft_di_print(f, buf, (long)num);
@@ -47,7 +47,7 @@ void	ft_parse_num(t_options *f, t_buff *buf, long long num)
 ** По умолчанию выводится число размером sizeof( int ), с правым выравниванием.
 */
 
-void	ft_parse_unum(t_options *f, t_buff *buf, unsigned long long unum)
+void		ft_parse_unum(t_options *f, t_buff *buf, unsigned long long unum)
 {
 	if (f->spec == 'U' || f->spec == 'O')
 		ft_uoxb_print(f, buf, (unsigned long)unum);
@@ -96,7 +96,7 @@ void	ft_parse_unum(t_options *f, t_buff *buf, unsigned long long unum)
 ** ipoint - числа до точки, fpoint - числа после точки
 */
 
-void	ft_parse_fnum(t_options *f, t_buff *buf, double num, \
+void		ft_parse_fnum(t_options *f, t_buff *buf, double num, \
 				void (*ft_print)(t_options*, t_buff*, t_fnum*))
 {
 	t_fnum	fnum;
@@ -141,7 +141,7 @@ void	ft_parse_fnum(t_options *f, t_buff *buf, double num, \
 ** всех битов соответствующих биту «1» в маске
 */
 
-void	ft_parse_lfnum(t_options *f, t_buff *buf, long double num, \
+void		ft_parse_lfnum(t_options *f, t_buff *buf, long double num, \
 				void (*ft_print)(t_options*, t_buff*, t_fnum*))
 {
 	t_fnum	fnum;
