@@ -33,7 +33,7 @@ t_connect		*ft_createconnect(t_room *room)
 }
 
 /*
-** Creation of links in the structure and initialization.
+** Creation of links in the structure and initialization
 */
 
 static void		ft_connectconnect(t_room *room_one, t_room *room_two)

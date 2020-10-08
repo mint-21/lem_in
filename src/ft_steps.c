@@ -51,9 +51,9 @@ int				steps_for_ants(t_way *way, int ants)
 }
 
 /*
-** The function looks for the room where the ant currently exists.
-** ++way->ants: counting the number of ants passing through the path.
-** way = way->next: if there is more than one path, we take the next path.
+** The function looks for the room where the ant currently exists
+** ++way->ants: counting the number of ants passing through the path
+** way = way->next: if there is more than one path, we take the next path
 */
 
 void			ft_step(t_data *data, int *ant, t_buf *buf, int steps)
