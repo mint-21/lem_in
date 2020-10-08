@@ -12,6 +12,26 @@
 
 #include "lemin.h"
 
+void		ft_clean_links(t_data *s)
+{
+	t_link	*cur_l;
+	t_link	*next_l;
+	int		i;
+
+	i = -1;
+	while (++i < s->rooms_count)
+	{
+		cur_l = s->links[i];
+		while (cur_l)
+		{
+			next_l = cur_l->next;
+			free(cur_l);
+			cur_l = next_l;
+		}
+	}
+	free(s->links);
+}
+
 static void		ft_free_connects(t_connect *connects)
 {
 	t_connect	*tmp;
@@ -84,6 +104,7 @@ void			ft_struct_free(t_data *data)
 		free(tmp->out_part);
 		free(tmp);
 	}
+	ft_clean_links(data);
 	ft_free_ways(data->ways_dij);
 	ft_free_vars(data->options);
 }

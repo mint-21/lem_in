@@ -181,7 +181,7 @@ int						ft_findrooms(t_data *data, char *connect,
 										t_room **room1, t_room **room2);
 void					ft_find_all_ways(t_data *data);
 int						ft_suurballe(t_data *data);
-void					djkastra(int flag, t_data *data);
+void					djkastra(int flag, t_data *data, int room_count);
 void					ft_change_ribs(t_path *path);
 void					ft_lemin(t_data *data);
 void					ft_struct_free(t_data *data);

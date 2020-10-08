@@ -1,0 +1,3 @@
+/Users/asmall/Desktop/new08/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/asmall/Desktop/new08/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/asmall/Desktop/new08/cmake-build-debug/CMakeFiles/new08.dir

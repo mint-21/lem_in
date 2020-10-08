@@ -4,5 +4,7 @@ s 1 7
 ##end
 e 1 0
 a 2 0
-s-e
-a-e
+b 3 0
+c 3 0
+s-b
+b-c

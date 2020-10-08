@@ -51,7 +51,7 @@ int				ft_init_room(t_data *data, t_valid *check, char **str)
 	}
 	i = check->li_connects_bigin - 1;
 	free_init(i, check, data, str);
-	return (0);
+	return (1);
 }
 
 static void		correct_strings(t_data *data, t_valid *check, char *str, int i)

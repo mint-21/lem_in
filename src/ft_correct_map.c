@@ -58,6 +58,8 @@ int				ft_correct_rooms(char *str, t_valid *check, int j)
 			ft_print_error(E_ROOM);
 		space++;
 		str = (*str == '+' || *str == '-') ? str + 2 : str + 1;
+		if (!*str && space == 2)
+			ft_print_error(E_ROOM);
 		while (*str >= '0' && *str <= '9')
 			str++;
 	}
@@ -87,7 +89,7 @@ int				check_double_coor(t_data *s, t_room *curr, char *str)
 	check = s->rooms;
 	while (check)
 	{
-		if (curr->name != check->name && (curr->x == check->x
+		if ((!ft_strcmp(curr->name, check->name)) || (curr->x == check->x
 			&& curr->y == check->y))
 			return (1);
 		check = check->next;

@@ -81,13 +81,13 @@ void			path(t_room *room, t_room *start, t_way **ways, int path_cost)
 ** начиная с узла-источника, все преемники текущего узла,
 */
 
-void			djkastra(int flag, t_data *data)
+void			djkastra(int flag, t_data *data, int room_count)
 {
 	t_room		*room;
 	t_connect	*connect;
 	t_room		*room_d;
 
-	while (--(data->rooms_count) && flag == 1)
+	while (--room_count && flag == 1)
 	{
 		flag = 0;
 		room = data->rooms;
