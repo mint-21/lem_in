@@ -174,19 +174,19 @@ int						ft_correct_rooms(char *str, t_valid *check, int j);
 int						ft_correct_rooms_double(char *room1, char *room2);
 void					ft_correct_connects(char *str, t_valid *check, int j);
 void					ft_create(t_data *data, char *str);
-t_room					*ft_createroom(char *line);
+t_room					*ft_createroom(char *line);  // поменять
 void					ft_connects(t_data *data, char *str);
 t_connect				*ft_createconnect(t_room *room);
 int						ft_findrooms(t_data *data, char *connect,
-										t_room **room1, t_room **room2);
+										t_room **room1, t_room **room2);  //поменять
 void					ft_find_all_ways(t_data *data);
 int						ft_srb_alg(t_data *data);
 void					djkastra(int flag, t_data *data, int room_count);
 void					ft_change_ribs(t_path *path);
-void					ft_lemin(t_data *data);
+void					ft_lemin(t_data *data);   //поменять
 void					ft_struct_free(t_data *data);
 void					ft_print_error(int id);
-void					ft_perror();
+void					ft_perror();                  // придумать что с ним делать
 int						ft_atoi_mod(const char *str);
 int						steps_for_ants(t_way *way, int ants);
 void					find_of_ways_struct(t_data *data);
