@@ -14,7 +14,7 @@
 
 /*
 ** Counts the number of links from start and the number of links coming to end
-** The function returns the smallest of the counted values.
+** The function returns the smallest of the counted values
 */
 
 static int			find_ways(t_room *start, t_room *end)

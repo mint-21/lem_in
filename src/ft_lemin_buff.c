@@ -44,8 +44,8 @@ void		copy_text_buff(t_data *data, t_path *path, t_buf *buf, int ant)
 }
 
 /*
-** The function prints each step to the console.
-** ft_step: buffered the text one step per path.
+** The function prints each step to the console
+** ft_step: buffered the text one step per path
 */
 
 void		ft_lemin(t_data *data)
