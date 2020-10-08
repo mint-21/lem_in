@@ -32,8 +32,7 @@ char		*ft_read_line(char *str, int fd)
 }
 
 /*
-** Главная функция чтения карты.
-** ft_read_line: чтени карты через read в строку.
+** Main card reading function.
 */
 
 char		*reading_card(t_flags *flags, char ***str_split)

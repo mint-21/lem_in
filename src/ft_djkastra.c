@@ -13,7 +13,7 @@
 #include "lemin.h"
 
 /*
-** Инициализация финальной структуры пути
+** Initializing the final path structure
 */
 
 static void		create_way(t_path *path, int path_cost, t_way **ways)
@@ -29,8 +29,8 @@ static void		create_way(t_path *path, int path_cost, t_way **ways)
 }
 
 /*
-** Создаем структуру n-пути с название на комнаты и указателем
-** на следующий и предыдущий элемент.
+** We create an n-path structure with a name for the rooms and a pointer
+** to the next and previous element.
 */
 
 static void		init_path(t_path *path, t_room *room_p, t_path *tmp)
@@ -73,12 +73,8 @@ void			path(t_room *room, t_room *start, t_way **ways, int path_cost)
 }
 
 /*
-** turn_and_change: присваивание комнате вес
-** path: создание n-части пути, инициализация структур t_way и t_path.
-** null: возвращаем структуру к исходному состоянию weight.
-** rooms_count: количество комнат; weight: временная метка.
-** изначально список посещённых узлов пуст, weight = 0.
-** начиная с узла-источника, все преемники текущего узла,
+** rooms_count: number of rooms.
+** initially the list of visited nodes is empty, weight = 0.
 */
 
 void			djkastra(int flag, t_data *data, int room_count)

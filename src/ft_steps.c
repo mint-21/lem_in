@@ -13,12 +13,13 @@
 #include "lemin.h"
 
 /*
-** Считаем количество шагов в пути
-** steps - (way->path_cost - 1): количество шагов подлежащее пересмотру
-** ((tmp * (way->path_number - 1)) + ost) / way->path_number: расчет нового
-** кол-ва шагов для пути
-** (tmp * (way->path_number - 1) + ost) % way->path_number: кол-во мурав в ост
-** Функция возвращает количество пройденных шагов.
+** We count the number of steps along the way
+** steps - (way->path_cost - 1): number of steps to revise
+** ((tmp * (way->path_number - 1)) + ost) / way->path_number: calculation of
+** a new number of steps
+** (tmp * (way->path_number - 1) + ost) % way->path_number: number of ant in
+** the remainder
+** The function returns the number of steps taken.
 */
 
 int				steps_for_ants(t_way *way, int ants)
@@ -50,12 +51,9 @@ int				steps_for_ants(t_way *way, int ants)
 }
 
 /*
-** Функция ищет комнату, где на данный момент есть муравей.
-** В path и way передали лучший путь.
-** ++way->ants: подчсчет кол-ва муравьев проходящих через путь.
-** copy_text_buff: заносит в буфер текст и ведет подсчет
-** муравьев в каждой комнате.
-** way = way->next: если путь не один, берем следубщий путь.
+** The function looks for the room where the ant currently exists.
+** ++way->ants: counting the number of ants passing through the path.
+** way = way->next: if there is more than one path, we take the next path.
 */
 
 void			ft_step(t_data *data, int *ant, t_buf *buf, int steps)

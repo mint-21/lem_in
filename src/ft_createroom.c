@@ -13,7 +13,7 @@
 #include "lemin.h"
 
 /*
-** Создаем структуру комнатыs
+** room structure
 */
 
 t_room			*ft_createroom(char *name)
@@ -36,8 +36,9 @@ t_room			*ft_createroom(char *name)
 }
 
 /*
-** Функция создает исходящие узлы
-** Вес ребер из исходящих во входящие узлы ставим на 0, наоборот -1
+** The function creates outgoing nodes
+** We set the weight of edges from outgoing to incoming nodes to 0,
+** vice versa -1
 */
 
 void			create_out_room(t_room *in, t_room *out, t_room *room,

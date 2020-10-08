@@ -13,8 +13,8 @@
 #include "lemin.h"
 
 /*
-** Проверяется связь до знака '-' с именем комнаты.
-** name_connect[i]; наименование комнаты до знака '-'.
+** The connection is checked up to the '-' sign with the name of the room.
+** name_connect[i]: the name of the room before the '-' sign.
 */
 
 int			ft_name_equ_room1(char *name_room, char *name_connect)
@@ -31,8 +31,8 @@ int			ft_name_equ_room1(char *name_room, char *name_connect)
 }
 
 /*
-** Проверяется связь после знака '-' с именем комнаты.
-** name_connect[j]; наименование комнаты после знака '-'.
+** The connection after the '-' sign with the name of the room is checked.
+** name_connect[j]: the name of the room after the '-' sign.
 */
 
 int			ft_name_equ_room2(char *name_room, char *name_connect)
@@ -58,10 +58,8 @@ int			ft_name_equ_room2(char *name_room, char *name_connect)
 }
 
 /*
-** Поиск связей комнат.
-** ft_name_equ_room1: проверка первой комнаты на связи.
-** ft_name_equ_room2: проверка второй комнаты на связи.
-** head: первая комната в структуре t_room.
+** Search for room connections.
+** head: the first room in the t_room structure.
 */
 
 int			ft_findrooms(t_data *data, char *connect_str,

@@ -117,7 +117,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/asmall/Desktop/new08/src/ft_print.c" "/Users/asmall/Desktop/new08/cmake-build-debug/CMakeFiles/new08.dir/src/ft_print.c.o"
   "/Users/asmall/Desktop/new08/src/ft_redirection.c" "/Users/asmall/Desktop/new08/cmake-build-debug/CMakeFiles/new08.dir/src/ft_redirection.c.o"
   "/Users/asmall/Desktop/new08/src/ft_steps.c" "/Users/asmall/Desktop/new08/cmake-build-debug/CMakeFiles/new08.dir/src/ft_steps.c.o"
-  "/Users/asmall/Desktop/new08/src/ft_suurballe.c" "/Users/asmall/Desktop/new08/cmake-build-debug/CMakeFiles/new08.dir/src/ft_suurballe.c.o"
+  "/Users/asmall/Desktop/new08/src/ft_srb_alg.c" "/Users/asmall/Desktop/new08/cmake-build-debug/CMakeFiles/new08.dir/src/ft_srb_alg.c.o"
   "/Users/asmall/Desktop/new08/src/ft_zerodata.c" "/Users/asmall/Desktop/new08/cmake-build-debug/CMakeFiles/new08.dir/src/ft_zerodata.c.o"
   "/Users/asmall/Desktop/new08/src/main.c" "/Users/asmall/Desktop/new08/cmake-build-debug/CMakeFiles/new08.dir/src/main.c.o"
   )

@@ -437,7 +437,7 @@
 		<Unit filename="/Users/asmall/Desktop/new08/src/ft_steps.c">
 			<Option target="new08"/>
 		</Unit>
-		<Unit filename="/Users/asmall/Desktop/new08/src/ft_suurballe.c">
+		<Unit filename="/Users/asmall/Desktop/new08/src/ft_srb_alg.c">
 			<Option target="new08"/>
 		</Unit>
 		<Unit filename="/Users/asmall/Desktop/new08/src/ft_zerodata.c">

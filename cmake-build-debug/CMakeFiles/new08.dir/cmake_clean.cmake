@@ -112,7 +112,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/new08.dir/src/ft_print.c.o"
   "CMakeFiles/new08.dir/src/ft_redirection.c.o"
   "CMakeFiles/new08.dir/src/ft_steps.c.o"
-  "CMakeFiles/new08.dir/src/ft_suurballe.c.o"
+  "CMakeFiles/new08.dir/src/ft_srb_alg.c.o"
   "CMakeFiles/new08.dir/src/ft_zerodata.c.o"
   "CMakeFiles/new08.dir/src/main.c.o"
   "new08"

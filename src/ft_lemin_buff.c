@@ -13,8 +13,8 @@
 #include "lemin.h"
 
 /*
-** В буфер запоминаем для вывода на консоль (L1-name).
-** В комнату добавляем муравья, а из которой вышли - убираем муравья
+** We store it in the buffer for output to the console (L1-name).
+** Add an ant to the room, and from which we left - remove the ant
 */
 
 void		copy_text_buff(t_data *data, t_path *path, t_buf *buf, int ant)
@@ -44,8 +44,8 @@ void		copy_text_buff(t_data *data, t_path *path, t_buf *buf, int ant)
 }
 
 /*
-** Функция выводит на консоль каждый шаг.
-** ft_step: заносит в буфер текст по одному шагу на каждый путь.
+** The function prints each step to the console.
+** ft_step: buffered the text one step per path.
 */
 
 void		ft_lemin(t_data *data)

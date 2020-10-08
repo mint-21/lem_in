@@ -13,7 +13,7 @@
 #include "lemin.h"
 
 /*
-** Инициализация финальной структуры пути
+** Initializing the final path structure
 */
 
 void		init_way(t_way *way, int path_cost, t_way **ways, t_path *path)
@@ -25,10 +25,6 @@ void		init_way(t_way *way, int path_cost, t_way **ways, t_path *path)
 	way->prev = NULL;
 	way->next = *ways;
 }
-
-/*
-** Инициализация
-*/
 
 void		path_init(t_path *path, t_room *end, t_path *tmp)
 {

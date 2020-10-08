@@ -52,7 +52,7 @@ typedef struct			s_flags
 }						t_flags;
 
 /*
-** t_path: список комнат
+** t_path: list of rooms
 */
 
 typedef struct			s_path
@@ -63,7 +63,7 @@ typedef struct			s_path
 }						t_path;
 
 /*
-** t_way: список путей (из комнат)
+** t_way: list of paths (from rooms)
 */
 
 typedef struct			s_way
@@ -77,7 +77,7 @@ typedef struct			s_way
 }						t_way;
 
 /*
-** s_option: структура варианта пути.
+** s_option: path variant structure.
 */
 
 typedef struct			s_option
@@ -134,9 +134,9 @@ typedef struct			s_valid
 }						t_valid;
 
 /*
-** ways_dij: все пути которые находил алгоритм дейкстры.
+** ways_dij: all the paths that Dijkstra's algorithm found.
 ** hash_start: index of room start; hash_end: index of room end.
-** options: варианты выбранных путей; best_opt: лучшие варианты.
+** options: options for selected paths; best_opt: the best options.
 */
 
 typedef struct			s_data
@@ -180,7 +180,7 @@ t_connect				*ft_createconnect(t_room *room);
 int						ft_findrooms(t_data *data, char *connect,
 										t_room **room1, t_room **room2);
 void					ft_find_all_ways(t_data *data);
-int						ft_suurballe(t_data *data);
+int						ft_srb_alg(t_data *data);
 void					djkastra(int flag, t_data *data, int room_count);
 void					ft_change_ribs(t_path *path);
 void					ft_lemin(t_data *data);

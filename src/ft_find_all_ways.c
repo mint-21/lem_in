@@ -13,8 +13,8 @@
 #include "lemin.h"
 
 /*
-** Считает количество связей с start и количество связей, приходящих в end
-** Функция возвращает наименьшее из подсчитанных значений.
+** Counts the number of links from start and the number of links coming to end
+** The function returns the smallest of the counted values.
 */
 
 static int			find_ways(t_room *start, t_room *end)
@@ -41,9 +41,9 @@ static int			find_ways(t_room *start, t_room *end)
 }
 
 /*
-** find_ways: возвращает количество путей
-** ft_suurballe: ф-ия создает новый граф с входящими и исходящими узлами
-** В главную структуру добавляем структуру с лучшими путями
+** find_ways: returns the number of paths
+** ft_srb_alg: function creates a new graph with incoming and outgoing nodes
+** add structure with better paths
 */
 
 void				ft_find_all_ways(t_data *data)
@@ -53,7 +53,7 @@ void				ft_find_all_ways(t_data *data)
 	t_option		*best_opt;
 
 	while ((data->total_ways = find_ways(data->start, data->end)) > 0
-			&& ft_suurballe(data))
+			&& ft_srb_alg(data))
 	{
 		--data->total_ways;
 		find_of_ways_struct(data);

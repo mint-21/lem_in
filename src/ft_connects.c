@@ -13,7 +13,7 @@
 #include "lemin.h"
 
 /*
-** Инициализация структуры связей
+** Link structure initialization
 */
 
 t_connect		*ft_createconnect(t_room *room)
@@ -33,7 +33,7 @@ t_connect		*ft_createconnect(t_room *room)
 }
 
 /*
-** Создание связей в структуре и инициализация.
+** Creation of links in the structure and initialization.
 */
 
 static void		ft_connectconnect(t_room *room_one, t_room *room_two)
@@ -55,10 +55,6 @@ static void		ft_connectconnect(t_room *room_one, t_room *room_two)
 	room_one->connects_count += 1;
 }
 
-/*
-** Проверка на повторяющиеся связи>
-*/
-
 static int		ft_check_duplicate_connect(t_room *room1, t_room *room2)
 {
 	t_connect	*connect;
@@ -74,9 +70,9 @@ static int		ft_check_duplicate_connect(t_room *room1, t_room *room2)
 }
 
 /*
-** ft_findrooms: поиск связующих комнат.
-** ft_check_duplicate_connect: проверка на повторяющиеся связи.
-** ft_connectconnect: связываем комнаты друг с другом в структуре.
+** ft_findrooms: search for connecting rooms.
+** ft_check_duplicate_connect: checking for duplicate connections.
+** ft_connectconnect: connect rooms in the structure.
 */
 
 void			ft_connects(t_data *data, char *connect_str)

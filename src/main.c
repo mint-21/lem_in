@@ -13,13 +13,10 @@
 #include "lemin.h"
 
 /*
-** ft_flags_lemin: проверка на флаги.
-** reading_card: чтение карты. ft_correct: валидация карты.
-** ft_parse_data: создание комнат и связей между ними.
-** ft_find_all_ways: главный алгоритм программы.
-** print_n_free_map_data: печать карты на консоль.
-** ft_lemin: вывод на консоль ответа программы.
-** ft_struct_free: очистка структуры.
+** reading_card: reading the map. ft_correct: card validation.
+** ft_find_all_ways: the main algorithm of the program.
+** print_n_free_map_data: printing the map to the console.
+** ft_lemin: output to the console of the program's response.
 */
 
 int			main(int ac, char **av)

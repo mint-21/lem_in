@@ -12,7 +12,7 @@
 
 NAME			=	lem-in
 
-SRC				=	ft_card_reading.c ft_createroom.c ft_djkastra.c ft_suurballe.c\
+SRC				=	ft_card_reading.c ft_createroom.c ft_djkastra.c ft_srb_alg.c\
 				   	ft_change.c ft_correct_main.c\
 				   	ft_name_find.c ft_correct_map.c ft_cleaning_struct.c\
 					ft_init.c ft_zerodata.c\
@@ -22,7 +22,7 @@ SRC				=	ft_card_reading.c ft_createroom.c ft_djkastra.c ft_suurballe.c\
 					ft_lemin_fl.c ft_creat_duplicate.c\
 					ft_steps.c ft_additional_func.c ft_print.c\
 
-OBJ				=	ft_card_reading.o ft_createroom.o ft_djkastra.o ft_suurballe.o\
+OBJ				=	ft_card_reading.o ft_createroom.o ft_djkastra.o ft_srb_alg.o\
 				   	ft_change.o ft_correct_main.o\
 				   	ft_name_find.o ft_correct_map.o ft_cleaning_struct.o\
 					ft_additional_func.o ft_zerodata.o\

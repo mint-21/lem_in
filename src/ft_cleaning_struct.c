@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_struct_free.c                                   :+:      :+:    :+:   */
+/*   ft_cleaning_struct.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: vfearles <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/06 14:09:52 by asmall            #+#    #+#             */
-/*   Updated: 2020/07/06 14:09:52 by vfearles         ###   ########.fr       */
+/*   Created: 2020/10/08 18:41:51 by vfearles          #+#    #+#             */
+/*   Updated: 2020/10/08 18:41:53 by vfearles         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lemin.h"
 
-void		ft_clean_links(t_data *s)
+void			ft_clean_links(t_data *s)
 {
-	t_link	*cur_l;
-	t_link	*next_l;
-	int		i;
+	t_link		*cur_l;
+	t_link		*next_l;
+	int			i;
 
 	i = -1;
 	while (++i < s->rooms_count)
@@ -83,7 +83,7 @@ static void		ft_free_vars(t_option *options)
 }
 
 /*
-** Очищаем главную структуру
+** Cleaning up the main structure
 */
 
 void			ft_struct_free(t_data *data)

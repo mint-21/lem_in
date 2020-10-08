@@ -13,7 +13,7 @@
 #include "lemin.h"
 
 /*
-** Удаление обратных краев(ребер) вместе с их оригиналами
+** Removing back edges (ribs) along with their originals
 */
 
 void			null_turn(t_connect *reverse_h, t_connect *reverse_t,
@@ -32,8 +32,8 @@ void			null_turn(t_connect *reverse_h, t_connect *reverse_t,
 }
 
 /*
-** Удаление предыдущих связей в следующей связующей комнате,
-** чтобы граф не был двунаправленным.
+** Removing previous links in the next link room,
+** so that the graph is not bi-directional.
 */
 
 static void		ft_null_connect(t_room *dst, t_room *src)
@@ -56,9 +56,9 @@ static void		ft_null_connect(t_room *dst, t_room *src)
 }
 
 /*
-** path->room: комната со связями;
-** path->next->room: следующая связующая комната.
-** ft_null_connect: удаление предыдущих связей
+** path->room: room with connections;
+** path->next->room: next link room.
+** ft_null_connect: deleting previous links
 */
 
 void			ft_find_null(t_path *path)

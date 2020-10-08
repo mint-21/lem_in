@@ -3194,32 +3194,32 @@ src/ft_steps.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_steps.c.s
 .PHONY : src/ft_steps.c.s
 
-src/ft_suurballe.o: src/ft_suurballe.c.o
+src/ft_srb_alg.o: src/ft_srb_alg.c.o
 
-.PHONY : src/ft_suurballe.o
+.PHONY : src/ft_srb_alg.o
 
 # target to build an object file
-src/ft_suurballe.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_suurballe.c.o
-.PHONY : src/ft_suurballe.c.o
+src/ft_srb_alg.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_srb_alg.c.o
+.PHONY : src/ft_srb_alg.c.o
 
-src/ft_suurballe.i: src/ft_suurballe.c.i
+src/ft_srb_alg.i: src/ft_srb_alg.c.i
 
-.PHONY : src/ft_suurballe.i
+.PHONY : src/ft_srb_alg.i
 
 # target to preprocess a source file
-src/ft_suurballe.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_suurballe.c.i
-.PHONY : src/ft_suurballe.c.i
+src/ft_srb_alg.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_srb_alg.c.i
+.PHONY : src/ft_srb_alg.c.i
 
-src/ft_suurballe.s: src/ft_suurballe.c.s
+src/ft_srb_alg.s: src/ft_srb_alg.c.s
 
-.PHONY : src/ft_suurballe.s
+.PHONY : src/ft_srb_alg.s
 
 # target to generate assembly for a file
-src/ft_suurballe.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_suurballe.c.s
-.PHONY : src/ft_suurballe.c.s
+src/ft_srb_alg.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_srb_alg.c.s
+.PHONY : src/ft_srb_alg.c.s
 
 src/ft_zerodata.o: src/ft_zerodata.c.o
 
@@ -3623,9 +3623,9 @@ help:
 	@echo "... src/ft_steps.o"
 	@echo "... src/ft_steps.i"
 	@echo "... src/ft_steps.s"
-	@echo "... src/ft_suurballe.o"
-	@echo "... src/ft_suurballe.i"
-	@echo "... src/ft_suurballe.s"
+	@echo "... src/ft_srb_alg.o"
+	@echo "... src/ft_srb_alg.i"
+	@echo "... src/ft_srb_alg.s"
 	@echo "... src/ft_zerodata.o"
 	@echo "... src/ft_zerodata.i"
 	@echo "... src/ft_zerodata.s"

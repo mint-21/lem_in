@@ -1546,18 +1546,18 @@ CMakeFiles/new08.dir/src/ft_steps.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/new08.dir/src/ft_steps.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asmall/Desktop/new08/src/ft_steps.c -o CMakeFiles/new08.dir/src/ft_steps.c.s
 
-CMakeFiles/new08.dir/src/ft_suurballe.c.o: CMakeFiles/new08.dir/flags.make
-CMakeFiles/new08.dir/src/ft_suurballe.c.o: ../src/ft_suurballe.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asmall/Desktop/new08/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/new08.dir/src/ft_suurballe.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/new08.dir/src/ft_suurballe.c.o   -c /Users/asmall/Desktop/new08/src/ft_suurballe.c
+CMakeFiles/new08.dir/src/ft_srb_alg.c.o: CMakeFiles/new08.dir/flags.make
+CMakeFiles/new08.dir/src/ft_srb_alg.c.o: ../src/ft_srb_alg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asmall/Desktop/new08/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/new08.dir/src/ft_srb_alg.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/new08.dir/src/ft_srb_alg.c.o   -c /Users/asmall/Desktop/new08/src/ft_srb_alg.c
 
-CMakeFiles/new08.dir/src/ft_suurballe.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/new08.dir/src/ft_suurballe.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asmall/Desktop/new08/src/ft_suurballe.c > CMakeFiles/new08.dir/src/ft_suurballe.c.i
+CMakeFiles/new08.dir/src/ft_srb_alg.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/new08.dir/src/ft_srb_alg.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asmall/Desktop/new08/src/ft_srb_alg.c > CMakeFiles/new08.dir/src/ft_srb_alg.c.i
 
-CMakeFiles/new08.dir/src/ft_suurballe.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/new08.dir/src/ft_suurballe.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asmall/Desktop/new08/src/ft_suurballe.c -o CMakeFiles/new08.dir/src/ft_suurballe.c.s
+CMakeFiles/new08.dir/src/ft_srb_alg.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/new08.dir/src/ft_srb_alg.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asmall/Desktop/new08/src/ft_srb_alg.c -o CMakeFiles/new08.dir/src/ft_srb_alg.c.s
 
 CMakeFiles/new08.dir/src/ft_zerodata.c.o: CMakeFiles/new08.dir/flags.make
 CMakeFiles/new08.dir/src/ft_zerodata.c.o: ../src/ft_zerodata.c
@@ -1700,7 +1700,7 @@ new08_OBJECTS = \
 "CMakeFiles/new08.dir/src/ft_print.c.o" \
 "CMakeFiles/new08.dir/src/ft_redirection.c.o" \
 "CMakeFiles/new08.dir/src/ft_steps.c.o" \
-"CMakeFiles/new08.dir/src/ft_suurballe.c.o" \
+"CMakeFiles/new08.dir/src/ft_srb_alg.c.o" \
 "CMakeFiles/new08.dir/src/ft_zerodata.c.o" \
 "CMakeFiles/new08.dir/src/main.c.o"
 
@@ -1820,7 +1820,7 @@ new08: CMakeFiles/new08.dir/src/ft_null.c.o
 new08: CMakeFiles/new08.dir/src/ft_print.c.o
 new08: CMakeFiles/new08.dir/src/ft_redirection.c.o
 new08: CMakeFiles/new08.dir/src/ft_steps.c.o
-new08: CMakeFiles/new08.dir/src/ft_suurballe.c.o
+new08: CMakeFiles/new08.dir/src/ft_srb_alg.c.o
 new08: CMakeFiles/new08.dir/src/ft_zerodata.c.o
 new08: CMakeFiles/new08.dir/src/main.c.o
 new08: CMakeFiles/new08.dir/build.make

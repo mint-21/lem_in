@@ -130,7 +130,7 @@ add_executable(new08
         src/ft_print.c
         src/ft_redirection.c
         src/ft_steps.c
-        src/ft_suurballe.c
+        src/ft_srb_alg.c
         src/ft_zerodata.c
         src/lemin.h
         src/main.c)

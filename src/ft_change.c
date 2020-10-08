@@ -12,6 +12,10 @@
 
 #include "lemin.h"
 
+/*
+** the parent room is assigned the one whose weight is less than the current
+*/
+
 static int		loop(t_room *new_parrent, t_room *room)
 {
 	t_room		*ptr;
@@ -27,9 +31,8 @@ static int		loop(t_room *new_parrent, t_room *room)
 }
 
 /*
-** которые ещё не были посещены, пометить как посещённые (weight)
-** Присваиваем текущей комнате вес (weight)
-** loop: родительской комнатой назначается та, чей weight меньше текущего
+** mark visited rooms
+** Weighting the current room (weight)
 */
 
 t_connect		*turn_and_change(t_room *room, t_connect *connect,

@@ -13,9 +13,9 @@
 #include "lemin.h"
 
 /*
-** Находим кратчайшие пути в графе с входящими и исходящими узлами
-** Создаем входящие узлы
-** ++(*weight): вес пути
+** Finding the shortest paths in a graph with incoming and outgoing nodes
+** Create Inbound Nodes
+** ++(*weight): path weight
 */
 
 t_connect		*create_inhead(t_path *tmp, t_path *path, t_connect *head,
@@ -34,7 +34,7 @@ t_connect		*create_inhead(t_path *tmp, t_path *path, t_connect *head,
 }
 
 /*
-** Инициализируем структуру путей way
+** We initialize the structure of paths way
 */
 
 t_way			*way_init(t_way *way, t_path *path, int weight, t_way *ways)
@@ -54,7 +54,7 @@ t_way			*way_init(t_way *way, t_path *path, int weight, t_way *ways)
 }
 
 /*
-** дополнительные условия для реализации входящих узлов
+** conditions for the implementation of incoming nodes
 */
 
 t_connect		*terms(t_connect *head, t_connect *connect)

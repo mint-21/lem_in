@@ -13,10 +13,10 @@
 #include "lemin.h"
 
 /*
-** Дублируем все промежуточные вершины найденного пути на входящие
-** и исходящие узлы.
-** create_out_room: создание исходящих узлов
-** end изначально указывает на входящую часть и не перенаправляется
+** Duplicate all intermediate vertices of the found path to the incoming
+** and outgoing nodes.
+** create_out_room: creating outgoing nodes
+** end initially points to the incoming portion and is not redirected
 */
 
 void			ft_creat_duplicate(t_path *path, t_room *in)

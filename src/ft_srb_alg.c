@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_suurballe.c                                     :+:      :+:    :+:   */
+/*   ft_srb_alg.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: vfearles <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/14 17:27:26 by asmall            #+#    #+#             */
-/*   Updated: 2020/09/05 16:43:29 by vfearles         ###   ########.fr       */
+/*   Created: 2020/10/08 18:39:25 by vfearles          #+#    #+#             */
+/*   Updated: 2020/10/08 18:39:28 by vfearles         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lemin.h"
 
 /*
-** Зануляем room_par и weight ставим на временную метку
+** Set room_par to zero and weight to timestamp
 */
 
 static void		null(t_room *room)
@@ -31,13 +31,10 @@ static void		null(t_room *room)
 }
 
 /*
-** Дублируем все промежуточные вершины найденного пути на входящие
-** и исходящие узлы.
-** create_out_room: создание исходящих узлов
-** end изначально указывает на входящую часть и не перенаправляется
+** Duplicate all intermediate vertices of the found path
 */
 
-static void		duplicate_rooms(t_path *path)
+static void		identical_rooms(t_path *path)
 {
 	t_room		*in;
 
@@ -52,8 +49,8 @@ static void		duplicate_rooms(t_path *path)
 }
 
 /*
-** ft_find_null: находим комнаты для обратных ребер и удаляем их связи
-** ft_redirection_connect: перенаправление связей в структуре two
+** ft_find_null: find rooms for back edges and remove their connections
+** ft_redirection_connect: redirecting links in structure
 */
 
 void			ft_change_ribs(t_path *path)
@@ -76,9 +73,9 @@ void			ft_change_ribs(t_path *path)
 }
 
 /*
-** path: создание n-части пути, инициализация структур t_way и t_path.
-** null: возвращаем структуру к исходному состоянию weight.
-** rooms_count = k: количество комнат; weight: временная метка.
+** path: creating the n-part of the path, initializing the t_way
+** and t_path structures.
+** null: we return the structure to its original state weight.
 */
 
 static int		ft_dij_path(t_data *data, int flag)
@@ -93,13 +90,13 @@ static int		ft_dij_path(t_data *data, int flag)
 }
 
 /*
-** ft_dij_path: поиск в ширину по алгоритму Дейкстры
-** ft_change_ribs: делаем график направленным и меняем направление ребер
-** duplicate_rooms: дублируем все промежуточные вершины части пути во
-** входящую и исходящую части.
+** ft_dij_path: Dijkstra Breadth First Search
+** ft_change_ribs: make the graph directional and change the direction
+** of the edges
+** identical_rooms: duplicate all intermediate vertices of the path part
 */
 
-int				ft_suurballe(t_data *data)
+int				ft_srb_alg(t_data *data)
 {
 	int flag;
 
@@ -107,7 +104,7 @@ int				ft_suurballe(t_data *data)
 	if (ft_dij_path(data, flag))
 	{
 		ft_change_ribs(data->ways_dij->path);
-		duplicate_rooms(data->ways_dij->path);
+		identical_rooms(data->ways_dij->path);
 		return (1);
 	}
 	return (0);

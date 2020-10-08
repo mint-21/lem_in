@@ -14,8 +14,8 @@
 
 /*
 ** ft_create: main funct to init and write info about rooms
-** ft_connects: основная функция связи между комнатами
-** ft_split_free: очистка двумерного массива после занесения всех данных
+** ft_connects: communication function between rooms
+** ft_split_free: clearing a two-dimensional array after entering all the data
 */
 
 static void		free_init(int i, t_valid *check, t_data *data, char **str)
@@ -71,8 +71,7 @@ static void		correct_strings(t_data *data, t_valid *check, char *str, int i)
 }
 
 /*
-** correct_strings: валидация муравьев, комнат, связей.
-** ft_correct_rooms_duble: проверка на дубликаты комнат.
+** correct_strings: validation of ants, rooms, connections.
 */
 
 int				ft_correct(t_data *data, t_valid *check, char **strings)

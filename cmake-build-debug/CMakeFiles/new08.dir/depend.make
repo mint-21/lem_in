@@ -361,9 +361,9 @@ CMakeFiles/new08.dir/src/ft_steps.c.o: ../libft/libft.h
 CMakeFiles/new08.dir/src/ft_steps.c.o: ../src/ft_steps.c
 CMakeFiles/new08.dir/src/ft_steps.c.o: ../src/lemin.h
 
-CMakeFiles/new08.dir/src/ft_suurballe.c.o: ../libft/libft.h
-CMakeFiles/new08.dir/src/ft_suurballe.c.o: ../src/ft_suurballe.c
-CMakeFiles/new08.dir/src/ft_suurballe.c.o: ../src/lemin.h
+CMakeFiles/new08.dir/src/ft_srb_alg.c.o: ../libft/libft.h
+CMakeFiles/new08.dir/src/ft_srb_alg.c.o: ../src/ft_srb_alg.c
+CMakeFiles/new08.dir/src/ft_srb_alg.c.o: ../src/lemin.h
 
 CMakeFiles/new08.dir/src/ft_zerodata.c.o: ../libft/libft.h
 CMakeFiles/new08.dir/src/ft_zerodata.c.o: ../src/ft_zerodata.c

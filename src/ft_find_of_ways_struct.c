@@ -13,9 +13,9 @@
 #include "lemin.h"
 
 /*
-** Создаем структуру путей ways
-** create_inhead: создаем входящие узлы
-** находим кратчайшие пути в новом графе с их весом
+** Building the ways path structure
+** create_inhead: creating incoming nodes
+** find the shortest paths in the new graph with their weight
 */
 
 static t_way	*create_ways(t_connect *head, t_way *ways, t_room *end)
@@ -48,10 +48,8 @@ static t_way	*create_ways(t_connect *head, t_way *ways, t_room *end)
 }
 
 /*
-** Находим кратчайшие пути на новом графе и заносим в структуру
-** create_ways: создание новой структуры для кратчайших путей
-** Переворачиваем ребра от конца до старта и ищем пути
-** terms: дополнительные условия
+** Find the shortest paths on the new graph and enter into the structure
+** Flip the ribs from end to start and find ways
 */
 
 static t_way	*flip_ribs(t_connect *head, t_connect *tail,
@@ -113,13 +111,10 @@ static void		init_var(t_option *var, t_way *new_ways,
 }
 
 /*
-** reverse_h, reverse_t: обратные края (ребра).
-** flip_ribs: поиск кратчайших путей.
-** ft_connect_end: связи с комнатой end.
-** null: удаление обратных краев (ребер).
-** ft_paths_ascending: инициализируем струтуру new_ways и находим
-** кратчайшие пути в новом графе
-** steps_for_ants: количество шагов от start до end
+** reverse_h, reverse_t: back edges (ribs).
+** ft_connect_end: connection with the room end.
+** null_turn: removal of back edges (ribs).
+** steps_for_ants: number of steps from start to end
 */
 
 void			find_of_ways_struct(t_data *data)

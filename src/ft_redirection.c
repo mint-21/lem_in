@@ -11,7 +11,8 @@
 /* ************************************************************************** */
 
 /*
-** Заменяем ребра из найденного кратчайшего пути обратными ребрами с отриц весом
+** Replace edges from the found shortest path with backward edges
+** with negative weight
 */
 
 #include "lemin.h"
