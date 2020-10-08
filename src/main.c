@@ -13,10 +13,10 @@
 #include "lemin.h"
 
 /*
-** reading_card: reading the map. ft_correct: card validation.
-** ft_find_all_ways: the main algorithm of the program.
-** print_n_free_map_data: printing the map to the console.
-** ft_lemin: output to the console of the program's response.
+** reading_card: reading the map. ft_correct: card validation
+** ft_find_all_ways: the main algorithm of the program
+** print_n_free_map_data: printing the map to the console
+** ft_lemin: output to the console of the program's response
 */
 
 int			main(int ac, char **av)
