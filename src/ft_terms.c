@@ -27,31 +27,6 @@ void			terms_null(t_room *room)
 }
 
 /*
-** The function counts the number of ants on each path
-** ++way->ants: counting the number of ants passing through the path
-*/
-
-void			terms_staps(t_way *way, t_data *data, int steps, t_buf *buf)
-{
-	t_path		*path;
-
-	path = way->path;
-	while (path)
-	{
-		if (path->room == data->start && data->start->ant &&
-			(way->path_cost <= steps || way->path_number == 1))
-		{
-			copy_text_buff(data, path, buf, ++data->ant);
-			++way->ants;
-		}
-		else if (path->room != data->start && path->room != data->end
-			&& path->room->ant)
-			copy_text_buff(data, path, buf, path->room->ant);
-		path = path->next;
-	}
-}
-
-/*
 ** conditions for the implementation of incoming nodes
 */
 
@@ -64,4 +39,22 @@ t_connect		*terms(t_connect *head, t_connect *connect)
 	while (connect && connect->weight != -1)
 		connect = connect->next;
 	return (connect);
+}
+
+void			terms_connect(t_room *room_one, t_connect *connect)
+{
+	t_connect	*tmp;
+
+	connect->prev = NULL;
+	connect->turn_next = NULL;
+	connect->parrent = NULL;
+	if (room_one->connects)
+	{
+		tmp = room_one->connects;
+		room_one->connects = connect;
+		connect->next = tmp;
+		tmp->prev = connect;
+	}
+	else
+		room_one->connects = connect;
 }

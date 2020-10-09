@@ -19,26 +19,13 @@
 static void		ft_connectconnect(t_room *room_one, t_room *room_two)
 {
 	t_connect	*connect;
-	t_connect	*tmp;
 
-	if (!(connect = (t_connect *)malloc(sizeof(t_connect))))
-		ft_perror();
+	(!(connect = (t_connect *)malloc(sizeof(t_connect)))) ? ft_perror() : 0;
 	connect->weight = 1;
 	connect->room_one = NULL;
 	connect->room = room_two;
 	connect->next = NULL;
-	connect->prev = NULL;
-	connect->turn_next = NULL;
-	connect->parrent = NULL;
-	if (room_one->connects)
-	{
-		tmp = room_one->connects;
-		room_one->connects = connect;
-		connect->next = tmp;
-		tmp->prev = connect;
-	}
-	else
-		room_one->connects = connect;
+	terms_connect(room_one, connect);
 	connect->room_one = room_one;
 	room_one->connects_count += 1;
 }
@@ -51,20 +38,20 @@ static void		ft_connectconnect(t_room *room_one, t_room *room_two)
 
 void			ft_connects(t_data *data, char *connect_str)
 {
-	t_room		*room1;
-	t_room		*room2;
+	t_room		*one;
+	t_room		*two;
 	t_connect	*connect;
 
-	room1 = NULL;
-	room2 = NULL;
-	ft_check_room_link(data, connect_str, &room1, &room2);
-	connect = room1->connects;
+	one = NULL;
+	two = NULL;
+	ft_check_room_link(data, connect_str, &one, &two);
+	connect = one->connects;
 	while (connect)
 	{
-		if (connect->room == room2)
+		if (connect->room == two)
 			return ;
 		connect = connect->next;
 	}
-	ft_connectconnect(room1, room2);
-	ft_connectconnect(room2, room1);
+	ft_connectconnect(one, two);
+	ft_connectconnect(two, one);
 }

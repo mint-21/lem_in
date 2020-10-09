@@ -161,6 +161,7 @@ char					*reading_card(char ***str_split, int fd);
 int						ft_correct(t_data *data, t_valid *check,
 									char **strings);
 int						ft_correct_hash(t_valid *check, char *str);
+void					terms_connect(t_room *room_one, t_connect *connect);
 int						ft_correct_ants(char *str, t_data *data);
 int						ft_correct_rooms(char *str, t_valid *check, int j);
 int						ft_correct_rooms_double(char *room1, char *room2);
