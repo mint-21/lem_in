@@ -13,7 +13,7 @@
 all:
 	@make -C ./libft/
 	@make -C ./src/
-	#@make -C ./vis/
+	@make -C ./vis/
 
 new_lem_in:
 	@make -C ./src/ new

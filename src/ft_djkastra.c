@@ -16,7 +16,7 @@
 ** Initializing the final path structure
 */
 
-static void		create_way(t_path *path, int path_cost, t_way **ways)
+static void		way_buld(t_path *path, int path_cost, t_way **ways)
 {
 	t_way		*way;
 
@@ -69,7 +69,7 @@ void			path(t_room *room, t_room *start, t_way **ways, int path_cost)
 		}
 		room = room->room_par;
 	}
-	create_way(path, path_cost, ways);
+	way_buld(path, path_cost, ways);
 }
 
 /*
