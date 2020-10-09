@@ -53,7 +53,7 @@ char		*reading_card(char ***str_split)
 	ptr = str;
 	while (*str++)
 		if (*str == '\n' && *(str + 1) == '\n')
-			ft_print_error(E_MALLOC);
+			ft_print_error(E_NO_CORRECT);
 	*str_split = ft_strsplit(trash, '\n');
 	str = ptr;
 	ft_strdel(&str);

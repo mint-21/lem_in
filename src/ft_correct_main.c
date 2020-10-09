@@ -40,7 +40,7 @@ int				ft_init_room(t_data *data, t_valid *check, char **str)
 		{
 			room = ft_createroom(str[i]);
 			if (check_double_coor(data, room, str[i]))
-				ft_print_error(E_NO_CORRECT);
+				ft_print_error(E_COORD);
 			room->next = data->rooms;
 			data->rooms = room;
 			data->rooms_count++;

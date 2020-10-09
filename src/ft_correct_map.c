@@ -34,7 +34,7 @@ int				ft_correct_ants(char *str, t_data *data)
 		++str;
 	}
 	if (*str || !((res *= negative) >= 0 && res <= INT_MAX))
-		ft_print_error(E_INT);
+		ft_print_error(E_ANT);
 	data->ants = ((int)res);
 	data->check.valid_flag = E_ANT;
 	return (0);

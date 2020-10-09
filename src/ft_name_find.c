@@ -79,6 +79,6 @@ int			ft_findrooms(t_data *data, char *connect_str,
 		head = head->next;
 	}
 	if (!(*room1) || !(*room2))
-		ft_print_error(E_MALLOC);
+		ft_print_error(E_NO_CORRECT);
 	return (0);
 }

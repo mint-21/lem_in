@@ -19,6 +19,7 @@ SRC				=	../src/ft_card_reading.c ../src/ft_createroom.c\
 					../src/ft_init.c ../src/ft_null.c ../src/ft_redirection.c\
 					../src/ft_connects.c ../src/ft_add_room_link.c\
 					../src/ft_zerodata.c ../src/ft_additional_func.c\
+					../src/ft_print.c\
 
 INCLUDE =	visualise.h \
 			../libft/libft.h

@@ -23,12 +23,11 @@
 # define E_START 3
 # define E_END 4
 # define E_ANT 5
-# define E_INT 6
-# define E_CONNECT 7
-# define E_PATH 8
-# define E_HASH 9
-# define E_ROOM 10
-# define E_COORD 12
+# define E_CONNECT 6
+# define E_PATH 7
+# define E_HASH 8
+# define E_ROOM 9
+# define E_COORD 10
 
 # define INF		(0x7FFFFFFF)
 # define BUFF_SIZE	2048
@@ -216,5 +215,6 @@ void					ft_print_ways(t_way *way, int steps);
 void					print_n_free_map_data(char **map_data);
 void					terms_null(t_room *room);
 void					terms_staps(t_way *way, t_data *data, int steps, t_buf *buf);
+void					ft_clean_links(t_data *s);
 
 #endif
