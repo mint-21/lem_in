@@ -19,7 +19,7 @@ SRC				=	ft_card_reading.c ft_createroom.c ft_djkastra.c ft_srb_alg.c\
 					ft_lemin_buff.c ft_null.c ft_redirection.c\
 					ft_connects.c ft_find_all_ways.c ft_add_room_link.c\
 					ft_find_of_ways_struct.c main.c\
-					ft_lemin_fl.c ft_creat_duplicate.c\
+					ft_creat_duplicate.c\
 					ft_steps.c ft_additional_func.c ft_print.c\
 
 OBJ				=	ft_card_reading.o ft_createroom.o ft_djkastra.o ft_srb_alg.o\
@@ -29,7 +29,7 @@ OBJ				=	ft_card_reading.o ft_createroom.o ft_djkastra.o ft_srb_alg.o\
 					ft_lemin_buff.o ft_null.o ft_redirection.o\
 					ft_connects.o ft_find_all_ways.o ft_init.o\
 					ft_find_of_ways_struct.o main.o ft_steps.o ft_add_room_link.o\
-					ft_lemin_fl.o ft_creat_duplicate.o ft_print.o\
+					ft_creat_duplicate.o ft_print.o\
 
 FLAGS = -Wall -Wextra -Werror
 

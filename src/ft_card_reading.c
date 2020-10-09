@@ -35,15 +35,14 @@ char		*ft_read_line(char *str, int fd)
 ** Main card reading function.
 */
 
-char		*reading_card(t_flags *flags, char ***str_split)
+char		*reading_card(char ***str_split)
 {
 	char	*str;
 	char	*trash;
 	int		fd;
 	char	*ptr;
 
-	fd = (flags->fd_path) ? open(flags->fd_path, O_RDONLY) : 0;
-	(fd < 0) ? ft_perror() : 1;
+	fd = 0;
 	str = (char *)malloc(1);
 	ft_bzero(str, 1);
 	str = ft_read_line(str, fd);

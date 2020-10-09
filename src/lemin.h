@@ -45,12 +45,6 @@ typedef struct			s_buf
 	int					space;
 }						t_buf;
 
-typedef struct			s_flags
-{
-	char				*fd_path;
-	char				ways;
-}						t_flags;
-
 /*
 ** t_path: list of rooms
 */
@@ -155,7 +149,6 @@ typedef struct			s_data
 	t_option			*options;
 	t_option			*best_opt;
 	t_way				*ways_dij;
-	t_flags				flags;
 	t_valid				check;
 	t_link				**links;
 	int					vis_quit;
@@ -164,8 +157,7 @@ typedef struct			s_data
 
 t_data					ft_zerodata(void);
 int						add_link(t_data *s, char *tab);
-void					ft_flags_lemin(t_flags *flags, int ac, char **av);
-char					*reading_card(t_flags *flags, char ***str_split);
+char					*reading_card(char ***str_split);
 int						ft_correct(t_data *data, t_valid *check,
 									char **strings);
 int						ft_correct_hash(t_valid *check, char *str);

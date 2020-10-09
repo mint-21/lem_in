@@ -19,21 +19,18 @@
 ** ft_lemin: output to the console of the program's response
 */
 
-int			main(int ac, char **av)
+int			main(void)
 {
 	t_data	data;
 	char	**str_split;
 	char	*map_data;
 
 	data = ft_zerodata();
-	ft_flags_lemin(&data.flags, ac, av);
-	map_data = reading_card(&data.flags, &str_split);
+	map_data = reading_card(&str_split);
 	ft_correct(&data, &data.check, str_split);
 	ft_find_all_ways(&data);
 	print_n_free_map_data(&map_data);
 	ft_lemin(&data);
-	(data.flags.ways == 1) ? ft_print_ways(data.best_opt->ways,
-			data.best_opt->steps) : 0;
 	ft_struct_free(&data);
 	return (0);
 }

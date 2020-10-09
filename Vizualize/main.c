@@ -45,7 +45,7 @@ int				initialize(void)
 	char		**str_split;
 
 	g_struct = ft_zerodata();
-	g_struct.map_data = reading_card(&g_struct.flags, &str_split);
+	g_struct.map_data = reading_card(&str_split);
 	ft_correct(&g_struct, &g_struct.check, str_split);
 	if (g_struct.rooms_count > 50)
 	{

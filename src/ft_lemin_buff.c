@@ -22,17 +22,14 @@ void		copy_text_buff(t_data *data, t_path *path, t_buf *buf, int ant)
 	int		j;
 
 	j = -1;
-	if (data->flags.ways == 0)
-	{
-		(buf->space) ? ft_putchar_buf(buf->str, &buf->i, BUFF_SIZE, ' ')
+	(buf->space) ? ft_putchar_buf(buf->str, &buf->i, BUFF_SIZE, ' ')
 		: (buf->space = 1);
-		ft_putchar_buf(buf->str, &buf->i, BUFF_SIZE, 'L');
-		ft_putnbr_buf(buf->str, &buf->i, BUFF_SIZE, ant);
-		ft_putchar_buf(buf->str, &buf->i, BUFF_SIZE, '-');
-		while (path->prev->room->name[++j])
-			ft_putchar_buf(buf->str, &buf->i, BUFF_SIZE,
-					path->prev->room->name[j]);
-	}
+	ft_putchar_buf(buf->str, &buf->i, BUFF_SIZE, 'L');
+	ft_putnbr_buf(buf->str, &buf->i, BUFF_SIZE, ant);
+	ft_putchar_buf(buf->str, &buf->i, BUFF_SIZE, '-');
+	while (path->prev->room->name[++j])
+		ft_putchar_buf(buf->str, &buf->i, BUFF_SIZE,
+				path->prev->room->name[j]);
 	if (path->prev->room != data->end)
 		path->prev->room->ant = ant;
 	else
@@ -61,10 +58,8 @@ void		ft_lemin(t_data *data)
 	while (steps)
 	{
 		ft_step(data, &ant, &buf, steps);
-		if (data->flags.ways == 0)
-			ft_putchar_buf(buf.str, &buf.i, BUFF_SIZE, '\n');
+		ft_putchar_buf(buf.str, &buf.i, BUFF_SIZE, '\n');
 		--steps;
 	}
-	if (data->flags.ways == 0)
-		write(1, buf.str, buf.i);
+	write(1, buf.str, buf.i);
 }

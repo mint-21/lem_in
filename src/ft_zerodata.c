@@ -22,7 +22,6 @@ static void		ft_zerodata2(t_data *data)
 	data->options = NULL;
 	data->best_opt = NULL;
 	data->ways_dij = NULL;
-	data->flags.fd_path = NULL;
 	data->links = NULL;
 }
 
@@ -36,7 +35,6 @@ t_data			ft_zerodata(void)
 	data.rooms_count = 0;
 	data.total_ways = 0;
 	data.links_count = 0;
-	data.flags.ways = 0;
 	data.check.valid_flag = 0;
 	data.check.li_room_begin = 0;
 	data.check.li_room_finish = 0;
