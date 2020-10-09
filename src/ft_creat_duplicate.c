@@ -13,6 +13,26 @@
 #include "lemin.h"
 
 /*
+** Link structure initialization
+*/
+
+t_connect		*ft_createconnect(t_room *room)
+{
+	t_connect	*connect;
+
+	if (!(connect = (t_connect *)malloc(sizeof(t_connect))))
+		ft_perror();
+	connect->weight = 1;
+	connect->room_one = NULL;
+	connect->room = room;
+	connect->next = NULL;
+	connect->prev = NULL;
+	connect->turn_next = NULL;
+	connect->parrent = NULL;
+	return (connect);
+}
+
+/*
 ** Duplicate all intermediate vertices of the found path to the incoming
 ** and outgoing nodes.
 ** create_out_room: creating outgoing nodes
