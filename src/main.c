@@ -16,7 +16,7 @@
 ** reading_card: reading the map. ft_correct: card validation
 ** ft_find_all_ways: the main algorithm of the program
 ** print_n_free_map_data: printing the map to the console
-** ft_lemin: output to the console of the program's response
+** ft_buff_lem: output to the console of the program's response
 */
 
 int			main(void)
@@ -30,7 +30,7 @@ int			main(void)
 	ft_correct(&data, &data.check, str_split);
 	ft_find_all_ways(&data);
 	print_n_free_map_data(&map_data);
-	ft_lemin(&data);
+	ft_buff_lem(&data);
 	ft_struct_free(&data);
 	return (0);
 }

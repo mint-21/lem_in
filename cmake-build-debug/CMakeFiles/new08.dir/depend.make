@@ -333,13 +333,13 @@ CMakeFiles/new08.dir/src/ft_init.c.o: ../libft/libft.h
 CMakeFiles/new08.dir/src/ft_init.c.o: ../src/ft_init.c
 CMakeFiles/new08.dir/src/ft_init.c.o: ../src/lemin.h
 
-CMakeFiles/new08.dir/src/ft_lemin_buff.c.o: ../libft/libft.h
-CMakeFiles/new08.dir/src/ft_lemin_buff.c.o: ../src/ft_lemin_buff.c
-CMakeFiles/new08.dir/src/ft_lemin_buff.c.o: ../src/lemin.h
+CMakeFiles/new08.dir/src/ft_buff_lem_buff.c.o: ../libft/libft.h
+CMakeFiles/new08.dir/src/ft_buff_lem_buff.c.o: ../src/ft_buff_lem_buff.c
+CMakeFiles/new08.dir/src/ft_buff_lem_buff.c.o: ../src/lemin.h
 
-CMakeFiles/new08.dir/src/ft_lemin_fl.c.o: ../libft/libft.h
-CMakeFiles/new08.dir/src/ft_lemin_fl.c.o: ../src/ft_lemin_fl.c
-CMakeFiles/new08.dir/src/ft_lemin_fl.c.o: ../src/lemin.h
+CMakeFiles/new08.dir/src/ft_buff_lem_fl.c.o: ../libft/libft.h
+CMakeFiles/new08.dir/src/ft_buff_lem_fl.c.o: ../src/ft_buff_lem_fl.c
+CMakeFiles/new08.dir/src/ft_buff_lem_fl.c.o: ../src/lemin.h
 
 CMakeFiles/new08.dir/src/ft_name_find.c.o: ../libft/libft.h
 CMakeFiles/new08.dir/src/ft_name_find.c.o: ../src/ft_name_find.c

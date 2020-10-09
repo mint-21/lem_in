@@ -153,6 +153,7 @@ typedef struct			s_data
 	t_link				**links;
 	int					vis_quit;
 	int					vis_pause;
+	int					ant;
 }						t_data;
 
 t_data					ft_zerodata(void);
@@ -175,7 +176,7 @@ void					ft_find_all_ways(t_data *data);
 int						ft_srb_alg(t_data *data);
 void					djkastra(int flag, t_data *data, int room_count);
 void					ft_change_ribs(t_path *path);
-void					ft_lemin(t_data *data);   //поменять
+void					ft_buff_lem(t_data *data);   //поменять
 void					ft_struct_free(t_data *data);
 void					ft_print_error(int id);
 void					ft_perror();                  // придумать что с ним делать
@@ -194,7 +195,7 @@ void					ft_creat_duplicate(t_path *path, t_room *in);
 void					create_out_in_room(t_room *in, t_room *out);
 t_room					*ft_create_new_room(char *line);
 int						check_double_coor(t_data *s, t_room *curr, char *str);
-void					ft_step(t_data *data, int *ant, t_buf *buf, int steps);
+int						ft_step(t_data *data, t_buf *buf, int steps, t_way *way);
 void					copy_text_buff(t_data *data, t_path *path,
 									t_buf *buf, int ant);
 t_way					*way_init(t_way *way, t_path *path, int weight,
@@ -214,5 +215,6 @@ void					init_way(t_way *way, int path_cost, t_way **ways,
 void					ft_print_ways(t_way *way, int steps);
 void					print_n_free_map_data(char **map_data);
 void					terms_null(t_room *room);
+void					terms_staps(t_way *way, t_data *data, int steps, t_buf *buf);
 
 #endif

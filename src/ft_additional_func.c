@@ -53,37 +53,8 @@ t_way			*way_init(t_way *way, t_path *path, int weight, t_way *ways)
 	return (way);
 }
 
-/*
-** conditions for the implementation of incoming nodes
-*/
-
-t_connect		*terms(t_connect *head, t_connect *connect)
-{
-	if (head->room->in_part)
-		connect = head->room->in_part->connects;
-	else
-		connect = head->room->connects;
-	while (connect && connect->weight != -1)
-		connect = connect->next;
-	return (connect);
-}
-
 void			ft_perror(void)
 {
 	perror("lem-in");
 	exit(1);
-}
-
-void			terms_null(t_room *room)
-{
-	if (room->out_part)
-	{
-		room->out_part->room_par = NULL;
-		room->out_part->weight = INF;
-	}
-	else if (room->in_part)
-	{
-		room->in_part->room_par = NULL;
-		room->in_part->weight = INF;
-	}
 }

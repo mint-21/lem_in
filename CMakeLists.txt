@@ -123,8 +123,8 @@ add_executable(new08
         src/ft_find_all_ways.c
         src/ft_find_of_ways_struct.c
         src/ft_init.c
-        src/ft_lemin_buff.c
-        src/ft_lemin_fl.c
+        src/ft_buff_lem_buff.c
+        src/ft_buff_lem_fl.c
         src/ft_name_find.c
         src/ft_null.c
         src/ft_print.c

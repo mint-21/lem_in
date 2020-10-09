@@ -3005,59 +3005,59 @@ src/ft_init.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_init.c.s
 .PHONY : src/ft_init.c.s
 
-src/ft_lemin_buff.o: src/ft_lemin_buff.c.o
+src/ft_buff_lem_buff.o: src/ft_buff_lem_buff.c.o
 
-.PHONY : src/ft_lemin_buff.o
-
-# target to build an object file
-src/ft_lemin_buff.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_lemin_buff.c.o
-.PHONY : src/ft_lemin_buff.c.o
-
-src/ft_lemin_buff.i: src/ft_lemin_buff.c.i
-
-.PHONY : src/ft_lemin_buff.i
-
-# target to preprocess a source file
-src/ft_lemin_buff.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_lemin_buff.c.i
-.PHONY : src/ft_lemin_buff.c.i
-
-src/ft_lemin_buff.s: src/ft_lemin_buff.c.s
-
-.PHONY : src/ft_lemin_buff.s
-
-# target to generate assembly for a file
-src/ft_lemin_buff.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_lemin_buff.c.s
-.PHONY : src/ft_lemin_buff.c.s
-
-src/ft_lemin_fl.o: src/ft_lemin_fl.c.o
-
-.PHONY : src/ft_lemin_fl.o
+.PHONY : src/ft_buff_lem_buff.o
 
 # target to build an object file
-src/ft_lemin_fl.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_lemin_fl.c.o
-.PHONY : src/ft_lemin_fl.c.o
+src/ft_buff_lem_buff.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_buff_lem_buff.c.o
+.PHONY : src/ft_buff_lem_buff.c.o
 
-src/ft_lemin_fl.i: src/ft_lemin_fl.c.i
+src/ft_buff_lem_buff.i: src/ft_buff_lem_buff.c.i
 
-.PHONY : src/ft_lemin_fl.i
+.PHONY : src/ft_buff_lem_buff.i
 
 # target to preprocess a source file
-src/ft_lemin_fl.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_lemin_fl.c.i
-.PHONY : src/ft_lemin_fl.c.i
+src/ft_buff_lem_buff.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_buff_lem_buff.c.i
+.PHONY : src/ft_buff_lem_buff.c.i
 
-src/ft_lemin_fl.s: src/ft_lemin_fl.c.s
+src/ft_buff_lem_buff.s: src/ft_buff_lem_buff.c.s
 
-.PHONY : src/ft_lemin_fl.s
+.PHONY : src/ft_buff_lem_buff.s
 
 # target to generate assembly for a file
-src/ft_lemin_fl.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_lemin_fl.c.s
-.PHONY : src/ft_lemin_fl.c.s
+src/ft_buff_lem_buff.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_buff_lem_buff.c.s
+.PHONY : src/ft_buff_lem_buff.c.s
+
+src/ft_buff_lem_fl.o: src/ft_buff_lem_fl.c.o
+
+.PHONY : src/ft_buff_lem_fl.o
+
+# target to build an object file
+src/ft_buff_lem_fl.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_buff_lem_fl.c.o
+.PHONY : src/ft_buff_lem_fl.c.o
+
+src/ft_buff_lem_fl.i: src/ft_buff_lem_fl.c.i
+
+.PHONY : src/ft_buff_lem_fl.i
+
+# target to preprocess a source file
+src/ft_buff_lem_fl.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_buff_lem_fl.c.i
+.PHONY : src/ft_buff_lem_fl.c.i
+
+src/ft_buff_lem_fl.s: src/ft_buff_lem_fl.c.s
+
+.PHONY : src/ft_buff_lem_fl.s
+
+# target to generate assembly for a file
+src/ft_buff_lem_fl.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new08.dir/build.make CMakeFiles/new08.dir/src/ft_buff_lem_fl.c.s
+.PHONY : src/ft_buff_lem_fl.c.s
 
 src/ft_name_find.o: src/ft_name_find.c.o
 
@@ -3602,12 +3602,12 @@ help:
 	@echo "... src/ft_init.o"
 	@echo "... src/ft_init.i"
 	@echo "... src/ft_init.s"
-	@echo "... src/ft_lemin_buff.o"
-	@echo "... src/ft_lemin_buff.i"
-	@echo "... src/ft_lemin_buff.s"
-	@echo "... src/ft_lemin_fl.o"
-	@echo "... src/ft_lemin_fl.i"
-	@echo "... src/ft_lemin_fl.s"
+	@echo "... src/ft_buff_lem_buff.o"
+	@echo "... src/ft_buff_lem_buff.i"
+	@echo "... src/ft_buff_lem_buff.s"
+	@echo "... src/ft_buff_lem_fl.o"
+	@echo "... src/ft_buff_lem_fl.i"
+	@echo "... src/ft_buff_lem_fl.s"
 	@echo "... src/ft_name_find.o"
 	@echo "... src/ft_name_find.i"
 	@echo "... src/ft_name_find.s"

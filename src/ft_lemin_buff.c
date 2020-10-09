@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lemin_buff.c                                    :+:      :+:    :+:   */
+/*   ft_buff_lem_buff.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -45,21 +45,17 @@ void		copy_text_buff(t_data *data, t_path *path, t_buf *buf, int ant)
 ** ft_step: buffered the text one step per path
 */
 
-void		ft_lemin(t_data *data)
+void		ft_buff_lem(t_data *data)
 {
-	int		ant;
 	t_buf	buf;
 	int		steps;
+	t_way	*way;
 
 	data->start->ant = data->ants;
-	ant = 0;
 	buf.i = 0;
 	steps = data->best_opt->steps;
+	way = data->best_opt->ways;
 	while (steps)
-	{
-		ft_step(data, &ant, &buf, steps);
-		ft_putchar_buf(buf.str, &buf.i, BUFF_SIZE, '\n');
-		--steps;
-	}
+		steps = ft_step(data, &buf, steps, way);
 	write(1, buf.str, buf.i);
 }

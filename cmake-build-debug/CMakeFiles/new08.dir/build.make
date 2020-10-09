@@ -1455,31 +1455,31 @@ CMakeFiles/new08.dir/src/ft_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/new08.dir/src/ft_init.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asmall/Desktop/new08/src/ft_init.c -o CMakeFiles/new08.dir/src/ft_init.c.s
 
-CMakeFiles/new08.dir/src/ft_lemin_buff.c.o: CMakeFiles/new08.dir/flags.make
-CMakeFiles/new08.dir/src/ft_lemin_buff.c.o: ../src/ft_lemin_buff.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asmall/Desktop/new08/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/new08.dir/src/ft_lemin_buff.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/new08.dir/src/ft_lemin_buff.c.o   -c /Users/asmall/Desktop/new08/src/ft_lemin_buff.c
+CMakeFiles/new08.dir/src/ft_buff_lem_buff.c.o: CMakeFiles/new08.dir/flags.make
+CMakeFiles/new08.dir/src/ft_buff_lem_buff.c.o: ../src/ft_buff_lem_buff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asmall/Desktop/new08/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/new08.dir/src/ft_buff_lem_buff.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/new08.dir/src/ft_buff_lem_buff.c.o   -c /Users/asmall/Desktop/new08/src/ft_buff_lem_buff.c
 
-CMakeFiles/new08.dir/src/ft_lemin_buff.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/new08.dir/src/ft_lemin_buff.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asmall/Desktop/new08/src/ft_lemin_buff.c > CMakeFiles/new08.dir/src/ft_lemin_buff.c.i
+CMakeFiles/new08.dir/src/ft_buff_lem_buff.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/new08.dir/src/ft_buff_lem_buff.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asmall/Desktop/new08/src/ft_buff_lem_buff.c > CMakeFiles/new08.dir/src/ft_buff_lem_buff.c.i
 
-CMakeFiles/new08.dir/src/ft_lemin_buff.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/new08.dir/src/ft_lemin_buff.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asmall/Desktop/new08/src/ft_lemin_buff.c -o CMakeFiles/new08.dir/src/ft_lemin_buff.c.s
+CMakeFiles/new08.dir/src/ft_buff_lem_buff.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/new08.dir/src/ft_buff_lem_buff.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asmall/Desktop/new08/src/ft_buff_lem_buff.c -o CMakeFiles/new08.dir/src/ft_buff_lem_buff.c.s
 
-CMakeFiles/new08.dir/src/ft_lemin_fl.c.o: CMakeFiles/new08.dir/flags.make
-CMakeFiles/new08.dir/src/ft_lemin_fl.c.o: ../src/ft_lemin_fl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asmall/Desktop/new08/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/new08.dir/src/ft_lemin_fl.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/new08.dir/src/ft_lemin_fl.c.o   -c /Users/asmall/Desktop/new08/src/ft_lemin_fl.c
+CMakeFiles/new08.dir/src/ft_buff_lem_fl.c.o: CMakeFiles/new08.dir/flags.make
+CMakeFiles/new08.dir/src/ft_buff_lem_fl.c.o: ../src/ft_buff_lem_fl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asmall/Desktop/new08/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/new08.dir/src/ft_buff_lem_fl.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/new08.dir/src/ft_buff_lem_fl.c.o   -c /Users/asmall/Desktop/new08/src/ft_buff_lem_fl.c
 
-CMakeFiles/new08.dir/src/ft_lemin_fl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/new08.dir/src/ft_lemin_fl.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asmall/Desktop/new08/src/ft_lemin_fl.c > CMakeFiles/new08.dir/src/ft_lemin_fl.c.i
+CMakeFiles/new08.dir/src/ft_buff_lem_fl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/new08.dir/src/ft_buff_lem_fl.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asmall/Desktop/new08/src/ft_buff_lem_fl.c > CMakeFiles/new08.dir/src/ft_buff_lem_fl.c.i
 
-CMakeFiles/new08.dir/src/ft_lemin_fl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/new08.dir/src/ft_lemin_fl.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asmall/Desktop/new08/src/ft_lemin_fl.c -o CMakeFiles/new08.dir/src/ft_lemin_fl.c.s
+CMakeFiles/new08.dir/src/ft_buff_lem_fl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/new08.dir/src/ft_buff_lem_fl.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asmall/Desktop/new08/src/ft_buff_lem_fl.c -o CMakeFiles/new08.dir/src/ft_buff_lem_fl.c.s
 
 CMakeFiles/new08.dir/src/ft_name_find.c.o: CMakeFiles/new08.dir/flags.make
 CMakeFiles/new08.dir/src/ft_name_find.c.o: ../src/ft_name_find.c
@@ -1693,8 +1693,8 @@ new08_OBJECTS = \
 "CMakeFiles/new08.dir/src/ft_find_all_ways.c.o" \
 "CMakeFiles/new08.dir/src/ft_find_of_ways_struct.c.o" \
 "CMakeFiles/new08.dir/src/ft_init.c.o" \
-"CMakeFiles/new08.dir/src/ft_lemin_buff.c.o" \
-"CMakeFiles/new08.dir/src/ft_lemin_fl.c.o" \
+"CMakeFiles/new08.dir/src/ft_buff_lem_buff.c.o" \
+"CMakeFiles/new08.dir/src/ft_buff_lem_fl.c.o" \
 "CMakeFiles/new08.dir/src/ft_name_find.c.o" \
 "CMakeFiles/new08.dir/src/ft_null.c.o" \
 "CMakeFiles/new08.dir/src/ft_print.c.o" \
@@ -1813,8 +1813,8 @@ new08: CMakeFiles/new08.dir/src/ft_djkastra.c.o
 new08: CMakeFiles/new08.dir/src/ft_find_all_ways.c.o
 new08: CMakeFiles/new08.dir/src/ft_find_of_ways_struct.c.o
 new08: CMakeFiles/new08.dir/src/ft_init.c.o
-new08: CMakeFiles/new08.dir/src/ft_lemin_buff.c.o
-new08: CMakeFiles/new08.dir/src/ft_lemin_fl.c.o
+new08: CMakeFiles/new08.dir/src/ft_buff_lem_buff.c.o
+new08: CMakeFiles/new08.dir/src/ft_buff_lem_fl.c.o
 new08: CMakeFiles/new08.dir/src/ft_name_find.c.o
 new08: CMakeFiles/new08.dir/src/ft_null.c.o
 new08: CMakeFiles/new08.dir/src/ft_print.c.o

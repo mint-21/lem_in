@@ -44,6 +44,7 @@ t_data			ft_zerodata(void)
 	data.check.hash_end = 0;
 	data.vis_quit = 0;
 	data.vis_pause = 0;
+	data.ant = 0;
 	ft_zerodata2(&data);
 	return (data);
 }

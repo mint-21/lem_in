@@ -52,33 +52,18 @@ int				steps_for_ants(t_way *way, int ants)
 
 /*
 ** The function looks for the room where the ant currently exists
-** ++way->ants: counting the number of ants passing through the path
 ** way = way->next: if there is more than one path, we take the next path
 */
 
-void			ft_step(t_data *data, int *ant, t_buf *buf, int steps)
+int				ft_step(t_data *data, t_buf *buf, int steps, t_way *way)
 {
-	t_way		*way;
-	t_path		*path;
-
 	buf->space = 0;
-	way = data->best_opt->ways;
 	while (way)
 	{
-		path = way->path;
-		while (path)
-		{
-			if (path->room == data->start && data->start->ant &&
-			(way->path_cost <= steps || way->path_number == 1))
-			{
-				copy_text_buff(data, path, buf, ++*ant);
-				++way->ants;
-			}
-			else if (path->room != data->start && path->room != data->end
-			&& path->room->ant)
-				copy_text_buff(data, path, buf, path->room->ant);
-			path = path->next;
-		}
+		terms_staps(way, data, steps, buf);
 		way = way->next;
 	}
+	ft_putchar_buf(buf->str, &buf->i, BUFF_SIZE, '\n');
+	--steps;
+	return (steps);
 }
