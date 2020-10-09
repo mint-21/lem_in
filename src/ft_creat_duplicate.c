@@ -26,7 +26,7 @@ void			ft_creat_duplicate(t_path *path, t_room *in)
 
 	if (!in->out_part && !in->in_part)
 	{
-		out = ft_createroom(in->name);
+		out = ft_initialization_struct_room(in->name);
 		in->out_part = out;
 		out->in_part = in;
 		links = ft_createconnect((path->room->out_part) ?

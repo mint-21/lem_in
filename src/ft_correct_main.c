@@ -38,7 +38,7 @@ int				ft_init_room(t_data *data, t_valid *check, char **str)
 	{
 		if (str[i][0] != '#')
 		{
-			room = ft_createroom(str[i]);
+			room = ft_initialization_struct_room(str[i]);
 			if (check_double_coor(data, room, str[i]))
 				ft_print_error(E_COORD);
 			room->next = data->rooms;

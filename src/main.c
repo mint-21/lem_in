@@ -24,11 +24,11 @@ int			main(int ac, char **av)
 	t_data	data;
 	char	**str_split;
 	char	*map_data;
-	int fd;
+	int		fd;
 
 	fd = 0;
-	 if (ac == 2)
-	 	fd = open(av[1], O_RDONLY);
+	if (ac == 2)
+		fd = open(av[1], O_RDONLY);
 	data = ft_zerodata();
 	map_data = reading_card(&str_split, fd);
 	ft_correct(&data, &data.check, str_split);

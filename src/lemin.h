@@ -166,17 +166,17 @@ int						ft_correct_rooms(char *str, t_valid *check, int j);
 int						ft_correct_rooms_double(char *room1, char *room2);
 void					ft_correct_connects(char *str, t_valid *check, int j);
 void					ft_create(t_data *data, char *str);
-t_room					*ft_createroom(char *line);  // поменять
+t_room					*ft_initialization_struct_room(char *line);
 void					ft_connects(t_data *data, char *str);
 t_connect				*ft_createconnect(t_room *room);
 void					ft_find_all_ways(t_data *data);
 int						ft_srb_alg(t_data *data);
 void					djkastra(int flag, t_data *data, int room_count);
 void					ft_change_ribs(t_path *path);
-void					ft_buff_lem(t_data *data);   //поменять
+void					ft_buff_lem(t_data *data);
 void					ft_struct_free(t_data *data);
 void					ft_print_error(int id);
-void					ft_perror();                  // придумать что с ним делать
+void					ft_perror();
 int						ft_atoi_mod(const char *str);
 int						steps_for_ants(t_way *way, int ants);
 void					find_of_ways_struct(t_data *data);
@@ -192,7 +192,8 @@ void					ft_creat_duplicate(t_path *path, t_room *in);
 void					create_out_in_room(t_room *in, t_room *out);
 t_room					*ft_create_new_room(char *line);
 int						check_double_coor(t_data *s, t_room *curr, char *str);
-int						ft_step(t_data *data, t_buf *buf, int steps, t_way *way);
+int						ft_step(t_data *data, t_buf *buf, int steps,
+								t_way *way);
 void					copy_text_buff(t_data *data, t_path *path,
 									t_buf *buf, int ant);
 t_way					*way_init(t_way *way, t_path *path, int weight,
@@ -212,7 +213,8 @@ void					init_way(t_way *way, int path_cost, t_way **ways,
 void					ft_print_ways(t_way *way, int steps);
 void					print_n_free_map_data(char **map_data);
 void					terms_null(t_room *room);
-void					terms_staps(t_way *way, t_data *data, int steps, t_buf *buf);
+void					terms_staps(t_way *way, t_data *data, int steps,
+									t_buf *buf);
 void					ft_clean_links(t_data *s);
 int						ft_check_room_link(t_data *data, char *connect_str,
 							t_room **room1, t_room **room2);

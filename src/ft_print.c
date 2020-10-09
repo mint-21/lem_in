@@ -12,7 +12,7 @@
 
 #include "lemin.h"
 
-void	ft_print_error(int id)
+void			ft_print_error(int id)
 {
 	if (id == 1)
 		ft_printf("{red}%s\n", "ERROR: memory problems");

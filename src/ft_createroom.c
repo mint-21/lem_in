@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_createroom.c                                    :+:      :+:    :+:   */
+/*   ft_initialization_struct_room.c                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -16,7 +16,7 @@
 ** room structure
 */
 
-t_room			*ft_createroom(char *name)
+t_room			*ft_initialization_struct_room(char *name)
 {
 	t_room		*room;
 
@@ -74,10 +74,10 @@ void			create_out_in_room(t_room *in, t_room *out)
 ** r_connect[j]: the name of the room after the '-' sign.
 */
 
-int			ft_find_link_name(char *r_name, char *r_connect, int flag)
+int				ft_find_link_name(char *r_name, char *r_connect, int flag)
 {
-	int		i;
-	int		j;
+	int			i;
+	int			j;
 
 	i = -1;
 	if (flag == 1)
@@ -107,10 +107,10 @@ int			ft_find_link_name(char *r_name, char *r_connect, int flag)
 ** head: the first room in the t_room structure.
 */
 
-int			ft_check_room_link(t_data *data, char *connect_str,
-				t_room **room1, t_room **room2)
+int				ft_check_room_link(t_data *data, char *connect_str,
+					t_room **room1, t_room **room2)
 {
-	t_room	*head;
+	t_room		*head;
 
 	(!room1 || !room2) ? ft_perror() : 0;
 	head = data->rooms;
