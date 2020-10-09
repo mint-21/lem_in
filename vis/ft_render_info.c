@@ -35,7 +35,7 @@ void			render_name_room(t_data s)
 	courier = NULL;
 	vis_room = g_vis_rooms;
 	norm_room = s.rooms;
-	courier = TTF_OpenFont("Vizualize/resourse/InputMono-Regular.ttf", 20);
+	courier = TTF_OpenFont("vis/resourse/InputMono-Regular.ttf", 20);
 	if (courier == NULL)
 		error("Font didn't find. SDL error: ", TTF_GetError());
 	while (vis_room && norm_room)
@@ -107,7 +107,7 @@ void			render_texture_png(SDL_FRect pos)
 	SDL_Texture	*ant_texture;
 	SDL_FRect	texture_settings;
 
-	ant_surface = IMG_Load("Vizualize/resourse/man_ant.png");
+	ant_surface = IMG_Load("vis/resourse/man_ant.png");
 	if (ant_surface == NULL)
 		error("Ant picture could not load. SDL error: ", IMG_GetError());
 	ant_texture = SDL_CreateTextureFromSurface(g_main_render, ant_surface);

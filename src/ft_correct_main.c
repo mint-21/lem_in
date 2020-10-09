@@ -81,7 +81,7 @@ int				ft_correct(t_data *data, t_valid *check, char **strings)
 	i = -1;
 	while (strings[++i] && strings[i][0] != 'L')
 		correct_strings(data, check, strings[i], i);
-	if (check->valid_flag != 29)
+	if (check->valid_flag != 27)
 		ft_print_error(E_NO_CORRECT);
 	ft_init_room(data, check, strings);
 	return (0);
