@@ -21,9 +21,9 @@ void			error(const char *s, const char *t)
 	exit(EXIT_FAILURE);
 }
 
-void			render_process(t_data s, t_vis_ants **array)
+void			render_process(t_data s, t_ants_v **array)
 {
-	t_vis_rooms	*curr;
+	t_room_v	*curr;
 
 	curr = g_vis_rooms;
 	SDL_SetRenderDrawColor(g_main_render, 255, 255, 255, 255);
@@ -36,7 +36,7 @@ void			render_process(t_data s, t_vis_ants **array)
 	}
 	render_links(s, -1);
 	if (array)
-		*array = make_new_vis_ants_array(s);
+		*array = array_vis_ants(s);
 	render_name_room(s);
 }
 
@@ -44,46 +44,46 @@ int				initialize(void)
 {
 	char		**str_split;
 
-	g_s = ft_zerodata();
-	g_s.map_data = reading_card(&g_s.flags, &str_split);
-	ft_correct(&g_s, &g_s.check, str_split);
-	if (g_s.rooms_count > 50)
+	g_struct = ft_zerodata();
+	g_struct.map_data = reading_card(&g_struct.flags, &str_split);
+	ft_correct(&g_struct, &g_struct.check, str_split);
+	if (g_struct.rooms_count > 50)
 	{
-		printf("Too many rooms\n");
+		ft_printf("Error: too many rooms\n");
+		ft_struct_free(&g_struct);
 		return (0);
 	}
-	srand(time(NULL));
 	if (!init_sdl())
 		return (close_sdl());
-	g_vis_rooms = render_rooms(g_s);
+	g_vis_rooms = render_rooms(g_struct);
 	return (1);
 }
 
-void			event_handler(t_data *g_s)
+void			event_handler(t_data *g_struct)
 {
 	SDL_Event	event;
 
 	while (SDL_PollEvent(&event))
 	{
 		if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_SPACE)
-			g_s->vis_pause = !g_s->vis_pause;
+			g_struct->vis_pause = !g_struct->vis_pause;
 		else if (event.type == SDL_QUIT ||
 		(event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_ESCAPE))
-			g_s->vis_quit = 1;
+			g_struct->vis_quit = 1;
 	}
 }
 
 int				main(void)
 {
-	t_vis_ants	*array;
-	t_vis_rooms	*end_room;
+	t_ants_v	*array;
+	t_room_v	*end_room;
 
 	if (!initialize())
 		return (0);
 	end_room = g_vis_rooms;
-	while (end_room && end_room->num != g_s.end->n)
+	while (end_room && end_room->num != g_struct.end->n)
 		end_room = end_room->next;
-	render_process(g_s, &array);
+	render_process(g_struct, &array);
 	start_process(array);
 	return (close_sdl());
 }

@@ -12,30 +12,20 @@
 
 #include "visualise.h"
 
-int				ft_find_max_x(t_data s)
+int				calc_max_xy(t_data s, int flag)
 {
 	int			max;
 	t_room		*curr;
 
 	max = -MAX_INT - 1;
 	curr = s.rooms;
-	while (curr)
+	while (curr && flag == 1)
 	{
 		if (curr->x > max)
 			max = curr->x;
 		curr = curr->next;
 	}
-	return (max);
-}
-
-int				ft_find_max_y(t_data s)
-{
-	int			max;
-	t_room		*curr;
-
-	max = -MAX_INT - 1;
-	curr = s.rooms;
-	while (curr)
+	while (curr && flag == 2)
 	{
 		if (curr->y > max)
 			max = curr->y;
@@ -44,20 +34,20 @@ int				ft_find_max_y(t_data s)
 	return (max);
 }
 
-void			null_ptr_ant(t_vis_ants *ant, int *null_count)
+void			ant_on_null(t_ants_v *ant, int *null_count)
 {
 	(*ant).x_diff = 0;
 	(*ant).y_diff = 0;
-	(*ant).current_room = (*ant).next_room;
+	(*ant).curr_room = (*ant).next_room;
 	(*ant).next_name = NULL;
 	(*null_count)++;
 }
 
-t_vis_rooms		*make_new_vis_room(void)
+t_room_v		*init_vis_room(void)
 {
-	t_vis_rooms	*room;
+	t_room_v	*room;
 
-	if (!(room = (t_vis_rooms *)malloc(sizeof(t_vis_rooms))))
+	if (!(room = (t_room_v *)malloc(sizeof(t_room_v))))
 		return (NULL);
 	room->next = NULL;
 	room->room.x = 0;
@@ -69,27 +59,27 @@ t_vis_rooms		*make_new_vis_room(void)
 	return (room);
 }
 
-t_vis_ants		*make_new_vis_ants_array(t_data s)
+t_ants_v		*array_vis_ants(t_data s)
 {
-	t_vis_ants	*array;
-	t_vis_rooms	*curr;
+	t_ants_v	*array;
+	t_room_v	*curr;
 	int			i;
 
-	array = (t_vis_ants *)malloc(sizeof(t_vis_ants) * s.ants);
+	i = -1;
+	array = (t_ants_v *)malloc(sizeof(t_ants_v) * s.ants);
 	curr = g_vis_rooms;
 	while (curr && curr->num != s.start->n)
 		curr = curr->next;
-	i = -1;
 	while (++i < s.ants)
 	{
-		array[i].current_room = curr->room;
+		array[i].curr_room = curr->room;
 		array[i].next_room.h = 50;
 		array[i].next_room.w = 50;
 		array[i].next_room.x = 0;
 		array[i].next_room.y = 0;
 		array[i].x_diff = 0;
 		array[i].y_diff = 0;
-		array[i].current_name = curr->name;
+		array[i].curr_name = curr->name;
 		array[i].next_name = NULL;
 	}
 	return (array);

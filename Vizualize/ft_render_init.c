@@ -31,12 +31,12 @@ int		init_sdl(void)
 	return (1);
 }
 
-void	color_and_coord(t_vis_rooms *vis_room, t_room *current_s_room, t_data s)
+void	color_and_coord(t_room_v *vis_room, t_room *current_s_room, t_data s)
 {
 	vis_room->room.x = ft_abs(current_s_room->x * (SCREEN_WIDTH /
-		(MAX(ft_find_max_x(s), 1))) - 50);
+		(MAX(calc_max_xy(s, 1), 1))) - 50);
 	vis_room->room.y = ft_abs(current_s_room->y * (SCREEN_HEIGHT /
-		(MAX(ft_find_max_y(s), 1))) - 50);
+		(MAX(calc_max_xy(s, 2), 1))) - 50);
 	vis_room->name = current_s_room->name;
 	vis_room->num = current_s_room->n;
 	vis_room->r = rand() % 255 + 1;
@@ -49,6 +49,7 @@ void	color_and_coord(t_vis_rooms *vis_room, t_room *current_s_room, t_data s)
 
 int		close_sdl(void)
 {
+	ft_struct_free(&g_struct);
 	free(g_vis_rooms);
 	SDL_DestroyWindow(g_main_window);
 	g_main_window = NULL;

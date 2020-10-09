@@ -12,7 +12,7 @@
 
 #include "visualise.h"
 
-void			create_name_room(t_vis_rooms *vis_room, t_room *norm_room,
+void			create_name_room(t_room_v *vis_room, t_room *norm_room,
 					TTF_Font *courier)
 {
 	SDL_Rect	name_rect;
@@ -28,7 +28,7 @@ void			create_name_room(t_vis_rooms *vis_room, t_room *norm_room,
 
 void			render_name_room(t_data s)
 {
-	t_vis_rooms	*vis_room;
+	t_room_v	*vis_room;
 	t_room		*norm_room;
 	TTF_Font	*courier;
 
@@ -50,21 +50,21 @@ void			render_name_room(t_data s)
 	TTF_CloseFont(courier);
 }
 
-t_vis_rooms		*render_rooms(t_data s)
+t_room_v		*render_rooms(t_data s)
 {
-	t_vis_rooms	*vis_rooms;
-	t_vis_rooms	*vis_room;
+	t_room_v	*vis_rooms;
+	t_room_v	*vis_room;
 	t_room		*current_s_room;
 
 	current_s_room = s.rooms;
-	vis_rooms = make_new_vis_room();
+	vis_rooms = init_vis_room();
 	vis_room = vis_rooms;
 	while (current_s_room)
 	{
 		color_and_coord(vis_room, current_s_room, s);
 		if (current_s_room->next)
 		{
-			vis_room->next = make_new_vis_room();
+			vis_room->next = init_vis_room();
 			vis_room = vis_room->next;
 		}
 		current_s_room = current_s_room->next;
@@ -74,9 +74,9 @@ t_vis_rooms		*render_rooms(t_data s)
 
 void			render_links(t_data s, int i)
 {
-	t_vis_rooms	*vis_room;
+	t_room_v	*vis_room;
 	t_link		*norm_room;
-	t_vis_rooms	*end_line;
+	t_room_v	*end_line;
 
 	while (++i < s.links_count)
 	{
@@ -105,7 +105,7 @@ void			render_texture_png(SDL_FRect pos)
 {
 	SDL_Surface	*ant_surface;
 	SDL_Texture	*ant_texture;
-	SDL_FRect	ant_texture_settings;
+	SDL_FRect	texture_settings;
 
 	ant_surface = IMG_Load("Vizualize/resourse/man_ant.png");
 	if (ant_surface == NULL)
@@ -113,9 +113,9 @@ void			render_texture_png(SDL_FRect pos)
 	ant_texture = SDL_CreateTextureFromSurface(g_main_render, ant_surface);
 	if (ant_texture == NULL)
 		error("Ant texture could not build. SDL error: ", SDL_GetError());
-	ant_texture_settings.h = 75;
-	ant_texture_settings.w = 75;
-	ant_texture_settings.x = pos.x;
-	ant_texture_settings.y = pos.y;
-	SDL_RenderCopyF(g_main_render, ant_texture, NULL, &ant_texture_settings);
+	texture_settings.h = 75;
+	texture_settings.w = 75;
+	texture_settings.x = pos.x;
+	texture_settings.y = pos.y;
+	SDL_RenderCopyF(g_main_render, ant_texture, NULL, &texture_settings);
 }

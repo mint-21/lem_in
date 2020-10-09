@@ -12,42 +12,42 @@
 
 #include "visualise.h"
 
-double			calc_diff(t_vis_ants ant, char axis)
+double			math_different(t_ants_v ant, char axis)
 {
 	double		diff;
 
 	diff = 0;
-	diff = (axis == 'x') ? (ft_abs(ant.next_room.x - ant.current_room.x)) :
-		(ft_abs(ant.next_room.y - ant.current_room.y));
+	diff = (axis == 'x') ? (ft_abs(ant.next_room.x - ant.curr_room.x)) :
+		(ft_abs(ant.next_room.y - ant.curr_room.y));
 	return (diff);
 }
 
-void			print_ants(t_vis_ants *array)
+void			print_ants(t_ants_v *array)
 {
 	int			i;
 
 	i = -1;
-	while (++i < g_s.ants)
+	while (++i < g_struct.ants)
 		if (array[i].next_name)
-			render_texture_png(array[i].current_room);
+			render_texture_png(array[i].curr_room);
 }
 
-int				if_turn_over(t_vis_ants **array, t_data *g_s)
+int				if_turn_over(t_ants_v **array, t_data *g_struct)
 {
-	t_vis_rooms	*curr;
+	t_room_v	*curr;
 	int			i;
 
-	if (g_s->flag)
-		g_s->split = ft_strsplit(g_s->map_data, '\n');
-	while (g_s->flag && g_s->split[g_s->step][0] != 'L')
-		g_s->step += 1;
-	g_s->flag = 0;
-	if (!g_s->split[g_s->step])
+	if (g_struct->flag)
+		g_struct->split = ft_strsplit(g_struct->map_data, '\n');
+	while (g_struct->flag && g_struct->split[g_struct->step][0] != 'L')
+		g_struct->step += 1;
+	g_struct->flag = 0;
+	if (!g_struct->split[g_struct->step])
 		return (0);
-	parse_turns_line(array, &g_s);
+	turn_line(array, &g_struct);
 	i = -1;
 	curr = g_vis_rooms;
-	while (++i < g_s->ants && curr)
+	while (++i < g_struct->ants && curr)
 		if ((*array)[i].next_name)
 		{
 			while (ft_strcmp((*array)[i].next_name, curr->name) != 0 && curr)
@@ -58,47 +58,47 @@ int				if_turn_over(t_vis_ants **array, t_data *g_s)
 	return (1);
 }
 
-int				ants_move(t_vis_ants *array, int null_count)
+int				ants_move(t_ants_v *array, int null_count)
 {
 	int			i;
 
 	i = -1;
-	while (++i < g_s.ants)
+	while (++i < g_struct.ants)
 		if (array[i].next_name)
 		{
 			if (array[i].x_diff == 0 && array[i].y_diff == 0)
 			{
 				array[i].x_diff = (array[i].next_room.x -
-					array[i].current_room.x) / SCREEN_FPS;
+					array[i].curr_room.x) / STEP_SCREEN;
 				array[i].y_diff = (array[i].next_room.y -
-					array[i].current_room.y) / SCREEN_FPS;
+					array[i].curr_room.y) / STEP_SCREEN;
 			}
-			array[i].current_room.x += array[i].x_diff;
-			array[i].current_room.y += array[i].y_diff;
-			if (calc_diff(array[i], 'x') <= 1 && calc_diff(array[i], 'y') <= 1
-				&& array[i].next_name)
-				null_ptr_ant(&array[i], &null_count);
+			array[i].curr_room.x += array[i].x_diff;
+			array[i].curr_room.y += array[i].y_diff;
+			if (math_different(array[i], 'x') <= 1
+				&& math_different(array[i], 'y') <= 1 && array[i].next_name)
+				ant_on_null(&array[i], &null_count);
 		}
 		else
 			null_count++;
 	return (null_count);
 }
 
-void			start_process(t_vis_ants *array)
+void			start_process(t_ants_v *array)
 {
 	int			count;
 
 	count = 0;
-	while (!g_s.vis_quit)
+	while (!g_struct.vis_quit)
 	{
-		event_handler(&g_s);
-		if (!g_s.vis_pause)
+		event_handler(&g_struct);
+		if (!g_struct.vis_pause)
 		{
 			count = ants_move(array, 0);
-			render_process(g_s, NULL);
-			if (count == g_s.ants)
+			render_process(g_struct, NULL);
+			if (count == g_struct.ants)
 			{
-				if (!if_turn_over(&array, &g_s))
+				if (!if_turn_over(&array, &g_struct))
 					break ;
 			}
 			else

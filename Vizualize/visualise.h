@@ -13,51 +13,50 @@
 #ifndef VISUALISE_H
 # define VISUALISE_H
 
-# include "/Users/vfearles/.brew/include/SDL2/SDL.h"
-# include "/Users/vfearles/.brew/include/SDL2/SDL_ttf.h"
-# include "/Users/vfearles/.brew/include/SDL2/SDL_image.h"
+# include "SDL.h"
+# include "SDL_ttf.h"
+# include "SDL_image.h"
 
 # include "../src/lemin.h"
 # include <stdio.h>
 # include <stdbool.h>
-# include <time.h>
 
 # define BLACK (SDL_Color){0, 0, 0, 255}
 # define SCREEN_WIDTH 1920
 # define SCREEN_HEIGHT 1080
-# define SCREEN_FPS 60
-# define SCREEN_TICKS_PER_FRAME 1000 / SCREEN_FPS
+# define STEP_SCREEN 60
+# define SCREEN_TICKS_PER_FRAME 1000 / STEP_SCREEN
 
 SDL_Window					*g_main_window;
 SDL_Renderer				*g_main_render;
-t_data						g_s;
+t_data						g_struct;
 
-typedef struct				s_vis_rooms
+typedef struct				s_room_v
 {
 	SDL_FRect				room;
-	struct s_vis_rooms		*next;
+	struct s_room_v			*next;
 	char					*name;
 	int						num;
 	unsigned short int		r;
 	unsigned short int		g;
 	unsigned short int		b;
-}							t_vis_rooms;
+}							t_room_v;
 
-t_vis_rooms					*g_vis_rooms;
+t_room_v					*g_vis_rooms;
 
-typedef struct				s_vis_ants
+typedef struct				s_ants_v
 {
-	char					*current_name;
+	char					*curr_name;
 	char					*next_name;
-	SDL_FRect				current_room;
+	SDL_FRect				curr_room;
 	SDL_FRect				next_room;
 	float					x_diff;
 	float					y_diff;
-}							t_vis_ants;
+}							t_ants_v;
 
 typedef struct				s_turns
 {
-	char					**ant_and_room;
+	char					**room_ant;
 	struct s_turns			*next;
 }							t_turns;
 
@@ -66,20 +65,20 @@ typedef struct				s_turns
 */
 
 void						error(const char *s, const char *t);
-void						render_process(t_data s, t_vis_ants **array);
-void						event_handler(t_data *g_s);
+void						render_process(t_data s, t_ants_v **array);
+void						event_handler(t_data *g_struct);
 
 /*
 ** ft_ants_move.c
 */
 
-void						start_process(t_vis_ants *array);
+void						start_process(t_ants_v *array);
 
 /*
 ** ft_render_info.c
 */
 
-t_vis_rooms					*render_rooms(t_data s);
+t_room_v					*render_rooms(t_data s);
 void						render_links(t_data s, int i);
 void						render_name_room(t_data s);
 void						render_texture_png(SDL_FRect pos);
@@ -88,17 +87,16 @@ void						render_texture_png(SDL_FRect pos);
 ** ft_help_funct.c
 */
 
-int							ft_find_max_x(t_data s);
-int							ft_find_max_y(t_data s);
-t_vis_rooms					*make_new_vis_room();
-t_vis_ants					*make_new_vis_ants_array(t_data s);
-void						null_ptr_ant(t_vis_ants *ant, int *null_count);
+int							calc_max_xy(t_data s, int flag);
+t_room_v					*init_vis_room();
+t_ants_v					*array_vis_ants(t_data s);
+void						ant_on_null(t_ants_v *ant, int *null_count);
 
 /*
 ** ft_push_turns.c
 */
 
-bool						parse_turns_line(t_vis_ants **array, t_data **g_s);
+bool						turn_line(t_ants_v **array, t_data **g_struct);
 
 /*
 ** ft_render_init.c
@@ -106,7 +104,7 @@ bool						parse_turns_line(t_vis_ants **array, t_data **g_s);
 
 int							init_sdl(void);
 int							close_sdl(void);
-void						color_and_coord(t_vis_rooms *vis_room,
+void						color_and_coord(t_room_v *vis_room,
 								t_room *current_s_room, t_data s);
 
 #endif
