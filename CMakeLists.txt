@@ -121,7 +121,7 @@ add_executable(new10
         src/ft_find_of_ways_struct.c
         src/ft_init.c
         src/ft_lemin_buff.c
-        src/ft_name_find.c
+        src/ft_check_link.c
         src/ft_null.c
         src/ft_print.c
         src/ft_redirection.c

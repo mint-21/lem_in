@@ -14,7 +14,7 @@ NAME			=	lem-in
 
 SRC				=	ft_card_reading.c ft_createroom.c ft_djkastra.c ft_srb_alg.c\
 				   	ft_change.c ft_correct_main.c\
-				   	ft_name_find.c ft_correct_map.c ft_cleaning_struct.c\
+				   	ft_correct_map.c ft_cleaning_struct.c\
 					ft_init.c ft_zerodata.c\
 					ft_lemin_buff.c ft_null.c ft_redirection.c\
 					ft_connects.c ft_find_all_ways.c ft_add_room_link.c\
@@ -24,7 +24,7 @@ SRC				=	ft_card_reading.c ft_createroom.c ft_djkastra.c ft_srb_alg.c\
 
 OBJ				=	ft_card_reading.o ft_createroom.o ft_djkastra.o ft_srb_alg.o\
 				   	ft_change.o ft_correct_main.o\
-				   	ft_name_find.o ft_correct_map.o ft_cleaning_struct.o\
+					ft_correct_map.o ft_cleaning_struct.o\
 					ft_additional_func.o ft_zerodata.o\
 					ft_lemin_buff.o ft_null.o ft_redirection.o\
 					ft_connects.o ft_find_all_ways.o ft_init.o\

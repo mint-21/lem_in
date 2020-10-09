@@ -334,9 +334,9 @@ CMakeFiles/new10.dir/src/ft_lemin_buff.c.o: ../libft/libft.h
 CMakeFiles/new10.dir/src/ft_lemin_buff.c.o: ../src/ft_lemin_buff.c
 CMakeFiles/new10.dir/src/ft_lemin_buff.c.o: ../src/lemin.h
 
-CMakeFiles/new10.dir/src/ft_name_find.c.o: ../libft/libft.h
-CMakeFiles/new10.dir/src/ft_name_find.c.o: ../src/ft_name_find.c
-CMakeFiles/new10.dir/src/ft_name_find.c.o: ../src/lemin.h
+CMakeFiles/new10.dir/src/ft_check_link.c.o: ../libft/libft.h
+CMakeFiles/new10.dir/src/ft_check_link.c.o: ../src/ft_check_link.c
+CMakeFiles/new10.dir/src/ft_check_link.c.o: ../src/lemin.h
 
 CMakeFiles/new10.dir/src/ft_null.c.o: ../libft/libft.h
 CMakeFiles/new10.dir/src/ft_null.c.o: ../src/ft_null.c

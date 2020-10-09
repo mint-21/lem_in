@@ -110,7 +110,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/asmall/Desktop/new10/src/ft_find_of_ways_struct.c" "/Users/asmall/Desktop/new10/cmake-build-debug/CMakeFiles/new10.dir/src/ft_find_of_ways_struct.c.o"
   "/Users/asmall/Desktop/new10/src/ft_init.c" "/Users/asmall/Desktop/new10/cmake-build-debug/CMakeFiles/new10.dir/src/ft_init.c.o"
   "/Users/asmall/Desktop/new10/src/ft_lemin_buff.c" "/Users/asmall/Desktop/new10/cmake-build-debug/CMakeFiles/new10.dir/src/ft_lemin_buff.c.o"
-  "/Users/asmall/Desktop/new10/src/ft_name_find.c" "/Users/asmall/Desktop/new10/cmake-build-debug/CMakeFiles/new10.dir/src/ft_name_find.c.o"
+  "/Users/asmall/Desktop/new10/src/ft_check_link.c" "/Users/asmall/Desktop/new10/cmake-build-debug/CMakeFiles/new10.dir/src/ft_check_link.c.o"
   "/Users/asmall/Desktop/new10/src/ft_null.c" "/Users/asmall/Desktop/new10/cmake-build-debug/CMakeFiles/new10.dir/src/ft_null.c.o"
   "/Users/asmall/Desktop/new10/src/ft_print.c" "/Users/asmall/Desktop/new10/cmake-build-debug/CMakeFiles/new10.dir/src/ft_print.c.o"
   "/Users/asmall/Desktop/new10/src/ft_redirection.c" "/Users/asmall/Desktop/new10/cmake-build-debug/CMakeFiles/new10.dir/src/ft_redirection.c.o"

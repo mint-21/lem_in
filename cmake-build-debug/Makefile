@@ -3005,32 +3005,32 @@ src/ft_lemin_buff.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/new10.dir/build.make CMakeFiles/new10.dir/src/ft_lemin_buff.c.s
 .PHONY : src/ft_lemin_buff.c.s
 
-src/ft_name_find.o: src/ft_name_find.c.o
+src/ft_name_find.o: src/ft_check_link.c.o
 
 .PHONY : src/ft_name_find.o
 
 # target to build an object file
-src/ft_name_find.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new10.dir/build.make CMakeFiles/new10.dir/src/ft_name_find.c.o
-.PHONY : src/ft_name_find.c.o
+src/ft_check_link.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new10.dir/build.make CMakeFiles/new10.dir/src/ft_check_link.c.o
+.PHONY : src/ft_check_link.c.o
 
-src/ft_name_find.i: src/ft_name_find.c.i
+src/ft_name_find.i: src/ft_check_link.c.i
 
 .PHONY : src/ft_name_find.i
 
 # target to preprocess a source file
-src/ft_name_find.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new10.dir/build.make CMakeFiles/new10.dir/src/ft_name_find.c.i
-.PHONY : src/ft_name_find.c.i
+src/ft_check_link.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new10.dir/build.make CMakeFiles/new10.dir/src/ft_check_link.c.i
+.PHONY : src/ft_check_link.c.i
 
-src/ft_name_find.s: src/ft_name_find.c.s
+src/ft_name_find.s: src/ft_check_link.c.s
 
 .PHONY : src/ft_name_find.s
 
 # target to generate assembly for a file
-src/ft_name_find.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new10.dir/build.make CMakeFiles/new10.dir/src/ft_name_find.c.s
-.PHONY : src/ft_name_find.c.s
+src/ft_check_link.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new10.dir/build.make CMakeFiles/new10.dir/src/ft_check_link.c.s
+.PHONY : src/ft_check_link.c.s
 
 src/ft_null.o: src/ft_null.c.o
 

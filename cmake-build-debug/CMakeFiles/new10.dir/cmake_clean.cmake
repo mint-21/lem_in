@@ -105,7 +105,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/new10.dir/src/ft_find_of_ways_struct.c.o"
   "CMakeFiles/new10.dir/src/ft_init.c.o"
   "CMakeFiles/new10.dir/src/ft_lemin_buff.c.o"
-  "CMakeFiles/new10.dir/src/ft_name_find.c.o"
+  "CMakeFiles/new10.dir/src/ft_check_link.c.o"
   "CMakeFiles/new10.dir/src/ft_null.c.o"
   "CMakeFiles/new10.dir/src/ft_print.c.o"
   "CMakeFiles/new10.dir/src/ft_redirection.c.o"

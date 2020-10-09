@@ -1455,18 +1455,18 @@ CMakeFiles/new10.dir/src/ft_lemin_buff.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/new10.dir/src/ft_lemin_buff.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asmall/Desktop/new10/src/ft_lemin_buff.c -o CMakeFiles/new10.dir/src/ft_lemin_buff.c.s
 
-CMakeFiles/new10.dir/src/ft_name_find.c.o: CMakeFiles/new10.dir/flags.make
-CMakeFiles/new10.dir/src/ft_name_find.c.o: ../src/ft_name_find.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asmall/Desktop/new10/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/new10.dir/src/ft_name_find.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/new10.dir/src/ft_name_find.c.o   -c /Users/asmall/Desktop/new10/src/ft_name_find.c
+CMakeFiles/new10.dir/src/ft_check_link.c.o: CMakeFiles/new10.dir/flags.make
+CMakeFiles/new10.dir/src/ft_check_link.c.o: ../src/ft_check_link.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asmall/Desktop/new10/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/new10.dir/src/ft_check_link.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/new10.dir/src/ft_check_link.c.o   -c /Users/asmall/Desktop/new10/src/ft_check_link.c
 
-CMakeFiles/new10.dir/src/ft_name_find.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/new10.dir/src/ft_name_find.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asmall/Desktop/new10/src/ft_name_find.c > CMakeFiles/new10.dir/src/ft_name_find.c.i
+CMakeFiles/new10.dir/src/ft_check_link.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/new10.dir/src/ft_check_link.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asmall/Desktop/new10/src/ft_check_link.c > CMakeFiles/new10.dir/src/ft_check_link.c.i
 
-CMakeFiles/new10.dir/src/ft_name_find.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/new10.dir/src/ft_name_find.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asmall/Desktop/new10/src/ft_name_find.c -o CMakeFiles/new10.dir/src/ft_name_find.c.s
+CMakeFiles/new10.dir/src/ft_check_link.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/new10.dir/src/ft_check_link.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asmall/Desktop/new10/src/ft_check_link.c -o CMakeFiles/new10.dir/src/ft_check_link.c.s
 
 CMakeFiles/new10.dir/src/ft_null.c.o: CMakeFiles/new10.dir/flags.make
 CMakeFiles/new10.dir/src/ft_null.c.o: ../src/ft_null.c
@@ -1680,7 +1680,7 @@ new10_OBJECTS = \
 "CMakeFiles/new10.dir/src/ft_find_of_ways_struct.c.o" \
 "CMakeFiles/new10.dir/src/ft_init.c.o" \
 "CMakeFiles/new10.dir/src/ft_lemin_buff.c.o" \
-"CMakeFiles/new10.dir/src/ft_name_find.c.o" \
+"CMakeFiles/new10.dir/src/ft_check_link.c.o" \
 "CMakeFiles/new10.dir/src/ft_null.c.o" \
 "CMakeFiles/new10.dir/src/ft_print.c.o" \
 "CMakeFiles/new10.dir/src/ft_redirection.c.o" \
@@ -1799,7 +1799,7 @@ new10: CMakeFiles/new10.dir/src/ft_find_all_ways.c.o
 new10: CMakeFiles/new10.dir/src/ft_find_of_ways_struct.c.o
 new10: CMakeFiles/new10.dir/src/ft_init.c.o
 new10: CMakeFiles/new10.dir/src/ft_lemin_buff.c.o
-new10: CMakeFiles/new10.dir/src/ft_name_find.c.o
+new10: CMakeFiles/new10.dir/src/ft_check_link.c.o
 new10: CMakeFiles/new10.dir/src/ft_null.c.o
 new10: CMakeFiles/new10.dir/src/ft_print.c.o
 new10: CMakeFiles/new10.dir/src/ft_redirection.c.o

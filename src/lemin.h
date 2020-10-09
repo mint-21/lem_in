@@ -169,8 +169,6 @@ void					ft_create(t_data *data, char *str);
 t_room					*ft_createroom(char *line);  // поменять
 void					ft_connects(t_data *data, char *str);
 t_connect				*ft_createconnect(t_room *room);
-int						ft_check_room_link(t_data *data, char *connect,
-										t_room **room1, t_room **room2);  //поменять
 void					ft_find_all_ways(t_data *data);
 int						ft_srb_alg(t_data *data);
 void					djkastra(int flag, t_data *data, int room_count);
@@ -216,5 +214,6 @@ void					print_n_free_map_data(char **map_data);
 void					terms_null(t_room *room);
 void					terms_staps(t_way *way, t_data *data, int steps, t_buf *buf);
 void					ft_clean_links(t_data *s);
-
+int						ft_check_room_link(t_data *data, char *connect_str,
+							t_room **room1, t_room **room2);
 #endif
