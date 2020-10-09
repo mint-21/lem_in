@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="new10"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/asmall/Desktop/new10/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/asmall/Desktop/new10/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/asmall/Desktop/new10/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="new10">
+				<Option output="/Users/asmall/Desktop/new10/cmake-build-debug/new10" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/asmall/Desktop/new10/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/asmall/Desktop/new10/libft"/>
+					<Add directory="/Users/asmall/Desktop/new10/libft/ft_printf/inc"/>
+					<Add directory="/Users/asmall/Desktop/new10/libft/ft_printf/src"/>
+					<Add directory="/Users/asmall/Desktop/new10/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 new10"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="new10/fast">
+				<Option output="/Users/asmall/Desktop/new10/cmake-build-debug/new10" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/asmall/Desktop/new10/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/asmall/Desktop/new10/libft"/>
+					<Add directory="/Users/asmall/Desktop/new10/libft/ft_printf/inc"/>
+					<Add directory="/Users/asmall/Desktop/new10/libft/ft_printf/src"/>
+					<Add directory="/Users/asmall/Desktop/new10/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 new10/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/new10/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_abs.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_atoll.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_atoull.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_bit.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_bzero.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_free_split.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_isalnum.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_isalpha.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_isascii.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_isdigit.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_isnum.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_isprint.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_itoa.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_lltoa.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_lstadd.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_lstdel.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_lstdelone.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_lstiter.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_lstmap.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_lstnew.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_lstrev.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_lstsize.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_memalloc.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_memccpy.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_memchr.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_memcmp.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_memcpy.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_memdel.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_memset.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_printf/inc/ft_printf.h">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_printf/src/ft_bigint.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_printf/src/ft_bigint_operations.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_printf/src/ft_buff_manage.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_printf/src/ft_color.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_printf/src/ft_handle.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_printf/src/ft_parse_nums.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_printf/src/ft_print_cs.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_printf/src/ft_print_diuoxb.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_printf/src/ft_print_e.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_printf/src/ft_print_f.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_printf/src/ft_print_options.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_printf/src/ft_print_prk.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_printf/src/ft_printf.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_printf/src/ft_printf.h">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_printf/src/ft_set_options.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_printf/src/ft_utils_num.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_printf/src/ft_utils_str.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_putchar.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_putchar_buf.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_putchar_fd.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_putendl.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_putendl_fd.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_putnbr.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_putnbr_buf.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_putnbr_fd.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_putstr.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_putstr_buf.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_putstr_fd.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_satoi.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strcat.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strchr.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strchr_count.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strclr.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strcmp.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strcpy.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strdup.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strequ.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_striter.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_striteri.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strjoin.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strlcat.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strlen.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strlen_char.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strlsplit.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strmap.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strmapi.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strncat.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strncpy.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strnequ.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strnew.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strnstr.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strrchr.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strrev.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strsplit.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strstr.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strsub.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_strtrim.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_swap.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_swapptr.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_tolower.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_toupper.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/ft_ulltoa.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/get_next_line.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/get_next_line.h">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/libft/libft.h">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_add_room_link.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_additional_func.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_card_reading.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_change.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_cleaning_struct.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_connects.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_correct_main.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_correct_map.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_creat_duplicate.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_createroom.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_djkastra.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_find_all_ways.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_find_of_ways_struct.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_init.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_lemin_buff.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_name_find.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_null.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_print.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_redirection.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_srb_alg.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_steps.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_terms.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/ft_zerodata.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/lemin.h">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/src/main.c">
+			<Option target="new10"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/new10/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

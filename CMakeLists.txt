@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.17)
-project(new08 C)
+project(new10 C)
 
 set(CMAKE_C_STANDARD 11)
 
@@ -8,7 +8,7 @@ include_directories(libft/ft_printf/inc)
 include_directories(libft/ft_printf/src)
 include_directories(src)
 
-add_executable(new08
+add_executable(new10
         libft/ft_printf/inc/ft_printf.h
         libft/ft_printf/src/ft_bigint.c
         libft/ft_printf/src/ft_bigint_operations.c
@@ -28,7 +28,6 @@ add_executable(new08
         libft/ft_printf/src/ft_utils_num.c
         libft/ft_printf/src/ft_utils_str.c
         libft/ft_abs.c
-
         libft/ft_atoll.c
         libft/ft_atoull.c
         libft/ft_bit.c
@@ -58,7 +57,6 @@ add_executable(new08
         libft/ft_memdel.c
 
         libft/ft_memset.c
-        libft/ft_print_error.c
         libft/ft_putchar.c
         libft/ft_putchar_buf.c
         libft/ft_putchar_fd.c
@@ -90,7 +88,6 @@ add_executable(new08
         libft/ft_strmap.c
         libft/ft_strmapi.c
         libft/ft_strncat.c
-
         libft/ft_strncpy.c
         libft/ft_strnequ.c
         libft/ft_strnew.c
@@ -123,14 +120,14 @@ add_executable(new08
         src/ft_find_all_ways.c
         src/ft_find_of_ways_struct.c
         src/ft_init.c
-        src/ft_buff_lem_buff.c
-        src/ft_buff_lem_fl.c
+        src/ft_lemin_buff.c
         src/ft_name_find.c
         src/ft_null.c
         src/ft_print.c
         src/ft_redirection.c
-        src/ft_steps.c
         src/ft_srb_alg.c
+        src/ft_steps.c
+        src/ft_terms.c
         src/ft_zerodata.c
         src/lemin.h
         src/main.c)

@@ -157,7 +157,7 @@ typedef struct			s_data
 
 t_data					ft_zerodata(void);
 int						add_link(t_data *s, char *tab);
-char					*reading_card(char ***str_split);
+char					*reading_card(char ***str_split, int fd);
 int						ft_correct(t_data *data, t_valid *check,
 									char **strings);
 int						ft_correct_hash(t_valid *check, char *str);
@@ -169,7 +169,7 @@ void					ft_create(t_data *data, char *str);
 t_room					*ft_createroom(char *line);  // поменять
 void					ft_connects(t_data *data, char *str);
 t_connect				*ft_createconnect(t_room *room);
-int						ft_findrooms(t_data *data, char *connect,
+int						ft_check_room_link(t_data *data, char *connect,
 										t_room **room1, t_room **room2);  //поменять
 void					ft_find_all_ways(t_data *data);
 int						ft_srb_alg(t_data *data);

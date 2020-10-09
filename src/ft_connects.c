@@ -70,7 +70,7 @@ static int		ft_check_duplicate_connect(t_room *room1, t_room *room2)
 }
 
 /*
-** ft_findrooms: search for connecting rooms.
+** ft_check_room_link: search for connecting rooms.
 ** ft_check_duplicate_connect: checking for duplicate connections.
 ** ft_connectconnect: connect rooms in the structure.
 */
@@ -82,7 +82,7 @@ void			ft_connects(t_data *data, char *connect_str)
 
 	room1 = NULL;
 	room2 = NULL;
-	ft_findrooms(data, connect_str, &room1, &room2);
+	ft_check_room_link(data, connect_str, &room1, &room2);
 	if (!ft_check_duplicate_connect(room1, room2))
 	{
 		ft_connectconnect(room1, room2);

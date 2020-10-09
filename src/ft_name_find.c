@@ -14,46 +14,36 @@
 
 /*
 ** The connection is checked up to the '-' sign with the name of the room.
-** name_connect[i]: the name of the room before the '-' sign.
-*/
-
-int			ft_name_equ_room1(char *name_room, char *name_connect)
-{
-	int		i;
-
-	i = -1;
-	while (name_room[++i] && name_connect[i] && name_connect[i] != '-')
-		if (name_room[i] != name_connect[i])
-			return (0);
-	if (name_room[i] == '\0' && name_connect[i] == '-')
-		return (1);
-	return (0);
-}
-
-/*
+** r_connect[i]: the name of the room before the '-' sign.
 ** The connection after the '-' sign with the name of the room is checked.
-** name_connect[j]: the name of the room after the '-' sign.
+** r_connect[j]: the name of the room after the '-' sign.
 */
 
-int			ft_name_equ_room2(char *name_room, char *name_connect)
+int			ft_find_link_name(char *r_name, char *r_connect, int flag)
 {
 	int		i;
 	int		j;
 
-	i = 0;
-	j = 0;
-	while (name_connect[j] && name_connect[j] != '-')
-		++j;
-	++j;
-	while (name_room[i] && name_connect[j])
+	i = -1;
+	if (flag == 1)
 	{
-		if (name_room[i] != name_connect[j])
-			return (0);
-		++i;
-		++j;
+		while (r_name[++i] && r_connect[i] && r_connect[i] != '-')
+			if (r_name[i] != r_connect[i])
+				return (0);
+		if (r_name[i] == '\0' && r_connect[i] == '-')
+			return (1);
 	}
-	if (name_room[i] == '\0' && name_connect[j] == '\0')
-		return (1);
+	else if (flag == 2)
+	{
+		j = 0;
+		while (r_connect[j] && r_connect[j] != '-')
+			++j;
+		while (r_name[++i] & r_connect[++j])
+			if (r_name[i] != r_connect[j])
+				return (0);
+		if (r_name[i] == '\0' && r_connect[j] == '\0')
+			return (1);
+	}
 	return (0);
 }
 
@@ -62,7 +52,7 @@ int			ft_name_equ_room2(char *name_room, char *name_connect)
 ** head: the first room in the t_room structure.
 */
 
-int			ft_findrooms(t_data *data, char *connect_str,
+int			ft_check_room_link(t_data *data, char *connect_str,
 				t_room **room1, t_room **room2)
 {
 	t_room	*head;
@@ -72,9 +62,9 @@ int			ft_findrooms(t_data *data, char *connect_str,
 	head = data->rooms;
 	while (head && (!(*room1) || !(*room2)))
 	{
-		if (!(*room1) && ft_name_equ_room1(head->name, &connect_str[0]))
+		if (!(*room1) && ft_find_link_name(head->name, &connect_str[0], 1))
 			*room1 = head;
-		else if (!(*room2) && ft_name_equ_room2(head->name, connect_str))
+		else if (!(*room2) && ft_find_link_name(head->name, connect_str, 2))
 			*room2 = head;
 		head = head->next;
 	}
