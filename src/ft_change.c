@@ -13,41 +13,32 @@
 #include "lemin.h"
 
 /*
-** the parent room is assigned the one whose weight is less than the current
-*/
-
-static int		loop(t_room *new_parrent, t_room *room)
-{
-	t_room		*ptr;
-
-	ptr = new_parrent;
-	while (ptr)
-	{
-		if (ptr == room)
-			return (1);
-		ptr = ptr->room_par;
-	}
-	return (0);
-}
-
-/*
 ** mark visited rooms
+** the parent room is assigned the one whose weight is less than the current
 ** Weighting the current room (weight)
 */
 
 t_connect		*turn_and_change(t_room *room, t_connect *connect,
 			t_room *start, int *flag)
 {
+	t_room		*ptr;
+
 	connect = room->connects;
+	ptr = room;
 	while (connect)
 	{
 		if (room->weight + connect->weight < connect->room->weight
 			&& connect->room != start)
 		{
 			connect->room->weight = room->weight + connect->weight;
-			if (!connect->room->room_par ||
-				((connect->room->room_par) && !loop(room, connect->room)))
+			if (!connect->room->room_par || ((connect->room->room_par)))
 			{
+				while (ptr)
+				{
+					if (ptr == room)
+						break ;
+					ptr = ptr->room_par;
+				}
 				connect->room->room_par = room;
 				*flag = 1;
 			}

@@ -73,6 +73,31 @@ void			path(t_room *room, t_room *start, t_way **ways, int path_cost)
 }
 
 /*
+** The function counts the number of ants on each path
+** ++way->ants: counting the number of ants passing through the path
+*/
+
+void		terms_staps(t_way *way, t_data *data, int steps, t_buf *buf)
+{
+	t_path	*path;
+
+	path = way->path;
+	while (path)
+	{
+		if (path->room == data->start && data->start->ant &&
+			(way->path_cost <= steps || way->path_number == 1))
+		{
+			copy_text_buff(data, path, buf, ++data->ant);
+			++way->ants;
+		}
+		else if (path->room != data->start && path->room != data->end
+			&& path->room->ant)
+			copy_text_buff(data, path, buf, path->room->ant);
+		path = path->next;
+	}
+}
+
+/*
 ** rooms_count: number of rooms.
 ** initially the list of visited nodes is empty, weight = 0.
 */

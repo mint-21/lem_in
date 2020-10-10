@@ -106,14 +106,14 @@ int				ft_correct_hash(t_valid *check, char *str)
 	if (ft_strequ(str, "##start"))
 	{
 		if (check->hash_start || check->hash_end == -1)
-			ft_print_error(E_END);
+			ft_print_error(E_START);
 		check->hash_start = -1;
 		check->valid_flag += E_START;
 	}
 	else if (ft_strequ(str, "##end"))
 	{
 		if (check->hash_end || check->hash_start == -1)
-			ft_print_error(E_START);
+			ft_print_error(E_END);
 		check->hash_end = -1;
 		check->valid_flag += E_END;
 	}
