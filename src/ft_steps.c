@@ -39,7 +39,8 @@ int				steps_for_ants(t_way *way, int ants, int steps)
 			tmp = (ost) ? tmp - 1 : tmp;
 			steps += ((tmp * (way->path_number - 1)) + ost) / way->path_number;
 			ost = (tmp * (way->path_number - 1) + ost) % way->path_number;
-			steps = (ost) ? steps + 1 : steps;
+			if (ost)
+				steps++;
 		}
 		else if (steps <= way->path_cost)
 			break ;
