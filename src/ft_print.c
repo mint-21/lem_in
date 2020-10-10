@@ -15,26 +15,26 @@
 void			ft_print_error(int id)
 {
 	write(2, "ERROR\n", 6);
-	// if (id == 1)
-	// 	ft_printf("{red}%s\n", "ERROR: memory problems");
-	// if (id == 2)
-	// 	ft_printf("{red}%s\n", "ERROR: using forbidden characters");
-	// if (id == 3)
-	// 	ft_printf("{red}%s\n", "ERROR: in start initialization");
-	// if (id == 4)
-	// 	ft_printf("{red}%s\n", "ERROR: in end initialization");
-	// if (id == 5)
-	// 	ft_printf("{red}%s\n", "ERROR: ants parameter not valid");
-	// if (id == 6)
-	// 	ft_printf("{red}%s\n", "ERROR: room connections are not valid");
-	// if (id == 7)
-	// 	ft_printf("{red}%s\n", "ERROR: the card has no solution");
-	// if (id == 8)
-	// 	ft_printf("{red}%s\n", "ERROR: comments are not valid");
-	// if (id == 9)
-	// 	ft_printf("{red}%s\n", "ERROR: room names are not valid");
-	// if (id == 10)
-	// 	ft_printf("{red}%s\n", "ERROR: coordinates of rooms are not valid");
+	if (id == 1)
+		ft_printf("{red}%s{eoc}\n", "memory problems");
+	if (id == 2)
+		ft_printf("{red}%s{eoc}\n", "using forbidden characters");
+	if (id == 3)
+		ft_printf("{red}%s{eoc}\n", "no start command or coordinates");
+	if (id == 4)
+		ft_printf("{red}%s{eoc}\n", "no end command or coordinates");
+	if (id == 5)
+		ft_printf("{red}%s{eoc}\n", "ants parameter not valid");
+	if (id == 6)
+		ft_printf("{red}%s{eoc}\n", "room connections are not valid");
+	if (id == 7)
+		ft_printf("{red}%s{eoc}\n", "the card has no solution");
+	if (id == 8)
+		ft_printf("{red}%s{eoc}\n", "comments are not valid");
+	if (id == 9)
+		ft_printf("{red}%s{eoc}\n", "room names/coord are not valid");
+	if (id == 10)
+		ft_printf("{red}%s{eoc}\n", "room names/coord are duplicated");
 	exit(id);
 }
 
