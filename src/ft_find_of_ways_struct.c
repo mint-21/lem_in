@@ -120,12 +120,10 @@ static void		init_var(t_option *var, t_way *new_ways,
 void			find_of_ways_struct(t_data *data)
 {
 	t_way		*new_ways;
-	int			new_steps;
 	t_option	*var;
 	t_connect	*reverse_h;
 	t_connect	*reverse_t;
 
-	new_steps = 0;
 	reverse_h = data->end->connects;
 	while (reverse_h && reverse_h->weight != -1)
 		reverse_h = reverse_h->next;
@@ -136,7 +134,7 @@ void			find_of_ways_struct(t_data *data)
 	new_ways = flip_ribs(reverse_h, reverse_t, data->start, data->end);
 	null_turn(reverse_h, reverse_t, data->end);
 	if (new_ways)
-		new_steps = steps_for_ants(new_ways, data->ants);
+		data->steps = steps_for_ants(new_ways, data->ants, data->steps);
 	!(var = (t_option *)malloc(sizeof(t_option))) ? ft_perror() : 0;
-	init_var(var, new_ways, new_steps, data);
+	init_var(var, new_ways, data->steps, data);
 }

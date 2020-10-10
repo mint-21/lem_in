@@ -22,13 +22,11 @@
 ** The function returns the number of steps taken.
 */
 
-int				steps_for_ants(t_way *way, int ants)
+int				steps_for_ants(t_way *way, int ants, int steps)
 {
-	int			steps;
 	int			ost;
 	int			tmp;
 
-	steps = 0;
 	ost = 0;
 	while (way)
 	{

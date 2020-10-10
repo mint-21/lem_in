@@ -45,10 +45,8 @@ static void		ft_null_connect(t_room *dst, t_room *src)
 		connect = connect->next;
 	if (connect && connect->room == src)
 	{
-		if (connect->prev)
-			connect->prev->next = connect->next;
-		else
-			dst->connects = connect->next;
+		(connect->prev) ? (connect->prev->next = connect->next)
+				: (dst->connects = connect->next);
 		if (connect->next)
 			connect->next->prev = connect->prev;
 		free(connect);

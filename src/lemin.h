@@ -153,6 +153,7 @@ typedef struct			s_data
 	int					vis_quit;
 	int					vis_pause;
 	int					ant;
+	int					steps;
 }						t_data;
 
 t_data					ft_zerodata(void);
@@ -179,7 +180,7 @@ void					ft_struct_free(t_data *data);
 void					ft_print_error(int id);
 void					ft_perror();
 int						ft_atoi_mod(const char *str);
-int						steps_for_ants(t_way *way, int ants);
+int						steps_for_ants(t_way *way, int ants, int steps);
 void					find_of_ways_struct(t_data *data);
 void					ft_find_null(t_path *path);
 void					null_turn(t_connect *reverse_h, t_connect *reverse_t,
