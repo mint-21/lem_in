@@ -24,27 +24,21 @@ static void		ft_free_connects(t_connect *connects)
 	}
 }
 
-static void		ft_free_path(t_path *path)
-{
-	t_path		*tmp;
-
-	while (path)
-	{
-		tmp = path;
-		path = path->next;
-		free(tmp);
-	}
-}
-
 static void		ft_free_ways(t_way *way)
 {
 	t_way		*tmp;
+	t_path		*ptr;
 
 	while (way)
 	{
 		tmp = way;
 		way = way->next;
-		ft_free_path(tmp->path);
+		while (tmp->path)
+		{
+			ptr = tmp->path;
+			tmp->path = tmp->path->next;
+			free(ptr);
+		}
 		free(tmp);
 	}
 }
