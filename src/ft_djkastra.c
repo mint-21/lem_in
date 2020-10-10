@@ -77,9 +77,9 @@ void			path(t_room *room, t_room *start, t_way **ways, int path_cost)
 ** ++way->ants: counting the number of ants passing through the path
 */
 
-void		terms_staps(t_way *way, t_data *data, int steps, t_buf *buf)
+void			terms_staps(t_way *way, t_data *data, int steps, t_buf *buf)
 {
-	t_path	*path;
+	t_path		*path;
 
 	path = way->path;
 	while (path)
