@@ -29,7 +29,7 @@
 # define E_ROOM 9
 # define E_COORD 10
 
-# define INF		(0x7FFFFFFF)
+# define INF		10000000
 # define BUFF_SIZE	2048
 
 # define MAX(a, b) (a > b ? a : b)

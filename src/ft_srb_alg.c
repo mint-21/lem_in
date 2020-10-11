@@ -80,7 +80,6 @@ void			ft_change_ribs(t_path *path)
 
 static int		ft_dij_path(t_data *data, int flag)
 {
-	data->start->weight = 0;
 	djkastra(flag, data, data->rooms_count);
 	if (!data->end->room_par)
 		return (0);

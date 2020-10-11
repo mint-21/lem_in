@@ -102,23 +102,56 @@ void			terms_staps(t_way *way, t_data *data, int steps, t_buf *buf)
 ** initially the list of visited nodes is empty, weight = 0.
 */
 
+void add_room(t_room *room, t_room **q)
+{
+    t_room *new;
+
+    if (!(new = (t_room *)ft_memalloc(sizeof(t_room))))
+        exit(1);
+    new = room;
+    if (!*q || room->weight < (*q)->weight)
+    {
+        if (*q)
+            (*q)->connects->prev = new;
+        new->next = *q;
+        *q = new;
+    }
+}
+
+void links_add(t_connect *link, t_room *start, t_room **q)
+{
+	while (link)
+	{
+		if (link->room->weight == INF)
+		{
+			link->room->weight = start->weight + link->weight;
+			link->room->room_par = start;
+			add_room(link->room, q);
+		}
+	}
+}
+
 void			djkastra(int flag, t_data *data, int room_count)
 {
 	t_room		*room;
 	t_connect	*connect;
 	t_room		*room_d;
+	t_room *q;   // добавила
 
 	while (--room_count && flag == 1)
 	{
 		flag = 0;
-		room = data->rooms;
+        q = NULL;
+		room = data->start;    // поменяла на старт
+		links_add(room->connects, room, &q);   // новое
+		//_________________
 		if (room == data->end)
 			room = room->next;
 		while (room)
 		{
 			if (room->state)
 			{
-				if (room->weight != INF)
+				if (room->weight == INF)
 					connect = turn_and_change(room, connect,
 											data->start, &flag);
 				if ((room_d = room->out_part) && room_d->weight != INF)

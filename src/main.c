@@ -19,6 +19,15 @@
 ** ft_buff_lem: output to the console of the program's response
 */
 
+void	set_distance(t_room *rooms)
+{
+	while (rooms)
+	{
+		rooms->weight = INF;
+		rooms = rooms->next;
+	}
+}
+
 int			main(int ac, char **av)
 {
 	t_data	data;
@@ -32,9 +41,13 @@ int			main(int ac, char **av)
 	data = ft_zerodata();
 	map_data = reading_card(&str_split, fd);
 	ft_correct(&data, &data.check, str_split);
+    //set_distance(data.rooms);
+	data.start->weight = 0;  // добавила ---- уводит по строкам в ++++
 	ft_find_all_ways(&data);
 	print_n_free_map_data(&map_data);
 	ft_buff_lem(&data);
 	ft_struct_free(&data);
 	return (0);
 }
+
+

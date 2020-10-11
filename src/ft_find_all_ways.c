@@ -17,27 +17,31 @@
 ** The function returns the smallest of the counted values
 */
 
+int					count_links(t_room *r)
+{
+	t_connect		*ptr;
+	int				ret;
+
+	ret = 0;
+	ptr = r->connects;
+	while (ptr)
+	{
+		ptr = ptr->next;
+		ret++;
+	}
+	return (ret);
+}
+
 static int			find_ways(t_room *start, t_room *end)
 {
-	int				i;
-	int				j;
-	t_connect		*ptr;
-	t_connect		*src;
+	int connect_start;
+	int connect_end;
 
-	i = -1;
-	j = -1;
-	ptr = start->connects;
-	src = end->connects;
-	while (ptr || src)
-	{
-		++i;
-		++j;
-		if (ptr)
-			ptr = ptr->next;
-		else if (src)
-			src = src->next;
-	}
-	return ((j < i) ? j : i);
+	connect_start = count_links(start);
+	connect_end = count_links(end);
+	if (connect_start > connect_end)
+		return (connect_end);
+	return (connect_start);
 }
 
 /*

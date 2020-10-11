@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.17)
-project(new10 C)
+project(lem_in3 C)
 
 set(CMAKE_C_STANDARD 11)
 
@@ -8,7 +8,7 @@ include_directories(libft/ft_printf/inc)
 include_directories(libft/ft_printf/src)
 include_directories(src)
 
-add_executable(new10
+add_executable(lem_in3
         libft/ft_printf/inc/ft_printf.h
         libft/ft_printf/src/ft_bigint.c
         libft/ft_printf/src/ft_bigint_operations.c
@@ -55,7 +55,6 @@ add_executable(new10
         libft/ft_memcmp.c
         libft/ft_memcpy.c
         libft/ft_memdel.c
-
         libft/ft_memset.c
         libft/ft_putchar.c
         libft/ft_putchar_buf.c
@@ -75,7 +74,6 @@ add_executable(new10
         libft/ft_strclr.c
         libft/ft_strcmp.c
         libft/ft_strcpy.c
-
         libft/ft_strdup.c
         libft/ft_strequ.c
         libft/ft_striter.c
@@ -110,18 +108,17 @@ add_executable(new10
         src/ft_additional_func.c
         src/ft_card_reading.c
         src/ft_change.c
+        src/ft_check_connects.c
+        src/ft_check_create_room.c
         src/ft_cleaning_struct.c
-        src/ft_connects.c
         src/ft_correct_main.c
         src/ft_correct_map.c
         src/ft_creat_duplicate.c
-        src/ft_createroom.c
         src/ft_djkastra.c
         src/ft_find_all_ways.c
         src/ft_find_of_ways_struct.c
         src/ft_init.c
         src/ft_lemin_buff.c
-        src/ft_check_link.c
         src/ft_null.c
         src/ft_print.c
         src/ft_redirection.c
