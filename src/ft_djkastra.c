@@ -112,7 +112,7 @@ void add_room(t_room *room, t_room **q)
     if (!*q || room->weight < (*q)->weight)
     {
         if (*q)
-            (*q)->connects->prev = new;
+            (*q)->prev = new;
         new->next = *q;
         *q = new;
     }

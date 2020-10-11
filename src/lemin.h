@@ -106,6 +106,7 @@ typedef struct			s_room
 	int					weight;
 	struct s_room		*next;
 	int					state;
+	struct s_room		*prev;   //добавила
 }						t_room;
 
 typedef struct			s_link
