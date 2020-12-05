@@ -81,6 +81,5 @@ void			ft_struct_free(t_data *data)
 			free(tmp);
 		}
 	(data->links) ? (ft_clean_links(data)) : 0;
-	(data->ways) ? (ft_free_ways(data->ways)) : 0; //дебажить
 	(data->options) ? (ft_free_vars(data->options)) : 0;
 }
