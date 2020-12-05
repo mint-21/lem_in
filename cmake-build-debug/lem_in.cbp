@@ -8,443 +8,424 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/karina/Desktop/lem_in/cmake-build-debug"/>
+				<Option working_dir="/Users/vfearles/Desktop/lem_in/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/karina/Desktop/lem_in/cmake-build-debug"/>
+				<Option working_dir="/Users/vfearles/Desktop/lem_in/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/karina/Desktop/lem_in/cmake-build-debug"/>
+				<Option working_dir="/Users/vfearles/Desktop/lem_in/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lem_in">
-				<Option output="/home/karina/Desktop/lem_in/cmake-build-debug/lem_in" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/karina/Desktop/lem_in/cmake-build-debug"/>
+				<Option output="/Users/vfearles/Desktop/lem_in/cmake-build-debug/lem_in" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/vfearles/Desktop/lem_in/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/karina/Desktop/lem_in/libft"/>
-					<Add directory="/home/karina/Desktop/lem_in/libft/ft_printf/inc"/>
-					<Add directory="/home/karina/Desktop/lem_in/libft/ft_printf/src"/>
-					<Add directory="/home/karina/Desktop/lem_in/src"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/Users/vfearles/Desktop/lem_in/libft"/>
+					<Add directory="/Users/vfearles/Desktop/lem_in/libft/ft_printf/inc"/>
+					<Add directory="/Users/vfearles/Desktop/lem_in/libft/ft_printf/src"/>
+					<Add directory="/Users/vfearles/Desktop/lem_in/src"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 lem_in"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 lem_in"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lem_in/fast">
-				<Option output="/home/karina/Desktop/lem_in/cmake-build-debug/lem_in" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/karina/Desktop/lem_in/cmake-build-debug"/>
+				<Option output="/Users/vfearles/Desktop/lem_in/cmake-build-debug/lem_in" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/vfearles/Desktop/lem_in/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/karina/Desktop/lem_in/libft"/>
-					<Add directory="/home/karina/Desktop/lem_in/libft/ft_printf/inc"/>
-					<Add directory="/home/karina/Desktop/lem_in/libft/ft_printf/src"/>
-					<Add directory="/home/karina/Desktop/lem_in/src"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/Users/vfearles/Desktop/lem_in/libft"/>
+					<Add directory="/Users/vfearles/Desktop/lem_in/libft/ft_printf/inc"/>
+					<Add directory="/Users/vfearles/Desktop/lem_in/libft/ft_printf/src"/>
+					<Add directory="/Users/vfearles/Desktop/lem_in/src"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 lem_in/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/karina/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 lem_in/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/Desktop/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_abs.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_abs.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_atoll.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_atoll.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_atoull.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_atoull.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_bit.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_bit.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_bzero.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_bzero.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_free_split.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_free_split.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_isalnum.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_isalnum.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_isalpha.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_isalpha.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_isascii.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_isascii.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_isdigit.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_isdigit.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_isnum.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_isnum.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_isprint.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_isprint.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_itoa.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_itoa.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_lltoa.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_lltoa.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_lstadd.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_lstadd.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_lstdel.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_lstdel.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_lstdelone.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_lstdelone.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_lstiter.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_lstiter.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_lstmap.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_lstmap.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_lstnew.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_lstnew.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_lstrev.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_lstrev.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_lstsize.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_lstsize.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_memalloc.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_memalloc.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_memccpy.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_memccpy.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_memchr.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_memchr.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_memcmp.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_memcmp.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_memcpy.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_memcpy.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_memdel.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_memdel.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_memset.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_memset.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_printf/inc/ft_printf.h">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_printf/inc/ft_printf.h">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_printf/src/ft_bigint.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_printf/src/ft_bigint.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_printf/src/ft_bigint_operations.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_printf/src/ft_bigint_operations.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_printf/src/ft_buff_manage.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_printf/src/ft_buff_manage.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_printf/src/ft_color.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_printf/src/ft_color.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_printf/src/ft_handle.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_printf/src/ft_handle.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_printf/src/ft_parse_nums.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_printf/src/ft_parse_nums.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_printf/src/ft_print_cs.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_printf/src/ft_print_cs.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_printf/src/ft_print_diuoxb.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_printf/src/ft_print_diuoxb.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_printf/src/ft_print_e.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_printf/src/ft_print_e.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_printf/src/ft_print_f.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_printf/src/ft_print_f.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_printf/src/ft_print_options.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_printf/src/ft_print_options.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_printf/src/ft_print_prk.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_printf/src/ft_print_prk.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_printf/src/ft_printf.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_printf/src/ft_printf.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_printf/src/ft_printf.h">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_printf/src/ft_printf.h">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_printf/src/ft_set_options.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_printf/src/ft_set_options.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_printf/src/ft_utils_num.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_printf/src/ft_utils_num.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_printf/src/ft_utils_str.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_printf/src/ft_utils_str.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_putchar.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_putchar.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_putchar_buf.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_putchar_buf.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_putchar_fd.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_putchar_fd.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_putendl.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_putendl.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_putendl_fd.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_putendl_fd.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_putnbr.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_putnbr.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_putnbr_buf.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_putnbr_buf.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_putnbr_fd.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_putnbr_fd.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_putstr.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_putstr.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_putstr_buf.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_putstr_buf.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_putstr_fd.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_putstr_fd.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_satoi.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_satoi.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strcat.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strcat.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strchr.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strchr.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strchr_count.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strchr_count.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strclr.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strclr.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strcmp.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strcmp.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strcpy.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strcpy.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strdup.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strdup.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strequ.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strequ.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_striter.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_striter.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_striteri.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_striteri.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strjoin.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strjoin.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strlcat.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strlcat.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strlen.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strlen.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strlen_char.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strlen_char.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strlsplit.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strlsplit.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strmap.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strmap.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strmapi.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strmapi.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strncat.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strncat.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strncpy.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strncpy.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strnequ.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strnequ.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strnew.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strnew.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strnstr.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strnstr.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strrchr.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strrchr.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strrev.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strrev.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strsplit.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strsplit.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strstr.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strstr.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strsub.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strsub.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_strtrim.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_strtrim.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_swap.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_swap.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_swapptr.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_swapptr.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_tolower.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_tolower.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_toupper.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_toupper.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/ft_ulltoa.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/ft_ulltoa.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/get_next_line.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/get_next_line.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/get_next_line.h">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/get_next_line.h">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/libft/libft.h">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/libft/libft.h">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/count.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/src/count.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_add_room_link.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/src/ft_add_room_link.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_additional_func.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/src/ft_additional_func.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_card_reading.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/src/ft_card_reading.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_change.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/src/ft_change.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_check_connects.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/src/ft_check_connects.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_check_create_room.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/src/ft_check_create_room.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_cleaning_struct.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/src/ft_cleaning_struct.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_correct_main.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/src/ft_correct_main.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_correct_map.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/src/ft_correct_map.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_creat_duplicate.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/src/ft_creat_duplicate.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_djkastra.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/src/ft_lemin_buff.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_find_all_ways.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/src/ft_null.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_find_of_ways_struct.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/src/ft_print.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_init.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/src/ft_terms.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_lemin_buff.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/src/ft_zerodata.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_null.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/src/lemin.h">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_print.c">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/src/main.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_redirection.c">
-			<Option target="lem_in"/>
-		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_srb_alg.c">
-			<Option target="lem_in"/>
-		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_steps.c">
-			<Option target="lem_in"/>
-		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_terms.c">
-			<Option target="lem_in"/>
-		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/ft_zerodata.c">
-			<Option target="lem_in"/>
-		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/lemin.h">
-			<Option target="lem_in"/>
-		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/src/main.c">
-			<Option target="lem_in"/>
-		</Unit>
-		<Unit filename="/home/karina/Desktop/lem_in/CMakeLists.txt">
+		<Unit filename="/Users/vfearles/Desktop/lem_in/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

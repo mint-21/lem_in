@@ -644,8 +644,9 @@ int			main(int ac, char **av)
 	data.start->weight = 0;  // добавила ---- уводит по строкам в ++++
 	suurb(&data);
 	print_n_free_map_data(&map_data);
-	//
+	//продебажить
 	ft_buff_lem(&data);
+	//дебажить
 	ft_struct_free(&data);
 	return (0);
 }

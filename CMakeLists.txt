@@ -115,16 +115,9 @@ add_executable(lem_in
         src/ft_correct_main.c
         src/ft_correct_map.c
         src/ft_creat_duplicate.c
-        src/ft_djkastra.c
-        src/ft_find_all_ways.c
-        src/ft_find_of_ways_struct.c
-        src/ft_init.c
         src/ft_lemin_buff.c
         src/ft_null.c
         src/ft_print.c
-        src/ft_redirection.c
-        src/ft_srb_alg.c
-        src/ft_steps.c
         src/ft_terms.c
         src/ft_zerodata.c
         src/lemin.h

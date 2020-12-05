@@ -36,6 +36,7 @@ static void		ft_free_ways(t_way *way)
 		while (tmp->path)
 		{
 			ptr = tmp->path;
+			//дебажить
 			tmp->path = tmp->path->next;
 			free(ptr);
 		}
@@ -80,6 +81,6 @@ void			ft_struct_free(t_data *data)
 			free(tmp);
 		}
 	(data->links) ? (ft_clean_links(data)) : 0;
-	(data->ways) ? (ft_free_ways(data->ways)) : 0;
+	(data->ways) ? (ft_free_ways(data->ways)) : 0; //дебажить
 	(data->options) ? (ft_free_vars(data->options)) : 0;
 }

@@ -37,21 +37,6 @@ t_connect		*create_inhead(t_path *tmp, t_path *path, t_connect *head,
 ** We initialize the structure of paths way
 */
 
-t_way			*way_init(t_way *way, t_path *path, int weight, t_way *ways)
-{
-	way->path = path;
-	way->len = weight;
-	way->ants = 0;
-	if (ways)
-		ways->next = way;
-	way->prev = ways;
-	way->next = NULL;
-	if (ways)
-		way->path_number = ways->path_number + 1;
-	else
-		way->path_number = 1;
-	return (way);
-}
 
 void			ft_perror(void)
 {

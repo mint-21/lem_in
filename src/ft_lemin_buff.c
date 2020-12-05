@@ -45,17 +45,133 @@ void		copy_text_buff(t_data *data, t_path *path, t_buf *buf, int ant)
 ** ft_step: buffered the text one step per path
 */
 
+void	teleport_all(char *name, int ants)
+{
+    int i;
+
+    i = 1;
+    while (i <= ants)
+    {
+        ft_printf("L%d-%s ", i, name);
+        i++;
+    }
+    ft_printf("\n");
+}
+
+void	add_to_buff(t_way *l, int i)
+{
+    t_ants	*new;
+
+    if (!(new = (t_ants *)ft_memalloc(sizeof(t_ants))))
+        exit(1);
+    new->num = i;
+    new->curr = l->path;
+    if (!(l->last_ant))
+        l->buf = new;
+    else
+        l->last_ant->next = new;
+    l->last_ant = new;
+}
+
+int		is_empty(t_way *l)
+{
+    while (l)
+    {
+        if (l->ants)
+            return (1);
+        l = l->next;
+    }
+    return (0);
+}
+
+void	fill_buf(t_way *l)
+{
+    t_way	*first;
+    int				i;
+
+    i = 1;
+    first = l;
+    while (1)
+    {
+        if (l->ants)
+        {
+            (l->ants)--;
+            add_to_buff(l, i);
+            i++;
+        }
+        if (!is_empty(first))
+            break ;
+        else if (!(l = l->next))
+            l = first;
+    }
+}
+
+t_ants	*buf_delete_ant(t_ants **buf, t_ants *ant)
+{
+    t_ants *tmp;
+    t_ants *ret;
+
+    if (*buf == ant)
+        *buf = (*buf)->next;
+    else
+    {
+        tmp = *buf;
+        while (tmp->next != ant)
+            tmp = tmp->next;
+        tmp->next = ant->next;
+    }
+    ret = ant->next;
+    free(ant);
+    return (ret);
+}
+
+int		print_step(t_ants **buf, int step)
+{
+    t_ants *tmp;
+
+    if (!*buf)
+        return (0);
+    tmp = *buf;
+    while (tmp && step--)
+    {
+        tmp->curr = tmp->curr->next;
+        ft_printf("L%d-%s ", tmp->num, tmp->curr->room->name);
+        if (!tmp->curr->prev->prev)
+            return (1);
+        if (!tmp->curr->next)
+            tmp = buf_delete_ant(buf, tmp);
+        else
+            tmp = tmp->next;
+    }
+    return (1);
+}
+
+int		print_line(t_way *l, int step)
+{
+    int ret;
+
+    ret = 0;
+    while (l)
+    {
+        ret += print_step(&l->buf, step);
+        l = l->next;
+    }
+    return (ret);
+}
+
 void		ft_buff_lem(t_data *data)
 {
-	t_buf	buf;
 	int		steps;
-	t_way	*way;
 
-	data->start->ant = data->ants;
-	buf.i = 0;
-	steps = data->best_opt->steps;
-	way = data->best_opt->ways;
-	while (steps)
-		steps = ft_step(data, &buf, steps, way);
-	write(1, buf.str, buf.i);
+	steps = 0;
+	if (data->ways->len == 2)
+    {
+	    teleport_all(data->ways->path->next->room->name, data->ants);
+        free_path_list(data->ways);
+        return ;
+    }
+    fill_buf(data->ways);
+    while (print_line(data->ways, ++steps))
+        ft_printf("\n");
+    free_path_list(data->ways);
 }

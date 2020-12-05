@@ -12,24 +12,24 @@
 
 NAME			=	lem-in
 
-SRC				=	ft_card_reading.c ft_check_create_room.c ft_djkastra.c\
-				   	ft_change.c ft_correct_main.c ft_srb_alg.c\
+SRC				=	ft_card_reading.c ft_check_create_room.c \
+				   	ft_change.c ft_correct_main.c \
 				   	ft_correct_map.c ft_cleaning_struct.c\
-					ft_init.c ft_zerodata.c\
-					ft_lemin_buff.c ft_null.c ft_redirection.c\
-					ft_check_connects.c ft_find_all_ways.c ft_add_room_link.c\
-					ft_find_of_ways_struct.c main.c\
+					ft_zerodata.c\
+					ft_lemin_buff.c ft_null.c \
+					ft_check_connects.c ft_add_room_link.c\
+					main.c\
 					ft_creat_duplicate.c ft_terms.c\
-					ft_steps.c ft_additional_func.c ft_print.c\
+					ft_additional_func.c ft_print.c\
 					count.c \
 
-OBJ				=	ft_card_reading.o ft_check_create_room.o ft_djkastra.o\
-				   	ft_change.o ft_correct_main.o ft_srb_alg.o\
+OBJ				=	ft_card_reading.o ft_check_create_room.o \
+				   	ft_change.o ft_correct_main.o \
 					ft_correct_map.o ft_cleaning_struct.o\
 					ft_additional_func.o ft_zerodata.o\
-					ft_lemin_buff.o ft_null.o ft_redirection.o\
-					ft_check_connects.o ft_find_all_ways.o ft_init.o\
-					ft_find_of_ways_struct.o main.o ft_steps.o ft_add_room_link.o\
+					ft_lemin_buff.o ft_null.o \
+					ft_check_connects.o \
+					main.o ft_add_room_link.o\
 					ft_creat_duplicate.o ft_print.o ft_terms.o\
 
 FLAGS = -Wall -Wextra -Werror
