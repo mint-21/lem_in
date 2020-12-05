@@ -31,10 +31,10 @@ int				steps_for_ants(t_way *way, int ants, int steps)
 	while (way)
 	{
 		if (!way->prev)
-			steps = way->path_cost + ants - 1;
-		else if (steps > way->path_cost)
+			steps = way->len + ants - 1;
+		else if (steps > way->len)
 		{
-			tmp = steps - (way->path_cost - 1);
+			tmp = steps - (way->len - 1);
 			steps = steps - tmp;
 			tmp = (ost) ? tmp - 1 : tmp;
 			steps += ((tmp * (way->path_number - 1)) + ost) / way->path_number;
@@ -42,7 +42,7 @@ int				steps_for_ants(t_way *way, int ants, int steps)
 			if (ost)
 				steps++;
 		}
-		else if (steps <= way->path_cost)
+		else if (steps <= way->len)
 			break ;
 		way = way->next;
 	}

@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/karina/Desktop/lem_in/libft/libft.h
+string.h
+-
+stdlib.h
+-
+unistd.h
+-
+
+/home/karina/Desktop/lem_in/src/lemin.h
+../libft/libft.h
+/home/karina/Desktop/lem_in/libft/libft.h
+stdio.h
+-
+fcntl.h
+-
+limits.h
+-
+
+/home/karina/Desktop/lem_in/src/main.c
+lemin.h
+/home/karina/Desktop/lem_in/src/lemin.h
+

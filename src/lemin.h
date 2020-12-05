@@ -63,7 +63,7 @@ typedef struct			s_way
 {
 	struct s_path		*path;
 	int					path_number;
-	int					path_cost;
+	int					len;
 	int					ants;
 	struct s_way		*next;
 	struct s_way		*prev;
@@ -106,8 +106,14 @@ typedef struct			s_room
 	int					weight;
 	struct s_room		*next;
 	int					state;
-	struct s_room		*prev;   //добавила
 }						t_room;
+
+typedef	struct			s_rooms
+{
+    t_room				*r;
+    struct s_rooms		*next;
+    struct s_rooms		*prev;
+}						t_rooms;
 
 typedef struct			s_link
 {
@@ -148,7 +154,7 @@ typedef struct			s_data
 	t_room				*rooms;
 	t_option			*options;
 	t_option			*best_opt;
-	t_way				*ways_dij;
+	t_way				*ways;
 	t_valid				check;
 	t_link				**links;
 	int					vis_quit;
@@ -221,4 +227,9 @@ void					terms_staps(t_way *way, t_data *data, int steps,
 void					ft_clean_links(t_data *s);
 int						ft_check_room_link(t_data *data, char *connect_str,
 							t_room **room1, t_room **room2);
+
+
+//новое
+int count_link(t_room *room);
+int get_max_path(t_room *start, t_room *end);
 #endif

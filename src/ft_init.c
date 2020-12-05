@@ -20,7 +20,7 @@ void		init_way(t_way *way, int path_cost, t_way **ways, t_path *path)
 {
 	way->path = path;
 	way->path_number = (*ways) ? (*ways)->path_number + 1 : 1;
-	way->path_cost = path_cost;
+	way->len = path_cost;
 	way->ants = 0;
 	way->prev = NULL;
 	way->next = *ways;

@@ -85,7 +85,7 @@ void			terms_staps(t_way *way, t_data *data, int steps, t_buf *buf)
 	while (path)
 	{
 		if (path->room == data->start && data->start->ant &&
-			(way->path_cost <= steps || way->path_number == 1))
+			(way->len <= steps || way->path_number == 1))
 		{
 			copy_text_buff(data, path, buf, ++data->ant);
 			++way->ants;
@@ -112,7 +112,7 @@ void add_room(t_room *room, t_room **q)
     if (!*q || room->weight < (*q)->weight)
     {
         if (*q)
-            (*q)->prev = new;
+            (*q)->next = new;
         new->next = *q;
         *q = new;
     }

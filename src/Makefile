@@ -21,6 +21,7 @@ SRC				=	ft_card_reading.c ft_check_create_room.c ft_djkastra.c\
 					ft_find_of_ways_struct.c main.c\
 					ft_creat_duplicate.c ft_terms.c\
 					ft_steps.c ft_additional_func.c ft_print.c\
+					count.c \
 
 OBJ				=	ft_card_reading.o ft_check_create_room.o ft_djkastra.o\
 				   	ft_change.o ft_correct_main.o ft_srb_alg.o\

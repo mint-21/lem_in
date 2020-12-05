@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.17)
-project(lem_in3 C)
+cmake_minimum_required(VERSION 3.16)
+project(lem_in C)
 
 set(CMAKE_C_STANDARD 11)
 
@@ -8,7 +8,7 @@ include_directories(libft/ft_printf/inc)
 include_directories(libft/ft_printf/src)
 include_directories(src)
 
-add_executable(lem_in3
+add_executable(lem_in
         libft/ft_printf/inc/ft_printf.h
         libft/ft_printf/src/ft_bigint.c
         libft/ft_printf/src/ft_bigint_operations.c
@@ -104,6 +104,7 @@ add_executable(lem_in3
         libft/get_next_line.c
         libft/get_next_line.h
         libft/libft.h
+        src/count.c
         src/ft_add_room_link.c
         src/ft_additional_func.c
         src/ft_card_reading.c

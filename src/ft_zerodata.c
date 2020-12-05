@@ -21,7 +21,7 @@ static void		ft_zerodata2(t_data *data)
 	data->rooms = NULL;
 	data->options = NULL;
 	data->best_opt = NULL;
-	data->ways_dij = NULL;
+	data->ways = NULL;
 	data->links = NULL;
 }
 

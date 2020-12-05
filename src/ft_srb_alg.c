@@ -83,7 +83,7 @@ static int		ft_dij_path(t_data *data, int flag)
 	djkastra(flag, data, data->rooms_count);
 	if (!data->end->room_par)
 		return (0);
-	path(data->end, data->start, &data->ways_dij, 0);
+	path(data->end, data->start, &data->ways, 0);
 	null(data->rooms);
 	return (1);
 }
@@ -102,8 +102,8 @@ int				ft_srb_alg(t_data *data)
 	flag = 1;
 	if (ft_dij_path(data, flag))
 	{
-		ft_change_ribs(data->ways_dij->path);
-		identical_rooms(data->ways_dij->path);
+		ft_change_ribs(data->ways->path);
+		identical_rooms(data->ways->path);
 		return (1);
 	}
 	return (0);

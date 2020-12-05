@@ -40,7 +40,7 @@ t_connect		*create_inhead(t_path *tmp, t_path *path, t_connect *head,
 t_way			*way_init(t_way *way, t_path *path, int weight, t_way *ways)
 {
 	way->path = path;
-	way->path_cost = weight;
+	way->len = weight;
 	way->ants = 0;
 	if (ways)
 		ways->next = way;
