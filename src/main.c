@@ -155,22 +155,22 @@ int p_len(t_path *p)
     return (len);
 }
 
-t_way *plist_push_back(t_data *data, t_path *p)
+t_way *plist_push_back(t_way *way, t_path *p)
 {
     t_way *first;
     t_way *new;
 
-    first = data->ways;
+    first = way;
     if (!(new = (t_way *)ft_memalloc(sizeof(t_way))))
         exit(1);
     new->len = p_len(p);
     new->path = p;
     if (!first)
         return (new);
-    while (data->ways->next)
-        data->ways = data->ways->next;
-    data->ways->next = new;
-    new->prev = data->ways;
+    while (way->next)
+        way = way->next;
+    way->next = new;
+    new->prev = way;
     return (first);
 }
 
@@ -528,11 +528,12 @@ t_way *check_steps(t_way *p_list, t_way *final, int ants)
         free_path_list(final);
         return (lst_copy(p_list));
     }
+
     tmp = count_steps(p_list, ants);
     if (tmp < last_count_steps)
     {
         last_count_steps = tmp;
-        free_path_list(final);
+        free_path_list(final); //неправильно фришит
         return (lst_copy(p_list));
     }
     return (final);
@@ -603,6 +604,51 @@ void bubble_sort(t_way *l)
     }
 }
 
+void add_link2(t_connect **l, t_room *dst, int weight)
+{
+    t_connect *new;
+    if (!(new = (t_connect *)ft_memalloc(sizeof(t_connect))))
+        exit(1);
+    new->next = *l;
+    *l = new;
+    new->room = dst;
+    new->weight = weight;
+}
+
+void split_vertex(t_path *vert)
+{
+    t_room *out;
+
+    if (!(out = (t_room *)ft_memalloc(sizeof(t_room))))
+        exit(1);
+    out->weight = INF;
+    out->connects = vert->room->connects;
+    vert->room->connects = NULL;
+    add_link2(&out->connects, vert->room, 0);
+    add_link2(&vert->room->connects, vert->prev->room->out_part == NULL ?
+            vert->prev->room : vert->prev->room->out_part, -1);
+    vert->room->out_part = out;
+    out->in_part = vert->room;
+}
+
+void split(t_way *way)
+{
+    t_path *p;
+
+    if (!way)
+        return;
+    while (way)
+    {
+        p = way->path->next;
+        while (p->next)
+        {
+            split_vertex(p);
+            p = p->next;
+        }
+        way = way->next;
+    }
+}
+
 void suurb(t_data *data)
 {
     int max_path;
@@ -610,11 +656,13 @@ void suurb(t_data *data)
     t_way *way;
 
     max_path = get_max_path(data->start, data->end);
+    way = NULL;
     while (max_path--)
     {
+        split(way);
         if (!(p = bfs(data)))
             break;
-        way = plist_push_back(data, p);
+        way = plist_push_back(way, p);//
         merge(way);
         if (collision_handle(way, p->next, 0))
             recount_len(way);
