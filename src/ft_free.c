@@ -17,11 +17,12 @@ void free_path_list(t_way *l)
     free(l);
 }
 
-void free_buf(t_room *buf)
+void free_buf(t_rooms *buf)
 {
     if (!buf)
         return;
     free_buf(buf->next);
+    free(buf->r);
     free(buf);
 }
 

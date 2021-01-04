@@ -1,6 +1,6 @@
 #include "lemin.h"
 
-void merge_vertex(t_path *vert, t_room **buf)
+void merge_vertex(t_path *vert, t_rooms **buf)
 {
     if (vert->room->out_part)
     {
@@ -19,7 +19,8 @@ void merge_vertex(t_path *vert, t_room **buf)
                 vert->next->prev = vert;
         }
     }
-    *buf = add_to_buf(vert->room->out_part, *buf);
+    if (vert->room->out_part) //можно убрать
+        *buf = add_to_buf(vert->room->out_part, *buf);
     vert->room->in_part = NULL;
     vert->room->out_part = NULL;
 }
@@ -27,7 +28,7 @@ void merge_vertex(t_path *vert, t_room **buf)
 void merge(t_way *way)
 {
     t_path *p;
-    t_room *buf;
+    t_rooms *buf;
 
     buf = NULL;
     if (!way)

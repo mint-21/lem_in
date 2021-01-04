@@ -1,26 +1,27 @@
 #include "lemin.h"
 
-t_room *b_find(t_room *r, t_room *buf)
+t_rooms *b_find(t_room *r, t_rooms *buf)
 {
     while (buf)
     {
-        if (buf == r)
+        if (buf->r == r)
             break;
         buf = buf->next;
     }
     return (buf);
 }
 
-t_room *add_to_buf(t_room *r, t_room *buf)
+t_rooms *add_to_buf(t_room *r, t_rooms *buf)
 {
-    t_room *new;
+    t_rooms *new;
 
     if (b_find(r, buf))
         return (buf);
-    if (!(new = (t_room *)ft_memalloc(sizeof(t_room))))
+    if (!(new = (t_rooms *)ft_memalloc(sizeof(t_rooms))))
         exit(1);
     new->next = buf;
-    new = r;
+    new->prev = NULL;
+    new->r = r;
     return (new);
 }
 
