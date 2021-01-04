@@ -1,4 +1,4 @@
-# Install script for directory: /Users/asmall/Desktop/mint_v2_04.01
+# Install script for directory: /Users/vfearles/Desktop/lemin
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/asmall/Desktop/mint_v2_04.01/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/vfearles/Desktop/lemin/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

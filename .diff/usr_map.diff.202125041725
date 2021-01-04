@@ -1,0 +1,11 @@
+3								3
+#you								#you
+##start								##start
+start 0 0							start 0 0
+#lost								#lost
+##end								##end
+end 1 1								end 1 1
+#the								#the
+#game								#game
+start-end							start-end
+#!!							      \	#!!

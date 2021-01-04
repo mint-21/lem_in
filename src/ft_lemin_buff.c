@@ -25,9 +25,9 @@ void	teleport_all(char *name, int ants)
     while (i <= ants)
     {
         ft_printf("L%d-%s ", i, name);
+        ft_printf("\n");
         i++;
     }
-    ft_printf("\n");
 }
 
 void		ft_buff_lem(t_data *data)
