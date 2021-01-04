@@ -1,3 +1,0 @@
-/home/karina/Desktop/lem_in2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/karina/Desktop/lem_in2/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/karina/Desktop/lem_in2/cmake-build-debug/CMakeFiles/lem_in2.dir

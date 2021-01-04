@@ -10,12 +10,15 @@ void q_free(t_rooms *q)
 
 t_room *q_get(t_rooms **q)
 {
-    t_room *ret;
+    t_room	*ret;
+    t_rooms *tmp;
 
     if (!*q)
         return (NULL);
     ret = (*q)->r;
+    tmp = *q;
     *q = (*q)->next;
+    free(tmp);
     return (ret);
 }
 
