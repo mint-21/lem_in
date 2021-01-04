@@ -16,7 +16,7 @@ SRC_VI			=	main.c ft_push_turns.c ft_help_funct.c ft_render_init.c\
 SRC				=	../src/ft_card_reading.c ../src/ft_check_create_room.c\
 				   	../src/ft_correct_main.c \
 					../src/ft_correct_map.c ../src/ft_cleaning_struct.c\
-					../src/ft_init.c ../src/ft_null.c ../src/ft_redirection.c\
+					../src/ft_null.c\
 					../src/ft_check_connects.c ../src/ft_add_room_link.c\
 					../src/ft_zerodata.c ../src/ft_additional_func.c\
 					../src/ft_print.c ../src/ft_terms.c\
