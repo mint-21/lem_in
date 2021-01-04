@@ -44,44 +44,6 @@ void			print_n_free_map_data(char **map_data)
 	free(*map_data);
 }
 
-static void		print_ways(t_way *way)
-{
-	t_path		*ptr;
-
-	ft_printf("%5d | ", way->ants);
-	ptr = way->path;
-	while (ptr && ptr->next)
-		ptr = ptr->next;
-	while (ptr)
-	{
-		ft_printf("%s", ptr->room->name);
-		if (ptr->prev)
-			ft_printf(" - ");
-		else
-			ft_printf("\n");
-		ptr = ptr->prev;
-	}
-}
-
-void			ft_print_ways(t_way *way, int steps)
-{
-	t_way		*w;
-	int			total_ways;
-
-	w = way;
-	if (w->ants)
-		total_ways = 1;
-	while ((w = w->next) && w->ants)
-		++total_ways;
-	ft_printf("Total lines: %d\nTotal ways:  %d\n"
-			" ANTS | WAYS\n", steps, total_ways);
-	while (way && way->ants > 0)
-	{
-		print_ways(way);
-		way = way->next;
-	}
-}
-
 void			ft_clean_links(t_data *s)
 {
 	t_link		*cur_l;
@@ -100,4 +62,38 @@ void			ft_clean_links(t_data *s)
 		}
 	}
 	free(s->links);
+}
+
+int		print_step(t_ants **buf, int step)
+{
+    t_ants *tmp;
+
+    if (!*buf)
+        return (0);
+    tmp = *buf;
+    while (tmp && step--)
+    {
+        tmp->curr = tmp->curr->next;
+        ft_printf("L%d-%s ", tmp->num, tmp->curr->room->name);
+        if (!tmp->curr->prev->prev)
+            return (1);
+        if (!tmp->curr->next)
+            tmp = buf_delete_ant(buf, tmp);
+        else
+            tmp = tmp->next;
+    }
+    return (1);
+}
+
+int		print_line(t_way *l, int step)
+{
+    int ret;
+
+    ret = 0;
+    while (l)
+    {
+        ret += print_step(&l->buf, step);
+        l = l->next;
+    }
+    return (ret);
 }

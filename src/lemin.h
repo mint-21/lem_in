@@ -236,4 +236,29 @@ int count_link(t_room *room);
 int get_max_path(t_room *start, t_room *end);
 void	free_path_list(t_way *l);
 void	free_path(t_path *p);
+void suurb(t_data *data);
+void split(t_way *way);
+t_path *bfs(t_data *data);
+t_path *assemble_path(t_room *end, t_room *start);
+void q_add_link(t_rooms **q, t_connect *l, t_room *par);
+void merge(t_way *way);
+t_room *add_to_buf(t_room *r, t_room *buf);
+void free_links(t_connect *l);
+t_connect *del_zero_link(t_connect *l);
+void free_buf(t_room *buf);
+int collision_handle(t_way *list, t_path *p, int ret);
+void recount_len(t_way *l);
+t_connect *del_link(t_connect *l, t_room *r);
+void modify_data(t_path *p);
+t_way *check_steps(t_way *p_list, t_way *final, int ants);
+void free_path_list(t_way *l);
+void free_path(t_path *p);
+t_way *lst_copy(t_way *l);
+void bubble_sort(t_way *l);
+void restore(t_data *data, t_way *p_list);
+void	fill_buf(t_way *l);
+int		print_line(t_way *l, int step);
+t_ants	*buf_delete_ant(t_ants **buf, t_ants *ant);
+
+
 #endif
