@@ -186,53 +186,24 @@ void					ft_correct_connects(char *str, t_valid *check, int j);
 t_room					*ft_initialization_struct_room(char *line);
 void					ft_connects(t_data *data, char *str);
 t_connect				*ft_createconnect(t_room *room);
-int						ft_srb_alg(t_data *data);
-void					djkastra(int flag, t_data *data, int room_count);
-void					ft_change_ribs(t_path *path);
 void					ft_buff_lem(t_data *data);
 void					ft_struct_free(t_data *data);
 void					ft_print_error(int id);
 void					ft_perror();
-int						steps_for_ants(t_way *way, int ants, int steps);
-void					find_of_ways_struct(t_data *data);
-void					ft_find_null(t_path *path);
-void					null_turn(t_connect *reverse_h, t_connect *reverse_t,
-								t_room *end);
-void					ft_redirection_connect(t_room *src, t_room *dst,
-											t_connect *connect);
-void					redirection_conditions(t_connect *connect, t_room *src);
 void					create_out_room(t_room *in, t_room *out, t_room *room,
 										t_connect *connect);
-void					ft_creat_duplicate(t_path *path, t_room *in);
 void					create_out_in_room(t_room *in, t_room *out);
 
 int						check_double_coor(t_data *s, t_room *curr, char *str);
-
-
-t_way					*way_init(t_way *way, t_path *path, int weight,
-								t_way *ways);
-t_connect				*create_inhead(t_path *tmp, t_path *path,
-										t_connect *head, int *weight);
-t_connect				*terms(t_connect *head, t_connect *connect);
-void					path_init(t_path *path, t_room *end, t_path *tmp);
-t_connect				*turn_and_change(t_room *room, t_connect *connect,
-									t_room *start, int *flag);
-int						ft_init_path_struct(t_path *path, t_room *room,
-											int path_cost);
 void					path(t_room *room, t_room *start, t_way **ways,
 							int path_cost);
-void					init_way(t_way *way, int path_cost, t_way **ways,
-								t_path *path);
-
 void					print_n_free_map_data(char **map_data);
-void					terms_null(t_room *room);
 void					ft_clean_links(t_data *s);
 int						ft_check_room_link(t_data *data, char *connect_str,
 							t_room **room1, t_room **room2);
 
 
 //новое
-int count_link(t_room *room);
 int get_max_path(t_room *start, t_room *end);
 void	free_list(t_way *l);
 void	free_path(t_path *p);
@@ -260,5 +231,7 @@ void	fill_buf(t_way *l);
 int		print_line(t_way *l, int step);
 t_ants	*buf_delete_ant(t_ants **buf, t_ants *ant);
 int		check_empty(t_way *way);
+t_way *max_path(t_data *data, t_way *way);
+t_way *plist_push_back(t_way *way, t_path *p);
 
 #endif

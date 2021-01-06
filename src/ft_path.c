@@ -30,3 +30,25 @@ t_path *assemble_path(t_room *end, t_room *start)
     p = p_push_begin(start, p);
     return (p);
 }
+
+t_way *max_path(t_data *data, t_way *way)
+{
+    int max_path;
+    t_path *p;
+
+    while ((max_path = get_max_path(data->start, data->end)) > 0)
+    {
+        --max_path;
+        split(way);
+        if (!(p = bfs(data)))
+            break;
+        way = plist_push_back(way, p);
+        merge(way);
+        if (collision_handle(way, p->next, 0))
+            recount_len(way);
+        modify_data(p);
+        data->ways = check_steps(way, data->ways, data->ants);
+        restore(data, way);
+    }
+    return (way);
+}

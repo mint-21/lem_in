@@ -43,25 +43,18 @@ t_way *plist_push_back(t_way *way, t_path *p)
 
 void suurb(t_data *data)
 {
-    int max_path;
-    t_path *p;
     t_way *way;
+    t_room *rooms;
 
-    max_path = get_max_path(data->start, data->end);
-    way = NULL;
-    while (max_path--)
+    rooms = data->rooms;
+    while (rooms)
     {
-        split(way);
-        if (!(p = bfs(data)))
-            break;
-        way = plist_push_back(way, p);//
-        merge(way);
-        if (collision_handle(way, p->next, 0))
-            recount_len(way);
-        modify_data(p);
-        data->ways = check_steps(way, data->ways, data->ants);
-        restore(data, way);
+        rooms->weight = INF;
+        rooms = rooms->next;
     }
+    data->start->weight = 0;
+    way = NULL;
+    way = max_path(data, way);
     merge(way);
     free_list(way);
     bubble_sort(data->ways);

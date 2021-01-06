@@ -19,15 +19,6 @@
 ** ft_buff_lem: output to the console of the program's response
 */
 
-void	set_distance(t_room *rooms)
-{
-	while (rooms)
-	{
-		rooms->weight = INF;
-		rooms = rooms->next;
-	}
-}
-
 void modify_data(t_path *p)
 {
     while (p->next)
@@ -50,13 +41,9 @@ int			main(int ac, char **av)
 	data = ft_zerodata();
 	map_data = reading_card(&str_split, fd);
 	ft_correct(&data, &data.check, str_split);
-    set_distance(data.rooms);
-	data.start->weight = 0;
 	suurb(&data);
 	print_n_free_map_data(&map_data);
-	//продебажить
 	ft_buff_lem(&data);
-	//дебажить
 	ft_struct_free(&data);
 	return (0);
 }

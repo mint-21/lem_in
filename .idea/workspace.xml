@@ -13,10 +13,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0867271a-a32d-490a-afc8-6fa19794d683" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.map_old" beforeDir="false" afterPath="$PROJECT_DIR$/.map_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
@@ -150,9 +151,14 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/mint_v2_04_01" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/mint_v2_04_01" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/mint_v2_04_01.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/mint_v2_04_01.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps/valid/map_loop" beforeDir="false" afterPath="$PROJECT_DIR$/maps/valid/map_loop" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps/valid/map_simple2" beforeDir="false" afterPath="$PROJECT_DIR$/maps/valid/map_simple2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ft_lemin_buff.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_lemin_buff.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft.h.gch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_bfs.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_bfs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_count.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_count.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_path.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_path.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_split.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_split.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_suurballe.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_suurballe.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lemin.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lemin.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test" beforeDir="false" afterPath="$PROJECT_DIR$/test" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -180,9 +186,9 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="mint_v2_04_01" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="test" REDIRECT_INPUT="false" ELEVATE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="mint_v2_04_01" TARGET_NAME="mint_v2_04_01" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="mint_v2_04_01" RUN_TARGET_NAME="mint_v2_04_01">
@@ -206,6 +212,7 @@
       <updated>1609768674928</updated>
       <workItem from="1609768676367" duration="631000" />
       <workItem from="1609769955411" duration="705000" />
+      <workItem from="1609951814095" duration="642000" />
     </task>
     <servers />
   </component>
@@ -223,5 +230,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/ft_path.c</url>
+          <line>38</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

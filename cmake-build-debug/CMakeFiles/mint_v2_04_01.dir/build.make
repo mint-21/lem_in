@@ -63,10 +63,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/vfearles/Desktop/lemin
+CMAKE_SOURCE_DIR = /Users/vfearles/Desktop/lemin6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/vfearles/Desktop/lemin/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/vfearles/Desktop/lemin6/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mint_v2_04_01.dir/depend.make
@@ -79,1576 +79,1576 @@ include CMakeFiles/mint_v2_04_01.dir/flags.make
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint.c.o: ../libft/ft_printf/src/ft_bigint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_bigint.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_bigint.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_bigint.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_bigint.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_bigint.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_bigint.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint_operations.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint_operations.c.o: ../libft/ft_printf/src/ft_bigint_operations.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint_operations.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint_operations.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_bigint_operations.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint_operations.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint_operations.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_bigint_operations.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint_operations.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint_operations.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_bigint_operations.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint_operations.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_bigint_operations.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint_operations.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint_operations.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint_operations.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_bigint_operations.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint_operations.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_bigint_operations.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_bigint_operations.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_buff_manage.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_buff_manage.c.o: ../libft/ft_printf/src/ft_buff_manage.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_buff_manage.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_buff_manage.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_buff_manage.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_buff_manage.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_buff_manage.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_buff_manage.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_buff_manage.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_buff_manage.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_buff_manage.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_buff_manage.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_buff_manage.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_buff_manage.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_buff_manage.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_buff_manage.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_buff_manage.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_buff_manage.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_buff_manage.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_buff_manage.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_color.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_color.c.o: ../libft/ft_printf/src/ft_color.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_color.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_color.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_color.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_color.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_color.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_color.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_color.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_color.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_color.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_color.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_color.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_color.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_color.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_color.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_color.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_color.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_color.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_color.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_handle.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_handle.c.o: ../libft/ft_printf/src/ft_handle.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_handle.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_handle.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_handle.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_handle.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_handle.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_handle.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_handle.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_handle.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_handle.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_handle.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_handle.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_handle.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_handle.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_handle.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_handle.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_handle.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_handle.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_handle.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_parse_nums.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_parse_nums.c.o: ../libft/ft_printf/src/ft_parse_nums.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_parse_nums.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_parse_nums.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_parse_nums.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_parse_nums.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_parse_nums.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_parse_nums.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_parse_nums.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_parse_nums.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_parse_nums.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_parse_nums.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_parse_nums.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_parse_nums.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_parse_nums.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_parse_nums.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_parse_nums.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_parse_nums.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_parse_nums.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_parse_nums.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_cs.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_cs.c.o: ../libft/ft_printf/src/ft_print_cs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_cs.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_cs.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_print_cs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_cs.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_cs.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_print_cs.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_cs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_cs.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_print_cs.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_cs.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_print_cs.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_cs.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_cs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_cs.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_print_cs.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_cs.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_print_cs.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_cs.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_diuoxb.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_diuoxb.c.o: ../libft/ft_printf/src/ft_print_diuoxb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_diuoxb.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_diuoxb.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_print_diuoxb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_diuoxb.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_diuoxb.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_print_diuoxb.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_diuoxb.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_diuoxb.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_print_diuoxb.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_diuoxb.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_print_diuoxb.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_diuoxb.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_diuoxb.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_diuoxb.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_print_diuoxb.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_diuoxb.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_print_diuoxb.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_diuoxb.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_e.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_e.c.o: ../libft/ft_printf/src/ft_print_e.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_e.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_e.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_print_e.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_e.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_e.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_print_e.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_e.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_e.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_print_e.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_e.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_print_e.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_e.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_e.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_e.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_print_e.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_e.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_print_e.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_e.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_f.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_f.c.o: ../libft/ft_printf/src/ft_print_f.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_f.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_f.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_print_f.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_f.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_f.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_print_f.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_f.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_f.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_print_f.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_f.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_print_f.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_f.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_f.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_f.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_print_f.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_f.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_print_f.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_f.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_options.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_options.c.o: ../libft/ft_printf/src/ft_print_options.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_options.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_options.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_print_options.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_options.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_options.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_print_options.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_options.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_options.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_print_options.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_options.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_print_options.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_options.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_options.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_options.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_print_options.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_options.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_print_options.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_options.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_prk.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_prk.c.o: ../libft/ft_printf/src/ft_print_prk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_prk.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_prk.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_print_prk.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_prk.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_prk.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_print_prk.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_prk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_prk.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_print_prk.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_prk.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_print_prk.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_prk.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_prk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_prk.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_print_prk.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_prk.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_print_prk.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_print_prk.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_printf.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_printf.c.o: ../libft/ft_printf/src/ft_printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_printf.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_printf.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_printf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_printf.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_printf.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_printf.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_printf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_printf.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_printf.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_printf.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_printf.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_printf.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_printf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_printf.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_printf.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_printf.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_printf.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_printf.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_set_options.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_set_options.c.o: ../libft/ft_printf/src/ft_set_options.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_set_options.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_set_options.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_set_options.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_set_options.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_set_options.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_set_options.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_set_options.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_set_options.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_set_options.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_set_options.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_set_options.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_set_options.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_set_options.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_set_options.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_set_options.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_set_options.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_set_options.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_set_options.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_num.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_num.c.o: ../libft/ft_printf/src/ft_utils_num.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_num.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_num.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_utils_num.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_num.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_num.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_utils_num.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_num.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_num.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_utils_num.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_num.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_utils_num.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_num.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_num.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_num.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_utils_num.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_num.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_utils_num.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_num.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_str.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_str.c.o: ../libft/ft_printf/src/ft_utils_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_str.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_str.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_utils_str.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_str.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_str.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_utils_str.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_str.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_str.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_utils_str.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_str.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_utils_str.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_str.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_str.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_str.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_printf/src/ft_utils_str.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_str.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_printf/src/ft_utils_str.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_printf/src/ft_utils_str.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_abs.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_abs.c.o: ../libft/ft_abs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_abs.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_abs.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_abs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_abs.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_abs.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_abs.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_abs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_abs.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_abs.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_abs.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_abs.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_abs.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_abs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_abs.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_abs.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_abs.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_abs.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_abs.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_atoll.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_atoll.c.o: ../libft/ft_atoll.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_atoll.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_atoll.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_atoll.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_atoll.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_atoll.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_atoll.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_atoll.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_atoll.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_atoll.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_atoll.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_atoll.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_atoll.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_atoll.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_atoll.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_atoll.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_atoll.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_atoll.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_atoll.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_atoull.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_atoull.c.o: ../libft/ft_atoull.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_atoull.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_atoull.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_atoull.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_atoull.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_atoull.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_atoull.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_atoull.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_atoull.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_atoull.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_atoull.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_atoull.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_atoull.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_atoull.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_atoull.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_atoull.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_atoull.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_atoull.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_atoull.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_bit.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_bit.c.o: ../libft/ft_bit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_bit.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_bit.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_bit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_bit.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_bit.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_bit.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_bit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_bit.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_bit.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_bit.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_bit.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_bit.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_bit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_bit.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_bit.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_bit.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_bit.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_bit.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_bzero.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_bzero.c.o: ../libft/ft_bzero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_bzero.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_bzero.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_bzero.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_bzero.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_bzero.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_bzero.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_bzero.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_bzero.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_bzero.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_bzero.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_bzero.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_bzero.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_bzero.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_bzero.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_bzero.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_bzero.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_bzero.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_bzero.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_free_split.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_free_split.c.o: ../libft/ft_free_split.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_free_split.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_free_split.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_free_split.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_free_split.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_free_split.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_free_split.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_free_split.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_free_split.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_free_split.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_free_split.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_free_split.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_free_split.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_free_split.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_free_split.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_free_split.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_free_split.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_free_split.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_free_split.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isalnum.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isalnum.c.o: ../libft/ft_isalnum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_isalnum.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isalnum.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_isalnum.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_isalnum.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isalnum.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_isalnum.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isalnum.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_isalnum.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_isalnum.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_isalnum.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_isalnum.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_isalnum.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isalnum.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_isalnum.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_isalnum.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isalnum.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_isalnum.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isalnum.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isalpha.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isalpha.c.o: ../libft/ft_isalpha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_isalpha.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isalpha.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_isalpha.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_isalpha.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isalpha.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_isalpha.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isalpha.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_isalpha.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_isalpha.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_isalpha.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_isalpha.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_isalpha.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isalpha.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_isalpha.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_isalpha.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isalpha.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_isalpha.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isalpha.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isascii.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isascii.c.o: ../libft/ft_isascii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_isascii.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isascii.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_isascii.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_isascii.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isascii.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_isascii.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isascii.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_isascii.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_isascii.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_isascii.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_isascii.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_isascii.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isascii.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_isascii.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_isascii.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isascii.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_isascii.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isascii.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isdigit.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isdigit.c.o: ../libft/ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_isdigit.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isdigit.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_isdigit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_isdigit.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isdigit.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_isdigit.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isdigit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_isdigit.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_isdigit.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_isdigit.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_isdigit.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_isdigit.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isdigit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_isdigit.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_isdigit.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isdigit.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_isdigit.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isdigit.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isnum.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isnum.c.o: ../libft/ft_isnum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_isnum.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isnum.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_isnum.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_isnum.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isnum.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_isnum.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isnum.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_isnum.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_isnum.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_isnum.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_isnum.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_isnum.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isnum.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_isnum.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_isnum.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isnum.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_isnum.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isnum.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isprint.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isprint.c.o: ../libft/ft_isprint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_isprint.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isprint.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_isprint.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_isprint.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isprint.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_isprint.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isprint.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_isprint.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_isprint.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_isprint.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_isprint.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_isprint.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_isprint.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_isprint.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_isprint.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isprint.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_isprint.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_isprint.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_itoa.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_itoa.c.o: ../libft/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_itoa.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_itoa.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_itoa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_itoa.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_itoa.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_itoa.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_itoa.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_itoa.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_itoa.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_itoa.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_itoa.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_itoa.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_itoa.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_itoa.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_itoa.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_itoa.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_itoa.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lltoa.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lltoa.c.o: ../libft/ft_lltoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_lltoa.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lltoa.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_lltoa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_lltoa.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lltoa.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_lltoa.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lltoa.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_lltoa.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_lltoa.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_lltoa.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_lltoa.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_lltoa.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lltoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_lltoa.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_lltoa.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lltoa.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_lltoa.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lltoa.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstadd.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstadd.c.o: ../libft/ft_lstadd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_lstadd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstadd.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_lstadd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_lstadd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstadd.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_lstadd.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstadd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_lstadd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_lstadd.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_lstadd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_lstadd.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_lstadd.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstadd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_lstadd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_lstadd.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstadd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_lstadd.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstadd.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdel.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdel.c.o: ../libft/ft_lstdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdel.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdel.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_lstdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdel.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdel.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_lstdel.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdel.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_lstdel.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdel.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_lstdel.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdel.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdel.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_lstdel.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdel.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_lstdel.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdel.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdelone.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdelone.c.o: ../libft/ft_lstdelone.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdelone.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdelone.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_lstdelone.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdelone.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdelone.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_lstdelone.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdelone.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdelone.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_lstdelone.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdelone.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_lstdelone.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdelone.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdelone.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdelone.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_lstdelone.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdelone.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_lstdelone.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstdelone.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstiter.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstiter.c.o: ../libft/ft_lstiter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_lstiter.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstiter.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_lstiter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_lstiter.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstiter.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_lstiter.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstiter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_lstiter.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_lstiter.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_lstiter.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_lstiter.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_lstiter.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstiter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_lstiter.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_lstiter.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstiter.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_lstiter.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstiter.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstmap.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstmap.c.o: ../libft/ft_lstmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_lstmap.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstmap.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_lstmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_lstmap.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstmap.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_lstmap.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_lstmap.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_lstmap.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_lstmap.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_lstmap.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_lstmap.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_lstmap.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_lstmap.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstmap.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_lstmap.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstmap.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstnew.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstnew.c.o: ../libft/ft_lstnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_lstnew.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstnew.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_lstnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_lstnew.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstnew.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_lstnew.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstnew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_lstnew.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_lstnew.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_lstnew.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_lstnew.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_lstnew.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_lstnew.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_lstnew.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstnew.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_lstnew.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstnew.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstrev.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstrev.c.o: ../libft/ft_lstrev.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_lstrev.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstrev.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_lstrev.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_lstrev.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstrev.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_lstrev.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstrev.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_lstrev.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_lstrev.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_lstrev.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_lstrev.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_lstrev.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstrev.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_lstrev.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_lstrev.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstrev.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_lstrev.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstrev.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstsize.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstsize.c.o: ../libft/ft_lstsize.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_lstsize.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstsize.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_lstsize.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_lstsize.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstsize.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_lstsize.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstsize.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_lstsize.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_lstsize.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_lstsize.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_lstsize.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_lstsize.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_lstsize.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_lstsize.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_lstsize.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstsize.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_lstsize.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_lstsize.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memalloc.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memalloc.c.o: ../libft/ft_memalloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_memalloc.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memalloc.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_memalloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_memalloc.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memalloc.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_memalloc.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memalloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_memalloc.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_memalloc.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_memalloc.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_memalloc.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_memalloc.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memalloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_memalloc.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_memalloc.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memalloc.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_memalloc.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memalloc.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memccpy.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memccpy.c.o: ../libft/ft_memccpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_memccpy.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memccpy.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_memccpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_memccpy.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memccpy.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_memccpy.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memccpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_memccpy.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_memccpy.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_memccpy.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_memccpy.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_memccpy.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memccpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_memccpy.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_memccpy.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memccpy.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_memccpy.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memccpy.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memchr.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memchr.c.o: ../libft/ft_memchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_memchr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memchr.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_memchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_memchr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memchr.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_memchr.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_memchr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_memchr.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_memchr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_memchr.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_memchr.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_memchr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_memchr.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memchr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_memchr.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memchr.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memcmp.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memcmp.c.o: ../libft/ft_memcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_memcmp.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memcmp.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_memcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_memcmp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memcmp.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_memcmp.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memcmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_memcmp.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_memcmp.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_memcmp.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_memcmp.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_memcmp.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memcmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_memcmp.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_memcmp.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memcmp.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_memcmp.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memcmp.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memcpy.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memcpy.c.o: ../libft/ft_memcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_memcpy.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memcpy.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_memcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_memcpy.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memcpy.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_memcpy.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memcpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_memcpy.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_memcpy.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_memcpy.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_memcpy.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_memcpy.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memcpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_memcpy.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_memcpy.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memcpy.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_memcpy.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memcpy.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memdel.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memdel.c.o: ../libft/ft_memdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_memdel.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memdel.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_memdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_memdel.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memdel.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_memdel.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_memdel.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_memdel.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_memdel.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_memdel.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_memdel.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_memdel.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_memdel.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memdel.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_memdel.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memdel.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memset.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memset.c.o: ../libft/ft_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_memset.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memset.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_memset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_memset.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memset.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_memset.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memset.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_memset.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_memset.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_memset.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_memset.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_memset.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_memset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_memset.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_memset.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memset.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_memset.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_memset.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar.c.o: ../libft/ft_putchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_putchar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_putchar.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_putchar.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_putchar.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_putchar.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_putchar.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_buf.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_buf.c.o: ../libft/ft_putchar_buf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_buf.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_buf.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_putchar_buf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_buf.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_buf.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_putchar_buf.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_buf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_buf.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_putchar_buf.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_buf.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_putchar_buf.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_buf.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_buf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_buf.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_putchar_buf.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_buf.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_putchar_buf.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_buf.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_fd.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_fd.c.o: ../libft/ft_putchar_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_fd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_fd.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_putchar_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_fd.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_putchar_fd.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_fd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_putchar_fd.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_fd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_putchar_fd.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_fd.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_fd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_putchar_fd.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_fd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_putchar_fd.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putchar_fd.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl.c.o: ../libft/ft_putendl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_putendl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_putendl.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_putendl.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_putendl.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_putendl.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_putendl.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl_fd.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl_fd.c.o: ../libft/ft_putendl_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl_fd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl_fd.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_putendl_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl_fd.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_putendl_fd.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl_fd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_putendl_fd.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl_fd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_putendl_fd.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl_fd.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl_fd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_putendl_fd.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl_fd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_putendl_fd.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putendl_fd.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr.c.o: ../libft/ft_putnbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_putnbr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_putnbr.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_putnbr.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_putnbr.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_putnbr.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_putnbr.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_buf.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_buf.c.o: ../libft/ft_putnbr_buf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_buf.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_buf.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_putnbr_buf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_buf.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_buf.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_putnbr_buf.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_buf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_buf.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_putnbr_buf.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_buf.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_putnbr_buf.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_buf.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_buf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_buf.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_putnbr_buf.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_buf.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_putnbr_buf.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_buf.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_fd.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_fd.c.o: ../libft/ft_putnbr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_fd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_fd.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_putnbr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_fd.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_putnbr_fd.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_fd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_putnbr_fd.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_fd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_putnbr_fd.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_fd.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_fd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_putnbr_fd.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_fd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_putnbr_fd.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putnbr_fd.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr.c.o: ../libft/ft_putstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_putstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_putstr.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_putstr.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_putstr.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_putstr.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_putstr.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_buf.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_buf.c.o: ../libft/ft_putstr_buf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_buf.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_buf.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_putstr_buf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_buf.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_buf.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_putstr_buf.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_buf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_buf.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_putstr_buf.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_buf.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_putstr_buf.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_buf.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_buf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_buf.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_putstr_buf.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_buf.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_putstr_buf.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_buf.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_fd.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_fd.c.o: ../libft/ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_fd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_fd.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_putstr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_fd.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_putstr_fd.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_fd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_putstr_fd.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_fd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_putstr_fd.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_fd.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_fd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_putstr_fd.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_fd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_putstr_fd.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_putstr_fd.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_satoi.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_satoi.c.o: ../libft/ft_satoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_satoi.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_satoi.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_satoi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_satoi.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_satoi.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_satoi.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_satoi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_satoi.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_satoi.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_satoi.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_satoi.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_satoi.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_satoi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_satoi.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_satoi.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_satoi.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_satoi.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_satoi.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strcat.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strcat.c.o: ../libft/ft_strcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strcat.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strcat.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strcat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strcat.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strcat.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strcat.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strcat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strcat.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strcat.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strcat.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strcat.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strcat.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strcat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strcat.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strcat.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strcat.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strcat.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strcat.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr.c.o: ../libft/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strchr.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strchr.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strchr.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strchr.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strchr.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr_count.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr_count.c.o: ../libft/ft_strchr_count.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr_count.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr_count.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strchr_count.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr_count.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr_count.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strchr_count.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr_count.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr_count.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strchr_count.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr_count.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strchr_count.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr_count.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr_count.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr_count.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strchr_count.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr_count.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strchr_count.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strchr_count.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strclr.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strclr.c.o: ../libft/ft_strclr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strclr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strclr.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strclr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strclr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strclr.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strclr.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strclr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strclr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strclr.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strclr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strclr.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strclr.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strclr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strclr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strclr.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strclr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strclr.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strclr.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strcmp.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strcmp.c.o: ../libft/ft_strcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strcmp.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strcmp.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strcmp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strcmp.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strcmp.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strcmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strcmp.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strcmp.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strcmp.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strcmp.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strcmp.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strcmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strcmp.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strcmp.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strcmp.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strcmp.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strcmp.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strcpy.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strcpy.c.o: ../libft/ft_strcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strcpy.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strcpy.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strcpy.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strcpy.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strcpy.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strcpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strcpy.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strcpy.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strcpy.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strcpy.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strcpy.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strcpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strcpy.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strcpy.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strcpy.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strcpy.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strcpy.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strdup.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strdup.c.o: ../libft/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strdup.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strdup.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strdup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strdup.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strdup.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strdup.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strdup.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strdup.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strdup.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strdup.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strdup.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strdup.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strdup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strdup.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strdup.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strdup.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strdup.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strdup.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strequ.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strequ.c.o: ../libft/ft_strequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strequ.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strequ.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strequ.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strequ.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strequ.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strequ.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strequ.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strequ.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strequ.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strequ.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strequ.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strequ.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strequ.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strequ.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strequ.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strequ.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strequ.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strequ.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_striter.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_striter.c.o: ../libft/ft_striter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_striter.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_striter.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_striter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_striter.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_striter.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_striter.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_striter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_striter.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_striter.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_striter.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_striter.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_striter.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_striter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_striter.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_striter.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_striter.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_striter.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_striter.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_striteri.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_striteri.c.o: ../libft/ft_striteri.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_striteri.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_striteri.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_striteri.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_striteri.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_striteri.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_striteri.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_striteri.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_striteri.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_striteri.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_striteri.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_striteri.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_striteri.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_striteri.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_striteri.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_striteri.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_striteri.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_striteri.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_striteri.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strjoin.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strjoin.c.o: ../libft/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strjoin.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strjoin.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strjoin.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strjoin.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strjoin.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strjoin.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strjoin.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strjoin.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strjoin.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strjoin.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strjoin.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strjoin.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strjoin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strjoin.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strjoin.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strjoin.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strjoin.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strjoin.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strlcat.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strlcat.c.o: ../libft/ft_strlcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strlcat.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strlcat.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strlcat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strlcat.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strlcat.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strlcat.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strlcat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strlcat.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strlcat.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strlcat.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strlcat.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strlcat.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strlcat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strlcat.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strlcat.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strlcat.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strlcat.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strlcat.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen.c.o: ../libft/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strlen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strlen.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strlen.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strlen.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strlen.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strlen.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen_char.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen_char.c.o: ../libft/ft_strlen_char.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen_char.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen_char.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strlen_char.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen_char.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen_char.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strlen_char.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen_char.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen_char.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strlen_char.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen_char.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strlen_char.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen_char.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen_char.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen_char.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strlen_char.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen_char.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strlen_char.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strlen_char.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strlsplit.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strlsplit.c.o: ../libft/ft_strlsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strlsplit.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strlsplit.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strlsplit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strlsplit.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strlsplit.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strlsplit.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strlsplit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strlsplit.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strlsplit.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strlsplit.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strlsplit.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strlsplit.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strlsplit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strlsplit.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strlsplit.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strlsplit.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strlsplit.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strlsplit.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strmap.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strmap.c.o: ../libft/ft_strmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strmap.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strmap.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strmap.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strmap.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strmap.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strmap.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strmap.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strmap.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strmap.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strmap.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strmap.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strmap.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strmap.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strmap.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strmap.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strmapi.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strmapi.c.o: ../libft/ft_strmapi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strmapi.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strmapi.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strmapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strmapi.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strmapi.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strmapi.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strmapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strmapi.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strmapi.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strmapi.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strmapi.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strmapi.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strmapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strmapi.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strmapi.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strmapi.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strmapi.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strmapi.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strncat.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strncat.c.o: ../libft/ft_strncat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strncat.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strncat.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strncat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strncat.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strncat.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strncat.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strncat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strncat.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strncat.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strncat.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strncat.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strncat.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strncat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strncat.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strncat.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strncat.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strncat.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strncat.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strncpy.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strncpy.c.o: ../libft/ft_strncpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strncpy.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strncpy.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strncpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strncpy.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strncpy.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strncpy.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strncpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strncpy.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strncpy.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strncpy.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strncpy.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strncpy.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strncpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strncpy.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strncpy.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strncpy.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strncpy.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strncpy.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strnequ.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strnequ.c.o: ../libft/ft_strnequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strnequ.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strnequ.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strnequ.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strnequ.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strnequ.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strnequ.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strnequ.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strnequ.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strnequ.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strnequ.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strnequ.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strnequ.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strnequ.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strnequ.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strnequ.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strnequ.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strnequ.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strnequ.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strnew.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strnew.c.o: ../libft/ft_strnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strnew.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strnew.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strnew.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strnew.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strnew.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strnew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strnew.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strnew.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strnew.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strnew.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strnew.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strnew.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strnew.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strnew.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strnew.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strnew.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strnstr.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strnstr.c.o: ../libft/ft_strnstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strnstr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strnstr.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strnstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strnstr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strnstr.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strnstr.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strnstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strnstr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strnstr.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strnstr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strnstr.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strnstr.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strnstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strnstr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strnstr.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strnstr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strnstr.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strnstr.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strrchr.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strrchr.c.o: ../libft/ft_strrchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strrchr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strrchr.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strrchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strrchr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strrchr.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strrchr.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strrchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strrchr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strrchr.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strrchr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strrchr.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strrchr.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strrchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strrchr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strrchr.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strrchr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strrchr.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strrchr.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strrev.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strrev.c.o: ../libft/ft_strrev.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strrev.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strrev.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strrev.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strrev.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strrev.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strrev.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strrev.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strrev.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strrev.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strrev.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strrev.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strrev.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strrev.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strrev.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strrev.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strrev.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strrev.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strrev.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strsplit.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strsplit.c.o: ../libft/ft_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strsplit.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strsplit.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strsplit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strsplit.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strsplit.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strsplit.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strsplit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strsplit.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strsplit.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strsplit.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strsplit.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strsplit.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strsplit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strsplit.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strsplit.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strsplit.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strsplit.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strsplit.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strstr.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strstr.c.o: ../libft/ft_strstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strstr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strstr.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strstr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strstr.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strstr.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strstr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strstr.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strstr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strstr.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strstr.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strstr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strstr.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strstr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strstr.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strstr.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strsub.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strsub.c.o: ../libft/ft_strsub.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strsub.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strsub.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strsub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strsub.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strsub.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strsub.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strsub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strsub.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strsub.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strsub.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strsub.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strsub.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strsub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strsub.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strsub.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strsub.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strsub.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strsub.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strtrim.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strtrim.c.o: ../libft/ft_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strtrim.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strtrim.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_strtrim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_strtrim.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strtrim.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_strtrim.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strtrim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_strtrim.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_strtrim.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strtrim.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_strtrim.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_strtrim.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_strtrim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_strtrim.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_strtrim.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strtrim.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_strtrim.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_strtrim.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_swap.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_swap.c.o: ../libft/ft_swap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_swap.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_swap.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_swap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_swap.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_swap.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_swap.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_swap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_swap.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_swap.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_swap.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_swap.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_swap.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_swap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_swap.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_swap.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_swap.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_swap.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_swap.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_swapptr.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_swapptr.c.o: ../libft/ft_swapptr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_swapptr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_swapptr.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_swapptr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_swapptr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_swapptr.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_swapptr.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_swapptr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_swapptr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_swapptr.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_swapptr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_swapptr.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_swapptr.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_swapptr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_swapptr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_swapptr.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_swapptr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_swapptr.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_swapptr.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_tolower.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_tolower.c.o: ../libft/ft_tolower.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_tolower.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_tolower.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_tolower.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_tolower.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_tolower.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_tolower.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_tolower.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_tolower.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_tolower.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_tolower.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_tolower.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_tolower.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_tolower.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_tolower.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_tolower.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_tolower.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_tolower.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_tolower.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_toupper.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_toupper.c.o: ../libft/ft_toupper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_toupper.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_toupper.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_toupper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_toupper.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_toupper.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_toupper.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_toupper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_toupper.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_toupper.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_toupper.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_toupper.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_toupper.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_toupper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_toupper.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_toupper.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_toupper.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_toupper.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_toupper.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_ulltoa.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/ft_ulltoa.c.o: ../libft/ft_ulltoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_ulltoa.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_ulltoa.c.o   -c /Users/vfearles/Desktop/lemin/libft/ft_ulltoa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/ft_ulltoa.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/ft_ulltoa.c.o   -c /Users/vfearles/Desktop/lemin6/libft/ft_ulltoa.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_ulltoa.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/ft_ulltoa.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/ft_ulltoa.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_ulltoa.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/ft_ulltoa.c > CMakeFiles/mint_v2_04_01.dir/libft/ft_ulltoa.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/ft_ulltoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/ft_ulltoa.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/ft_ulltoa.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_ulltoa.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/ft_ulltoa.c -o CMakeFiles/mint_v2_04_01.dir/libft/ft_ulltoa.c.s
 
 CMakeFiles/mint_v2_04_01.dir/libft/get_next_line.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/libft/get_next_line.c.o: ../libft/get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/get_next_line.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/get_next_line.c.o   -c /Users/vfearles/Desktop/lemin/libft/get_next_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/mint_v2_04_01.dir/libft/get_next_line.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/libft/get_next_line.c.o   -c /Users/vfearles/Desktop/lemin6/libft/get_next_line.c
 
 CMakeFiles/mint_v2_04_01.dir/libft/get_next_line.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/libft/get_next_line.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/libft/get_next_line.c > CMakeFiles/mint_v2_04_01.dir/libft/get_next_line.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/libft/get_next_line.c > CMakeFiles/mint_v2_04_01.dir/libft/get_next_line.c.i
 
 CMakeFiles/mint_v2_04_01.dir/libft/get_next_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/libft/get_next_line.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/libft/get_next_line.c -o CMakeFiles/mint_v2_04_01.dir/libft/get_next_line.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/libft/get_next_line.c -o CMakeFiles/mint_v2_04_01.dir/libft/get_next_line.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_add.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_add.c.o: ../src/ft_add.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_add.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_add.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_add.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_add.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_add.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_add.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_add.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_add.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_add.c > CMakeFiles/mint_v2_04_01.dir/src/ft_add.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_add.c > CMakeFiles/mint_v2_04_01.dir/src/ft_add.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_add.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_add.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_add.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_add.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_add.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_add.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_add_room_link.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_add_room_link.c.o: ../src/ft_add_room_link.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_add_room_link.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_add_room_link.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_add_room_link.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_add_room_link.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_add_room_link.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_add_room_link.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_add_room_link.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_add_room_link.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_add_room_link.c > CMakeFiles/mint_v2_04_01.dir/src/ft_add_room_link.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_add_room_link.c > CMakeFiles/mint_v2_04_01.dir/src/ft_add_room_link.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_add_room_link.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_add_room_link.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_add_room_link.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_add_room_link.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_add_room_link.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_add_room_link.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_additional_func.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_additional_func.c.o: ../src/ft_additional_func.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_additional_func.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_additional_func.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_additional_func.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_additional_func.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_additional_func.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_additional_func.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_additional_func.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_additional_func.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_additional_func.c > CMakeFiles/mint_v2_04_01.dir/src/ft_additional_func.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_additional_func.c > CMakeFiles/mint_v2_04_01.dir/src/ft_additional_func.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_additional_func.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_additional_func.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_additional_func.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_additional_func.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_additional_func.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_additional_func.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_bfs.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_bfs.c.o: ../src/ft_bfs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_bfs.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_bfs.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_bfs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_bfs.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_bfs.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_bfs.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_bfs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_bfs.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_bfs.c > CMakeFiles/mint_v2_04_01.dir/src/ft_bfs.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_bfs.c > CMakeFiles/mint_v2_04_01.dir/src/ft_bfs.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_bfs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_bfs.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_bfs.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_bfs.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_bfs.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_bfs.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_bubble_sort_restore.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_bubble_sort_restore.c.o: ../src/ft_bubble_sort_restore.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_bubble_sort_restore.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_bubble_sort_restore.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_bubble_sort_restore.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_bubble_sort_restore.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_bubble_sort_restore.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_bubble_sort_restore.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_bubble_sort_restore.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_bubble_sort_restore.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_bubble_sort_restore.c > CMakeFiles/mint_v2_04_01.dir/src/ft_bubble_sort_restore.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_bubble_sort_restore.c > CMakeFiles/mint_v2_04_01.dir/src/ft_bubble_sort_restore.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_bubble_sort_restore.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_bubble_sort_restore.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_bubble_sort_restore.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_bubble_sort_restore.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_bubble_sort_restore.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_bubble_sort_restore.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.o: ../src/ft_buf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_buf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_buf.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_buf.c > CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_buf.c > CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_buf.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_buf.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_card_reading.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_card_reading.c.o: ../src/ft_card_reading.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_card_reading.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_card_reading.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_card_reading.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_card_reading.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_card_reading.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_card_reading.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_card_reading.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_card_reading.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_card_reading.c > CMakeFiles/mint_v2_04_01.dir/src/ft_card_reading.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_card_reading.c > CMakeFiles/mint_v2_04_01.dir/src/ft_card_reading.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_card_reading.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_card_reading.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_card_reading.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_card_reading.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_card_reading.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_card_reading.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_change.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_change.c.o: ../src/ft_change.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_change.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_change.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_change.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_change.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_change.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_change.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_change.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_change.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_change.c > CMakeFiles/mint_v2_04_01.dir/src/ft_change.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_change.c > CMakeFiles/mint_v2_04_01.dir/src/ft_change.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_change.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_change.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_change.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_change.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_change.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_change.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_check_connects.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_check_connects.c.o: ../src/ft_check_connects.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_check_connects.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_check_connects.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_check_connects.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_check_connects.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_check_connects.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_check_connects.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_check_connects.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_check_connects.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_check_connects.c > CMakeFiles/mint_v2_04_01.dir/src/ft_check_connects.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_check_connects.c > CMakeFiles/mint_v2_04_01.dir/src/ft_check_connects.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_check_connects.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_check_connects.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_check_connects.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_check_connects.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_check_connects.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_check_connects.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_check_create_room.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_check_create_room.c.o: ../src/ft_check_create_room.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_check_create_room.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_check_create_room.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_check_create_room.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_check_create_room.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_check_create_room.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_check_create_room.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_check_create_room.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_check_create_room.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_check_create_room.c > CMakeFiles/mint_v2_04_01.dir/src/ft_check_create_room.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_check_create_room.c > CMakeFiles/mint_v2_04_01.dir/src/ft_check_create_room.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_check_create_room.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_check_create_room.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_check_create_room.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_check_create_room.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_check_create_room.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_check_create_room.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_cleaning_struct.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_cleaning_struct.c.o: ../src/ft_cleaning_struct.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_cleaning_struct.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_cleaning_struct.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_cleaning_struct.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_cleaning_struct.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_cleaning_struct.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_cleaning_struct.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_cleaning_struct.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_cleaning_struct.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_cleaning_struct.c > CMakeFiles/mint_v2_04_01.dir/src/ft_cleaning_struct.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_cleaning_struct.c > CMakeFiles/mint_v2_04_01.dir/src/ft_cleaning_struct.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_cleaning_struct.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_cleaning_struct.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_cleaning_struct.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_cleaning_struct.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_cleaning_struct.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_cleaning_struct.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_collision.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_collision.c.o: ../src/ft_collision.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_collision.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_collision.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_collision.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_collision.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_collision.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_collision.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_collision.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_collision.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_collision.c > CMakeFiles/mint_v2_04_01.dir/src/ft_collision.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_collision.c > CMakeFiles/mint_v2_04_01.dir/src/ft_collision.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_collision.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_collision.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_collision.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_collision.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_collision.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_collision.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_copy.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_copy.c.o: ../src/ft_copy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_copy.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_copy.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_copy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_copy.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_copy.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_copy.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_copy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_copy.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_copy.c > CMakeFiles/mint_v2_04_01.dir/src/ft_copy.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_copy.c > CMakeFiles/mint_v2_04_01.dir/src/ft_copy.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_copy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_copy.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_copy.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_copy.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_copy.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_copy.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_correct_main.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_correct_main.c.o: ../src/ft_correct_main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_correct_main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_correct_main.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_correct_main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_correct_main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_correct_main.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_correct_main.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_correct_main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_correct_main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_correct_main.c > CMakeFiles/mint_v2_04_01.dir/src/ft_correct_main.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_correct_main.c > CMakeFiles/mint_v2_04_01.dir/src/ft_correct_main.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_correct_main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_correct_main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_correct_main.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_correct_main.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_correct_main.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_correct_main.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_correct_map.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_correct_map.c.o: ../src/ft_correct_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_correct_map.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_correct_map.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_correct_map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_correct_map.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_correct_map.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_correct_map.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_correct_map.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_correct_map.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_correct_map.c > CMakeFiles/mint_v2_04_01.dir/src/ft_correct_map.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_correct_map.c > CMakeFiles/mint_v2_04_01.dir/src/ft_correct_map.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_correct_map.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_correct_map.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_correct_map.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_correct_map.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_correct_map.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_correct_map.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_count.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_count.c.o: ../src/ft_count.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_count.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_count.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_count.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_count.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_count.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_count.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_count.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_count.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_count.c > CMakeFiles/mint_v2_04_01.dir/src/ft_count.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_count.c > CMakeFiles/mint_v2_04_01.dir/src/ft_count.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_count.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_count.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_count.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_count.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_count.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_count.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_creat_duplicate.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_creat_duplicate.c.o: ../src/ft_creat_duplicate.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_creat_duplicate.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_creat_duplicate.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_creat_duplicate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_creat_duplicate.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_creat_duplicate.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_creat_duplicate.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_creat_duplicate.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_creat_duplicate.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_creat_duplicate.c > CMakeFiles/mint_v2_04_01.dir/src/ft_creat_duplicate.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_creat_duplicate.c > CMakeFiles/mint_v2_04_01.dir/src/ft_creat_duplicate.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_creat_duplicate.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_creat_duplicate.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_creat_duplicate.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_creat_duplicate.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_creat_duplicate.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_creat_duplicate.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_del.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_del.c.o: ../src/ft_del.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_del.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_del.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_del.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_del.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_del.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_del.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_del.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_del.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_del.c > CMakeFiles/mint_v2_04_01.dir/src/ft_del.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_del.c > CMakeFiles/mint_v2_04_01.dir/src/ft_del.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_del.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_del.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_del.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_del.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_del.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_del.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_free.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_free.c.o: ../src/ft_free.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_free.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_free.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_free.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_free.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_free.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_free.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_free.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_free.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_free.c > CMakeFiles/mint_v2_04_01.dir/src/ft_free.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_free.c > CMakeFiles/mint_v2_04_01.dir/src/ft_free.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_free.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_free.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_free.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_free.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_free.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_free.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_lemin_buff.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_lemin_buff.c.o: ../src/ft_lemin_buff.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_lemin_buff.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_lemin_buff.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_lemin_buff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_lemin_buff.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_lemin_buff.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_lemin_buff.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_lemin_buff.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_lemin_buff.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_lemin_buff.c > CMakeFiles/mint_v2_04_01.dir/src/ft_lemin_buff.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_lemin_buff.c > CMakeFiles/mint_v2_04_01.dir/src/ft_lemin_buff.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_lemin_buff.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_lemin_buff.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_lemin_buff.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_lemin_buff.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_lemin_buff.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_lemin_buff.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_merge.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_merge.c.o: ../src/ft_merge.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_merge.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_merge.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_merge.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_merge.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_merge.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_merge.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_merge.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_merge.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_merge.c > CMakeFiles/mint_v2_04_01.dir/src/ft_merge.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_merge.c > CMakeFiles/mint_v2_04_01.dir/src/ft_merge.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_merge.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_merge.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_merge.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_merge.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_merge.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_merge.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_null.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_null.c.o: ../src/ft_null.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_null.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_null.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_null.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_null.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_null.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_null.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_null.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_null.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_null.c > CMakeFiles/mint_v2_04_01.dir/src/ft_null.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_null.c > CMakeFiles/mint_v2_04_01.dir/src/ft_null.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_null.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_null.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_null.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_null.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_null.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_null.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_path.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_path.c.o: ../src/ft_path.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_path.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_path.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_path.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_path.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_path.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_path.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_path.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_path.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_path.c > CMakeFiles/mint_v2_04_01.dir/src/ft_path.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_path.c > CMakeFiles/mint_v2_04_01.dir/src/ft_path.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_path.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_path.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_path.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_path.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_path.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_path.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_print.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_print.c.o: ../src/ft_print.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_print.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_print.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_print.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_print.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_print.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_print.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_print.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_print.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_print.c > CMakeFiles/mint_v2_04_01.dir/src/ft_print.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_print.c > CMakeFiles/mint_v2_04_01.dir/src/ft_print.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_print.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_print.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_print.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_print.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_print.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_print.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_split.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_split.c.o: ../src/ft_split.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_split.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_split.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_split.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_split.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_split.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_split.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_split.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_split.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_split.c > CMakeFiles/mint_v2_04_01.dir/src/ft_split.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_split.c > CMakeFiles/mint_v2_04_01.dir/src/ft_split.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_split.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_split.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_split.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_split.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_split.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_split.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_steps.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_steps.c.o: ../src/ft_steps.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_steps.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_steps.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_steps.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_steps.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_steps.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_steps.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_steps.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_steps.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_steps.c > CMakeFiles/mint_v2_04_01.dir/src/ft_steps.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_steps.c > CMakeFiles/mint_v2_04_01.dir/src/ft_steps.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_steps.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_steps.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_steps.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_steps.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_steps.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_steps.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_suurballe.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_suurballe.c.o: ../src/ft_suurballe.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_suurballe.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_suurballe.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_suurballe.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_suurballe.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_suurballe.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_suurballe.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_suurballe.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_suurballe.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_suurballe.c > CMakeFiles/mint_v2_04_01.dir/src/ft_suurballe.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_suurballe.c > CMakeFiles/mint_v2_04_01.dir/src/ft_suurballe.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_suurballe.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_suurballe.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_suurballe.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_suurballe.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_suurballe.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_suurballe.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_terms.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_terms.c.o: ../src/ft_terms.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_terms.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_terms.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_terms.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_terms.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_terms.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_terms.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_terms.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_terms.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_terms.c > CMakeFiles/mint_v2_04_01.dir/src/ft_terms.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_terms.c > CMakeFiles/mint_v2_04_01.dir/src/ft_terms.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_terms.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_terms.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_terms.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_terms.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_terms.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_terms.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_zerodata.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/ft_zerodata.c.o: ../src/ft_zerodata.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_zerodata.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_zerodata.c.o   -c /Users/vfearles/Desktop/lemin/src/ft_zerodata.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object CMakeFiles/mint_v2_04_01.dir/src/ft_zerodata.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/ft_zerodata.c.o   -c /Users/vfearles/Desktop/lemin6/src/ft_zerodata.c
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_zerodata.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/ft_zerodata.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/ft_zerodata.c > CMakeFiles/mint_v2_04_01.dir/src/ft_zerodata.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/ft_zerodata.c > CMakeFiles/mint_v2_04_01.dir/src/ft_zerodata.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/ft_zerodata.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/ft_zerodata.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/ft_zerodata.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_zerodata.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/ft_zerodata.c -o CMakeFiles/mint_v2_04_01.dir/src/ft_zerodata.c.s
 
 CMakeFiles/mint_v2_04_01.dir/src/main.c.o: CMakeFiles/mint_v2_04_01.dir/flags.make
 CMakeFiles/mint_v2_04_01.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object CMakeFiles/mint_v2_04_01.dir/src/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/main.c.o   -c /Users/vfearles/Desktop/lemin/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object CMakeFiles/mint_v2_04_01.dir/src/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mint_v2_04_01.dir/src/main.c.o   -c /Users/vfearles/Desktop/lemin6/src/main.c
 
 CMakeFiles/mint_v2_04_01.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mint_v2_04_01.dir/src/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin/src/main.c > CMakeFiles/mint_v2_04_01.dir/src/main.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vfearles/Desktop/lemin6/src/main.c > CMakeFiles/mint_v2_04_01.dir/src/main.c.i
 
 CMakeFiles/mint_v2_04_01.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mint_v2_04_01.dir/src/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin/src/main.c -o CMakeFiles/mint_v2_04_01.dir/src/main.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vfearles/Desktop/lemin6/src/main.c -o CMakeFiles/mint_v2_04_01.dir/src/main.c.s
 
 # Object files for target mint_v2_04_01
 mint_v2_04_01_OBJECTS = \
@@ -1900,7 +1900,7 @@ mint_v2_04_01: CMakeFiles/mint_v2_04_01.dir/src/ft_zerodata.c.o
 mint_v2_04_01: CMakeFiles/mint_v2_04_01.dir/src/main.c.o
 mint_v2_04_01: CMakeFiles/mint_v2_04_01.dir/build.make
 mint_v2_04_01: CMakeFiles/mint_v2_04_01.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Linking C executable mint_v2_04_01"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Linking C executable mint_v2_04_01"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mint_v2_04_01.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1913,6 +1913,6 @@ CMakeFiles/mint_v2_04_01.dir/clean:
 .PHONY : CMakeFiles/mint_v2_04_01.dir/clean
 
 CMakeFiles/mint_v2_04_01.dir/depend:
-	cd /Users/vfearles/Desktop/lemin/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/vfearles/Desktop/lemin /Users/vfearles/Desktop/lemin /Users/vfearles/Desktop/lemin/cmake-build-debug /Users/vfearles/Desktop/lemin/cmake-build-debug /Users/vfearles/Desktop/lemin/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/vfearles/Desktop/lemin6/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/vfearles/Desktop/lemin6 /Users/vfearles/Desktop/lemin6 /Users/vfearles/Desktop/lemin6/cmake-build-debug /Users/vfearles/Desktop/lemin6/cmake-build-debug /Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/mint_v2_04_01.dir/depend
 
