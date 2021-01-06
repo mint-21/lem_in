@@ -6,7 +6,7 @@
 #    By: asmall <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/08/14 14:54:15 by asmall            #+#    #+#              #
-#    Updated: 2019/09/18 19:06:23 by asmall           ###   ########.fr        #
+#    Updated: 2021/01/06 20:34:46 by asmall           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,6 @@ SRC				=	ft_card_reading.c ft_check_create_room.c \
 					ft_split.c ft_suurballe.c ft_merge.c\
 					ft_collision.c ft_free.c ft_del.c ft_steps.c\
 					ft_copy.c ft_bubble_sort_restore.c\
-					ft_buf.c\
 
 OBJ				=	ft_card_reading.o ft_check_create_room.o \
 				   	ft_change.o ft_correct_main.o \
@@ -39,7 +38,6 @@ OBJ				=	ft_card_reading.o ft_check_create_room.o \
 					ft_split.o ft_suurballe.o ft_merge.o\
 					ft_collision.o ft_free.o ft_del.o\
 					ft_copy.o ft_bubble_sort_restore.o ft_steps.o\
-					ft_buf.o\
 
 
 FLAGS = -Wall -Wextra -Werror

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/11 22:28:23 by asmall            #+#    #+#             */
-/*   Updated: 2020/06/13 19:28:53 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/01/06 20:27:15 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int			main(int ac, char **av)
 	ft_correct(&data, &data.check, str_split);
 	suurb(&data);
 	print_n_free_map_data(&map_data);
-	ft_buff_lem(&data);
+	ft_buff_lem(&data, data.ways);
 	ft_struct_free(&data);
 	return (0);
 }

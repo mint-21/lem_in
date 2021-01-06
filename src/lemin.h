@@ -6,7 +6,7 @@
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/11 22:31:10 by asmall            #+#    #+#             */
-/*   Updated: 2021/01/06 15:22:24 by asmall           ###   ########.fr       */
+/*   Updated: 2021/01/06 20:27:02 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -186,7 +186,6 @@ void					ft_correct_connects(char *str, t_valid *check, int j);
 t_room					*ft_initialization_struct_room(char *line);
 void					ft_connects(t_data *data, char *str);
 t_connect				*ft_createconnect(t_room *room);
-void					ft_buff_lem(t_data *data);
 void					ft_struct_free(t_data *data);
 void					ft_print_error(int id);
 void					ft_perror();
@@ -233,5 +232,6 @@ t_ants	*buf_delete_ant(t_ants **buf, t_ants *ant);
 int		check_empty(t_way *way);
 t_way *max_path(t_data *data, t_way *way);
 t_way *plist_push_back(t_way *way, t_path *p);
+void		ft_buff_lem(t_data *data, t_way *way);
 
 #endif
