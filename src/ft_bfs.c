@@ -1,5 +1,13 @@
 #include "lemin.h"
 
+void q_free(t_rooms *q)
+{
+    if (!q)
+        return;
+    q_free(q->next);
+    free(q);
+} 
+
 t_room *q_get(t_rooms **q)
 {
     t_room	*ret;
@@ -30,10 +38,6 @@ t_path *bfs(t_data *data)
         if (!(w = q_get(&q)))
             return (NULL);
     }
-    while (q)
-    {
-        free(q);
-        q = q->next;
-    }
+    q_free(q);
     return (assemble_path(w, data->start));
 }
