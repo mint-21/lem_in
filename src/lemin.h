@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   lemin.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/11 22:31:10 by asmall            #+#    #+#             */
-/*   Updated: 2020/09/13 15:05:41 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/01/06 15:22:24 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -234,7 +234,7 @@ int						ft_check_room_link(t_data *data, char *connect_str,
 //новое
 int count_link(t_room *room);
 int get_max_path(t_room *start, t_room *end);
-void	free_path_list(t_way *l);
+void	free_list(t_way *l);
 void	free_path(t_path *p);
 void suurb(t_data *data);
 void split(t_way *way);
@@ -251,7 +251,7 @@ void recount_len(t_way *l);
 t_connect *del_link(t_connect *l, t_room *r);
 void modify_data(t_path *p);
 t_way *check_steps(t_way *p_list, t_way *final, int ants);
-void free_path_list(t_way *l);
+void free_list(t_way *l);
 void free_path(t_path *p);
 t_way *lst_copy(t_way *l);
 void bubble_sort(t_way *l);
@@ -259,6 +259,6 @@ void restore(t_data *data, t_way *p_list);
 void	fill_buf(t_way *l);
 int		print_line(t_way *l, int step);
 t_ants	*buf_delete_ant(t_ants **buf, t_ants *ant);
-
+int		check_empty(t_way *way);
 
 #endif

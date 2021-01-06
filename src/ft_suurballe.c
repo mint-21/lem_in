@@ -63,6 +63,6 @@ void suurb(t_data *data)
         restore(data, way);
     }
     merge(way);
-    free_path_list(way);
+    free_list(way);
     bubble_sort(data->ways);
 }

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_free.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/01/06 14:02:42 by asmall            #+#    #+#             */
+/*   Updated: 2021/01/06 14:05:33 by asmall           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "lemin.h"
 
 void free_path(t_path *p)
@@ -8,13 +20,13 @@ void free_path(t_path *p)
     free(p);
 }
 
-void free_path_list(t_way *l)
+void free_list(t_way *list)
 {
-    if (!l)
+    if (!list)
         return;
-    free_path_list(l->next);
-    free_path(l->path);
-    free(l);
+    free_list(list->next);
+    free_path(list->path);
+    free(list);
 }
 
 void free_buf(t_rooms *buf)

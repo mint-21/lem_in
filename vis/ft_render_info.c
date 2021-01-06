@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_render_info.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/22 11:33:25 by asmall            #+#    #+#             */
-/*   Updated: 2020/09/22 12:06:15 by asmall           ###   ########.fr       */
+/*   Updated: 2021/01/06 14:49:26 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void			render_name_room(t_data s)
 	courier = NULL;
 	vis_room = g_vis_rooms;
 	norm_room = s.rooms;
-	courier = TTF_OpenFont("vis/resourse/InputMono-Regular.ttf", 20);
+	courier = TTF_OpenFont("vis/resourse/InputMono-Regular.ttf", 30);
 	if (courier == NULL)
 		error("Font didn't find. SDL error: ", TTF_GetError());
 	while (vis_room && norm_room)
@@ -113,8 +113,8 @@ void			render_texture_png(SDL_FRect pos)
 	ant_texture = SDL_CreateTextureFromSurface(g_main_render, ant_surface);
 	if (ant_texture == NULL)
 		error("Ant texture could not build. SDL error: ", SDL_GetError());
-	texture_settings.h = 75;
-	texture_settings.w = 75;
+	texture_settings.h = 50;
+	texture_settings.w = 50;
 	texture_settings.x = pos.x;
 	texture_settings.y = pos.y;
 	SDL_RenderCopyF(g_main_render, ant_texture, NULL, &texture_settings);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ants_move.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/21 13:11:21 by asmall            #+#    #+#             */
-/*   Updated: 2020/09/21 13:11:37 by asmall           ###   ########.fr       */
+/*   Updated: 2021/01/06 14:43:56 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,10 @@ void			print_ants(t_ants_v *array)
 	int			i;
 
 	i = -1;
-	while (++i < g_struct.ants)
+	while (++i < g_struct.ants) {
 		if (array[i].next_name)
 			render_texture_png(array[i].curr_room);
+	}
 }
 
 int				if_turn_over(t_ants_v **array, t_data *g_struct)

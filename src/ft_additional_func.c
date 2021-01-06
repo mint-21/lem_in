@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_additional_func.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vfearles <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/22 11:16:04 by vfearles          #+#    #+#             */
-/*   Updated: 2020/09/22 11:16:08 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/01/06 15:22:22 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,17 @@ t_connect		*create_inhead(t_path *tmp, t_path *path, t_connect *head,
 	++(*weight);
 	head = head->parrent;
 	return (head);
+}
+
+int		check_empty(t_way *way)
+{
+    while (way)
+    {
+        if (way->ants)
+            return (1);
+        way = way->next;
+    }
+    return (0);
 }
 
 /*

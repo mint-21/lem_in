@@ -46,7 +46,7 @@ t_way *check_steps(t_way *p_list, t_way *final, int ants)
     if (!last_count_steps)
     {
         last_count_steps = count_steps(p_list, ants);
-        free_path_list(final);
+        free_list(final);
         return (lst_copy(p_list));
     }
 
@@ -54,7 +54,7 @@ t_way *check_steps(t_way *p_list, t_way *final, int ants)
     if (tmp < last_count_steps)
     {
         last_count_steps = tmp;
-        free_path_list(final); //неправильно фришит
+        free_list(final); //неправильно фришит
         return (lst_copy(p_list));
     }
     return (final);
