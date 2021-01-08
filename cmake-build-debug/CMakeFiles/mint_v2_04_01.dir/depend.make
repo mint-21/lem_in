@@ -294,10 +294,6 @@ CMakeFiles/mint_v2_04_01.dir/src/ft_bubble_sort_restore.c.o: ../libft/libft.h
 CMakeFiles/mint_v2_04_01.dir/src/ft_bubble_sort_restore.c.o: ../src/ft_bubble_sort_restore.c
 CMakeFiles/mint_v2_04_01.dir/src/ft_bubble_sort_restore.c.o: ../src/lemin.h
 
-CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.o: ../libft/libft.h
-CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.o: ../src/ft_buf.c
-CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.o: ../src/lemin.h
-
 CMakeFiles/mint_v2_04_01.dir/src/ft_card_reading.c.o: ../libft/libft.h
 CMakeFiles/mint_v2_04_01.dir/src/ft_card_reading.c.o: ../src/ft_card_reading.c
 CMakeFiles/mint_v2_04_01.dir/src/ft_card_reading.c.o: ../src/lemin.h

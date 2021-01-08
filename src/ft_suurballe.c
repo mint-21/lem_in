@@ -22,15 +22,22 @@ void recount_len(t_way *l)
     }
 }
 
-t_way *plist_push_back(t_way *way, t_path *p)
+t_way *plist_push_back(t_way *way, t_path *p, int len)
 {
     t_way *first;
     t_way *new;
+    t_path *w;
 
+    w = p;
     first = way;
     if (!(new = (t_way *)ft_memalloc(sizeof(t_way))))
         exit(1);
-    new->len = p_len(p);
+    while (w)
+    {
+        w = w->next;
+        len++;
+    }
+    new->len = len;
     new->path = p;
     if (!first)
         return (new);
@@ -45,7 +52,9 @@ void suurb(t_data *data)
 {
     t_way *way;
     t_room *rooms;
+    int len;
 
+    len = 0;
     rooms = data->rooms;
     while (rooms)
     {
@@ -54,7 +63,7 @@ void suurb(t_data *data)
     }
     data->start->weight = 0;
     way = NULL;
-    way = max_path(data, way);
+    way = max_path(data, way, len);
     merge(way);
     free_list(way);
     bubble_sort(data->ways);

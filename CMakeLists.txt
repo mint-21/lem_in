@@ -104,7 +104,6 @@ add_executable(mint_v2_04_01
         src/ft_additional_func.c
         src/ft_bfs.c
         src/ft_bubble_sort_restore.c
-        src/ft_buf.c
         src/ft_card_reading.c
         src/ft_change.c
         src/ft_check_connects.c

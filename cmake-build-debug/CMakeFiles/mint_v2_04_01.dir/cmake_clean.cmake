@@ -95,7 +95,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/mint_v2_04_01.dir/src/ft_additional_func.c.o"
   "CMakeFiles/mint_v2_04_01.dir/src/ft_bfs.c.o"
   "CMakeFiles/mint_v2_04_01.dir/src/ft_bubble_sort_restore.c.o"
-  "CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.o"
   "CMakeFiles/mint_v2_04_01.dir/src/ft_card_reading.c.o"
   "CMakeFiles/mint_v2_04_01.dir/src/ft_change.c.o"
   "CMakeFiles/mint_v2_04_01.dir/src/ft_check_connects.c.o"

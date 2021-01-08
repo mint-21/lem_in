@@ -68,10 +68,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/vfearles/Desktop/lemin6
+CMAKE_SOURCE_DIR = /Users/vfearles/Desktop/lem_in
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/vfearles/Desktop/lemin6/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/vfearles/Desktop/lem_in/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles /Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vfearles/Desktop/lem_in/cmake-build-debug/CMakeFiles /Users/vfearles/Desktop/lem_in/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vfearles/Desktop/lemin6/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vfearles/Desktop/lem_in/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -2735,33 +2735,6 @@ src/ft_bubble_sort_restore.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mint_v2_04_01.dir/build.make CMakeFiles/mint_v2_04_01.dir/src/ft_bubble_sort_restore.c.s
 .PHONY : src/ft_bubble_sort_restore.c.s
 
-src/ft_buf.o: src/ft_buf.c.o
-
-.PHONY : src/ft_buf.o
-
-# target to build an object file
-src/ft_buf.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mint_v2_04_01.dir/build.make CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.o
-.PHONY : src/ft_buf.c.o
-
-src/ft_buf.i: src/ft_buf.c.i
-
-.PHONY : src/ft_buf.i
-
-# target to preprocess a source file
-src/ft_buf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mint_v2_04_01.dir/build.make CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.i
-.PHONY : src/ft_buf.c.i
-
-src/ft_buf.s: src/ft_buf.c.s
-
-.PHONY : src/ft_buf.s
-
-# target to generate assembly for a file
-src/ft_buf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mint_v2_04_01.dir/build.make CMakeFiles/mint_v2_04_01.dir/src/ft_buf.c.s
-.PHONY : src/ft_buf.c.s
-
 src/ft_card_reading.o: src/ft_card_reading.c.o
 
 .PHONY : src/ft_card_reading.o
@@ -3707,9 +3680,6 @@ help:
 	@echo "... src/ft_bubble_sort_restore.o"
 	@echo "... src/ft_bubble_sort_restore.i"
 	@echo "... src/ft_bubble_sort_restore.s"
-	@echo "... src/ft_buf.o"
-	@echo "... src/ft_buf.i"
-	@echo "... src/ft_buf.s"
 	@echo "... src/ft_card_reading.o"
 	@echo "... src/ft_card_reading.i"
 	@echo "... src/ft_card_reading.s"

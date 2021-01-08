@@ -229,8 +229,8 @@ void	fill_buf(t_way *l);
 int		print_line(t_way *l, int step);
 t_ants	*buf_delete_ant(t_ants **buf, t_ants *ant);
 int		check_empty(t_way *way);
-t_way *max_path(t_data *data, t_way *way);
-t_way *plist_push_back(t_way *way, t_path *p);
+t_way *max_path(t_data *data, t_way *way, int len);
+t_way *plist_push_back(t_way *way, t_path *p, int len);
 void		ft_buff_lem(t_data *data, t_way *way);
 t_path *p_push_begin(t_room *r, t_path *p);
 

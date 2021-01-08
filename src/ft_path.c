@@ -14,20 +14,18 @@ t_path *p_push_begin(t_room *r, t_path *p)
     return (new);
 }
 
-t_way *max_path(t_data *data, t_way *way)
+t_way *max_path(t_data *data, t_way *way, int len)
 {
     int max_path;
     t_path *p;
-    int len;
 
     while ((max_path = get_max_path(data->start, data->end)) > 0)
     {
         --max_path;
         split(way);
-        len = 0;
         if (!(p = bfs(data, len)))
             break;
-        way = plist_push_back(way, p);
+        way = plist_push_back(way, p, len);
         merge(way);
         if (collision_handle(way, p->next, 0))
             recount_len(way);
