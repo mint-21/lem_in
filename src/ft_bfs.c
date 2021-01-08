@@ -22,10 +22,11 @@ t_room *q_get(t_rooms **q)
     return (ret);
 }
 
-t_path *bfs(t_data *data)
+t_path *bfs(t_data *data, int len)
 {
     t_room *w;
     t_rooms *q;
+    t_path *p;
 
     w = data->start;
     q = NULL;
@@ -39,5 +40,13 @@ t_path *bfs(t_data *data)
             return (NULL);
     }
     q_free(q);
-    return (assemble_path(w, data->start));
+    p = NULL;
+    while (w != data->start)
+    {
+        p = p_push_begin(w, p);
+        w = w->room_par;
+        len++;
+    }
+    p = p_push_begin(data->start, p);
+    return (p);
 }

@@ -14,39 +14,28 @@ t_path *p_push_begin(t_room *r, t_path *p)
     return (new);
 }
 
-t_path *assemble_path(t_room *end, t_room *start)
-{
-    t_path *p;
-    int len;
-
-    p = NULL;
-    len = 0;
-    while (end != start)
-    {
-        p = p_push_begin(end, p);
-        end = end->room_par;
-        len++;
-    }
-    p = p_push_begin(start, p);
-    return (p);
-}
-
 t_way *max_path(t_data *data, t_way *way)
 {
     int max_path;
     t_path *p;
+    int len;
 
     while ((max_path = get_max_path(data->start, data->end)) > 0)
     {
         --max_path;
         split(way);
-        if (!(p = bfs(data)))
+        len = 0;
+        if (!(p = bfs(data, len)))
             break;
         way = plist_push_back(way, p);
         merge(way);
         if (collision_handle(way, p->next, 0))
             recount_len(way);
-        modify_data(p);
+        while (p->next)
+        {
+            p->room->connects = del_link(p->room->connects, p->next->room);
+            p = p->next;
+        }
         data->ways = check_steps(way, data->ways, data->ants);
         restore(data, way);
     }

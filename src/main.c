@@ -19,15 +19,6 @@
 ** ft_buff_lem: output to the console of the program's response
 */
 
-void modify_data(t_path *p)
-{
-    while (p->next)
-    {
-        p->room->connects = del_link(p->room->connects, p->next->room);
-        p = p->next;
-    }
-}
-
 int			main(int ac, char **av)
 {
 	t_data	data;

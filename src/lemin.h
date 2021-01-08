@@ -208,7 +208,7 @@ void	free_list(t_way *l);
 void	free_path(t_path *p);
 void suurb(t_data *data);
 void split(t_way *way);
-t_path *bfs(t_data *data);
+t_path *bfs(t_data *data, int len);
 t_path *assemble_path(t_room *end, t_room *start);
 void q_add_link(t_rooms **q, t_connect *l, t_room *par);
 void merge(t_way *way);
@@ -219,7 +219,6 @@ void free_buf(t_rooms *buf);
 int collision_handle(t_way *list, t_path *p, int ret);
 void recount_len(t_way *l);
 t_connect *del_link(t_connect *l, t_room *r);
-void modify_data(t_path *p);
 t_way *check_steps(t_way *p_list, t_way *final, int ants);
 void free_list(t_way *l);
 void free_path(t_path *p);
@@ -233,5 +232,6 @@ int		check_empty(t_way *way);
 t_way *max_path(t_data *data, t_way *way);
 t_way *plist_push_back(t_way *way, t_path *p);
 void		ft_buff_lem(t_data *data, t_way *way);
+t_path *p_push_begin(t_room *r, t_path *p);
 
 #endif

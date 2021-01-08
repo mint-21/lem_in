@@ -29,10 +29,13 @@ void q_insert(t_rooms *q, t_rooms *new)
 {
     while (q->next && q->r->weight <= new->r->weight)
         q = q->next;
-    if (!q->next && q->r->weight <= new->r->weight) {
+    if (!q->next && q->r->weight <= new->r->weight)
+    {
         q->next = new;
         new->prev = q;
-    } else {
+    }
+    else
+    {
         if (q->prev)
             q->prev->next = new;
         new->prev = q->prev;
@@ -41,31 +44,28 @@ void q_insert(t_rooms *q, t_rooms *new)
     }
 }
 
-void    q_add_room(t_rooms **q, t_room *r)
+void q_add_link(t_rooms **q, t_connect *l, t_room *par)
 {
     t_rooms *new;
 
-    if (!(new = (t_rooms *)ft_memalloc(sizeof(t_rooms))))
-        exit(1);
-    new->r = r;
-    if (!*q || r->weight < (*q)->r->weight) {
-        if (*q)
-            (*q)->prev = new;
-        new->next = *q;
-        *q = new;
-    } else
-        q_insert(*q, new);
-}
-
-void q_add_link(t_rooms **q, t_connect *l, t_room *par)
-{
     while (l)
     {
         if (l->room->weight == INF)
         {
             l->room->weight = par->weight + l->weight;
             l->room->room_par = par;
-            q_add_room(q, l->room);
+            if (!(new = (t_rooms *)ft_memalloc(sizeof(t_rooms))))
+                exit(1);
+            new->r = l->room;
+            if (!*q || l->room->weight < (*q)->r->weight)
+            {
+                if (*q)
+                    (*q)->prev = new;
+                new->next = *q;
+                *q = new;
+            }
+            else
+                q_insert(*q, new);
         }
         l = l->next;
     }
