@@ -6,7 +6,7 @@
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/11 22:31:10 by asmall            #+#    #+#             */
-/*   Updated: 2021/01/06 20:27:02 by asmall           ###   ########.fr       */
+/*   Updated: 2021/01/09 16:59:51 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -233,5 +233,6 @@ t_way *max_path(t_data *data, t_way *way, int len, t_rooms *buf);
 t_way *plist_push_back(t_way *way, t_path *p, int len);
 void		ft_buff_lem(t_data *data, t_way *way);
 t_path *p_push_begin(t_room *r, t_path *p);
+int		print_step(t_ants **buf, int step);
 
 #endif

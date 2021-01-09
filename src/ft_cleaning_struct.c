@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_cleaning_struct.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vfearles <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/08 18:41:51 by vfearles          #+#    #+#             */
-/*   Updated: 2020/10/08 18:41:53 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/01/09 16:57:35 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,26 @@ static void		ft_free_vars(t_option *options)
 		ft_free_ways(tmp->ways);
 		free(tmp);
 	}
+}
+
+void			ft_clean_links(t_data *s)
+{
+	t_link		*cur_l;
+	t_link		*next_l;
+	int			i;
+
+	i = -1;
+	while (++i < s->rooms_count)
+	{
+		cur_l = s->links[i];
+		while (cur_l)
+		{
+			next_l = cur_l->next;
+			free(cur_l);
+			cur_l = next_l;
+		}
+	}
+	free(s->links);
 }
 
 /*

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/11 22:28:23 by asmall            #+#    #+#             */
-/*   Updated: 2020/05/13 19:28:53 by asmall           ###   ########.fr       */
+/*   Updated: 2021/01/09 16:58:22 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,30 +38,10 @@ void			ft_print_error(int id)
 	exit(id);
 }
 
-void			print_n_free_map_data(char **map_data)
+void	print_n_free_map_data(char **map_data)
 {
 	ft_printf("%s\n", *map_data);
 	free(*map_data);
-}
-
-void			ft_clean_links(t_data *s)
-{
-	t_link		*cur_l;
-	t_link		*next_l;
-	int			i;
-
-	i = -1;
-	while (++i < s->rooms_count)
-	{
-		cur_l = s->links[i];
-		while (cur_l)
-		{
-			next_l = cur_l->next;
-			free(cur_l);
-			cur_l = next_l;
-		}
-	}
-	free(s->links);
 }
 
 int		print_step(t_ants **buf, int step)
@@ -77,23 +57,7 @@ int		print_step(t_ants **buf, int step)
         ft_printf("L%d-%s ", tmp->num, tmp->curr->room->name);
         if (!tmp->curr->prev->prev)
             return (1);
-        if (!tmp->curr->next)
-            tmp = buf_delete_ant(buf, tmp);
-        else
-            tmp = tmp->next;
+        tmp = (!tmp->curr->next) ? buf_delete_ant(buf, tmp) : tmp->next;
     }
     return (1);
-}
-
-int		print_line(t_way *l, int step)
-{
-    int ret;
-
-    ret = 0;
-    while (l)
-    {
-        ret += print_step(&l->buf, step);
-        l = l->next;
-    }
-    return (ret);
 }
