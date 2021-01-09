@@ -52,26 +52,26 @@ t_path *find_room(t_way *l, t_room *tofind, t_path *ap)
     return (NULL);
 }
 
-t_path *get_first(t_path *p)
-{
-    while (p->prev)
-        p = p->prev;
-    return (p);
-}
-
 int collision_handle(t_way *list, t_path *p, int ret)
 {
     t_path *tmp;
     t_path *first;
+    t_path *w;
 
-    first = get_first(p);
+    w = p;
+    while (w->prev)
+        w = w->prev;
+    first = w;
     while (p->next)
     {
         if ((tmp = find_room(list, p->room, first)))
         {
             ret = 1;
             p = remove_collision(p, tmp);
-            first = get_first(p);
+            w = p;
+            while (w->prev)
+                w = w->prev;
+            first = w;
         } else
             p = p->next;
     }

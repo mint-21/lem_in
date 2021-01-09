@@ -1,27 +1,5 @@
 #include "lemin.h"
 
-int p_len(t_path *p)
-{
-    int len;
-
-    len = 0;
-    while (p)
-    {
-        p = p->next;
-        len++;
-    }
-    return (len);
-}
-
-void recount_len(t_way *l)
-{
-    while (l)
-    {
-        l->len = p_len(l->path);
-        l = l->next;
-    }
-}
-
 t_way *plist_push_back(t_way *way, t_path *p, int len)
 {
     t_way *first;
@@ -53,9 +31,11 @@ void suurb(t_data *data)
     t_way *way;
     t_room *rooms;
     int len;
+    t_rooms *buf;
 
     len = 0;
     rooms = data->rooms;
+    buf = NULL;
     while (rooms)
     {
         rooms->weight = INF;
@@ -63,8 +43,8 @@ void suurb(t_data *data)
     }
     data->start->weight = 0;
     way = NULL;
-    way = max_path(data, way, len);
-    merge(way);
+    way = max_path(data, way, len, buf);
+    merge(way, buf);
     free_list(way);
     bubble_sort(data->ways);
 }
