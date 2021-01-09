@@ -46,5 +46,6 @@ void suurb(t_data *data)
     way = max_path(data, way, len, buf);
     merge(way, buf);
     free_list(way);
-    bubble_sort(data->ways);
+    if (data->ways)
+        bubble_sort(data->ways, data->ways);
 }

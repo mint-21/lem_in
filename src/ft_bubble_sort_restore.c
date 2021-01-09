@@ -24,29 +24,11 @@ void restore(t_data *data, t_way *p_list)
     restore_p_list(p_list);
 }
 
-void swap(t_way *l1, t_way *l2)
-{
-    t_way  tmp;
-
-    tmp.len = l1->len;
-    tmp.path = l1->path;
-    tmp.ants = l1->ants;
-    l1->len = l2->len;
-    l1->path = l2->path;
-    l1->ants = l2->ants;
-    l2->len = tmp.len;
-    l2->path = tmp.path;
-    l2->ants = tmp.ants;
-}
-
-void bubble_sort(t_way *l)
+void bubble_sort(t_way *l, t_way *first)
 {
     int sort;
-    t_way *first;
+    t_way  tmp;
 
-    first = l;
-    if (!l)
-        return;
     while (1)
     {
         sort = 1;
@@ -54,7 +36,11 @@ void bubble_sort(t_way *l)
         {
             if (l->len > l->next->len)
             {
-                swap(l, l->next);
+                ft_swap(&(l)->len, &(l->next)->len);
+                ft_swap(&(l)->ants, &(l->next)->ants);
+                tmp.path = l->path;
+                l->path = l->next->path;
+                l->next->path = tmp.path;
                 sort = 0;
             }
             l = l->next;
