@@ -6,22 +6,22 @@
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/05 19:21:00 by asmall            #+#    #+#             */
-/*   Updated: 2021/04/17 14:51:14 by asmall           ###   ########.fr       */
+/*   Updated: 2021/01/09 16:57:57 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lemin.h"
 
-void	print_step_and_ant(char *room_name, int ants, int i)
+void		print_step_and_ant(char *room_name, int ants, int i)
 {
-	while (i++ <= ants)
+	while (++i <= ants)
 	{
 		ft_printf("L%d-%s ", i, room_name);
 		ft_printf("\n");
 	}
 }
 
-void	add_ant_in_buff(t_way *way, int i)
+void		add_ant_in_buff(t_way *way, int i)
 {
 	t_ants	*new;
 
@@ -37,9 +37,9 @@ void	add_ant_in_buff(t_way *way, int i)
 	way->last_ant = new;
 }
 
-void	write_in_buff(t_way *way, int count)
+void		write_in_buff(t_way *way, int count)
 {
-	t_way	*head;
+	t_way *head;
 
 	head = way;
 	while (1)
@@ -53,12 +53,16 @@ void	write_in_buff(t_way *way, int count)
 	}
 }
 
-void	ft_buff_lem(t_data *data, t_way *way)
+void		ft_buff_lem(t_data *data, t_way *way)
 {
 	int		count;
 	int		step;
 	t_way	*head;
 
+	if (!data->ways) {
+        ft_print_error(E_PATH);
+        free_list(data->ways);
+	}
 	if (data->ways->len == 2)
 	{
 		print_step_and_ant(data->ways->path->next->room->name, data->ants, 0);
@@ -76,8 +80,9 @@ void	ft_buff_lem(t_data *data, t_way *way)
 		{
 			count += print_step(&(head)->buf, step);
 			head = head->next;
+            if (count && !head)
+                ft_printf("\n");
 		}
-		ft_printf("\n");
 	}
 	free_list(data->ways);
 }
