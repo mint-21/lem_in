@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_null.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/04 17:00:00 by asmall            #+#    #+#             */
-/*   Updated: 2020/03/04 14:00:01 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/04/17 14:53:33 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,7 @@
 ** Removing back edges (ribs) along with their originals
 */
 
-void			null_turn(t_connect *reverse_h, t_connect *reverse_t,
-								t_room *end)
+void	null_turn(t_connect *reverse_h, t_connect *reverse_t, t_room *end)
 {
 	reverse_h = end->connects;
 	while (reverse_h && reverse_h->weight != -1)
@@ -36,7 +35,7 @@ void			null_turn(t_connect *reverse_h, t_connect *reverse_t,
 ** so that the graph is not bi-directional.
 */
 
-static void		ft_null_connect(t_room *dst, t_room *src)
+static void	ft_null_connect(t_room *dst, t_room *src)
 {
 	t_connect	*connect;
 
@@ -59,7 +58,7 @@ static void		ft_null_connect(t_room *dst, t_room *src)
 ** ft_null_connect: deleting previous links
 */
 
-void			ft_find_null(t_path *path)
+void	ft_find_null(t_path *path)
 {
 	t_room		*room_one;
 	t_room		*room_two;

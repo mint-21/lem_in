@@ -6,7 +6,7 @@
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/11 22:28:23 by asmall            #+#    #+#             */
-/*   Updated: 2021/01/06 20:27:15 by asmall           ###   ########.fr       */
+/*   Updated: 2021/04/17 15:02:49 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 ** ft_buff_lem: output to the console of the program's response
 */
 
-int			main(int ac, char **av)
+int	main(int ac, char **av)
 {
 	t_data	data;
 	char	**str_split;
@@ -38,5 +38,3 @@ int			main(int ac, char **av)
 	ft_struct_free(&data);
 	return (0);
 }
-
-

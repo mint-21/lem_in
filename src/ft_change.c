@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_change.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/28 18:01:12 by asmall            #+#    #+#             */
-/*   Updated: 2020/07/28 18:01:13 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/04/17 14:32:07 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 ** Weighting the current room (weight)
 */
 
-t_connect		*turn_and_change(t_room *room, t_connect *connect,
+t_connect	*turn_and_change(t_room *room, t_connect *connect,
 			t_room *start, int *flag)
 {
 	t_room		*ptr;

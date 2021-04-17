@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_connects.c                                      :+:      :+:    :+:   */
+/*   ft_check_connects.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 17:17:51 by asmall            #+#    #+#             */
-/*   Updated: 2020/07/16 17:17:52 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/04/17 14:32:30 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** Creation of links in the structure and initialization
 */
 
-static void		ft_connectconnect(t_room *room_one, t_room *room_two)
+static void	ft_connectconnect(t_room *room_one, t_room *room_two)
 {
 	t_connect	*connect;
 
@@ -36,7 +36,7 @@ static void		ft_connectconnect(t_room *room_one, t_room *room_two)
 ** ft_connectconnect: connect rooms in the structure.
 */
 
-void			ft_connects(t_data *data, char *connect_str)
+void	ft_connects(t_data *data, char *connect_str)
 {
 	t_room		*one;
 	t_room		*two;

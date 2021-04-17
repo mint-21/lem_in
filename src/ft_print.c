@@ -6,13 +6,13 @@
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/11 22:28:23 by asmall            #+#    #+#             */
-/*   Updated: 2021/01/09 16:58:22 by asmall           ###   ########.fr       */
+/*   Updated: 2021/04/17 14:56:15 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lemin.h"
 
-void			ft_print_error(int id)
+void	ft_print_error(int id)
 {
 	write(2, "ERROR\n", 6);
 	if (id == 1)
@@ -44,20 +44,20 @@ void	print_n_free_map_data(char **map_data)
 	free(*map_data);
 }
 
-int		print_step(t_ants **buf, int step)
+int	print_step(t_ants **buf, int step)
 {
-    t_ants *tmp;
+	t_ants *tmp;
 
-    if (!*buf)
-        return (0);
-    tmp = *buf;
-    while (tmp && step--)
-    {
-        tmp->curr = tmp->curr->next;
-        ft_printf("L%d-%s ", tmp->num, tmp->curr->room->name);
-        if (!tmp->curr->prev->prev)
-            return (1);
-        tmp = (!tmp->curr->next) ? buf_delete_ant(buf, tmp) : tmp->next;
-    }
-    return (1);
+	if (!*buf)
+		return (0);
+	tmp = *buf;
+	while (tmp && step--)
+	{
+		tmp->curr = tmp->curr->next;
+		ft_printf("L%d-%s ", tmp->num, tmp->curr->room->name);
+		if (!tmp->curr->prev->prev)
+			return (1);
+		tmp = (!tmp->curr->next) ? buf_delete_ant(buf, tmp) : tmp->next;
+	}
+	return (1);
 }

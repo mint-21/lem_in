@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_terms.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vfearles <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 13:19:23 by vfearles          #+#    #+#             */
-/*   Updated: 2020/10/09 13:19:27 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/04/17 15:02:18 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lemin.h"
 
-void			terms_null(t_room *room)
+void	terms_null(t_room *room)
 {
 	if (room->out_part)
 	{
@@ -30,7 +30,7 @@ void			terms_null(t_room *room)
 ** conditions for the implementation of incoming nodes
 */
 
-t_connect		*terms(t_connect *head, t_connect *connect)
+t_connect	*terms(t_connect *head, t_connect *connect)
 {
 	if (head->room->in_part)
 		connect = head->room->in_part->connects;
@@ -41,7 +41,7 @@ t_connect		*terms(t_connect *head, t_connect *connect)
 	return (connect);
 }
 
-void			terms_connect(t_room *room_one, t_connect *connect)
+void	terms_connect(t_room *room_one, t_connect *connect)
 {
 	t_connect	*tmp;
 

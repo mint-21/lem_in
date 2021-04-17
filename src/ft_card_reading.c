@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_card_reading.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vfearles <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/22 11:17:02 by vfearles          #+#    #+#             */
-/*   Updated: 2020/09/22 11:17:09 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/04/17 14:31:49 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lemin.h"
 
-char		*ft_read_line(char *str, int fd)
+char	*ft_read_line(char *str, int fd)
 {
 	int		ret;
 	char	*temp;
@@ -27,15 +27,12 @@ char		*ft_read_line(char *str, int fd)
 			ft_perror();
 		free(temp);
 	}
-	(ret < 0) ? ft_perror() : 1;
+	if (ret < 0)
+		ft_perror();
 	return (str);
 }
 
-/*
-** Main card reading function.
-*/
-
-char		*reading_card(char ***str_split, int fd)
+char	*reading_card(char ***str_split, int fd)
 {
 	char	*str;
 	char	*trash;

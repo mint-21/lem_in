@@ -11,11 +11,18 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0867271a-a32d-490a-afc8-6fa19794d683" name="Default Changelist" comment="">
+    <list default="true" id="0867271a-a32d-490a-afc8-6fa19794d683" name="Default Changelist" comment="Функции исправлены по норме (кроме тернарников и структур)">
+      <change afterPath="$PROJECT_DIR$/.idea/mint_v2_04_01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.map" beforeDir="false" afterPath="$PROJECT_DIR$/.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.map_old" beforeDir="false" afterPath="$PROJECT_DIR$/.map_old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/a.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
@@ -26,6 +33,8 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/libft/ft_abs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/libft/ft_abs.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/libft/ft_atoll.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/libft/ft_atoll.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/libft/ft_atoull.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/libft/ft_atoull.c.o" afterDir="false" />
@@ -117,6 +126,7 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/libft/ft_toupper.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/libft/ft_toupper.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/libft/ft_ulltoa.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/libft/ft_ulltoa.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/libft/get_next_line.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/libft/get_next_line.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/src/ft_add.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/src/ft_add.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/src/ft_add_room_link.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/src/ft_add_room_link.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/src/ft_additional_func.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir/src/ft_additional_func.c.o" afterDir="false" />
@@ -151,9 +161,38 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/mint_v2_04_01" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/mint_v2_04_01" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/mint_v2_04_01.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/mint_v2_04_01.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_swap.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_swap.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_abs.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_abs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_bzero.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_bzero.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_add.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_add.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_add_room_link.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_add_room_link.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_additional_func.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_additional_func.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_bfs.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_bfs.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ft_bubble_sort_restore.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_bubble_sort_restore.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lemin.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/lemin.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_card_reading.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_card_reading.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_change.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_change.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_check_connects.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_check_connects.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_check_create_room.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_check_create_room.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_cleaning_struct.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_cleaning_struct.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_collision.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_collision.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_copy.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_copy.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_correct_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_correct_main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_correct_map.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_correct_map.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_count.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_count.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_creat_duplicate.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_creat_duplicate.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_del.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_del.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_free.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_free.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_lemin_buff.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_lemin_buff.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_merge.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_merge.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_null.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_null.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_path.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_path.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_print.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_print.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_split.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_split.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_steps.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_steps.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_suurballe.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_suurballe.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_terms.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_terms.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_zerodata.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_zerodata.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,23 +214,27 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="mint_v2_04_01" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="maps/valid/map_25" REDIRECT_INPUT="false" ELEVATE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="mint_v2_04_01" TARGET_NAME="mint_v2_04_01" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="mint_v2_04_01" RUN_TARGET_NAME="mint_v2_04_01">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="mint_v2_04_01" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="maps/valid/map_25" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="mint_v2_04_01" TARGET_NAME="mint_v2_04_01" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="mint_v2_04_01" RUN_TARGET_NAME="mint_v2_04_01">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -212,6 +255,7 @@
       <workItem from="1610113983235" duration="1154000" />
       <workItem from="1610196357440" duration="451000" />
       <workItem from="1610205127800" duration="1231000" />
+      <workItem from="1618656269908" duration="1812000" />
     </task>
     <servers />
   </component>
@@ -229,5 +273,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Функции исправлены по норме (кроме тернарников и структур)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Функции исправлены по норме (кроме тернарников и структур)" />
   </component>
 </project>

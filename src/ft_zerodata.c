@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_zerodata.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 20:06:00 by asmall            #+#    #+#             */
-/*   Updated: 2020/09/12 13:40:22 by asmall           ###   ########.fr       */
+/*   Updated: 2021/04/17 15:02:28 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lemin.h"
 
-static void		ft_zerodata2(t_data *data)
+static void	ft_zerodata2(t_data *data)
 {
 	data->map_data = NULL;
 	data->split = NULL;
@@ -25,7 +25,7 @@ static void		ft_zerodata2(t_data *data)
 	data->links = NULL;
 }
 
-t_data			ft_zerodata(void)
+t_data	ft_zerodata(void)
 {
 	t_data		data;
 

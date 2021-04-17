@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_creat_duplicate.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/14 17:27:26 by asmall            #+#    #+#             */
-/*   Updated: 2020/08/14 17:27:26 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/04/17 14:47:13 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** Link structure initialization
 */
 
-t_connect		*ft_createconnect(t_room *room)
+t_connect	*ft_createconnect(t_room *room)
 {
 	t_connect	*connect;
 
@@ -39,7 +39,7 @@ t_connect		*ft_createconnect(t_room *room)
 ** end initially points to the incoming portion and is not redirected
 */
 
-void			ft_creat_duplicate(t_path *path, t_room *in)
+void	ft_creat_duplicate(t_path *path, t_room *in)
 {
 	t_connect	*links;
 	t_room		*out;

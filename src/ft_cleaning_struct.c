@@ -6,13 +6,13 @@
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/08 18:41:51 by vfearles          #+#    #+#             */
-/*   Updated: 2021/01/09 16:57:35 by asmall           ###   ########.fr       */
+/*   Updated: 2021/04/17 14:34:56 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lemin.h"
 
-static void		ft_free_connects(t_connect *connects)
+static void	ft_free_connects(t_connect *connects)
 {
 	t_connect	*tmp;
 
@@ -24,7 +24,7 @@ static void		ft_free_connects(t_connect *connects)
 	}
 }
 
-static void		ft_free_ways(t_way *way)
+static void	ft_free_ways(t_way *way)
 {
 	t_way		*tmp;
 	t_path		*ptr;
@@ -44,7 +44,7 @@ static void		ft_free_ways(t_way *way)
 	}
 }
 
-static void		ft_free_vars(t_option *options)
+static void	ft_free_vars(t_option *options)
 {
 	t_option	*tmp;
 
@@ -57,7 +57,7 @@ static void		ft_free_vars(t_option *options)
 	}
 }
 
-void			ft_clean_links(t_data *s)
+void	ft_clean_links(t_data *s)
 {
 	t_link		*cur_l;
 	t_link		*next_l;
@@ -81,7 +81,7 @@ void			ft_clean_links(t_data *s)
 ** Cleaning up the main structure
 */
 
-void			ft_struct_free(t_data *data)
+void	ft_struct_free(t_data *data)
 {
 	t_room		*tmp;
 

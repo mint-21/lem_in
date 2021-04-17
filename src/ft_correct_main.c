@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_correct_main.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 20:06:00 by asmall            #+#    #+#             */
-/*   Updated: 2020/06/12 13:40:22 by asmall           ###   ########.fr       */
+/*   Updated: 2021/04/17 14:42:36 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 ** ft_split_free: clearing a two-dimensional array after entering all the data
 */
 
-static void		free_init(int i, t_valid *check, t_data *data, char **str)
+static void	free_init(int i, t_valid *check, t_data *data, char **str)
 {
 	while (++i <= check->li_connects_finish)
 	{
@@ -28,7 +28,7 @@ static void		free_init(int i, t_valid *check, t_data *data, char **str)
 	ft_split_free(str);
 }
 
-int				ft_init_room(t_data *data, t_valid *check, char **str)
+int	ft_init_room(t_data *data, t_valid *check, char **str)
 {
 	int			i;
 	t_room		*room;
@@ -54,7 +54,7 @@ int				ft_init_room(t_data *data, t_valid *check, char **str)
 	return (1);
 }
 
-static void		correct_strings(t_data *data, t_valid *check, char *str, int i)
+static void	correct_strings(t_data *data, t_valid *check, char *str, int i)
 {
 	if (str[0] == '\0' || str[0] == 'L')
 		ft_print_error(E_NO_CORRECT);
@@ -74,7 +74,7 @@ static void		correct_strings(t_data *data, t_valid *check, char *str, int i)
 ** correct_strings: validation of ants, rooms, connections.
 */
 
-int				ft_correct(t_data *data, t_valid *check, char **strings)
+int	ft_correct(t_data *data, t_valid *check, char **strings)
 {
 	int			i;
 

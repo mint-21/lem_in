@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_initialization_struct_room.c                    :+:      :+:    :+:   */
+/*   ft_check_create_room.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/13 20:04:05 by asmall            #+#    #+#             */
-/*   Updated: 2020/06/13 20:04:06 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/04/17 14:34:17 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** room structure
 */
 
-t_room			*ft_initialization_struct_room(char *name)
+t_room	*ft_initialization_struct_room(char *name)
 {
 	t_room		*room;
 
@@ -41,7 +41,7 @@ t_room			*ft_initialization_struct_room(char *name)
 ** vice versa -1
 */
 
-void			create_out_room(t_room *in, t_room *out, t_room *room,
+void	create_out_room(t_room *in, t_room *out, t_room *room,
 					t_connect *connect)
 {
 	while (connect && connect->room != room)
@@ -56,7 +56,7 @@ void			create_out_room(t_room *in, t_room *out, t_room *room,
 		in->connects = connect;
 }
 
-void			create_out_in_room(t_room *in, t_room *out)
+void	create_out_in_room(t_room *in, t_room *out)
 {
 	t_connect	*connect;
 
@@ -74,7 +74,7 @@ void			create_out_in_room(t_room *in, t_room *out)
 ** r_connect[j]: the name of the room after the '-' sign.
 */
 
-int				ft_find_link_name(char *r_name, char *r_connect, int flag)
+int	ft_find_link_name(char *r_name, char *r_connect, int flag)
 {
 	int			i;
 	int			j;
@@ -107,12 +107,13 @@ int				ft_find_link_name(char *r_name, char *r_connect, int flag)
 ** head: the first room in the t_room structure.
 */
 
-int				ft_check_room_link(t_data *data, char *connect_str,
+int	ft_check_room_link(t_data *data, char *connect_str,
 					t_room **room1, t_room **room2)
 {
 	t_room		*head;
 
-	(!room1 || !room2) ? ft_perror() : 0;
+	if (!room1 || !room2)
+		ft_perror();
 	head = data->rooms;
 	while (head && (!(*room1) || !(*room2)))
 	{
@@ -122,6 +123,7 @@ int				ft_check_room_link(t_data *data, char *connect_str,
 			*room2 = head;
 		head = head->next;
 	}
-	(!(*room1) || !(*room2)) ? ft_print_error(E_NO_CORRECT) : 0;
+	if (!(*room1) || !(*room2))
+		ft_print_error(E_NO_CORRECT);
 	return (0);
 }
