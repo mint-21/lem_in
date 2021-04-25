@@ -20,10 +20,9 @@
 ** числами, на месте знака числа, будет выводиться пробел.
 */
 
-char					ft_get_sign(t_options *f,
-							unsigned long long *unum, long long num)
+char	ft_get_sign(t_options *f, unsigned long long *unum, long long num)
 {
-	char				sign;
+	char	sign;
 
 	*unum = num;
 	sign = 0;
@@ -56,7 +55,7 @@ char					ft_get_sign(t_options *f,
 ** если ему предшествует 0x, и восьмеричное, если ему предшествует 0
 */
 
-void					ft_di_print(t_options *f, t_buff *buf, long long num)
+void	ft_di_print(t_options *f, t_buff *buf, long long num)
 {
 	unsigned long long	unum;
 	char				sign;
@@ -70,14 +69,22 @@ void					ft_di_print(t_options *f, t_buff *buf, long long num)
 		number[len++] = '0';
 	else
 		len = ft_itoa_base(unum, number, 10, f->flags & F_LOWER);
-	f->sum = (len > f->sum && (f->sum || num)) ? len : f->sum;
+	if (len > f->sum && (f->sum || num))
+		f->sum = len;
+	else
+		f->sum = f->sum;
 	f->width -= f->sum;
 	if (!(f->flags & (F_NULL + F_MINUS)))
 		ft_print_width(buf, &f->width, ' ');
 	if (sign)
 		ft_push(buf, sign);
 	if (!(f->flags & F_MINUS))
-		ft_print_width(buf, &f->width, (f->flags & F_NULL) ? '0' : ' ');
+	{
+		if (f->flags & F_NULL)
+			ft_print_width(buf, &f->width, '0');
+		else
+			ft_print_width(buf, &f->width, ' ');
+	}
 	ft_p_printrec(buf, f->sum, len);
 	temp = number;
 	while (len-- && (f->sum || num))
@@ -91,7 +98,7 @@ void					ft_di_print(t_options *f, t_buff *buf, long long num)
 ** Примяняется если есть F_SHARP '#'
 */
 
-void					ft_reset_options(t_options *f, int num)
+void	ft_reset_options(t_options *f, int num)
 {
 	if (f->flags & F_MINUS)
 		f->flags &= ~F_NULL;
@@ -121,8 +128,7 @@ void					ft_reset_options(t_options *f, int num)
 ** f->flags - флаги, которые подаются на вход
 */
 
-void					ft_cond(t_options *f, t_buff *buf, \
-							unsigned long long num, int fl)
+void	ft_cond(t_options *f, t_buff *buf, unsigned long long num, int fl)
 {
 	if ((f->flags == 8 || f->flags == 9) && f->spec == 'o' && f->width == 5)
 	{
@@ -147,7 +153,12 @@ void					ft_cond(t_options *f, t_buff *buf, \
 	if ((f->flags & F_SHARP) && (num || f->spec == 'p'))
 		ft_s_printharp(buf, f);
 	if (!(f->flags & F_MINUS))
-		ft_print_width(buf, &f->width, (f->flags & F_NULL && fl) ? '0' : ' ');
+	{
+		if (f->flags & F_NULL && fl)
+			ft_print_width(buf, &f->width, '0');
+		else
+			ft_print_width(buf, &f->width, ' ');
+	}
 }
 
 /*
@@ -159,8 +170,7 @@ void					ft_cond(t_options *f, t_buff *buf, \
 ** escape-последовательности с аргументом.
 */
 
-void					ft_uoxb_print(t_options *f, t_buff *buf, \
-							unsigned long long num)
+void	ft_uoxb_print(t_options *f, t_buff *buf, unsigned long long num)
 {
 	char				number[MAX_BIN];
 	char				*temp;
@@ -172,9 +182,18 @@ void					ft_uoxb_print(t_options *f, t_buff *buf, \
 		number[len++] = '0';
 	else
 		len = ft_itoa_base(num, number, f->base, f->flags & F_LOWER);
-	ft_reset_options(f, (number[0] == '0') ? 1 : 0);
-	flag = (f->sum <= 0) ? 1 : 0;
-	(len > f->sum && f->sum) ? (f->sum = len) : (f->sum);
+	if (number[0] == '0')
+		ft_reset_options(f, 1);
+	else
+		ft_reset_options(f, 0);
+	if (f->sum <= 0)
+		flag = 1;
+	else
+		flag = 0;
+	if (len > f->sum && f->sum)
+		f->sum = len;
+	else
+		f->sum = f->sum;
 	f->width -= f->sum;
 	ft_cond(f, buf, num, flag);
 	ft_p_printrec(buf, f->sum, len);

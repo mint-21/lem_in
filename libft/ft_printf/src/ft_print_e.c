@@ -12,21 +12,26 @@
 
 #include "ft_printf.h"
 
-void		ft_set_exp(char *number, t_fnum *fnum, char spec)
+void	ft_set_exp(char *number, t_fnum *fnum, char spec)
 {
 	int		numlen;
 
 	*number++ = spec;
-	*number++ = (fnum->fpoint && !fnum->ipoint) ? '-' : '+';
+	if (fnum->fpoint && !fnum->ipoint)
+		*number++ = '-';
+	else
+		*number++ = '+';
 	if (fnum->fpoint && !fnum->ipoint)
 	{
-		if ((numlen = ft_unumlen(fnum->zero, 10)) < 2)
+		numlen = ft_unumlen(fnum->zero, 10);
+		if (numlen < 2)
 			*number++ = '0';
 		number += ft_itoa_base(fnum->zero + 1, number, 10, 0);
 	}
 	else
 	{
-		if (!fnum->ipoint || ((numlen = ft_strnlen(fnum->ipoint, -1)) < 11))
+		numlen = ft_strnlen(fnum->ipoint, -1);
+		if (!fnum->ipoint || (numlen < 11))
 			*number++ = '0';
 		if (!fnum->ipoint || numlen == 1)
 			*number++ = '0';
@@ -36,7 +41,7 @@ void		ft_set_exp(char *number, t_fnum *fnum, char spec)
 	*number = '\0';
 }
 
-int			ft_get_first_enum(char *number, char **ipoint, char **fpoint)
+int	ft_get_first_enum(char *number, char **ipoint, char **fpoint)
 {
 	int		i;
 
@@ -44,12 +49,17 @@ int			ft_get_first_enum(char *number, char **ipoint, char **fpoint)
 	if (!*ipoint && !*fpoint)
 		number[i++] = '0';
 	else
-		number[i++] = *ipoint ? *(*ipoint)++ : *(*fpoint)++;
+	{
+		if (*ipoint)
+			number[i++] = *(*ipoint)++;
+		else
+			number[i++] = *(*fpoint)++;
+	}
 	number[i++] = '.';
 	return (i);
 }
 
-char		*ft_get_enum(t_fnum *fnum, int sum, int ilen, char spec)
+char	*ft_get_enum(t_fnum *fnum, int sum, int ilen, char spec)
 {
 	int		i;
 	int		zero;
@@ -57,7 +67,7 @@ char		*ft_get_enum(t_fnum *fnum, int sum, int ilen, char spec)
 	char	*fpoint;
 	char	*number;
 
-	number = (char*)malloc(ilen + sum + 2);
+	number = (char *)malloc(ilen + sum + 2);
 	ipoint = fnum->ipoint;
 	fpoint = fnum->fpoint;
 	zero = fnum->zero;
@@ -71,7 +81,8 @@ char		*ft_get_enum(t_fnum *fnum, int sum, int ilen, char spec)
 	while (i < sum + 1)
 		number[i++] = '0';
 	ft_round(number, --i);
-	(sum == 2) ? (--i) : (i);
+	if (sum == 2)
+		--i;
 	ft_set_exp(&number[i], fnum, spec);
 	return (number);
 }
@@ -86,7 +97,7 @@ char		*ft_get_enum(t_fnum *fnum, int sum, int ilen, char spec)
 ** (они равны 0, если аргумент равен 0).
 */
 
-void		ft_e_print(t_options *f, t_buff *buf, t_fnum *fnum)
+void	ft_e_print(t_options *f, t_buff *buf, t_fnum *fnum)
 {
 	char	sign;
 	char	*number;
@@ -96,14 +107,25 @@ void		ft_e_print(t_options *f, t_buff *buf, t_fnum *fnum)
 
 	sign = ft_get_sign_f(f, fnum->sign);
 	numlen = ft_unumlen(fnum->zero + 1, 10);
-	len = numlen < 2 ? 5 : numlen + 3;
-	f->width -= f->sum ? f->sum + len + 1 : len;
+	if (numlen < 2)
+		len = 5;
+	else
+		len = numlen + 3;
+	if (f->sum)
+		f->width -= f->sum + len + 1;
+	else
+		f->width -= len;
 	if (!(f->flags & (F_NULL + F_MINUS)))
 		ft_print_width(buf, &f->width, ' ');
 	if (sign)
 		ft_push(buf, sign);
 	if (!(f->flags & F_MINUS))
-		ft_print_width(buf, &f->width, (f->flags & F_NULL) ? '0' : ' ');
+	{
+		if (f->flags & F_NULL)
+			ft_print_width(buf, &f->width, '0');
+		else
+			ft_print_width(buf, &f->width, ' ');
+	}
 	number = ft_get_enum(fnum, f->sum + 2, len, f->spec);
 	temp = number;
 	while (*temp)

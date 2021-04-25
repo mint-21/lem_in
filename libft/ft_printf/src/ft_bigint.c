@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-void			ft_reset_bigint(t_bigint *bigint)
+void	ft_reset_bigint(t_bigint *bigint)
 {
 	int			i;
 
@@ -26,7 +26,7 @@ void			ft_reset_bigint(t_bigint *bigint)
 ** Функция заполняет массив и запоминает значения до точки.
 */
 
-void			ft_set_bigint(t_bigint *bigint, int power, int base)
+void	ft_set_bigint(t_bigint *bigint, int power, int base)
 {
 	int			num;
 	int			count;
@@ -53,7 +53,7 @@ void			ft_set_bigint(t_bigint *bigint, int power, int base)
 		ft_big_int_multi(bigint, ft_power(base, last_pow));
 }
 
-t_bigint		ft_get_fp(unsigned long long num, int shift)
+t_bigint	ft_get_fp(unsigned long long num, int shift)
 {
 	t_bigint	res_bigint;
 	t_bigint	temp_bigint;
@@ -87,7 +87,7 @@ t_bigint		ft_get_fp(unsigned long long num, int shift)
 ** ft_reset_bigint(&res_bigint): заполнение массивов '0'
 */
 
-t_bigint		ft_get_ip(unsigned long long num, int shift)
+t_bigint	ft_get_ip(unsigned long long num, int shift)
 {
 	t_bigint	res_bigint;
 	t_bigint	temp_bigint;
@@ -113,7 +113,7 @@ t_bigint		ft_get_ip(unsigned long long num, int shift)
 ** ft_get_bigint: возвращает массив, заполненный '0'
 */
 
-char			*ft_get_part(unsigned long long num, int shift,
+char	*ft_get_part(unsigned long long num, int shift,
 					t_bigint (*ft_get_bigint)(unsigned long long, int))
 {
 	t_bigint	bigint;

@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int			ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
 
@@ -24,36 +24,38 @@ int			ft_strncmp(const char *s1, const char *s2, size_t n)
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 
-int			ft_color(t_buff *buf, const char **form, t_options *f)
+int	ft_color(t_buff *buf, const char **form, t_options *f)
 {
-	int		len;
+	int	len;
 
 	f->color = 0;
 	if (**form == '{')
 	{
-		if (!ft_strncmp(*form, "{red}", (len = 5)))
-			f->color = PF_RED;
-		else if (!ft_strncmp(*form, "{green}", (len = 7)))
-			f->color = PF_GREEN;
-		else if (!ft_strncmp(*form, "{yellow}", (len = 8)))
-			f->color = PF_YELLOW;
-		else if (!ft_strncmp(*form, "{blue}", (len = 6)))
-			f->color = PF_BLUE;
-		else if (!ft_strncmp(*form, "{cyan}", (len = 6)))
-			f->color = PF_CYAN;
-		else if (!ft_strncmp(*form, "{eoc}", (len = 5)))
+		if (!ft_strncmp(*form, "{red}", (5)))
 		{
+			len = 5;
+			f->color = PF_RED;
+		}
+		else if (!ft_strncmp(*form, "{eoc}", (5)))
+		{
+			len = 5;
 			f->color = PF_EOC;
 			ft_put_color(buf, f);
 		}
-		else if (!(len = 0))
+		else
+		{
+			len = 0;
 			f->color = 0;
+		}
 		*form += len;
 	}
-	return ((f->color) ? 1 : 0);
+	if (f->color)
+		return (1);
+	else
+		return (0);
 }
 
-void		ft_put_color(t_buff *buf, t_options *f)
+void	ft_put_color(t_buff *buf, t_options *f)
 {
 	char	*str;
 
