@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 17:30:19 by asmall            #+#    #+#             */
-/*   Updated: 2019/04/17 17:52:32 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/04/25 13:49:52 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int				prov(const char *str, int i, int flag)
+static int	prov(const char *str, int i, int flag)
 {
 	unsigned long long	n;
 
@@ -34,7 +34,7 @@ static int				prov(const char *str, int i, int flag)
 	return (n * flag);
 }
 
-int						ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int					i;
 	int					flag;

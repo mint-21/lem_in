@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsplit.c                                      :+:      :+:    :+:   */
+/*   ft_strlsplit.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vfearles <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/12 19:04:09 by vfearles          #+#    #+#             */
-/*   Updated: 2019/08/27 14:18:11 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/04/25 15:53:49 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char		*ft_strdupl(const char *s, size_t len)
+static char	*ft_strdupl(const char *s, size_t len)
 {
 	size_t		i;
 	char		*r;
 
 	i = 0;
-	if (s && (r = (char *)malloc(sizeof(char) * (len + 1))))
+	r = (char *)malloc(sizeof(char) * (len + 1));
+	if (s && r)
 	{
 		while (i < len)
 		{
@@ -40,7 +41,8 @@ static t_list	*ft_createelem(const char *str, char c, size_t *i)
 	f = *i;
 	while (str[*i] && str[*i] != c)
 		(*i)++;
-	if (!(t = ft_strdupl(&str[f], *i - f)))
+	t = ft_strdupl(&str[f], *i - f);
+	if (!(t))
 		return (NULL);
 	r = ft_lstnew(t, ft_strlen(t) + 1);
 	free(t);
@@ -56,14 +58,14 @@ static size_t	ft_findword(char const *str, char c, size_t *i)
 	return (0);
 }
 
-static void		ft_del(void *content, size_t content_size)
+static void	ft_del(void *content, size_t content_size)
 {
 	content_size = 0;
 	content_size -= 1;
 	free(content);
 }
 
-t_list			*ft_strlsplit(char const *s, char c)
+t_list	*ft_strlsplit(char const *s, char c)
 {
 	size_t		i;
 	t_list		*l;
@@ -74,14 +76,16 @@ t_list			*ft_strlsplit(char const *s, char c)
 	i = 0;
 	if (c == '\0')
 		return (ft_createelem(s, c, &i));
-	if (!((ft_findword(s, c, &i)) && (l = ft_createelem(s, c, &i))))
+	l = ft_createelem(s, c, &i);
+	if (!((ft_findword(s, c, &i)) && l))
 		return (NULL);
 	h = l;
 	while (s[i])
 	{
 		if (!(ft_findword(s, c, &i)))
 			break ;
-		if (!(l->next = ft_createelem(s, c, &i)))
+		l->next = ft_createelem(s, c, &i);
+		if (!(l->next))
 		{
 			ft_lstdel(&h, &ft_del);
 			return (NULL);

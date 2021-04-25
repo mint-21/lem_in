@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_f_print.h                                       :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vfearles <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/26 14:47:47 by vfearles          #+#    #+#             */
-/*   Updated: 2020/01/26 14:47:49 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/04/25 14:14:48 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@
 # define PF_CYAN		66
 # define PF_EOC			77
 
-typedef struct			s_options
+typedef struct s_options
 {
 	int					flags;
 	int					width;
@@ -63,7 +63,7 @@ typedef struct			s_options
 	int					color;
 }						t_options;
 
-typedef struct			s_buff
+typedef struct s_buff
 {
 	char				buff[MAX_LEN];
 	int					i;

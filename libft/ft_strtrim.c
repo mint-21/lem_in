@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vfearles <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/11 18:08:12 by vfearles          #+#    #+#             */
-/*   Updated: 2019/04/11 21:31:25 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/04/25 15:39:33 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strtrim(char const *s)
+char	*ft_strtrim(char const *s)
 {
 	char	*r;
 	size_t	i;
@@ -34,7 +34,8 @@ char		*ft_strtrim(char const *s)
 	i--;
 	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
 		i--;
-	if ((r = ft_strnew(i - j + 1)))
+	r = ft_strnew(i - j + 1);
+	if (r)
 		while (j <= i)
 			r[k++] = s[j++];
 	return (r);

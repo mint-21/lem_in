@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_swapptr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vfearles <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/27 14:20:25 by vfearles          #+#    #+#             */
-/*   Updated: 2019/08/27 14:20:26 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/04/25 15:39:44 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_swapptr(void **a, void **b)
+void	ft_swapptr(void **a, void **b)
 {
 	void	*tmp;
 

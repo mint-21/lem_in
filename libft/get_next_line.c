@@ -3,23 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/16 20:23:30 by asmall            #+#    #+#             */
-/*   Updated: 2020/04/27 19:48:01 by asmall           ###   ########.fr       */
+/*   Updated: 2021/04/25 15:42:03 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 #include "libft.h"
 
-void			free_text(char **text, char **temp)
+void	free_text(char **text, char **temp)
 {
 	free(*text);
 	*text = *temp;
 }
 
-int				set_line(char **text, char **line, char *ptr, const int fd)
+int	set_line(char **text, char **line, char *ptr, const int fd)
 {
 	char		*temp;
 
@@ -41,7 +41,7 @@ int				set_line(char **text, char **line, char *ptr, const int fd)
 	return (1);
 }
 
-int				get_next_line(const int fd, char **line)
+int	get_next_line(const int fd, char **line)
 {
 	char		buf[BUFF_SIZE + 1];
 	static char	*text[FD_MAX];
@@ -54,9 +54,12 @@ int				get_next_line(const int fd, char **line)
 		return (-1);
 	if (text[fd] == NULL)
 		text[fd] = ft_strnew(1);
-	while ((ptr = ft_strchr(text[fd], '\n')) == NULL)
+	ptr = ft_strchr(text[fd], '\n');
+	while (ptr == NULL)
 	{
-		if ((len = read(fd, buf, BUFF_SIZE)) == 0)
+		ptr = ft_strchr(text[fd], '\n');
+		len = read(fd, buf, BUFF_SIZE);
+		if (len == 0)
 			break ;
 		buf[len] = '\0';
 		temp = ft_strjoin(text[fd], buf);

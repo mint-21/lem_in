@@ -3,90 +3,70 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vfearles <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/12 19:04:09 by vfearles          #+#    #+#             */
-/*   Updated: 2019/04/15 22:24:38 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/04/25 16:12:15 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t		g(char const *s, char c)
+size_t	ft_word_count(char const *s, char c)
 {
-	size_t			size;
+	size_t	n;
 
-	size = 0;
-	while (*s == c)
-		s++;
-	if (*s == '\0')
+	if (!s)
 		return (0);
-	while (*s != '\0')
+	n = 0;
+	while (*s == c)
+		++s;
+	while (*s)
 	{
-		if (*s == c)
-		{
-			size++;
-			while (*s == c)
-				s++;
-		}
-		if (*s != '\0')
-			s++;
+		while (*s && *s != c)
+			++s;
+		++n;
+		while (*s == c)
+			++s;
 	}
-	return (size + 1);
+	return (n);
 }
 
-static char			**matrm(size_t number_of_strings)
+static char	**clean(char **arr, size_t n)
 {
-	char			**array;
-	int				i;
-
-	if (!(array = (char **)malloc(sizeof(char *) * number_of_strings)))
-		return (NULL);
-	i = 0;
-	while (i < (int)number_of_strings)
-		array[i++] = NULL;
-	return (array);
-}
-
-static void			*matrdel(char **array)
-{
-	size_t			i;
-
-	i = 0;
-	while (array[i] != NULL)
-	{
-		free(array[i]);
-		i++;
-	}
-	free(array);
+	while (n--)
+		free(arr[n]);
+	free(arr);
 	return (NULL);
 }
 
-char				**ft_strsplit(char const *s, char c)
+char	**ft_strsplit(char const *s, char c)
 {
-	char			**array;
-	size_t			size;
-	size_t			i;
-	char			*str;
+	const char	*t;
+	char		**arr;
+	size_t		n;
+	size_t		i;
 
-	i = 0;
-	if (s == NULL || !(array = (char **)matrm(sizeof(char *) * (g(s, c) + 1))))
+	n = ft_word_count(s, c);
+	arr = (char **)malloc(sizeof(char *) * (n + 1));
+	if (!s || !(arr))
 		return (NULL);
-	while (*s != '\0')
+	i = 0;
+	while (*s == c)
+		++s;
+	while (i < n)
 	{
+		t = s;
+		while (*s && *s != c)
+			++s;
+		arr[i] = (char *)malloc(s - t + 1);
+		if (!(arr[i]))
+			return (clean(arr, i));
+		ft_strncpy(arr[i], t, s - t);
+		arr[i++][s - t] = '\0';
 		while (*s == c)
-			s++;
-		if (*s == '\0')
-			break ;
-		size = ft_strlen(s);
-		if ((str = ft_strchr(s, c)) != NULL)
-			size = str - s;
-		if (!(array[i] = (char *)ft_memalloc(sizeof(char) * (size + 1))))
-			return (matrdel(array));
-		ft_strncpy(array[i++], s, size);
-		s = s + size;
-		if (*s != '\0')
-			s++;
+			++s;
 	}
-	return (array);
+	arr[i] = NULL;
+	return (arr);
 }

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoll.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/03 20:34:45 by asmall            #+#    #+#             */
-/*   Updated: 2019/10/07 17:14:17 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/04/25 13:50:01 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long long				ft_atoll(const char *str)
+long long	ft_atoll(const char *str)
 {
 	unsigned long long	r;
 	int					i;

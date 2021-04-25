@@ -3,23 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr_count.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/12 13:33:01 by asmall            #+#    #+#             */
-/*   Updated: 2020/01/12 13:33:07 by asmall           ###   ########.fr       */
+/*   Updated: 2021/04/25 14:44:02 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_strchr_count(const char *s, int c)
+int	ft_strchr_count(const char *s, int c)
 {
 	int		i;
 
 	i = 0;
 	while (*s)
 	{
-		(*s == c) ? i++ : 1;
+		if (*s == c)
+			i++;
 		s++;
 	}
 	return (i);

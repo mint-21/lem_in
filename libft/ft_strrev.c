@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrev.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/15 19:51:56 by asmall            #+#    #+#             */
-/*   Updated: 2019/04/17 16:27:29 by asmall           ###   ########.fr       */
+/*   Updated: 2021/04/25 15:37:06 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_strrev(char *str)
+void	ft_strrev(char *str)
 {
 	size_t	i;
 	size_t	j;

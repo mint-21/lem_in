@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoull.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 16:08:54 by asmall            #+#    #+#             */
-/*   Updated: 2019/12/11 16:08:55 by asmall           ###   ########.fr       */
+/*   Updated: 2021/04/25 13:50:53 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned long long		ft_atoull(const char *str)
+unsigned long long	ft_atoull(const char *str)
 {
 	unsigned long long	r;
 	int					l;
@@ -31,8 +31,8 @@ unsigned long long		ft_atoull(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		if (i > l || ((i == l && r == 1844674407370955161) &&
-						!(str[i] >= '0' && str[i] <= '5')))
+		if (i > l || ((i == l && r == 1844674407370955161)
+				&& !(str[i] >= '0' && str[i] <= '5')))
 			return (0);
 		r = r * 10 + (str[i] - '0');
 		++i;

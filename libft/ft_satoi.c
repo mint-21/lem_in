@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_satoi.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/08 21:44:01 by asmall            #+#    #+#             */
-/*   Updated: 2020/04/27 19:49:56 by asmall           ###   ########.fr       */
+/*   Updated: 2021/04/25 15:51:11 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 **	number of chars atoi processed with
 */
 
-static int		count_number(const char *str, int ord, int f, int *i)
+static int	count_number(const char *str, int ord, int f, int *i)
 {
 	int			nmb;
 	const char	*end;
@@ -48,7 +48,7 @@ static int		count_number(const char *str, int ord, int f, int *i)
 	return (f * nmb);
 }
 
-int				ft_satoi(const char *str, int *i)
+int	ft_satoi(const char *str, int *i)
 {
 	int			f;
 	int			ord;
@@ -56,17 +56,20 @@ int				ft_satoi(const char *str, int *i)
 	ord = 0;
 	*i = 0;
 	while (str[*i] == ' ' || str[*i] == '\r' || str[*i] == '\v'
-	|| str[*i] == '\f' || str[*i] == '\t' || str[*i] == '\n')
+		|| str[*i] == '\f' || str[*i] == '\t' || str[*i] == '\n')
 		(*i)++;
-	f = (str[*i] == '-') ? -1 : 1;
+	if (str[*i] == '-')
+		f = -1;
+	else
+		f = 1;
 	if (str[*i] == '-' || str[*i] == '+')
 		(*i)++;
 	while (str[*i] == '0')
 		(*i)++;
 	while (*(str + ord + *i) >= '0' && *(str + ord + *i) <= '9')
 		ord++;
-	*i = (ord > 10 ||
-		(ord == 0 && (*i == 0 || str[*i - 1] != '0'))) ? 0 : *i + ord;
+	if (!(ord > 10 || (ord == 0 && (*i == 0 || str[*i - 1] != '0'))))
+		*i = *i + ord;
 	if (!(*i) || !(ord))
 		return (0);
 	return (count_number(str + *i - ord, ord, f, i));

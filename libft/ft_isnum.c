@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isnum.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vfearles <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/30 21:44:16 by vfearles          #+#    #+#             */
-/*   Updated: 2019/10/30 21:47:21 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/04/25 13:52:03 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_isnum(char *str, int c)
+int	ft_isnum(char *str, int c)
 {
 	size_t	i;
 

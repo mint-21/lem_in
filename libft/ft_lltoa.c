@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lltoa.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 13:51:23 by asmall            #+#    #+#             */
-/*   Updated: 2019/11/06 13:51:25 by asmall           ###   ########.fr       */
+/*   Updated: 2021/04/25 16:04:13 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,13 +34,14 @@ static int	ft_count(long long n)
 	return (i);
 }
 
-char		*ft_lltoa(long long n)
+char	*ft_lltoa(long long n)
 {
 	char	*r;
 	int		i;
 
 	i = ft_count(n);
-	if (!(r = (char *)malloc(sizeof(char) * (i + 1))))
+	r = (char *)malloc(sizeof(char) * (i + 1));
+	if (!(r))
 		return (NULL);
 	r[i--] = '\0';
 	if (n == 0)

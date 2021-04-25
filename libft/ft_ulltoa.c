@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ulltoa.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vfearles <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 16:42:03 by vfearles          #+#    #+#             */
-/*   Updated: 2019/12/11 16:42:04 by vfearles         ###   ########.fr       */
+/*   Updated: 2021/04/25 15:40:25 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,14 @@ static int	ft_count(unsigned long long n)
 	return (i);
 }
 
-char		*ft_ulltoa(unsigned long long n)
+char	*ft_ulltoa(unsigned long long n)
 {
 	char	*r;
 	int		i;
 
 	i = ft_count(n);
-	if (!(r = (char *)malloc(sizeof(char) * (i + 1))))
+	r = (char *)malloc(sizeof(char) * (i + 1));
+	if (!(r))
 		return (NULL);
 	r[i--] = '\0';
 	if (n == 0)

@@ -3,20 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/13 19:48:28 by asmall            #+#    #+#             */
-/*   Updated: 2019/04/16 15:13:56 by asmall           ###   ########.fr       */
+/*   Updated: 2021/04/25 14:38:40 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list		*ft_lstnew(void const *content, size_t content_size)
+t_list	*ft_lstnew(void const *content, size_t content_size)
 {
 	t_list	*l;
 
-	if (!(l = malloc(sizeof(t_list))))
+	l = malloc(sizeof(t_list));
+	if (!(l))
 		return (NULL);
 	if (!content)
 	{
