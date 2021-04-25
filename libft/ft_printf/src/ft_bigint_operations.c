@@ -12,9 +12,9 @@
 
 #include "ft_printf.h"
 
-void					ft_bigint_sum(t_bigint *bigint1, t_bigint *bigint2)
+void	ft_bigint_sum(t_bigint *bigint1, t_bigint *bigint2)
 {
-	int					i;
+	int				i;
 	unsigned long long	temp;
 
 	i = 0;
@@ -31,7 +31,7 @@ void					ft_bigint_sum(t_bigint *bigint1, t_bigint *bigint2)
 	}
 }
 
-void					ft_big_int_multi(t_bigint *bigint, int num)
+void	ft_big_int_multi(t_bigint *bigint, int num)
 {
 	int					i;
 	unsigned long long	temp;
@@ -50,7 +50,7 @@ void					ft_big_int_multi(t_bigint *bigint, int num)
 	}
 }
 
-t_bigint				ft_bigint_multi(t_bigint *bigint1, t_bigint *bigint2)
+t_bigint	ft_bigint_multi(t_bigint *bigint1, t_bigint *bigint2)
 {
 	t_bigint			result;
 	unsigned long long	temp;

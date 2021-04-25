@@ -52,7 +52,7 @@
 # define PF_CYAN		66
 # define PF_EOC			77
 
-typedef struct			s_options
+typedef struct s_options
 {
 	int					flags;
 	int					width;
@@ -63,7 +63,7 @@ typedef struct			s_options
 	int					color;
 }						t_options;
 
-typedef struct			s_buff
+typedef struct s_buff
 {
 	char				buff[MAX_LEN];
 	int					i;
@@ -83,7 +83,7 @@ union					u_f
 	unsigned long long	ll;
 };
 
-typedef struct			s_fnum
+typedef struct s_fnum
 {
 	union u_f			num;
 	char				sign;
@@ -94,7 +94,7 @@ typedef struct			s_fnum
 	int					zero;
 }						t_fnum;
 
-typedef struct			s_bigint
+typedef struct s_bigint
 {
 	unsigned long long	num[MAX_BIGINT];
 	int					size;
@@ -192,5 +192,6 @@ void					ft_s_printharp(t_buff *buf, t_options *f);
 
 int						ft_color(t_buff *buf, const char **form, t_options *f);
 void					ft_put_color(t_buff *buf, t_options *f);
+int						ft_convert_to_utf8(wchar_t c, char *lc);
 
 #endif
