@@ -10,14 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
-
-/*
-** Печать спецификатора 'p'
-** p - Вывод указателя.
-** Результат ввода зависит от архитектуры и используемого компилятрора.
-** На основе 16 битной платформы
-*/
+#include "../inc/ft_printf.h"
 
 void	ft_p_print(t_options *f, t_buff *buf, void *pointer)
 {
@@ -34,16 +27,16 @@ void	ft_r_printand(t_options *f, t_buff *buf)
 {
 	f->width--;
 	if (!(f->flags & F_MINUS))
-		ft_print_width(buf, &f->width, (f->flags & F_NULL) ? '0' : ' ');
+	{
+		if (f->flags & F_NULL)
+			ft_print_width(buf, &f->width, '0');
+		else
+			ft_print_width(buf, &f->width, ' ');
+	}
 	ft_push(buf, f->spec);
 	if (f->flags & F_MINUS)
 		ft_print_width(buf, &f->width, ' ');
 }
-
-/*
-** Печать спецификатора 'r' для бонусной части заданий
-** r - вывод строки с непечатными символами
-*/
 
 void	ft_r_print(t_options *f, t_buff *buf, char *str)
 {
@@ -54,7 +47,12 @@ void	ft_r_print(t_options *f, t_buff *buf, char *str)
 	len = ft_rstrnlen(str, f->sum);
 	f->width -= len;
 	if (!(f->flags & F_MINUS))
-		ft_print_width(buf, &f->width, (f->flags & F_NULL) ? '0' : ' ');
+	{
+		if (f->flags & F_NULL)
+			ft_print_width(buf, &f->width, '0');
+		else
+			ft_print_width(buf, &f->width, ' ');
+	}
 	while (len--)
 	{
 		if ((*str >= 7 && *str <= 13) || *str == '\e')
@@ -65,12 +63,6 @@ void	ft_r_print(t_options *f, t_buff *buf, char *str)
 		ft_print_width(buf, &f->width, ' ');
 }
 
-/*
-** Инициализация структуры для печати спецификатора 'k'.
-** k - печать даты в любом формате ISO.
-** Для бонусной части заданий.
-*/
-
 void	ft_reset_opt_k(t_options *f)
 {
 	f->flags = 0;
@@ -78,12 +70,6 @@ void	ft_reset_opt_k(t_options *f)
 	f->sum = 2;
 	f->base = 10;
 }
-
-/*
-** Печать спецификатора 'k'
-** k - печать даты в любом формате ISO.
-** Деление на 60 необходимо для перевода int при вводе в вывод
-*/
 
 void	ft_k_print(t_options *f, t_buff *buf, unsigned long long unum)
 {

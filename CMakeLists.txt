@@ -20,10 +20,14 @@ add_executable(mint_v2_04_01
         libft/ft_printf/src/ft_print_options.c
         libft/ft_printf/src/ft_print_prk.c
         libft/ft_printf/src/ft_printf.c
-        libft/ft_printf/src/ft_printf.h
-        libft/ft_printf/src/ft_set_options.c
+        libft/ft_printf/src/ft_set_opt.c
         libft/ft_printf/src/ft_utils_num.c
         libft/ft_printf/src/ft_utils_str.c
+        libft/ft_printf/src/ft_ls_print.c
+        libft/ft_printf/src/ft_parse_lfnum.c
+        libft/ft_printf/src/ft_get_fnum.c
+        libft/ft_printf/src/ft_set_modif.c
+        libft/ft_printf/src/ft_uoxb_cond.c
         libft/ft_abs.c
         libft/ft_atoll.c
         libft/ft_atoull.c
@@ -127,10 +131,4 @@ add_executable(mint_v2_04_01
         src/ft_terms.c
         src/ft_zerodata.c
         src/lemin.h
-        vis/main.c
-        vis/visualise.h
-        vis/ft_ants_move.c
-        vis/ft_help_funct.c
-        vis/ft_push_turns.c
-        vis/ft_render_info.c
-        vis/ft_render_init.c)
+        src/main.c)

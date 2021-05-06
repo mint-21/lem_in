@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../inc/ft_printf.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
@@ -24,29 +24,36 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 
+int	ft_help_color(t_buff *buf, const char **form, t_options *f, int len)
+{
+	if (!ft_strncmp(*form, "{red}", (5)))
+	{
+		len = 5;
+		f->color = PF_RED;
+	}
+	else if (!ft_strncmp(*form, "{eoc}", (5)))
+	{
+		len = 5;
+		f->color = PF_EOC;
+		ft_put_color(buf, f);
+	}
+	else
+	{
+		len = 0;
+		f->color = 0;
+	}
+	return (len);
+}
+
 int	ft_color(t_buff *buf, const char **form, t_options *f)
 {
 	int	len;
 
 	f->color = 0;
+	len = 0;
 	if (**form == '{')
 	{
-		if (!ft_strncmp(*form, "{red}", (5)))
-		{
-			len = 5;
-			f->color = PF_RED;
-		}
-		else if (!ft_strncmp(*form, "{eoc}", (5)))
-		{
-			len = 5;
-			f->color = PF_EOC;
-			ft_put_color(buf, f);
-		}
-		else
-		{
-			len = 0;
-			f->color = 0;
-		}
+		len = ft_help_color(buf, form, f, len);
 		*form += len;
 	}
 	if (f->color)

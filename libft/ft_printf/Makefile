@@ -23,11 +23,14 @@ SOURCES =	ft_bigint.c \
 			ft_printf.c \
 			ft_print_options.c \
 			ft_print_prk.c \
-			ft_set_options.c \
+			ft_set_opt.c \
 			ft_utils_num.c \
 			ft_utils_str.c \
 			ft_ls_print.c \
 			ft_parse_lfnum.c \
+			ft_uoxb_cond.c \
+			ft_get_fnum.c \
+			ft_set_modif.c \
 
 SRCS = $(addprefix $(DIR_S),$(SOURCES))
 

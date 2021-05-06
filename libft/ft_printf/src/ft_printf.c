@@ -10,18 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../inc/ft_printf.h"
 
-/*
-** %[флаги][ширина][точность][модификаторы][тип преобразования]
-** ft_set_flags - проверка на флаги
-** ft_set_width - вычисление ширины
-** ft_set_accur - проверка на точность
-** ft_set_modif - проверка модификаторов
-** ft_set_spec - проверка спецификаторов
-*/
-
-void			ft_set_options(t_options *f, const char **form, va_list ap)
+void	ft_set_options(t_options *f, const char **form, va_list ap)
 {
 	char		*temp;
 
@@ -33,7 +24,7 @@ void			ft_set_options(t_options *f, const char **form, va_list ap)
 	f->spec = 0;
 	while (**form)
 	{
-		temp = (char*)*form;
+		temp = (char *)*form;
 		ft_set_flags(form, f);
 		ft_set_width(form, f, ap);
 		ft_set_accur(form, f, ap);
@@ -47,13 +38,15 @@ void			ft_set_options(t_options *f, const char **form, va_list ap)
 	}
 }
 
-/*
-** Главная управляющая функция
-** ft_init_buff: инициализация структуры, buff: массив(512 символов)
-** ft_push: заполнение массива buff, если есть символы до "%"
-*/
+int	ft_printf_help(va_list ap, t_buff buf)
+{
+	va_end(ap);
+	if (buf.i)
+		ft_fd_write(1, &buf);
+	return (buf.len);
+}
 
-int				ft_printf(const char *form, ...)
+int	ft_printf(const char *form, ...)
 {
 	va_list		ap;
 	t_options	f;
@@ -65,26 +58,31 @@ int				ft_printf(const char *form, ...)
 	while (*form)
 	{
 		if (*form != '%')
-			(ft_color(&buf, &form, &f)) ? 1 : (ft_push(&buf, *form++));
+		{
+			if (!ft_color(&buf, &form, &f))
+				ft_push(&buf, *form++);
+		}
 		else
 		{
 			form++;
 			ft_set_options(&f, &form, ap);
-			(f.color) ? (ft_put_color(&buf, &f)) : 1;
+			if (f.color)
+				ft_put_color(&buf, &f);
 			ft_handle_spec(&f, &buf, ap);
 		}
 	}
+	return (ft_printf_help(ap, buf));
+}
+
+int	ft_dprintf_help(int fd, va_list ap, t_buff buf)
+{
 	va_end(ap);
 	if (buf.i)
-		ft_fd_write(1, &buf);
+		ft_fd_write(fd, &buf);
 	return (buf.len);
 }
 
-/*
-** Главная управляющая функция с fd
-*/
-
-int				ft_dprintf(int fd, const char *form, ...)
+int	ft_dprintf(int fd, const char *form, ...)
 {
 	va_list		ap;
 	t_options	f;
@@ -95,17 +93,18 @@ int				ft_dprintf(int fd, const char *form, ...)
 	while (*form)
 	{
 		if (*form != '%')
-			(ft_color(&buf, &form, &f)) ? 1 : (ft_push(&buf, *form++));
+		{
+			if (!ft_color(&buf, &form, &f))
+				ft_push(&buf, *form++);
+		}
 		else
 		{
 			form++;
 			ft_set_options(&f, &form, ap);
-			(f.color) ? (ft_put_color(&buf, &f)) : 1;
+			if (f.color)
+				ft_put_color(&buf, &f);
 			ft_handle_spec(&f, &buf, ap);
 		}
 	}
-	va_end(ap);
-	if (buf.i)
-		ft_fd_write(fd, &buf);
-	return (buf.len);
+	return (ft_dprintf_help(fd, ap, buf));
 }

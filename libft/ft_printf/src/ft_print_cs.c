@@ -10,14 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
-
-/*
-** Печать спецификатора 'c'
-** F_MINUS - флаг '-', F_NULL - флаг '0'
-** c - Вывод символа, соответстветсвующего числу указанному в
-** аргументе функции. По умолчанию число приводится к типу unsigned char.
-*/
+#include "../inc/ft_printf.h"
 
 void	ft_c_print(t_options *f, t_buff *buf, unsigned char c)
 {
@@ -33,10 +26,6 @@ void	ft_c_print(t_options *f, t_buff *buf, unsigned char c)
 	if (f->flags & F_MINUS)
 		ft_print_width(buf, &f->width, ' ');
 }
-
-/*
-** Условия для побитовой конвертации типа 'c'
-*/
 
 wchar_t	ft_convert_to_utf8_help(wchar_t c, char *lc, int bytes)
 {
@@ -75,14 +64,6 @@ int	ft_convert_to_utf8(wchar_t c, char *lc)
 		return (0);
 }
 
-/*
-** Печать спецификатора 'c' с модификатором 'l'
-** l - Для вывода числа типа long int или unsigned long int.
-** c — вывод символа с кодом, соответствующим переданному аргументу;
-** переданное число приводится к типу unsigned char (или wchar t,
-** если был указан модификатор длины l)
-*/
-
 void	ft_lc_print(t_options *f, t_buff *buf, wchar_t c)
 {
 	int		bytes;
@@ -104,12 +85,6 @@ void	ft_lc_print(t_options *f, t_buff *buf, wchar_t c)
 	if (f->flags & F_MINUS)
 		ft_print_width(buf, &f->width, ' ');
 }
-
-/*
-** Печать спецификатора 's'
-** Вывод строки, на которую ссылается указатель в аргументе функции.
-** Строка выводится пока не будет встречен символ конец строки (/0).
-*/
 
 void	ft_s_print(t_options *f, t_buff *buf, char *str)
 {

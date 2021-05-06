@@ -10,11 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
-
-/*
-** Печать ширины формата
-*/
+#include "../inc/ft_printf.h"
 
 void	ft_print_width(t_buff *buf, int *width, char c)
 {
@@ -22,20 +18,11 @@ void	ft_print_width(t_buff *buf, int *width, char c)
 		ft_push(buf, c);
 }
 
-/*
-** Печать количества выводимых символов
-*/
-
 void	ft_p_printrec(t_buff *buf, int sum, int len)
 {
 	while (len < sum--)
 		ft_push(buf, '0');
 }
-
-/*
-** Условия для печати шестнадцатеричной, восьмеричной и двоичной
-** с условием если есть флаг F_SHARP '#'
-*/
 
 void	ft_s_printharp(t_buff *buf, t_options *f)
 {

@@ -10,12 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../inc/ft_printf.h"
 
 void	ft_bigint_sum(t_bigint *bigint1, t_bigint *bigint2)
 {
 	int				i;
-	unsigned long long	temp;
+	unsigned long	temp;
 
 	i = 0;
 	temp = 0;

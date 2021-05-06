@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../inc/ft_printf.h"
 
 void	ft_set_exp(char *number, t_fnum *fnum, char spec)
 {
@@ -87,15 +87,20 @@ char	*ft_get_enum(t_fnum *fnum, int sum, int ilen, char spec)
 	return (number);
 }
 
-/*
-** Печать спецификатора 'e' для бонусной части заданий
-** Вывод числа с плавающей точкой в экспоненциальной форме записи
-** По умолчанию выводится число с точностью 6, если число по
-** модулю меньше еденицы, то пред десятично точкой выводится ноль,
-** знак указывается только для отрицательных чисел, с правым выравниванием.
-** После символа "e" (или "E") всегда выводится две цифры
-** (они равны 0, если аргумент равен 0).
-*/
+void	ft_help_print_e(t_options *f, t_buff *buf, char sign)
+{
+	if (!(f->flags & (F_NULL + F_MINUS)))
+		ft_print_width(buf, &f->width, ' ');
+	if (sign)
+		ft_push(buf, sign);
+	if (!(f->flags & F_MINUS))
+	{
+		if (f->flags & F_NULL)
+			ft_print_width(buf, &f->width, '0');
+		else
+			ft_print_width(buf, &f->width, ' ');
+	}
+}
 
 void	ft_e_print(t_options *f, t_buff *buf, t_fnum *fnum)
 {
@@ -115,17 +120,7 @@ void	ft_e_print(t_options *f, t_buff *buf, t_fnum *fnum)
 		f->width -= f->sum + len + 1;
 	else
 		f->width -= len;
-	if (!(f->flags & (F_NULL + F_MINUS)))
-		ft_print_width(buf, &f->width, ' ');
-	if (sign)
-		ft_push(buf, sign);
-	if (!(f->flags & F_MINUS))
-	{
-		if (f->flags & F_NULL)
-			ft_print_width(buf, &f->width, '0');
-		else
-			ft_print_width(buf, &f->width, ' ');
-	}
+	ft_help_print_e(f, buf, sign);
 	number = ft_get_enum(fnum, f->sum + 2, len, f->spec);
 	temp = number;
 	while (*temp)

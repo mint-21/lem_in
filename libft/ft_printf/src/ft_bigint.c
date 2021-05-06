@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../inc/ft_printf.h"
 
 void	ft_reset_bigint(t_bigint *bigint)
 {
@@ -21,10 +21,6 @@ void	ft_reset_bigint(t_bigint *bigint)
 		bigint->num[i++] = 0;
 	bigint->size = 0;
 }
-
-/*
-** Функция заполняет массив и запоминает значения до точки.
-*/
 
 void	ft_set_bigint(t_bigint *bigint, int power, int base)
 {
@@ -82,11 +78,6 @@ t_bigint	ft_get_fp(unsigned long long num, int shift)
 	return (res_bigint);
 }
 
-/*
-** функция заполняет массив до точки
-** ft_reset_bigint(&res_bigint): заполнение массивов '0'
-*/
-
 t_bigint	ft_get_ip(unsigned long long num, int shift)
 {
 	t_bigint	res_bigint;
@@ -109,10 +100,6 @@ t_bigint	ft_get_ip(unsigned long long num, int shift)
 	return (res_bigint);
 }
 
-/*
-** ft_get_bigint: возвращает массив, заполненный '0'
-*/
-
 char	*ft_get_part(unsigned long long num, int shift,
 					t_bigint (*ft_get_bigint)(unsigned long long, int))
 {
@@ -126,7 +113,7 @@ char	*ft_get_part(unsigned long long num, int shift,
 	if (!num)
 		bigint.size++;
 	size = bigint.size - 1;
-	res = (char*)malloc(size * NUM_LEN + ft_unumlen(bigint.num[size], 10) + 1);
+	res = (char *)malloc(size * NUM_LEN + ft_unumlen(bigint.num[size], 10) + 1);
 	len = ft_itoa_base(bigint.num[size], res, 10, 0);
 	while (size--)
 	{

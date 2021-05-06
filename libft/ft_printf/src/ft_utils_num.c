@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../inc/ft_printf.h"
 
-int				ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	long		res;
 	short int	sign;
@@ -38,17 +38,21 @@ int				ft_atoi(const char *str)
 	return ((int)(res * sign));
 }
 
-int				ft_unumlen(unsigned long long num, int base)
+int	ft_unumlen(unsigned long long num, int base)
 {
 	int			len;
 
 	len = 0;
-	while (num /= base)
+	num /= base;
+	while (num)
+	{
+		num /= base;
 		len++;
+	}
 	return (len + 1);
 }
 
-int				ft_itoa_base(unsigned long long num, char *str,
+int	ft_itoa_base(unsigned long long num, char *str,
 								int base, char lower)
 {
 	char		*digits;
@@ -66,11 +70,7 @@ int				ft_itoa_base(unsigned long long num, char *str,
 	return (len);
 }
 
-/*
-** Возведение в степень
-*/
-
-int				ft_power(int base, int power)
+int	ft_power(int base, int power)
 {
 	int			res;
 
@@ -80,12 +80,7 @@ int				ft_power(int base, int power)
 	return (res);
 }
 
-/*
-** 1ULL - Эти буквы изменяют литерал 1 и делают его типа unsigned long long.
-** & (Побитовое И (AND)), << (Побитовый сдвиг влево)
-*/
-
-int				ft_get_zero(unsigned long long num, int shift, char *fpoint)
+int	ft_get_zero(unsigned long long num, int shift, char *fpoint)
 {
 	int			len;
 	int			zero;
