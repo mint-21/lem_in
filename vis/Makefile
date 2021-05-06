@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: asmall <marvin@42.fr>                      +#+  +:+       +#+         #
+#    By: asmall <asmall@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/09/21 13:01:00 by asmall            #+#    #+#              #
-#    Updated: 2020/09/21 13:01:04 by asmall           ###   ########.fr        #
+#    Updated: 2021/05/06 15:14:39 by asmall           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,10 +16,10 @@ SRC_VI			=	main.c ft_push_turns.c ft_help_funct.c ft_render_init.c\
 SRC				=	../src/ft_card_reading.c ../src/ft_check_create_room.c\
 				   	../src/ft_correct_main.c \
 					../src/ft_correct_map.c ../src/ft_cleaning_struct.c\
-					../src/ft_null.c ../src/ft_print.c\
+					../src/ft_null.c ../src/ft_del.c \
 					../src/ft_check_connects.c ../src/ft_add_room_link.c\
 					../src/ft_zerodata.c ../src/ft_additional_func.c\
-					../src/ft_terms.c ../src/ft_del.c\
+					../src/ft_print.c ../src/ft_terms.c\
 
 INCLUDE =	visualise.h \
 			../libft/libft.h

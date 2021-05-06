@@ -13,9 +13,9 @@
 #ifndef VISUALISE_H
 # define VISUALISE_H
 
-# include "SDL.h"
-# include "SDL_ttf.h"
-# include "SDL_image.h"
+# include "/Users/asmall/.brew/include/SDL2/SDL.h"
+# include "/Users/asmall/.brew/include/SDL2/SDL_ttf.h"
+# include "/Users/asmall/.brew/include/SDL2/SDL_image.h"
 
 # include "../src/lemin.h"
 # include <stdio.h>
