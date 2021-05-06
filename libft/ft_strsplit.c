@@ -6,67 +6,68 @@
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/12 19:04:09 by vfearles          #+#    #+#             */
-/*   Updated: 2021/04/25 16:12:15 by asmall           ###   ########.fr       */
+/*   Updated: 2021/05/06 14:04:09 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_word_count(char const *s, char c)
+static char	*ft_wordnew(char *word, char c)
 {
-	size_t	n;
+	char		*slovo;
 
-	if (!s)
-		return (0);
-	n = 0;
-	while (*s == c)
-		++s;
-	while (*s)
-	{
-		while (*s && *s != c)
-			++s;
-		++n;
-		while (*s == c)
-			++s;
-	}
-	return (n);
+	slovo = word;
+	while (*word && *word != c)
+		word++;
+	*word = '\0';
+	return (ft_strdup(slovo));
 }
 
-static char	**clean(char **arr, size_t n)
+static void	ft_free(char **result, size_t i)
 {
-	while (n--)
-		free(arr[n]);
-	free(arr);
-	return (NULL);
+	while (i--)
+		ft_strdel(&(result[i]));
+	free(*result);
+}
+
+static char	**ft_newstr(char *str, char c, size_t count, size_t i)
+{
+	char		**result;
+	char		*word;
+
+	result = (char **)ft_memalloc(sizeof(char *) * (count + 1));
+	if (result)
+	{
+		while (i < count)
+		{
+			while (*str == c)
+				str++;
+			if (*str)
+			{
+				word = ft_wordnew(str, c);
+				if (!(word))
+				{
+					ft_free(result, i);
+					return (NULL);
+				}
+				result[i++] = word;
+				str += (ft_strlen(word) + 1);
+			}
+		}
+		result[i] = NULL;
+	}
+	return (result);
 }
 
 char	**ft_strsplit(char const *s, char c)
 {
-	const char	*t;
-	char		**arr;
-	size_t		n;
-	size_t		i;
+	char	**words;
+	char	*line;
 
-	n = ft_word_count(s, c);
-	arr = (char **)malloc(sizeof(char *) * (n + 1));
-	if (!s || !(arr))
+	line = ft_strdup((char *)s);
+	if (!s || !(line))
 		return (NULL);
-	i = 0;
-	while (*s == c)
-		++s;
-	while (i < n)
-	{
-		t = s;
-		while (*s && *s != c)
-			++s;
-		arr[i] = (char *)malloc(s - t + 1);
-		if (!(arr[i]))
-			return (clean(arr, i));
-		ft_strncpy(arr[i], t, s - t);
-		arr[i++][s - t] = '\0';
-		while (*s == c)
-			++s;
-	}
-	arr[i] = NULL;
-	return (arr);
+	words = ft_newstr(line, c, ft_count(line, c), 0);
+	free(line);
+	return (words);
 }

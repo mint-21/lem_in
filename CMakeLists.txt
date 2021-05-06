@@ -5,14 +5,15 @@ set(CMAKE_C_STANDARD 99)
 
 add_executable(mint_v2_04_01
         libft/ft_printf/inc/ft_printf.h
-        #libft/ft_printf/src/ft_handle_other
+        libft/ft_printf/src/ft_print_cs.c
+        libft/ft_printf/src/ft_parse_lfnum
+        libft/ft_printf/src/ft_ls_print
+        libft/ft_printf/src/ft_handle.c
         libft/ft_printf/src/ft_bigint.c
         libft/ft_printf/src/ft_bigint_operations.c
         libft/ft_printf/src/ft_buff_manage.c
         libft/ft_printf/src/ft_color.c
-        libft/ft_printf/src/ft_handle.c
         libft/ft_printf/src/ft_parse_nums.c
-        libft/ft_printf/src/ft_print_cs.c
         libft/ft_printf/src/ft_print_diuoxb.c
         libft/ft_printf/src/ft_print_e.c
         libft/ft_printf/src/ft_print_f.c
@@ -36,13 +37,11 @@ add_executable(mint_v2_04_01
         libft/ft_isnum.c
         libft/ft_isprint.c
         libft/ft_itoa.c
-        libft/ft_lltoa.c
         libft/ft_lstadd.c
         libft/ft_lstdel.c
         libft/ft_lstdelone.c
         libft/ft_lstiter.c
         libft/ft_lstmap.c
-        libft/ft_lstnew.c
         libft/ft_lstrev.c
         libft/ft_lstsize.c
         libft/ft_memalloc.c
@@ -78,7 +77,6 @@ add_executable(mint_v2_04_01
         libft/ft_strlcat.c
         libft/ft_strlen.c
         libft/ft_strlen_char.c
-        libft/ft_strlsplit.c
         libft/ft_strmap.c
         libft/ft_strmapi.c
         libft/ft_strncat.c
@@ -97,6 +95,7 @@ add_executable(mint_v2_04_01
         libft/ft_tolower.c
         libft/ft_toupper.c
         libft/ft_ulltoa.c
+        libft/ft_count.c
         libft/get_next_line.c
         libft/get_next_line.h
         libft/libft.h

@@ -1,43 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_count.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/13 19:48:28 by asmall            #+#    #+#             */
-/*   Updated: 2021/04/25 14:38:40 by asmall           ###   ########.fr       */
+/*   Created: 2019/09/19 19:57:15 by asmall            #+#    #+#             */
+/*   Updated: 2021/05/06 14:10:52 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void const *content, size_t content_size)
+size_t	ft_count(char const *str, char c)
 {
-	t_list	*l;
+	size_t		count;
 
-	l = malloc(sizeof(t_list));
-	if (!(l))
-		return (NULL);
-	if (!content)
+	count = 0;
+	while (*str != '\0')
 	{
-		l->content_size = 0;
-		l->content = NULL;
-	}
-	else
-	{
-		l->content = malloc(content_size);
-		if (!l->content)
+		while (*str == c)
+			str++;
+		if (*str)
 		{
-			free(l);
-			return (NULL);
-		}
-		else
-		{
-			ft_memmove(l->content, content, content_size);
-			l->content_size = content_size;
+			count++;
+			while (*str && *str != c)
+				str++;
 		}
 	}
-	l->next = NULL;
-	return (l);
+	return (count);
 }
