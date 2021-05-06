@@ -95,7 +95,6 @@ add_executable(mint_v2_04_01
         libft/ft_tolower.c
         libft/ft_toupper.c
         libft/ft_ulltoa.c
-        libft/ft_count.c
         libft/get_next_line.c
         libft/get_next_line.h
         libft/libft.h
@@ -128,4 +127,10 @@ add_executable(mint_v2_04_01
         src/ft_terms.c
         src/ft_zerodata.c
         src/lemin.h
-        src/main.c)
+        vis/main.c
+        vis/visualise.h
+        vis/ft_ants_move.c
+        vis/ft_help_funct.c
+        vis/ft_push_turns.c
+        vis/ft_render_info.c
+        vis/ft_render_init.c)

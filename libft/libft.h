@@ -6,7 +6,7 @@
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/04 21:38:27 by asmall            #+#    #+#             */
-/*   Updated: 2021/05/06 14:10:44 by asmall           ###   ########.fr       */
+/*   Updated: 2021/05/06 14:40:11 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,6 +108,5 @@ void				ft_putstr_buf(char *buf, size_t *i, size_t buff_size,
 void				ft_putnbr_buf(char *buf, size_t *i, size_t buff_size,
 						int num);
 void				*ft_split_free(char **str_split);
-size_t				ft_count(char const *str, char c);
 
 #endif
