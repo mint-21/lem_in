@@ -1,3 +1,0 @@
-/Users/asmall/CLionProjects/lem_in_17/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/asmall/CLionProjects/lem_in_17/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/asmall/CLionProjects/lem_in_17/cmake-build-debug/CMakeFiles/mint_v2_04_01.dir

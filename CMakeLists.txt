@@ -5,6 +5,7 @@ set(CMAKE_C_STANDARD 99)
 
 add_executable(mint_v2_04_01
         libft/ft_printf/inc/ft_printf.h
+        #libft/ft_printf/src/ft_handle_other
         libft/ft_printf/src/ft_bigint.c
         libft/ft_printf/src/ft_bigint_operations.c
         libft/ft_printf/src/ft_buff_manage.c
