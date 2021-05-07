@@ -131,4 +131,10 @@ add_executable(mint_v2_04_01
         src/ft_terms.c
         src/ft_zerodata.c
         src/lemin.h
-        src/main.c)
+        #src/main.c
+        vis/main.c
+        vis/ft_render_info.c
+        vis/ft_render_init.c
+        vis/ft_ants_move.c
+        vis/ft_help_funct.c
+        vis/ft_push_turns.c)

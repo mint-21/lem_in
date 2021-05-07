@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_push_turns.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/21 12:59:54 by asmall            #+#    #+#             */
-/*   Updated: 2020/09/22 12:03:20 by asmall           ###   ########.fr       */
+/*   Updated: 2021/05/07 12:51:05 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "visualise.h"
 
-t_turns		*make_new_ant_turn(void)
+t_turns	*make_new_ant_turn(void)
 {
 	t_turns	*t;
 
@@ -22,7 +22,7 @@ t_turns		*make_new_ant_turn(void)
 	return (t);
 }
 
-int			count_amount_turns(char *line)
+int	count_amount_turns(char *line)
 {
 	int		i;
 	int		amount_turns;
@@ -35,7 +35,7 @@ int			count_amount_turns(char *line)
 	return (amount_turns);
 }
 
-void		free_turn(t_turns *start, t_turns *curr)
+void	free_turn(t_turns *start, t_turns *curr)
 {
 	while (curr)
 	{
@@ -47,7 +47,7 @@ void		free_turn(t_turns *start, t_turns *curr)
 	free(curr);
 }
 
-void		turn_vis_ants(int amount_turns, char **turns,
+void	turn_vis_ants(int amount_turns, char **turns,
 				char ant_num_str[4], t_ants_v **array)
 {
 	int		i;
@@ -76,7 +76,7 @@ void		turn_vis_ants(int amount_turns, char **turns,
 	free_turn(curr, start);
 }
 
-bool		turn_line(t_ants_v **array, t_data **g_struct)
+bool	turn_line(t_ants_v **array, t_data **g_struct)
 {
 	char	**turns;
 	char	**temp_str;

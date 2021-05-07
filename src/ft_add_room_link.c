@@ -86,7 +86,7 @@ int	add_link(t_data *s, char *tab)
 		ft_bzero(s->links, sizeof(t_link *) * s->rooms_count);
 	}
 	n_a = 0;
-	add_link_process(tab, s, n_a);
+	n_a = add_link_process(tab, s, n_a);
 	while (tab && *tab != '-')
 		tab++;
 	tab += 1;
