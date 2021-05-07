@@ -12,7 +12,7 @@
 
 #include "lemin.h"
 
-void		print_step_and_ant(char *room_name, int ants, int i)
+void	print_step_and_ant(char *room_name, int ants, int i)
 {
 	while (++i <= ants)
 	{
@@ -21,11 +21,12 @@ void		print_step_and_ant(char *room_name, int ants, int i)
 	}
 }
 
-void		add_ant_in_buff(t_way *way, int i)
+void	add_ant_in_buff(t_way *way, int i)
 {
 	t_ants	*new;
 
-	if (!(new = (t_ants *)ft_memalloc(sizeof(t_ants))))
+	new = (t_ants *)ft_memalloc(sizeof(t_ants));
+	if (!new)
 		exit(1);
 	way->ants -= 1;
 	new->num = i;
@@ -37,38 +38,29 @@ void		add_ant_in_buff(t_way *way, int i)
 	way->last_ant = new;
 }
 
-void		write_in_buff(t_way *way, int count)
+void	write_in_buff(t_way *way, int count)
 {
-	t_way *head;
+	t_way	*head;
 
 	head = way;
 	while (1)
 	{
 		if (way->ants)
 			add_ant_in_buff(way, count++);
+		way = way->next;
 		if (!check_empty(head))
 			break ;
-		else if (!(way = way->next))
+		else if (!way)
 			way = head;
 	}
 }
 
-void		ft_buff_lem(t_data *data, t_way *way)
+void	ft_lala(t_data *data, t_way *way)
 {
 	int		count;
 	int		step;
 	t_way	*head;
 
-	if (!data->ways) {
-        ft_print_error(E_PATH);
-        free_list(data->ways);
-	}
-	if (data->ways->len == 2)
-	{
-		print_step_and_ant(data->ways->path->next->room->name, data->ants, 0);
-		free_list(data->ways);
-		return ;
-	}
 	step = 0;
 	count = 1;
 	write_in_buff(way, count);
@@ -80,9 +72,25 @@ void		ft_buff_lem(t_data *data, t_way *way)
 		{
 			count += print_step(&(head)->buf, step);
 			head = head->next;
-            if (count && !head)
-                ft_printf("\n");
+			if (count && !head)
+				ft_printf("\n");
 		}
 	}
+}
+
+void	ft_buff_lem(t_data *data, t_way *way)
+{
+	if (!data->ways)
+	{
+		ft_print_error(E_PATH);
+		free_list(data->ways);
+	}
+	if (data->ways->len == 2)
+	{
+		print_step_and_ant(data->ways->path->next->room->name, data->ants, 0);
+		free_list(data->ways);
+		return ;
+	}
+	ft_lala(data, way);
 	free_list(data->ways);
 }

@@ -33,7 +33,8 @@ int	ft_correct_ants(char *str, t_data *data)
 		res = res * 10 + (*str - 48);
 		++str;
 	}
-	if (*str || !((res *= negative) >= 0 && res <= INT_MAX))
+	res *= negative;
+	if (*str || !(res >= 0 && res <= INT_MAX))
 		ft_print_error(E_ANT);
 	data->ants = ((int)res);
 	data->check.valid_flag = E_ANT;
@@ -44,6 +45,16 @@ int	ft_correct_ants(char *str, t_data *data)
 ** ft_correct_rooms: write room-start/room-end in struct
 ** checking coordinates for int, the presence of two spaces
 */
+
+void	ft_rooms_check(t_valid *check, int j)
+{
+	if (!check->li_room_begin)
+		check->li_room_begin = j;
+	if (check->hash_start == -1)
+		check->hash_start = j;
+	if (check->hash_end == -1)
+		check->hash_end = j;
+}
 
 int	ft_correct_rooms(char *str, t_valid *check, int j)
 {
@@ -69,35 +80,7 @@ int	ft_correct_rooms(char *str, t_valid *check, int j)
 	if (space != 2)
 		ft_print_error(E_ROOM);
 	check->li_room_finish = j;
-	if (!check->li_room_begin)
-		check->li_room_begin = j;
-	(check->hash_start == -1) ? check->hash_start = j : 1;
-	(check->hash_end == -1) ? (check->hash_end = j) : 1;
-	return (0);
-}
-
-/*
-** ft_correct_rooms_double: check rooms for doublicate x and y
-*/
-
-int	check_double_coor(t_data *s, t_room *curr, char *str)
-{
-	t_room		*check;
-
-	str += ft_strlen(curr->name);
-	curr->x = ft_atoi(str);
-	str += 1;
-	while (*str && (*str >= '0' && *str <= '9'))
-		str += 1;
-	curr->y = ft_atoi(str);
-	check = s->rooms;
-	while (check)
-	{
-		if ((!ft_strcmp(curr->name, check->name))
-			|| (curr->x == check->x && curr->y == check->y))
-			return (1);
-		check = check->next;
-	}
+	ft_rooms_check(check, j);
 	return (0);
 }
 

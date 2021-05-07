@@ -24,7 +24,7 @@ SRC				=	ft_card_reading.c ft_check_create_room.c \
 					ft_count.c ft_path.c ft_bfs.c ft_add.c\
 					ft_split.c ft_suurballe.c ft_merge.c\
 					ft_collision.c ft_free.c ft_del.c ft_steps.c\
-					ft_copy.c ft_bubble_sort_restore.c\
+					ft_copy.c ft_bubble_sort_restore.c ft_coord_check.c\
 
 OBJ				=	ft_card_reading.o ft_check_create_room.o \
 				   	ft_change.o ft_correct_main.o \
@@ -37,7 +37,7 @@ OBJ				=	ft_card_reading.o ft_check_create_room.o \
 					ft_count.o ft_path.o ft_bfs.o ft_add.o\
 					ft_split.o ft_suurballe.o ft_merge.o\
 					ft_collision.o ft_free.o ft_del.o\
-					ft_copy.o ft_bubble_sort_restore.o ft_steps.o\
+					ft_copy.o ft_bubble_sort_restore.o ft_steps.o ft_coord_check.o\
 
 
 FLAGS = -Wall -Wextra -Werror

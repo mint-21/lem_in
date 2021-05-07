@@ -32,12 +32,9 @@
 # define INF		10000000
 # define BUFF_SIZE	2048
 
-# define MAX(a, b) (a > b ? a : b)
-# define MIN(a, b) (a < b ? a : b)
-
 # define MAX_INT	2147483647
 
-typedef struct			s_buf
+typedef struct s_buf
 {
 	char				str[BUFF_SIZE];
 	size_t				i;
@@ -48,47 +45,47 @@ typedef struct			s_buf
 ** t_path: list of rooms
 */
 
-typedef struct			s_path
+typedef struct s_path
 {
 	struct s_room		*room;
 	struct s_path		*next;
 	struct s_path		*prev;
 }						t_path;
 
-typedef struct			s_ants
+typedef struct s_ants
 {
-    int					num;
-    t_path				*curr;
-    struct s_ants		*next;
+	int					num;
+	t_path				*curr;
+	struct s_ants		*next;
 }						t_ants;
 
 /*
 ** t_way: list of paths (from rooms)
 */
 
-typedef struct			s_way
+typedef struct s_way
 {
 	struct s_path		*path;
-    t_ants *last_ant;
+	t_ants				*last_ant;
 	int					len;
 	int					ants;
 	struct s_way		*next;
 	struct s_way		*prev;
-	t_ants *buf;
+	t_ants				*buf;
 }						t_way;
 
 /*
 ** s_option: path variant structure.
 */
 
-typedef struct			s_option
+typedef struct s_option
 {
 	t_way				*ways;
 	int					steps;
 	struct s_option		*next;
 }						t_option;
 
-typedef struct			s_connect
+typedef struct s_connect
 {
 	int					weight;
 	struct s_room		*room_one;
@@ -99,7 +96,7 @@ typedef struct			s_connect
 	struct s_connect	*parrent;
 }						t_connect;
 
-typedef struct			s_room
+typedef struct s_room
 {
 	char				*name;
 	int					x;
@@ -116,21 +113,21 @@ typedef struct			s_room
 	int					state;
 }						t_room;
 
-typedef	struct			s_rooms
+typedef struct s_rooms
 {
-    t_room				*r;
-    struct s_rooms		*next;
-    struct s_rooms		*prev;
+	t_room				*r;
+	struct s_rooms		*next;
+	struct s_rooms		*prev;
 }						t_rooms;
 
-typedef struct			s_link
+typedef struct s_link
 {
 	int					pair;
 	int					mark;
 	struct s_link		*next;
 }						t_link;
 
-typedef struct			s_valid
+typedef struct s_valid
 {
 	int					li_room_begin;
 	int					li_room_finish;
@@ -147,7 +144,7 @@ typedef struct			s_valid
 ** options: options for selected paths; best_opt: the best options.
 */
 
-typedef struct			s_data
+typedef struct s_data
 {
 	int					ants;
 	int					step;
@@ -175,24 +172,21 @@ t_data					ft_zerodata(void);
 int						add_link(t_data *s, char *tab);
 char					*reading_card(char ***str_split, int fd);
 int						ft_correct(t_data *data, t_valid *check,
-									char **strings);
+							char **strings);
 int						ft_correct_hash(t_valid *check, char *str);
 void					terms_connect(t_room *room_one, t_connect *connect);
 int						ft_correct_ants(char *str, t_data *data);
 int						ft_correct_rooms(char *str, t_valid *check, int j);
-
-
 void					ft_correct_connects(char *str, t_valid *check, int j);
 t_room					*ft_initialization_struct_room(char *line);
 void					ft_connects(t_data *data, char *str);
 t_connect				*ft_createconnect(t_room *room);
 void					ft_struct_free(t_data *data);
 void					ft_print_error(int id);
-void					ft_perror();
+void					ft_perror(void);
 void					create_out_room(t_room *in, t_room *out, t_room *room,
-										t_connect *connect);
+							t_connect *connect);
 void					create_out_in_room(t_room *in, t_room *out);
-
 int						check_double_coor(t_data *s, t_room *curr, char *str);
 void					path(t_room *room, t_room *start, t_way **ways,
 							int path_cost);
@@ -200,36 +194,34 @@ void					print_n_free_map_data(char **map_data);
 void					ft_clean_links(t_data *s);
 int						ft_check_room_link(t_data *data, char *connect_str,
 							t_room **room1, t_room **room2);
-
-
-//новое
-int get_max_path(t_room *start, t_room *end);
-void	free_list(t_way *l);
-void	free_path(t_path *p);
-void suurb(t_data *data);
-void split(t_way *way);
-t_path *bfs(t_data *data, int len);
-void q_add_link(t_rooms **q, t_connect *l, t_room *par);
-void merge(t_way *way, t_rooms *buf);
-t_rooms *add_to_buf(t_room *r, t_rooms *buf);
-void free_links(t_connect *l);
-t_connect *del_zero_link(t_connect *l);
-void free_buf(t_rooms *buf);
-int collision_handle(t_way *list, t_path *p, int ret);
-void recount_len(t_way *l);
-t_connect *del_link(t_connect *l, t_room *r);
-t_way *check_steps(t_way *p_list, t_way *final, int ants);
-void free_list(t_way *l);
-void free_path(t_path *p);
-t_way *lst_copy(t_way *l);
-void bubble_sort(t_way *l, t_way *first);
-void restore(t_data *data, t_way *p_list);
-t_ants	*buf_delete_ant(t_ants **buf, t_ants *ant);
-int		check_empty(t_way *way);
-t_way *max_path(t_data *data, t_way *way, int len, t_rooms *buf);
-t_way *plist_push_back(t_way *way, t_path *p, int len);
-void		ft_buff_lem(t_data *data, t_way *way);
-t_path *p_push_begin(t_room *r, t_path *p);
-int		print_step(t_ants **buf, int step);
+int						get_max_path(t_room *start, t_room *end);
+void					free_list(t_way *l);
+void					free_path(t_path *p);
+void					suurb(t_data *data);
+void					split(t_way *way);
+t_path					*bfs(t_data *data, int len);
+void					q_add_link(t_rooms **q, t_connect *l, t_room *par);
+void					merge(t_way *way, t_rooms *buf);
+t_rooms					*add_to_buf(t_room *r, t_rooms *buf);
+void					free_links(t_connect *l);
+t_connect				*del_zero_link(t_connect *l);
+void					free_buf(t_rooms *buf);
+int						collision_handle(t_way *list, t_path *p, int ret);
+void					recount_len(t_way *l);
+t_connect				*del_link(t_connect *l, t_room *r);
+t_way					*check_steps(t_way *p_list, t_way *final, int ants);
+void					free_list(t_way *l);
+void					free_path(t_path *p);
+t_way					*lst_copy(t_way *l);
+void					bubble_sort(t_way *l, t_way *first);
+void					restore(t_data *data, t_way *p_list);
+t_ants					*buf_delete_ant(t_ants **buf, t_ants *ant);
+int						check_empty(t_way *way);
+t_way					*max_path(t_data *data, t_way *way, int len,
+							t_rooms *buf);
+t_way					*plist_push_back(t_way *way, t_path *p, int len);
+void					ft_buff_lem(t_data *data, t_way *way);
+t_path					*p_push_begin(t_room *r, t_path *p);
+int						print_step(t_ants **buf, int step);
 
 #endif

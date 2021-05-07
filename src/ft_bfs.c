@@ -34,11 +34,25 @@ t_room	*q_get(t_rooms **q)
 	return (ret);
 }
 
+t_path	*bfs_path(t_room *w, t_data *data, int len)
+{
+	t_path	*p;
+
+	p = NULL;
+	while (w != data->start)
+	{
+		p = p_push_begin(w, p);
+		w = w->room_par;
+		len++;
+	}
+	p = p_push_begin(data->start, p);
+	return (p);
+}
+
 t_path	*bfs(t_data *data, int len)
 {
 	t_room	*w;
 	t_rooms	*q;
-	t_path	*p;
 
 	w = data->start;
 	q = NULL;
@@ -49,17 +63,10 @@ t_path	*bfs(t_data *data, int len)
 	while (w != data->end)
 	{
 		q_add_link(&q, w->connects, w);
-		if (!(w = q_get(&q)))
+		w = q_get(&q);
+		if (!w)
 			return (NULL);
 	}
 	q_free(q);
-	p = NULL;
-	while (w != data->start)
-	{
-		p = p_push_begin(w, p);
-		w = w->room_par;
-		len++;
-	}
-	p = p_push_begin(data->start, p);
-	return (p);
+	return (bfs_path(w, data, len));
 }

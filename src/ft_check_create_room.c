@@ -20,9 +20,11 @@ t_room	*ft_initialization_struct_room(char *name)
 {
 	t_room		*room;
 
-	if (!(room = (t_room *)malloc(sizeof(t_room))))
+	room = (t_room *)malloc(sizeof(t_room));
+	if (!room)
 		ft_perror();
-	if (!(room->name = ft_strsub(name, 0, ft_strlen_char(name, " "))))
+	room->name = ft_strsub(name, 0, ft_strlen_char(name, " "));
+	if (!(room->name))
 		ft_perror();
 	room->connects = NULL;
 	room->out_part = NULL;

@@ -36,7 +36,6 @@ static void	ft_free_ways(t_way *way)
 		while (tmp->path)
 		{
 			ptr = tmp->path;
-			//дебажить
 			tmp->path = tmp->path->next;
 			free(ptr);
 		}
@@ -85,21 +84,22 @@ void	ft_struct_free(t_data *data)
 {
 	t_room		*tmp;
 
-	if (data->rooms)
-		while (data->rooms)
+	while (data->rooms)
+	{
+		tmp = data->rooms;
+		data->rooms = data->rooms->next;
+		free(tmp->name);
+		ft_free_connects(tmp->connects);
+		if (tmp->out_part)
 		{
-			tmp = data->rooms;
-			data->rooms = data->rooms->next;
-			free(tmp->name);
-			ft_free_connects(tmp->connects);
-			if (tmp->out_part)
-			{
-				free(tmp->out_part->name);
-				ft_free_connects(tmp->out_part->connects);
-			}
-			free(tmp->out_part);
-			free(tmp);
+			free(tmp->out_part->name);
+			ft_free_connects(tmp->out_part->connects);
 		}
-	(data->links) ? (ft_clean_links(data)) : 0;
-	(data->options) ? (ft_free_vars(data->options)) : 0;
+		free(tmp->out_part);
+		free(tmp);
+	}
+	if (data->links)
+		ft_clean_links(data);
+	if (data->options)
+		ft_free_vars(data->options);
 }

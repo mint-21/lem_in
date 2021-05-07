@@ -20,7 +20,8 @@ t_connect	*ft_createconnect(t_room *room)
 {
 	t_connect	*connect;
 
-	if (!(connect = (t_connect *)malloc(sizeof(t_connect))))
+	connect = (t_connect *)malloc(sizeof(t_connect));
+	if (!connect)
 		ft_perror();
 	connect->weight = 1;
 	connect->room_one = NULL;
@@ -49,8 +50,10 @@ void	ft_creat_duplicate(t_path *path, t_room *in)
 		out = ft_initialization_struct_room(in->name);
 		in->out_part = out;
 		out->in_part = in;
-		links = ft_createconnect((path->room->out_part) ?
-				path->room->out_part : path->room);
+		if (path->room->out_part)
+			links = ft_createconnect(path->room->out_part);
+		else
+			links = ft_createconnect(path->room);
 		links->weight = -1;
 		links->room_one = in;
 		out->connects = in->connects;

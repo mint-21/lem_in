@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_cleaning_struct.c                               :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/10/08 18:41:51 by vfearles          #+#    #+#             */
+/*   Updated: 2021/04/17 14:34:56 by asmall           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "lemin.h"
 
 t_path	*p_copy(t_path *p)
@@ -10,7 +22,8 @@ t_path	*p_copy(t_path *p)
 		p = p->next;
 	while (p)
 	{
-		if (!(tmp = (t_path *)ft_memalloc(sizeof(t_path))))
+		tmp = (t_path *)ft_memalloc(sizeof(t_path));
+		if (!tmp)
 			exit(1);
 		tmp->room = p->room;
 		tmp->next = new;
@@ -32,7 +45,8 @@ t_way 	*lst_copy(t_way *l)
 		l = l->next;
 	while (l)
 	{
-		if (!(tmp = (t_way *)ft_memalloc(sizeof(t_way))))
+		tmp = (t_way *)ft_memalloc(sizeof(t_way));
+		if (!tmp)
 			exit(1);
 		tmp->len = l->len;
 		tmp->path = p_copy(l->path);

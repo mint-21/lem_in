@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_null.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/12/23 17:50:26 by asmall            #+#    #+#             */
+/*   Updated: 2021/04/21 14:53:33 by asmall           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "lemin.h"
 
 t_way	*get_max(t_way *l)
@@ -53,7 +65,7 @@ t_way	*check_steps(t_way *p_list, t_way *final, int ants)
 	if (tmp < last_count_steps)
 	{
 		last_count_steps = tmp;
-		free_list(final); //неправильно фришит
+		free_list(final);
 		return (lst_copy(p_list));
 	}
 	return (final);
