@@ -6,15 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strsplit.c
-libft.h
-/Users/vfearles/CLionProjects/lem_in_17_04/libft/libft.h
-
 /Users/vfearles/CLionProjects/lem_in_17_04/libft/libft.h
 string.h
 -
 stdlib.h
 -
 unistd.h
+-
+
+/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_coord_check.c
+lemin.h
+/Users/vfearles/CLionProjects/lem_in_17_04/src/lemin.h
+
+/Users/vfearles/CLionProjects/lem_in_17_04/src/lemin.h
+../libft/libft.h
+/Users/vfearles/CLionProjects/lem_in_17_04/libft/libft.h
+stdio.h
+-
+fcntl.h
+-
+limits.h
 -
 

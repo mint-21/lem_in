@@ -19,13 +19,16 @@ char	*ft_read_line(char *str, int fd)
 	char	line[16002];
 
 	ft_bzero(line, 16001);
-	while ((ret = read(fd, line, 16001)) > 0)
+	ret = read(fd, line, 16001);
+	while (ret > 0)
 	{
 		line[ret] = '\0';
 		temp = str;
-		if (!(str = ft_strjoin(str, line)))
+		str = ft_strjoin(str, line);
+		if (!str)
 			ft_perror();
 		free(temp);
+		ret = read(fd, line, 16001);
 	}
 	if (ret < 0)
 		ft_perror();
@@ -42,8 +45,12 @@ char	*reading_card(char ***str_split, int fd)
 	ft_bzero(str, 1);
 	str = ft_read_line(str, fd);
 	if (fd > 2)
-		((close(fd)) < 0) ? ft_perror() : 1;
-	if (!(trash = ft_strdup(str)))
+	{
+		if ((close(fd)) < 0)
+			ft_perror();
+	}
+	trash = ft_strdup(str);
+	if (!trash)
 		ft_perror();
 	ptr = str;
 	while (*str++)

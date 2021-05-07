@@ -130,5 +130,6 @@ add_executable(mint_v2_04_01
         src/ft_suurballe.c
         src/ft_terms.c
         src/ft_zerodata.c
+        src/ft_coord_check.c
         src/lemin.h
         src/main.c)

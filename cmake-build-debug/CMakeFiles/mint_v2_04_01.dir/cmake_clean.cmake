@@ -103,6 +103,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/mint_v2_04_01.dir/src/ft_check_create_room.c.o"
   "CMakeFiles/mint_v2_04_01.dir/src/ft_cleaning_struct.c.o"
   "CMakeFiles/mint_v2_04_01.dir/src/ft_collision.c.o"
+  "CMakeFiles/mint_v2_04_01.dir/src/ft_coord_check.c.o"
   "CMakeFiles/mint_v2_04_01.dir/src/ft_copy.c.o"
   "CMakeFiles/mint_v2_04_01.dir/src/ft_correct_main.c.o"
   "CMakeFiles/mint_v2_04_01.dir/src/ft_correct_map.c.o"

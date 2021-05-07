@@ -399,6 +399,9 @@
 		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_collision.c">
 			<Option target="mint_v2_04_01"/>
 		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_coord_check.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
 		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_copy.c">
 			<Option target="mint_v2_04_01"/>
 		</Unit>

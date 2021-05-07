@@ -20,7 +20,9 @@ static void	ft_connectconnect(t_room *room_one, t_room *room_two)
 {
 	t_connect	*connect;
 
-	(!(connect = (t_connect *)malloc(sizeof(t_connect)))) ? ft_perror() : 0;
+	connect = (t_connect *)malloc(sizeof(t_connect));
+	if (!connect)
+		ft_perror();
 	connect->weight = 1;
 	connect->room_one = NULL;
 	connect->room = room_two;

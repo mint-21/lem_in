@@ -2950,6 +2950,33 @@ src/ft_collision.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mint_v2_04_01.dir/build.make CMakeFiles/mint_v2_04_01.dir/src/ft_collision.c.s
 .PHONY : src/ft_collision.c.s
 
+src/ft_coord_check.o: src/ft_coord_check.c.o
+
+.PHONY : src/ft_coord_check.o
+
+# target to build an object file
+src/ft_coord_check.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mint_v2_04_01.dir/build.make CMakeFiles/mint_v2_04_01.dir/src/ft_coord_check.c.o
+.PHONY : src/ft_coord_check.c.o
+
+src/ft_coord_check.i: src/ft_coord_check.c.i
+
+.PHONY : src/ft_coord_check.i
+
+# target to preprocess a source file
+src/ft_coord_check.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mint_v2_04_01.dir/build.make CMakeFiles/mint_v2_04_01.dir/src/ft_coord_check.c.i
+.PHONY : src/ft_coord_check.c.i
+
+src/ft_coord_check.s: src/ft_coord_check.c.s
+
+.PHONY : src/ft_coord_check.s
+
+# target to generate assembly for a file
+src/ft_coord_check.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mint_v2_04_01.dir/build.make CMakeFiles/mint_v2_04_01.dir/src/ft_coord_check.c.s
+.PHONY : src/ft_coord_check.c.s
+
 src/ft_copy.o: src/ft_copy.c.o
 
 .PHONY : src/ft_copy.o
@@ -3757,6 +3784,9 @@ help:
 	@echo "... src/ft_collision.o"
 	@echo "... src/ft_collision.i"
 	@echo "... src/ft_collision.s"
+	@echo "... src/ft_coord_check.o"
+	@echo "... src/ft_coord_check.i"
+	@echo "... src/ft_coord_check.s"
 	@echo "... src/ft_copy.o"
 	@echo "... src/ft_copy.i"
 	@echo "... src/ft_copy.s"

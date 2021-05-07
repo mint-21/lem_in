@@ -22,10 +22,19 @@ static void	free_init(int i, t_valid *check, t_data *data, char **str)
 {
 	while (++i <= check->li_connects_finish)
 	{
-		(str[i][0] != '#') ? ft_connects(data, str[i]) : 0;
+		if (str[i][0] != '#')
+			ft_connects(data, str[i]);
 		add_link(data, str[i]);
 	}
 	ft_split_free(str);
+}
+
+void	init_room_process(int i, t_data *data, t_valid *check)
+{
+	if (i == check->hash_start)
+		data->start = data->rooms;
+	if (i == check->hash_end)
+		data->end = data->rooms;
 }
 
 int	ft_init_room(t_data *data, t_valid *check, char **str)
@@ -44,10 +53,12 @@ int	ft_init_room(t_data *data, t_valid *check, char **str)
 			room->next = data->rooms;
 			data->rooms = room;
 			data->rooms_count++;
-			room->n = room->next == NULL ? 0 : room->next->n + 1;
+			if (room->next == NULL)
+				room->n = 0;
+			else
+				room->n = room->next->n + 1;
 		}
-		data->start = (i == check->hash_start) ? data->rooms : data->start;
-		data->end = (i == check->hash_end) ? data->rooms : data->end;
+		init_room_process(i, data, check);
 	}
 	i = check->li_connects_bigin - 1;
 	free_init(i, check, data, str);

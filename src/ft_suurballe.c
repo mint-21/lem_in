@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_null.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/12/23 17:50:26 by asmall            #+#    #+#             */
+/*   Updated: 2021/04/21 14:53:33 by asmall           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "lemin.h"
 
 t_way	*plist_push_back(t_way *way, t_path *p, int len)
@@ -8,7 +20,8 @@ t_way	*plist_push_back(t_way *way, t_path *p, int len)
 
 	w = p;
 	first = way;
-	if (!(new = (t_way *)ft_memalloc(sizeof(t_way))))
+	new = (t_way *)ft_memalloc(sizeof(t_way));
+	if (!new)
 		exit(1);
 	while (w)
 	{

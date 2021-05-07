@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_cleaning_struct.c                               :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/10/08 18:41:51 by vfearles          #+#    #+#             */
+/*   Updated: 2021/04/17 14:34:56 by asmall           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "lemin.h"
 
 void	restore_col(t_path *start, t_path *end)
@@ -64,7 +76,8 @@ int	collision_handle(t_way *list, t_path *p, int ret)
 	first = w;
 	while (p->next)
 	{
-		if ((tmp = find_room(list, p->room, first)))
+		tmp = find_room(list, p->room, first);
+		if (tmp)
 		{
 			ret = 1;
 			p = remove_collision(p, tmp);

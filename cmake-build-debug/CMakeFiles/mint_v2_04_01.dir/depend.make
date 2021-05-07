@@ -324,6 +324,10 @@ CMakeFiles/mint_v2_04_01.dir/src/ft_collision.c.o: ../libft/libft.h
 CMakeFiles/mint_v2_04_01.dir/src/ft_collision.c.o: ../src/ft_collision.c
 CMakeFiles/mint_v2_04_01.dir/src/ft_collision.c.o: ../src/lemin.h
 
+CMakeFiles/mint_v2_04_01.dir/src/ft_coord_check.c.o: ../libft/libft.h
+CMakeFiles/mint_v2_04_01.dir/src/ft_coord_check.c.o: ../src/ft_coord_check.c
+CMakeFiles/mint_v2_04_01.dir/src/ft_coord_check.c.o: ../src/lemin.h
+
 CMakeFiles/mint_v2_04_01.dir/src/ft_copy.c.o: ../libft/libft.h
 CMakeFiles/mint_v2_04_01.dir/src/ft_copy.c.o: ../src/ft_copy.c
 CMakeFiles/mint_v2_04_01.dir/src/ft_copy.c.o: ../src/lemin.h

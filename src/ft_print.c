@@ -46,7 +46,7 @@ void	print_n_free_map_data(char **map_data)
 
 int	print_step(t_ants **buf, int step)
 {
-	t_ants *tmp;
+	t_ants	*tmp;
 
 	if (!*buf)
 		return (0);
@@ -57,7 +57,10 @@ int	print_step(t_ants **buf, int step)
 		ft_printf("L%d-%s ", tmp->num, tmp->curr->room->name);
 		if (!tmp->curr->prev->prev)
 			return (1);
-		tmp = (!tmp->curr->next) ? buf_delete_ant(buf, tmp) : tmp->next;
+		if (!tmp->curr->next)
+			tmp = buf_delete_ant(buf, tmp);
+		else
+			tmp = tmp->next;
 	}
 	return (1);
 }
