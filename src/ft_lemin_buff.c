@@ -55,28 +55,12 @@ void	write_in_buff(t_way *way, int count)
 	}
 }
 
-void	ft_buff_process(t_data *data)
-{
-	if (!data->ways)
-	{
-		ft_print_error(E_PATH);
-		free_list(data->ways);
-	}
-	if (data->ways->len == 2)
-	{
-		print_step_and_ant(data->ways->path->next->room->name, data->ants, 0);
-		free_list(data->ways);
-		return ;
-	}
-}
-
-void	ft_buff_lem(t_data *data, t_way *way)
+void	ft_lala(t_data *data, t_way *way)
 {
 	int		count;
 	int		step;
 	t_way	*head;
 
-	ft_buff_process(data);
 	step = 0;
 	count = 1;
 	write_in_buff(way, count);
@@ -92,5 +76,21 @@ void	ft_buff_lem(t_data *data, t_way *way)
 				ft_printf("\n");
 		}
 	}
+}
+
+void	ft_buff_lem(t_data *data, t_way *way)
+{
+	if (!data->ways)
+	{
+		ft_print_error(E_PATH);
+		free_list(data->ways);
+	}
+	if (data->ways->len == 2)
+	{
+		print_step_and_ant(data->ways->path->next->room->name, data->ants, 0);
+		free_list(data->ways);
+		return ;
+	}
+	ft_lala(data, way);
 	free_list(data->ways);
 }
