@@ -120,7 +120,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/mint_v2_04_01.dir/src/ft_suurballe.c.o"
   "CMakeFiles/mint_v2_04_01.dir/src/ft_terms.c.o"
   "CMakeFiles/mint_v2_04_01.dir/src/ft_zerodata.c.o"
-  "CMakeFiles/mint_v2_04_01.dir/src/main.c.o"
+  "CMakeFiles/mint_v2_04_01.dir/vis/ft_ants_move.c.o"
+  "CMakeFiles/mint_v2_04_01.dir/vis/ft_help_funct.c.o"
+  "CMakeFiles/mint_v2_04_01.dir/vis/ft_push_turns.c.o"
+  "CMakeFiles/mint_v2_04_01.dir/vis/ft_render_info.c.o"
+  "CMakeFiles/mint_v2_04_01.dir/vis/ft_render_init.c.o"
+  "CMakeFiles/mint_v2_04_01.dir/vis/main.c.o"
   "mint_v2_04_01"
   "mint_v2_04_01.pdb"
 )

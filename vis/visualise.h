@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   visualise.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/18 13:42:35 by asmall            #+#    #+#             */
-/*   Updated: 2020/09/18 13:42:38 by asmall           ###   ########.fr       */
+/*   Updated: 2021/05/07 16:03:40 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,17 +21,16 @@
 # include <stdio.h>
 # include <stdbool.h>
 
-# define BLACK (SDL_Color){0, 0, 0, 255}
 # define SCREEN_WIDTH 1920
 # define SCREEN_HEIGHT 1080
 # define STEP_SCREEN 60
-# define SCREEN_TICKS_PER_FRAME 1000 / STEP_SCREEN
+# define SCREEN_TICKS_PER_FRAME 16
 
 SDL_Window					*g_main_window;
 SDL_Renderer				*g_main_render;
 t_data						g_struct;
 
-typedef struct				s_room_v
+typedef struct s_room_v
 {
 	SDL_FRect				room;
 	struct s_room_v			*next;
@@ -44,7 +43,7 @@ typedef struct				s_room_v
 
 t_room_v					*g_vis_rooms;
 
-typedef struct				s_ants_v
+typedef struct s_ants_v
 {
 	char					*curr_name;
 	char					*next_name;
@@ -54,7 +53,7 @@ typedef struct				s_ants_v
 	float					y_diff;
 }							t_ants_v;
 
-typedef struct				s_turns
+typedef struct s_turns
 {
 	char					**room_ant;
 	struct s_turns			*next;
@@ -87,10 +86,13 @@ void						render_texture_png(SDL_FRect pos);
 ** ft_help_funct.c
 */
 
+int							ft_max(int a, int b);
 int							calc_max_xy(t_data s, int flag);
-t_room_v					*init_vis_room();
+t_room_v					*init_vis_room(void);
 t_ants_v					*array_vis_ants(t_data s);
 void						ant_on_null(t_ants_v *ant, int *null_count);
+void						create_name_room(t_room_v *vis_room,
+								t_room *norm_room, TTF_Font *courier);
 
 /*
 ** ft_push_turns.c

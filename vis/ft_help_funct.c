@@ -3,16 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_help_funct.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/21 13:00:28 by asmall            #+#    #+#             */
-/*   Updated: 2020/09/22 12:07:30 by asmall           ###   ########.fr       */
+/*   Updated: 2021/05/07 16:03:27 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "visualise.h"
 
-int				calc_max_xy(t_data s, int flag)
+int	ft_max(int a, int b)
+{
+	if (a > b)
+		return (a);
+	else
+		return (b);
+}
+
+int	calc_max_xy(t_data s, int flag)
 {
 	int			max;
 	t_room		*curr;
@@ -34,7 +42,7 @@ int				calc_max_xy(t_data s, int flag)
 	return (max);
 }
 
-void			ant_on_null(t_ants_v *ant, int *null_count)
+void	ant_on_null(t_ants_v *ant, int *null_count)
 {
 	(*ant).x_diff = 0;
 	(*ant).y_diff = 0;
@@ -43,11 +51,12 @@ void			ant_on_null(t_ants_v *ant, int *null_count)
 	(*null_count)++;
 }
 
-t_room_v		*init_vis_room(void)
+t_room_v	*init_vis_room(void)
 {
 	t_room_v	*room;
 
-	if (!(room = (t_room_v *)malloc(sizeof(t_room_v))))
+	room = (t_room_v *)malloc(sizeof(t_room_v));
+	if (!(room))
 		return (NULL);
 	room->next = NULL;
 	room->room.x = 0;
@@ -59,7 +68,7 @@ t_room_v		*init_vis_room(void)
 	return (room);
 }
 
-t_ants_v		*array_vis_ants(t_data s)
+t_ants_v	*array_vis_ants(t_data s)
 {
 	t_ants_v	*array;
 	t_room_v	*curr;

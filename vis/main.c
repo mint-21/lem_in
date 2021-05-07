@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/21 12:59:36 by asmall            #+#    #+#             */
-/*   Updated: 2020/09/21 12:59:40 by asmall           ###   ########.fr       */
+/*   Updated: 2021/05/07 12:55:38 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "visualise.h"
 
-void			error(const char *s, const char *t)
+void	error(const char *s, const char *t)
 {
 	write(STDERR_FILENO, "Error: ", 7);
 	write(STDERR_FILENO, s, ft_strlen(s));
@@ -21,7 +21,7 @@ void			error(const char *s, const char *t)
 	exit(EXIT_FAILURE);
 }
 
-void			render_process(t_data s, t_ants_v **array)
+void	render_process(t_data s, t_ants_v **array)
 {
 	t_room_v	*curr;
 
@@ -40,7 +40,7 @@ void			render_process(t_data s, t_ants_v **array)
 	render_name_room(s);
 }
 
-int				initialize(int fd)
+int	initialize(int fd)
 {
 	char		**str_split;
 
@@ -59,7 +59,7 @@ int				initialize(int fd)
 	return (1);
 }
 
-void			event_handler(t_data *g_struct)
+void	event_handler(t_data *g_struct)
 {
 	SDL_Event	event;
 
@@ -67,21 +67,21 @@ void			event_handler(t_data *g_struct)
 	{
 		if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_SPACE)
 			g_struct->vis_pause = !g_struct->vis_pause;
-		else if (event.type == SDL_QUIT ||
-		(event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_ESCAPE))
+		else if (event.type == SDL_QUIT || (event.type == SDL_KEYDOWN
+				&& event.key.keysym.sym == SDLK_ESCAPE))
 			g_struct->vis_quit = 1;
 	}
 }
 
-int				main(int ac, char **av)
+int	main(int ac, char **av)
 {
 	t_ants_v	*array;
 	t_room_v	*end_room;
-	int fd;
+	int			fd;
 
-    fd = 0;
-    if (ac == 2)
-        fd = open(av[1], O_RDONLY);
+	fd = 0;
+	if (ac == 2)
+		fd = open(av[1], O_RDONLY);
 	if (!initialize(fd))
 		return (0);
 	end_room = g_vis_rooms;
