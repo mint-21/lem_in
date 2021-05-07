@@ -9,5 +9,6 @@ bc 3 1
 #eee
 b 2 1
 c 4 0
-a-bc
-bc-b
+a-b
+b-c
+c-bc

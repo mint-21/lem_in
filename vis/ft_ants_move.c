@@ -3,26 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ants_move.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/21 13:11:21 by asmall            #+#    #+#             */
-/*   Updated: 2020/09/21 13:11:37 by asmall           ###   ########.fr       */
+/*   Updated: 2021/05/07 12:49:35 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "visualise.h"
 
-double			math_different(t_ants_v ant, char axis)
+double	math_different(t_ants_v ant, char axis)
 {
 	double		diff;
 
 	diff = 0;
-	diff = (axis == 'x') ? (ft_abs(ant.next_room.x - ant.curr_room.x)) :
-		(ft_abs(ant.next_room.y - ant.curr_room.y));
+	if (axis == 'x')
+		diff = (ft_abs(ant.next_room.x - ant.curr_room.x));
+	else
+		diff = (ft_abs(ant.next_room.y - ant.curr_room.y));
 	return (diff);
 }
 
-void			print_ants(t_ants_v *array)
+void	print_ants(t_ants_v *array)
 {
 	int			i;
 
@@ -32,7 +34,7 @@ void			print_ants(t_ants_v *array)
 			render_texture_png(array[i].curr_room);
 }
 
-int				if_turn_over(t_ants_v **array, t_data *g_struct)
+int	if_turn_over(t_ants_v **array, t_data *g_struct)
 {
 	t_room_v	*curr;
 	int			i;
@@ -48,6 +50,7 @@ int				if_turn_over(t_ants_v **array, t_data *g_struct)
 	i = -1;
 	curr = g_vis_rooms;
 	while (++i < g_struct->ants && curr)
+	{
 		if ((*array)[i].next_name)
 		{
 			while (ft_strcmp((*array)[i].next_name, curr->name) != 0 && curr)
@@ -55,23 +58,25 @@ int				if_turn_over(t_ants_v **array, t_data *g_struct)
 			(*array)[i].next_room = curr->room;
 			curr = g_vis_rooms;
 		}
+	}
 	return (1);
 }
 
-int				ants_move(t_ants_v *array, int null_count)
+int	ants_move(t_ants_v *array, int null_count)
 {
 	int			i;
 
 	i = -1;
 	while (++i < g_struct.ants)
+	{
 		if (array[i].next_name)
 		{
 			if (array[i].x_diff == 0 && array[i].y_diff == 0)
 			{
-				array[i].x_diff = (array[i].next_room.x -
-					array[i].curr_room.x) / STEP_SCREEN;
-				array[i].y_diff = (array[i].next_room.y -
-					array[i].curr_room.y) / STEP_SCREEN;
+				array[i].x_diff = (array[i].next_room.x
+						- array[i].curr_room.x) / STEP_SCREEN;
+				array[i].y_diff = (array[i].next_room.y
+						- array[i].curr_room.y) / STEP_SCREEN;
 			}
 			array[i].curr_room.x += array[i].x_diff;
 			array[i].curr_room.y += array[i].y_diff;
@@ -81,10 +86,11 @@ int				ants_move(t_ants_v *array, int null_count)
 		}
 		else
 			null_count++;
+	}
 	return (null_count);
 }
 
-void			start_process(t_ants_v *array)
+void	start_process(t_ants_v *array)
 {
 	int			count;
 

@@ -3,30 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_render_info.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/22 11:33:25 by asmall            #+#    #+#             */
-/*   Updated: 2020/09/22 12:06:15 by asmall           ###   ########.fr       */
+/*   Updated: 2021/05/07 14:02:12 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "visualise.h"
 
-void			create_name_room(t_room_v *vis_room, t_room *norm_room,
-					TTF_Font *courier)
-{
-	SDL_Rect	name_rect;
-
-	TTF_SizeText(courier, norm_room->name, &name_rect.w, &name_rect.h);
-	name_rect.x = (int)vis_room->room.x;
-	name_rect.y = (int)vis_room->room.y;
-	SDL_RenderCopy(g_main_render,
-		SDL_CreateTextureFromSurface(g_main_render,
-		TTF_RenderText_Solid(courier, norm_room->name, BLACK)),
-		NULL, &name_rect);
-}
-
-void			render_name_room(t_data s)
+void	render_name_room(t_data s)
 {
 	t_room_v	*vis_room;
 	t_room		*norm_room;
@@ -50,7 +36,7 @@ void			render_name_room(t_data s)
 	TTF_CloseFont(courier);
 }
 
-t_room_v		*render_rooms(t_data s)
+t_room_v	*render_rooms(t_data s)
 {
 	t_room_v	*vis_rooms;
 	t_room_v	*vis_room;
@@ -72,37 +58,45 @@ t_room_v		*render_rooms(t_data s)
 	return (vis_rooms);
 }
 
-void			render_links(t_data s, int i)
+void	render_links_help(t_room_v *vis_room, t_link *norm_room, int i)
+{
+	t_room_v	*end_line;
+
+	end_line = g_vis_rooms;
+	while (end_line && end_line->num != norm_room->pair)
+		end_line = end_line->next;
+	SDL_SetRenderDrawColor(g_main_render, vis_room->r,
+		vis_room->g, vis_room->b, 100);
+	if (norm_room->pair >= i)
+		SDL_RenderDrawLineF(g_main_render,
+			vis_room->room.x + 25, vis_room->room.y + 25,
+			end_line->room.x + 25, end_line->room.y + 25);
+}
+
+void	render_links(t_data s, int i)
 {
 	t_room_v	*vis_room;
 	t_link		*norm_room;
-	t_room_v	*end_line;
 
-	while (++i < s.links_count)
+	while (++i < s.check.li_connects_finish)
 	{
+		printf("\n ________%i______", s.links_count);
 		norm_room = s.links[i];
 		vis_room = g_vis_rooms;
 		while (vis_room && vis_room->num != i)
 			vis_room = vis_room->next;
 		if (vis_room)
+		{
 			while (norm_room)
 			{
-				end_line = g_vis_rooms;
-				while (end_line && end_line->num != norm_room->pair)
-					end_line = end_line->next;
-				SDL_SetRenderDrawColor(g_main_render, vis_room->r,
-					vis_room->g, vis_room->b, 100);
-				if (norm_room->pair >= i)
-				    printf("ok");
-					SDL_RenderDrawLineF(g_main_render,
-						vis_room->room.x + 25, vis_room->room.y + 25,
-						end_line->room.x + 25, end_line->room.y + 25);
+				render_links_help(vis_room, norm_room, i);
 				norm_room = norm_room->next;
 			}
+		}
 	}
 }
 
-void			render_texture_png(SDL_FRect pos)
+void	render_texture_png(SDL_FRect pos)
 {
 	SDL_Surface	*ant_surface;
 	SDL_Texture	*ant_texture;
