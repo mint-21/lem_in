@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_add_room_link.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/09/22 11:13:51 by vfearles          #+#    #+#             */
+/*   Updated: 2021/04/17 14:18:53 by asmall           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "lemin.h"
 
-t_rooms *b_find(t_room *r, t_rooms *buf)
+t_rooms	*b_find(t_room *r, t_rooms *buf)
 {
 	while (buf)
 	{
@@ -11,13 +23,14 @@ t_rooms *b_find(t_room *r, t_rooms *buf)
 	return (buf);
 }
 
-t_rooms *add_to_buf(t_room *r, t_rooms *buf)
+t_rooms	*add_to_buf(t_room *r, t_rooms *buf)
 {
 	t_rooms	*new;
 
 	if (b_find(r, buf))
 		return (buf);
-	if (!(new = (t_rooms *)ft_memalloc(sizeof(t_rooms))))
+	new = (t_rooms *)ft_memalloc(sizeof(t_rooms));
+	if (!(new))
 		exit(1);
 	new->next = buf;
 	new->prev = NULL;
@@ -25,7 +38,7 @@ t_rooms *add_to_buf(t_room *r, t_rooms *buf)
 	return (new);
 }
 
-void q_insert(t_rooms *q, t_rooms *new)
+void	q_insert(t_rooms *q, t_rooms *new)
 {
 	while (q->next && q->r->weight <= new->r->weight)
 		q = q->next;
@@ -44,7 +57,7 @@ void q_insert(t_rooms *q, t_rooms *new)
 	}
 }
 
-void q_add_link(t_rooms **q, t_connect *l, t_room *par)
+void	q_add_link(t_rooms **q, t_connect *l, t_room *par)
 {
 	t_rooms	*new;
 
@@ -54,7 +67,8 @@ void q_add_link(t_rooms **q, t_connect *l, t_room *par)
 		{
 			l->room->weight = par->weight + l->weight;
 			l->room->room_par = par;
-			if (!(new = (t_rooms *)ft_memalloc(sizeof(t_rooms))))
+			new = (t_rooms *)ft_memalloc(sizeof(t_rooms));
+			if (!(new))
 				exit(1);
 			new->r = l->room;
 			if (!*q || l->room->weight < (*q)->r->weight)

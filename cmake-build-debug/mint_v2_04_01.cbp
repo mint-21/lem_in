@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="mint_v2_04_01"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mint_v2_04_01">
+				<Option output="/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/mint_v2_04_01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 mint_v2_04_01"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mint_v2_04_01/fast">
+				<Option output="/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/mint_v2_04_01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 mint_v2_04_01/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vfearles/CLionProjects/lem_in_17_04/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_abs.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_atoll.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_atoull.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_bit.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_bzero.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_free_split.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_isalnum.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_isalpha.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_isascii.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_isdigit.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_isnum.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_isprint.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_itoa.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_lstadd.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_lstdel.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_lstdelone.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_lstiter.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_lstmap.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_lstrev.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_lstsize.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_memalloc.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_memccpy.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_memchr.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_memcmp.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_memcpy.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_memdel.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_memset.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/inc/ft_printf.h">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_bigint.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_bigint_operations.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_buff_manage.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_color.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_get_fnum.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_handle.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_ls_print.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_parse_lfnum.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_parse_nums.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_print_cs.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_print_diuoxb.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_print_e.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_print_f.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_print_options.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_print_prk.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_printf.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_set_modif.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_set_opt.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_uoxb_cond.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_utils_num.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_printf/src/ft_utils_str.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_putchar.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_putchar_buf.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_putchar_fd.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_putendl.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_putendl_fd.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_putnbr.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_putnbr_buf.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_putnbr_fd.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_putstr.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_putstr_buf.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_putstr_fd.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_satoi.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strcat.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strchr.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strchr_count.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strclr.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strcmp.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strcpy.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strdup.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strequ.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_striter.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_striteri.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strjoin.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strlcat.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strlen.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strlen_char.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strmap.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strmapi.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strncat.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strncpy.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strnequ.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strnew.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strnstr.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strrchr.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strrev.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strsplit.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strstr.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strsub.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_strtrim.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_swap.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_swapptr.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_tolower.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_toupper.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/ft_ulltoa.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/get_next_line.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/get_next_line.h">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/libft/libft.h">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_add.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_add_room_link.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_additional_func.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_bfs.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_bubble_sort_restore.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_card_reading.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_change.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_check_connects.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_check_create_room.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_cleaning_struct.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_collision.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_copy.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_correct_main.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_correct_map.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_count.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_creat_duplicate.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_del.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_free.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_lemin_buff.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_merge.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_null.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_path.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_print.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_split.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_steps.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_suurballe.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_terms.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/ft_zerodata.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/lemin.h">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/src/main.c">
+			<Option target="mint_v2_04_01"/>
+		</Unit>
+		<Unit filename="/Users/vfearles/CLionProjects/lem_in_17_04/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

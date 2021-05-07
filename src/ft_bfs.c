@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_additional_func.c                               :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/09/22 11:16:04 by vfearles          #+#    #+#             */
+/*   Updated: 2021/04/17 14:22:57 by asmall           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "lemin.h"
 
-void q_free(t_rooms *q)
+void	q_free(t_rooms *q)
 {
 	if (!q)
 		return ;
@@ -31,7 +43,8 @@ t_path	*bfs(t_data *data, int len)
 	w = data->start;
 	q = NULL;
 	q_add_link(&q, w->connects, w);
-	if (!(w = q_get(&q)))
+	w = q_get(&q);
+	if (!w)
 		return (NULL);
 	while (w != data->end)
 	{

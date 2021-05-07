@@ -32,7 +32,8 @@ int	add_link_list(t_link **link)
 	t_link	*list;
 
 	tmp = NULL;
-	if (!(tmp = (t_link*)malloc(sizeof(t_link))))
+	tmp = (t_link *)malloc(sizeof(t_link));
+	if (!(tmp))
 		return (-1);
 	tmp->next = NULL;
 	list = *link;
@@ -61,6 +62,16 @@ int	fill_link(t_data *s, int n_a, int n_b)
 	return (0);
 }
 
+int	add_link_process(char *tab, t_data *s, int n_a)
+{
+	if (!tab[0] || !tab[1] || !tab[2])
+		return (-2);
+	n_a = find_name_num(tab, s->rooms);
+	if (n_a == -1)
+		return (-2);
+	return (n_a);
+}
+
 int	add_link(t_data *s, char *tab)
 {
 	int		n_a;
@@ -69,20 +80,21 @@ int	add_link(t_data *s, char *tab)
 
 	if (!s->links)
 	{
-		if (!(s->links = (t_link **)malloc(sizeof(t_link *) * s->rooms_count)))
+		s->links = (t_link **)malloc(sizeof(t_link *) * s->rooms_count);
+		if (!(s->links))
 			return (-1);
 		ft_bzero(s->links, sizeof(t_link *) * s->rooms_count);
 	}
-	if (!tab[0] || !tab[1] || !tab[2])
-		return (-2);
-	if ((n_a = find_name_num(tab, s->rooms)) == -1)
-		return (-2);
+	n_a = 0;
+	add_link_process(tab, s, n_a);
 	while (tab && *tab != '-')
 		tab++;
 	tab += 1;
-	if ((n_b = find_name_num(tab, s->rooms)) == -1 || n_a == n_b)
+	n_b = find_name_num(tab, s->rooms);
+	if (n_b == -1 || n_a == n_b)
 		return (-2);
-	if ((stat = fill_link(s, n_a, n_b)) == -2 || stat == -2)
+	stat = fill_link(s, n_a, n_b);
+	if (stat == -2 || stat == -2)
 		return (stat);
 	return (3);
 }
