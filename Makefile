@@ -6,14 +6,14 @@
 #    By: asmall <asmall@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/09 19:21:40 by asmall            #+#    #+#              #
-#    Updated: 2021/05/07 12:44:15 by asmall           ###   ########.fr        #
+#    Updated: 2021/05/07 16:18:41 by vfearles         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 all:
 	@make -C ./libft/
 	@make -C ./src/
-	@make -C ./vis/
+#	@make -C ./vis/
 
 new_lem_in:
 	@make -C ./src/ new
