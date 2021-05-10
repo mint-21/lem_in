@@ -6,7 +6,7 @@
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/22 11:33:25 by asmall            #+#    #+#             */
-/*   Updated: 2021/05/07 14:02:12 by asmall           ###   ########.fr       */
+/*   Updated: 2021/05/10 16:58:25 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,6 @@ void	render_links(t_data s, int i)
 
 	while (++i < s.check.li_connects_finish)
 	{
-		printf("\n ________%i______", s.links_count);
 		norm_room = s.links[i];
 		vis_room = g_vis_rooms;
 		while (vis_room && vis_room->num != i)

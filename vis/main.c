@@ -6,7 +6,7 @@
 /*   By: asmall <asmall@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/21 12:59:36 by asmall            #+#    #+#             */
-/*   Updated: 2021/05/07 12:55:38 by asmall           ###   ########.fr       */
+/*   Updated: 2021/05/10 16:56:35 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,12 +40,12 @@ void	render_process(t_data s, t_ants_v **array)
 	render_name_room(s);
 }
 
-int	initialize(int fd)
+int	initialize(void)
 {
 	char		**str_split;
 
 	g_struct = ft_zerodata();
-	g_struct.map_data = reading_card(&str_split, fd);
+	g_struct.map_data = reading_card(&str_split, 0);
 	ft_correct(&g_struct, &g_struct.check, str_split);
 	if (g_struct.rooms_count > 50)
 	{
@@ -73,16 +73,12 @@ void	event_handler(t_data *g_struct)
 	}
 }
 
-int	main(int ac, char **av)
+int	main(void)
 {
 	t_ants_v	*array;
 	t_room_v	*end_room;
-	int			fd;
 
-	fd = 0;
-	if (ac == 2)
-		fd = open(av[1], O_RDONLY);
-	if (!initialize(fd))
+	if (!initialize())
 		return (0);
 	end_room = g_vis_rooms;
 	while (end_room && end_room->num != g_struct.end->n)
